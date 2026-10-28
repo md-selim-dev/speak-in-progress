@@ -1,0 +1,70 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile and learning progress settings",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string", "maxLength": 100 },
+        "email": { "type": "string", "maxLength": 150 },
+        "photoURL": { "type": "string", "maxLength": 500 },
+        "currentLevel": { "type": "string", "maxLength": 10 },
+        "currentDay": { "type": "number" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["email"]
+    },
+    "Script": {
+      "title": "Script",
+      "description": "A personal day-by-day teleprompter practice script created or customized by a user",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 200 },
+        "dayNumber": { "type": "number" },
+        "level": { "type": "string", "maxLength": 10 },
+        "focusSkill": { "type": "string", "maxLength": 200 },
+        "introHook": { "type": "string", "maxLength": 2000 },
+        "storyParagraphs": { "type": "array" },
+        "usefulExpressions": { "type": "array" },
+        "retellingAnchors": { "type": "array" },
+        "reflectionPrompts": { "type": "array" },
+        "userId": { "type": "string", "maxLength": 128 },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "dayNumber", "storyParagraphs", "userId"]
+    },
+    "CurriculumDay": {
+      "title": "CurriculumDay",
+      "description": "Master CEFR-graded practice day from A1 to C2",
+      "type": "object",
+      "properties": {
+        "dayNumber": { "type": "number" },
+        "title": { "type": "string", "maxLength": 200 },
+        "level": { "type": "string", "maxLength": 10 },
+        "topic": { "type": "string", "maxLength": 200 },
+        "focusSkill": { "type": "string", "maxLength": 200 },
+        "introHook": { "type": "string", "maxLength": 2000 },
+        "storyParagraphs": { "type": "array" },
+        "usefulExpressions": { "type": "array" },
+        "retellingAnchors": { "type": "array" },
+        "reflectionPrompts": { "type": "array" }
+      },
+      "required": ["dayNumber", "title", "level", "storyParagraphs"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "User profile state and current practice progress"
+    },
+    "/users/{userId}/scripts/{scriptId}": {
+      "schema": { "$ref": "#/entities/Script" },
+      "description": "User private teleprompter scripts saved in cloud Firestore"
+    },
+    "/curriculum/{dayId}": {
+      "schema": { "$ref": "#/entities/CurriculumDay" },
+      "description": "Master curriculum practice stories accessible to readers"
+    }
+  }
+}

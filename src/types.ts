@@ -68,6 +68,13 @@ export interface PracticeStory {
   usefulExpressions: ExpressionItem[];
   retellingPrompts: string[];
   reflectionPrompts: string[];
+  introHook?: string;
+  level?: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2' | string;
+  topic?: string;
+  notes?: string;
+  userId?: string;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 export interface ReflectionEntry {
