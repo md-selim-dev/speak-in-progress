@@ -18,16 +18,22 @@ import {
   Layout,
   Image as ImageIcon,
   Tv,
+  Sparkles as SparklesIcon,
+  Film,
 } from 'lucide-react';
 import { VideoWatermarkStudio } from './VideoWatermarkStudio';
+import { ThumbnailDesignStudio } from './ThumbnailDesignStudio';
+import { VideoIntroStudio } from './VideoIntroStudio';
+
+export type ChannelSubTab = 'banner-studio' | 'thumbnail-studio' | 'intro-studio' | 'watermark-studio' | 'channel-mockup';
 
 interface ChannelMockupViewProps {
   activeBrand: BrandIdentity;
-  defaultSubTab?: 'banner-studio' | 'watermark-studio' | 'channel-mockup';
+  defaultSubTab?: ChannelSubTab;
 }
 
 export const ChannelMockupView: React.FC<ChannelMockupViewProps> = ({ activeBrand, defaultSubTab }) => {
-  const [activeSubTab, setActiveSubTab] = useState<'banner-studio' | 'watermark-studio' | 'channel-mockup'>(
+  const [activeSubTab, setActiveSubTab] = useState<ChannelSubTab>(
     defaultSubTab || 'banner-studio'
   );
 
@@ -36,107 +42,15 @@ export const ChannelMockupView: React.FC<ChannelMockupViewProps> = ({ activeBran
   const [copiedAbout, setCopiedAbout] = useState<boolean>(false);
   const [devicePreview, setDevicePreview] = useState<'desktop' | 'mobile'>('desktop');
 
-  // Thumbnail Studio state
-  const [thumbDay, setThumbDay] = useState<number>(1);
-  const [thumbTitle, setThumbTitle] = useState<string>('The Morning Routine Shift');
-  const [thumbTheme, setThumbTheme] = useState<'emerald' | 'mint' | 'cobalt' | 'amber'>('emerald');
-
   const handleCopyAbout = () => {
     navigator.clipboard.writeText(activeBrand.youtubeMeta.aboutBio);
     setCopiedAbout(true);
     setTimeout(() => setCopiedAbout(false), 2000);
   };
 
-  // Export 1280x720 Thumbnail PNG
-  const handleDownloadThumbnailPNG = () => {
-    const canvas = document.createElement('canvas');
-    canvas.width = 1280;
-    canvas.height = 720;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    const accentColor =
-      thumbTheme === 'emerald'
-        ? '#10B981'
-        : thumbTheme === 'mint'
-        ? '#00F5A0'
-        : thumbTheme === 'cobalt'
-        ? '#3B82F6'
-        : '#F59E0B';
-
-    // Dark sleek background in botanical obsidian
-    ctx.fillStyle = '#061411';
-    ctx.fillRect(0, 0, 1280, 720);
-
-    // Outer border with accent
-    ctx.strokeStyle = accentColor;
-    ctx.lineWidth = 14;
-    ctx.strokeRect(7, 7, 1266, 706);
-
-    // Top Header Badge: DAY XX · SPEAKING PRACTICE
-    ctx.fillStyle = accentColor;
-    ctx.beginPath();
-    ctx.roundRect(80, 70, 420, 60, 14);
-    ctx.fill();
-
-    ctx.fillStyle = '#061210';
-    ctx.font = '900 26px "JetBrains Mono", monospace';
-    ctx.textAlign = 'center';
-    const dayStr = thumbDay < 10 ? `DAY 0${thumbDay} · SPEAKING LAB` : `DAY ${thumbDay} · SPEAKING LAB`;
-    ctx.fillText(dayStr, 290, 110);
-
-    // Main Story Title
-    ctx.fillStyle = '#FFFFFF';
-    ctx.font = '900 68px "Plus Jakarta Sans", sans-serif';
-    ctx.textAlign = 'left';
-
-    const words = thumbTitle.split(' ');
-    let line1 = '';
-    let line2 = '';
-    words.forEach((word) => {
-      if ((line1 + word).length < 20) {
-        line1 += `${word} `;
-      } else {
-        line2 += `${word} `;
-      }
-    });
-
-    ctx.fillText(line1.trim(), 80, 260);
-    if (line2) {
-      ctx.fillText(line2.trim(), 80, 350);
-    }
-
-    // Method subline with "Progress, not perfection" motto
-    ctx.fillStyle = '#94A3B8';
-    ctx.font = 'bold 30px "Plus Jakarta Sans", sans-serif';
-    ctx.fillText('“PROGRESS, NOT PERFECTION” · RETELLING', 80, line2 ? 440 : 360);
-
-    // Bottom Branding Strip
-    ctx.fillStyle = '#111827';
-    ctx.beginPath();
-    ctx.roundRect(80, 560, 1120, 84, 18);
-    ctx.fill();
-
-    ctx.fillStyle = accentColor;
-    ctx.font = '900 32px "Plus Jakarta Sans", sans-serif';
-    ctx.fillText('SPEAK IN PROGRESS', 120, 612);
-
-    ctx.fillStyle = '#E2E8F0';
-    ctx.font = '24px "DM Sans", sans-serif';
-    ctx.fillText('· Spoken English Journey', 480, 612);
-
-    const url = canvas.toDataURL('image/png');
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `speak-in-progress-thumbnail-day-${thumbDay}.png`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <div className="space-y-8 sm:space-y-10">
-      {/* Sub-navigation Switcher between Banner Studio and Channel Mockup */}
+      {/* Sub-navigation Switcher between Banner Studio, Thumbnail Studio, Intro Studio, Watermark Studio, and Channel Mockup */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.08] pb-4">
         <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 bg-stone-950 p-1 sm:p-1.5 rounded-2xl border border-white/10 shadow-badge-inset w-full sm:w-auto">
           <button
@@ -160,6 +74,46 @@ export const ChannelMockupView: React.FC<ChannelMockupViewProps> = ({ activeBran
           </button>
 
           <button
+            onClick={() => setActiveSubTab('thumbnail-studio')}
+            className={`flex-1 sm:flex-none px-3.5 sm:px-4 py-2 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2 ${
+              activeSubTab === 'thumbnail-studio'
+                ? 'shadow-modern-glow'
+                : 'text-stone-400 hover:text-white'
+            }`}
+            style={
+              activeSubTab === 'thumbnail-studio'
+                ? {
+                    backgroundColor: activeBrand.colors.accent.hex,
+                    color: activeBrand.colors.accent.textDark ? '#061210' : '#FFFFFF',
+                  }
+                : {}
+            }
+          >
+            <SparklesIcon className="w-3.5 h-3.5" />
+            <span>16:9 Thumbnails</span>
+          </button>
+
+          <button
+            onClick={() => setActiveSubTab('intro-studio')}
+            className={`flex-1 sm:flex-none px-3.5 sm:px-4 py-2 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2 ${
+              activeSubTab === 'intro-studio'
+                ? 'shadow-modern-glow'
+                : 'text-stone-400 hover:text-white'
+            }`}
+            style={
+              activeSubTab === 'intro-studio'
+                ? {
+                    backgroundColor: activeBrand.colors.accent.hex,
+                    color: activeBrand.colors.accent.textDark ? '#061210' : '#FFFFFF',
+                  }
+                : {}
+            }
+          >
+            <Film className="w-3.5 h-3.5" />
+            <span>3-4s Video Intro</span>
+          </button>
+
+          <button
             onClick={() => setActiveSubTab('watermark-studio')}
             className={`flex-1 sm:flex-none px-3.5 sm:px-4 py-2 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-2 ${
               activeSubTab === 'watermark-studio'
@@ -176,7 +130,7 @@ export const ChannelMockupView: React.FC<ChannelMockupViewProps> = ({ activeBran
             }
           >
             <Tv className="w-3.5 h-3.5" />
-            <span>150×150 Video Watermark</span>
+            <span>150×150 Watermark</span>
           </button>
 
           <button
@@ -196,7 +150,7 @@ export const ChannelMockupView: React.FC<ChannelMockupViewProps> = ({ activeBran
             }
           >
             <Layout className="w-3.5 h-3.5" />
-            <span>Channel & Thumbnails</span>
+            <span>Channel & Videos</span>
           </button>
         </div>
 
@@ -212,10 +166,16 @@ export const ChannelMockupView: React.FC<ChannelMockupViewProps> = ({ activeBran
       {/* 1. Dedicated Banner Design Studio */}
       {activeSubTab === 'banner-studio' && <BannerDesignStudio activeBrand={activeBrand} />}
 
-      {/* 2. Official 150x150 Video Watermark Studio */}
+      {/* 2. Official 16:9 Thumbnail Studio */}
+      {activeSubTab === 'thumbnail-studio' && <ThumbnailDesignStudio activeBrand={activeBrand} />}
+
+      {/* 3. Official 3-4s Video Intro Studio */}
+      {activeSubTab === 'intro-studio' && <VideoIntroStudio activeBrand={activeBrand} />}
+
+      {/* 4. Official 150x150 Video Watermark Studio */}
       {activeSubTab === 'watermark-studio' && <VideoWatermarkStudio activeBrand={activeBrand} />}
 
-      {/* 3. Simulated Channel Mockup View */}
+      {/* 5. Simulated Channel Mockup View */}
       {activeSubTab === 'channel-mockup' && (
         <div className="space-y-8 sm:space-y-12">
           {/* Section Header */}
@@ -409,176 +369,186 @@ export const ChannelMockupView: React.FC<ChannelMockupViewProps> = ({ activeBran
             </div>
           </section>
 
-          {/* 16:9 Thumbnail Studio */}
+          {/* Real YouTube Video Feed & Uploads Mockup */}
           <section className="space-y-6">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-white/[0.08]">
               <div>
                 <div
                   className="text-xs font-bold uppercase tracking-wider mb-1"
                   style={{ color: activeBrand.colors.accent.hex }}
                 >
-                  Click-Through Packaging
+                  YouTube Feed Simulation
                 </div>
-                <h3 className="text-2xl font-bold text-white tracking-tight">
-                  16:9 YouTube Thumbnail Studio
+                <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight font-brand">
+                  Latest Video Uploads & Thumbnails
                 </h3>
                 <p className="text-xs text-stone-400 mt-0.5">
-                  High-contrast, faceless thumbnail template featuring your “Progress, not perfection” motto.
+                  See how your unboxed Emerald Spark logo and high-contrast thumbnails capture attention in the YouTube browse feed.
                 </p>
               </div>
 
               <button
-                onClick={handleDownloadThumbnailPNG}
-                className="px-4 py-2 text-xs font-extrabold rounded-xl shadow-modern-glow transition-all flex items-center gap-2 self-start sm:self-auto hover:scale-[1.02] active:scale-95"
+                onClick={() => setActiveSubTab('thumbnail-studio')}
+                className="px-4 py-2 text-xs font-bold rounded-xl shadow-modern-glow transition-all flex items-center gap-2 self-start sm:self-auto hover:scale-[1.02] active:scale-95"
                 style={{
                   backgroundColor: activeBrand.colors.accent.hex,
-                  color: activeBrand.colors.accent.textDark ? '#061210' : '#FFFFFF',
+                  color: '#061210',
                 }}
               >
-                <Download className="w-3.5 h-3.5" />
-                <span>Download Thumbnail PNG (1280x720)</span>
+                <SparklesIcon className="w-3.5 h-3.5" />
+                <span>Open 16:9 Thumbnail Studio</span>
               </button>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-              {/* Controls */}
-              <div className="lg:col-span-5 bg-stone-900/60 border border-white/[0.08] rounded-2xl sm:rounded-3xl p-5 sm:p-6 space-y-4 shadow-card-elevated">
-                <div>
-                  <label className="block text-xs font-semibold text-stone-400 uppercase mb-1.5">
-                    Session / Day Number
-                  </label>
-                  <input
-                    type="number"
-                    min="1"
-                    value={thumbDay}
-                    onChange={(e) => setThumbDay(parseInt(e.target.value) || 1)}
-                    className="w-full bg-stone-950 border border-white/10 rounded-xl px-4 py-2 text-sm text-stone-100 font-mono focus:outline-none shadow-badge-inset"
-                    style={{ outlineColor: activeBrand.colors.accent.hex }}
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-stone-400 uppercase mb-1.5">
-                    Story Title Headline
-                  </label>
-                  <input
-                    type="text"
-                    value={thumbTitle}
-                    onChange={(e) => setThumbTitle(e.target.value)}
-                    className="w-full bg-stone-950 border border-white/10 rounded-xl px-4 py-2 text-sm text-stone-100 focus:outline-none shadow-badge-inset"
-                    style={{ outlineColor: activeBrand.colors.accent.hex }}
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-stone-400 uppercase mb-1.5">
-                    Accent Theme
-                  </label>
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                    {[
-                      { id: 'emerald', label: 'Emerald Spark', hex: '#10B981', darkText: false },
-                      { id: 'mint', label: 'Neo Mint', hex: '#00F5A0', darkText: true },
-                      { id: 'cobalt', label: 'Cobalt', hex: '#3B82F6', darkText: false },
-                      { id: 'amber', label: 'Amber', hex: '#F59E0B', darkText: false },
-                    ].map((t) => (
-                      <button
-                        key={t.id}
-                        onClick={() => setThumbTheme(t.id as any)}
-                        className={`px-2.5 py-2 text-xs font-semibold rounded-xl border transition-all text-center ${
-                          thumbTheme === t.id
-                            ? 'font-bold shadow-md'
-                            : 'bg-stone-950 text-stone-400 border-white/[0.06] hover:text-white'
-                        }`}
-                        style={
-                          thumbTheme === t.id
-                            ? {
-                                backgroundColor: t.hex,
-                                color: t.darkText ? '#061411' : '#FFFFFF',
-                                borderColor: t.hex,
-                              }
-                            : {}
-                        }
+            {/* Video Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  day: 1,
+                  category: 'SPEAKING LAB',
+                  title: 'The Morning Routine Shift',
+                  highlight: 'Routine Shift',
+                  hook: '“PROGRESS, NOT PERFECTION” · RETELLING',
+                  duration: '14:28',
+                  views: '3.4K views',
+                  timeAgo: '2 days ago',
+                },
+                {
+                  day: 7,
+                  category: 'FLUENCY DRILL',
+                  title: 'Stop Translating In Your Head',
+                  highlight: 'Translating',
+                  hook: 'HOW TO THINK DIRECTLY IN ENGLISH',
+                  duration: '18:05',
+                  views: '5.1K views',
+                  timeAgo: '5 days ago',
+                },
+                {
+                  day: 14,
+                  category: 'UNSCRIPTED PRACTICE',
+                  title: 'Speaking Without Hesitation',
+                  highlight: 'Without Hesitation',
+                  hook: 'FACELESS AUDIO DRILL · DAILY LOG',
+                  duration: '12:44',
+                  views: '2.8K views',
+                  timeAgo: '1 week ago',
+                },
+              ].map((video) => (
+                <div
+                  key={video.day}
+                  className="bg-stone-900/50 border border-white/[0.08] rounded-2xl overflow-hidden shadow-card-elevated group hover:border-emerald-500/40 transition-all flex flex-col"
+                >
+                  {/* High Quality Thumbnail Card */}
+                  <div
+                    className="relative w-full aspect-video border-b border-white/[0.08] p-4 flex flex-col justify-between overflow-hidden select-none"
+                    style={{
+                      backgroundColor: '#030B09',
+                      backgroundImage: `radial-gradient(circle at 35% 45%, ${activeBrand.colors.accent.hex}22 0%, #030B09 100%)`,
+                    }}
+                  >
+                    {/* Top Row: Category Badge + Unboxed Logo */}
+                    <div className="relative z-10 flex items-start justify-between">
+                      <div
+                        className="px-2.5 py-1 rounded-lg text-[10px] font-mono font-black shadow-md"
+                        style={{
+                          backgroundColor: activeBrand.colors.accent.hex,
+                          color: '#04120D',
+                        }}
                       >
-                        {t.label}
-                      </button>
-                    ))}
+                        DAY {video.day < 10 ? `0${video.day}` : video.day} · {video.category}
+                      </div>
+
+                      {/* Standalone Brand Logo in Thumbnail Corner */}
+                      <div className="p-1 rounded-xl bg-stone-950/60 backdrop-blur-sm border border-white/10 shadow-lg">
+                        <LogoMark brand={activeBrand} size="xs" layout="icon-only" isAnimated={false} />
+                      </div>
+                    </div>
+
+                    {/* Central Title */}
+                    <div className="relative z-10 my-auto space-y-1">
+                      <h4 className="text-base sm:text-lg font-black text-white uppercase tracking-tight font-brand leading-tight drop-shadow-md">
+                        {video.title.split(' ').map((word, wIdx) => {
+                          const isH = video.highlight.toLowerCase().includes(word.toLowerCase());
+                          return (
+                            <span
+                              key={wIdx}
+                              style={{ color: isH ? activeBrand.colors.accent.hex : '#FFFFFF' }}
+                            >
+                              {word}{' '}
+                            </span>
+                          );
+                        })}
+                      </h4>
+                      <p
+                        className="text-[10px] font-bold tracking-wide"
+                        style={{ color: activeBrand.colors.accent.hex }}
+                      >
+                        {video.hook}
+                      </p>
+                    </div>
+
+                    {/* Bottom strip */}
+                    <div className="relative z-10 flex items-center justify-between pt-1.5 border-t border-white/10 text-[9px] font-mono text-stone-400">
+                      <span className="font-bold text-white tracking-wider">SPEAK IN PROGRESS</span>
+                      <span className="text-[10px] bg-black/85 text-white font-mono font-bold px-1.5 py-0.5 rounded shadow">
+                        {video.duration}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* YouTube Video Metadata Below Thumbnail */}
+                  <div className="p-4 flex gap-3 flex-1 items-start">
+                    <div className="w-9 h-9 rounded-full bg-stone-950 border border-white/10 shrink-0 flex items-center justify-center overflow-hidden">
+                      <LogoMark brand={activeBrand} size="xs" layout="icon-only" />
+                    </div>
+
+                    <div className="space-y-1 min-w-0 flex-1">
+                      <h5 className="text-xs font-bold text-white leading-snug line-clamp-2 group-hover:text-emerald-300 transition-colors">
+                        Day {video.day < 10 ? `0${video.day}` : video.day}: {video.title} (Natural English Speaking Practice)
+                      </h5>
+                      <div className="text-[11px] text-stone-400 flex items-center gap-1.5">
+                        <span>Speak in Progress</span>
+                        <span className="w-1 h-1 rounded-full bg-stone-600" />
+                        <span>{video.views}</span>
+                        <span className="w-1 h-1 rounded-full bg-stone-600" />
+                        <span>{video.timeAgo}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              ))}
+            </div>
 
-                <div className="bg-stone-950/80 p-4 rounded-2xl border border-white/[0.06] text-[11px] text-stone-400 leading-relaxed shadow-badge-inset">
-                  💡 <strong>Thumbnail Best Practice:</strong> Keep title text concise (2–4 words) for maximum click-through rate on smartphone feeds!
+            {/* Quick Action Prompt to Open Full Studio */}
+            <div className="bg-gradient-to-r from-emerald-950/40 via-stone-900/60 to-emerald-950/40 border border-emerald-500/20 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div
+                  className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border"
+                  style={{
+                    backgroundColor: `${activeBrand.colors.accent.hex}20`,
+                    borderColor: `${activeBrand.colors.accent.hex}40`,
+                    color: activeBrand.colors.accent.hex,
+                  }}
+                >
+                  <SparklesIcon className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-white">Full-Fidelity 16:9 Thumbnail Studio Available</div>
+                  <div className="text-[11px] text-stone-300">
+                    Export high-res 1080p / 1440p PNGs with custom headlines, keyword glow, and soundwaves.
+                  </div>
                 </div>
               </div>
 
-              {/* 16:9 Live Preview Canvas */}
-              <div className="lg:col-span-7 bg-stone-900/40 border border-white/[0.08] rounded-2xl sm:rounded-3xl p-4 sm:p-6 flex flex-col items-center justify-center shadow-card-elevated">
-                {(() => {
-                  const currentAccent =
-                    thumbTheme === 'emerald'
-                      ? '#10B981'
-                      : thumbTheme === 'mint'
-                      ? '#00F5A0'
-                      : thumbTheme === 'cobalt'
-                      ? '#3B82F6'
-                      : '#F59E0B';
-                  const currentTextDark = thumbTheme === 'mint';
-
-                  return (
-                    <div
-                      className="w-full aspect-video rounded-2xl border-4 shadow-2xl relative overflow-hidden flex flex-col justify-between p-4 sm:p-6 md:p-8 select-none"
-                      style={{
-                        backgroundColor: '#061411',
-                        borderColor: currentAccent,
-                        boxShadow: `0 25px 50px -12px rgba(0,0,0,0.8), 0 0 25px ${currentAccent}33`,
-                      }}
-                    >
-                      {/* Day Badge */}
-                      <div className="relative z-10 flex items-center justify-between">
-                        <div
-                          className="px-3 sm:px-4 py-1 sm:py-1.5 rounded-xl text-xs sm:text-sm font-mono font-black shadow-lg"
-                          style={{
-                            backgroundColor: currentAccent,
-                            color: currentTextDark ? '#061411' : '#FFFFFF',
-                          }}
-                        >
-                          DAY {thumbDay < 10 ? `0${thumbDay}` : thumbDay} · PRACTICE
-                        </div>
-                        <div className="text-[10px] sm:text-[11px] font-mono text-stone-400 hidden sm:block">
-                          PROGRESS, NOT PERFECTION
-                        </div>
-                      </div>
-
-                      {/* Big Bold Headline */}
-                      <div className="relative z-10 space-y-1 sm:space-y-2 my-auto">
-                        <h4 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight uppercase font-brand drop-shadow-lg">
-                          {thumbTitle}
-                        </h4>
-                        <p
-                          className="text-[11px] sm:text-sm font-bold"
-                          style={{
-                            color: currentAccent,
-                          }}
-                        >
-                          “PROGRESS, NOT PERFECTION” · RETELLING
-                        </p>
-                      </div>
-
-                  {/* Bottom Channel Strip */}
-                  <div className="relative z-10 flex items-center justify-between pt-2 sm:pt-3 border-t border-white/10 text-xs">
-                    <div className="flex items-center gap-2">
-                      <span className="font-extrabold text-white uppercase tracking-wider font-brand text-[11px] sm:text-xs">
-                        SPEAK IN PROGRESS
-                      </span>
-                      <span className="text-stone-400 hidden sm:inline">· Spoken English Journey</span>
-                    </div>
-                    <div className="text-stone-400 font-mono text-[9px] sm:text-[10px]">1080P SCREEN LOG</div>
-                  </div>
-                </div>
-              );
-            })()}
-          </div>
-        </div>
-      </section>
+              <button
+                onClick={() => setActiveSubTab('thumbnail-studio')}
+                className="px-4 py-2 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 shrink-0 bg-stone-800 hover:bg-stone-700 text-white border border-white/10"
+              >
+                <span>Launch Thumbnail Studio</span>
+                <span>→</span>
+              </button>
+            </div>
+          </section>
         </div>
       )}
     </div>

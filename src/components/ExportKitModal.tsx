@@ -5,7 +5,8 @@
 
 import React, { useState } from 'react';
 import { BrandIdentity } from '../types';
-import { Copy, Check, Download, FileText, Youtube, Sparkles, Tv, ExternalLink } from 'lucide-react';
+import { Copy, Check, Download, FileText, Youtube, Sparkles, Tv, ExternalLink, Image as ImageIcon, Film } from 'lucide-react';
+import { exportThumbnailPNG } from './ThumbnailDesignStudio';
 
 interface ExportKitViewProps {
   activeBrand: BrandIdentity;
@@ -276,12 +277,12 @@ export const ExportKitView: React.FC<ExportKitViewProps> = ({ activeBrand }) => 
           <span className="text-xs text-stone-400 font-mono">Ready to upload</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Watermark Item */}
-          <div className="bg-stone-950/80 p-4 sm:p-5 rounded-2xl border border-white/[0.06] flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3.5 min-w-0">
+          <div className="bg-stone-950/80 p-4 sm:p-5 rounded-2xl border border-white/[0.06] flex flex-col justify-between gap-4">
+            <div className="flex items-center gap-3 min-w-0">
               <div
-                className="w-12 h-12 rounded-xl border flex items-center justify-center bg-[radial-gradient(#ffffff20_1px,transparent_1px)] [background-size:6px_6px] shrink-0"
+                className="w-11 h-11 rounded-xl border flex items-center justify-center bg-[radial-gradient(#ffffff20_1px,transparent_1px)] [background-size:6px_6px] shrink-0"
                 style={{ borderColor: `${activeBrand.colors.accent.hex}60` }}
               >
                 <div className="text-[10px] font-black font-mono" style={{ color: activeBrand.colors.accent.hex }}>
@@ -289,48 +290,108 @@ export const ExportKitView: React.FC<ExportKitViewProps> = ({ activeBrand }) => 
                 </div>
               </div>
               <div className="min-w-0">
-                <div className="text-sm font-bold text-white">Video Watermark (150×150)</div>
-                <div className="text-xs text-stone-400">Bottom-right corner 1-click subscribe badge</div>
+                <div className="text-xs font-bold text-white">Watermark (150×150)</div>
+                <div className="text-[10px] text-stone-400 truncate">1-click subscribe corner badge</div>
               </div>
             </div>
 
             <button
               onClick={handleDownloadWatermarkPNG}
-              className="px-3.5 py-2 text-xs font-bold rounded-xl shadow-sm transition-all flex items-center gap-1.5 shrink-0 active:scale-95"
+              className="w-full py-2 text-xs font-bold rounded-xl shadow-sm transition-all flex items-center justify-center gap-1.5 active:scale-95"
               style={{
                 backgroundColor: activeBrand.colors.accent.hex,
                 color: '#061210',
               }}
             >
               <Download className="w-3.5 h-3.5" />
-              <span>Download</span>
+              <span>Download PNG</span>
             </button>
           </div>
 
+          {/* 16:9 Episode Thumbnail Item */}
+          <div className="bg-stone-950/80 p-4 sm:p-5 rounded-2xl border border-white/[0.06] flex flex-col justify-between gap-4">
+            <div className="flex items-center gap-3 min-w-0">
+              <div
+                className="w-11 h-11 rounded-xl border flex items-center justify-center bg-stone-900 shrink-0"
+                style={{ borderColor: `${activeBrand.colors.accent.hex}40` }}
+              >
+                <ImageIcon className="w-5 h-5" style={{ color: activeBrand.colors.accent.hex }} />
+              </div>
+              <div className="min-w-0">
+                <div className="text-xs font-bold text-white">Thumbnail (1080p)</div>
+                <div className="text-[10px] text-stone-400 truncate">High-CTR unboxed logo PNG</div>
+              </div>
+            </div>
+
+            <button
+              onClick={() =>
+                exportThumbnailPNG(activeBrand, {
+                  day: 1,
+                  title: 'The Morning Routine Shift',
+                  category: 'SPEAKING LAB',
+                  resolution: '1080p',
+                })
+              }
+              className="w-full py-2 text-xs font-bold rounded-xl shadow-sm transition-all flex items-center justify-center gap-1.5 active:scale-95"
+              style={{
+                backgroundColor: activeBrand.colors.accent.hex,
+                color: '#061210',
+              }}
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Download PNG</span>
+            </button>
+          </div>
+
+          {/* 3-4s Intro Video Bumper Item */}
+          <div className="bg-stone-950/80 p-4 sm:p-5 rounded-2xl border border-white/[0.06] flex flex-col justify-between gap-4">
+            <div className="flex items-center gap-3 min-w-0">
+              <div
+                className="w-11 h-11 rounded-xl border flex items-center justify-center bg-stone-900 shrink-0"
+                style={{ borderColor: `${activeBrand.colors.accent.hex}40` }}
+              >
+                <Film className="w-5 h-5" style={{ color: activeBrand.colors.accent.hex }} />
+              </div>
+              <div className="min-w-0">
+                <div className="text-xs font-bold text-white">Intro Bumper (3–4s)</div>
+                <div className="text-[10px] text-stone-400 truncate">60fps with Natural Sound</div>
+              </div>
+            </div>
+
+            <div className="text-[10px] text-stone-400 font-mono text-center bg-stone-900/60 py-1 rounded-lg border border-white/5">
+              528Hz Chime · 1080p
+            </div>
+          </div>
+
           {/* JSON Config Item */}
-          <div className="bg-stone-950/80 p-4 sm:p-5 rounded-2xl border border-white/[0.06] flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3.5 min-w-0">
-              <div className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center bg-stone-900 shrink-0">
+          <div className="bg-stone-950/80 p-4 sm:p-5 rounded-2xl border border-white/[0.06] flex flex-col justify-between gap-4">
+            <div className="flex items-center gap-3 min-w-0">
+              <div className="w-11 h-11 rounded-xl border border-white/10 flex items-center justify-center bg-stone-900 shrink-0">
                 <FileText className="w-5 h-5 text-stone-300" />
               </div>
               <div className="min-w-0">
-                <div className="text-sm font-bold text-white">Brand JSON Package</div>
-                <div className="text-xs text-stone-400">Complete color codes, typography & tags</div>
+                <div className="text-xs font-bold text-white">Brand JSON</div>
+                <div className="text-[10px] text-stone-400 truncate">Hex codes & YouTube tags</div>
               </div>
             </div>
 
             <button
               onClick={handleDownloadBrandJSON}
-              className="px-3.5 py-2 text-xs font-semibold text-stone-200 bg-stone-800 hover:bg-stone-700 border border-white/10 rounded-xl transition-all flex items-center gap-1.5 shrink-0 active:scale-95"
+              className="w-full py-2 text-xs font-semibold text-stone-200 bg-stone-800 hover:bg-stone-700 border border-white/10 rounded-xl transition-all flex items-center justify-center gap-1.5 active:scale-95"
             >
               <Download className="w-3.5 h-3.5" />
-              <span>Download</span>
+              <span>Download JSON</span>
             </button>
           </div>
         </div>
 
-        <div className="text-[11px] text-stone-400 pt-2 border-t border-white/[0.06]">
-          Upload the <strong>150×150 Watermark</strong> in <strong>YouTube Studio &gt; Customization &gt; Branding &gt; Video watermark</strong>!
+        <div className="text-[11px] text-stone-400 pt-2 border-t border-white/[0.06] flex flex-wrap gap-4">
+          <span>
+            Upload the <strong>150×150 Watermark</strong> in <strong>YouTube Studio &gt; Customization &gt; Branding &gt; Video watermark</strong>.
+          </span>
+          <span>
+            Drop the <strong>3–4s Video Intro</strong> at the beginning of each speaking session video before uploading.
+          </span>
         </div>
       </section>
 
