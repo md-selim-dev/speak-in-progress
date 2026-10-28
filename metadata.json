@@ -1,0 +1,10 @@
+{
+  "name": "Speak in Progress - YouTube Brand \u0026 Studio",
+  "description": "Comprehensive channel branding kit, unique identity systems, vector logo generator, banner exporter, tone guide, and faceless screen-recording teleprompter studio.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
