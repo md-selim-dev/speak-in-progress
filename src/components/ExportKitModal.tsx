@@ -358,8 +358,8 @@ export const ExportKitView: React.FC<ExportKitViewProps> = ({ activeBrand }) => 
               </div>
             </div>
 
-            <div className="text-[10px] text-stone-400 font-mono text-center bg-stone-900/60 py-1 rounded-lg border border-white/5">
-              528Hz Chime · 1080p
+            <div className="text-[10px] text-emerald-400 font-mono text-center bg-stone-900/60 py-1 rounded-lg border border-white/5 truncate">
+              Corporate FX & Cinematic · 1080p
             </div>
           </div>
 

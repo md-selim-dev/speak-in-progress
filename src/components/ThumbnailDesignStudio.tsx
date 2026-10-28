@@ -506,22 +506,29 @@ export const ThumbnailDesignStudio: React.FC<ThumbnailDesignStudioProps> = ({ ac
     ctx.stroke();
 
     // Left: Brand Name
+    const brandX = headlineStartX + 30 * scale;
+    const textBaselineY = barY + 50 * scale;
+
+    const brandFont = `900 ${28 * scale}px "Plus Jakarta Sans", sans-serif`;
     ctx.fillStyle = '#FFFFFF';
-    ctx.font = `900 ${28 * scale}px "Plus Jakarta Sans", sans-serif`;
+    ctx.font = brandFont;
     ctx.textAlign = 'left';
-    ctx.fillText(channelLabel, headlineStartX + 30 * scale, barY + 50 * scale);
+    ctx.fillText(channelLabel, brandX, textBaselineY);
 
-    // Left Sub: Spoken English Practice
-    ctx.fillStyle = '#94A3B8';
-    ctx.font = `500 ${22 * scale}px "DM Sans", sans-serif`;
+    // Measure brand label width while its exact font is applied to prevent any text overlap
     const labelWidth = ctx.measureText(channelLabel).width;
-    ctx.fillText('·  Spoken English Journey', headlineStartX + 50 * scale + labelWidth, barY + 50 * scale);
 
-    // Right: Resolution & Format Spec
-    ctx.fillStyle = `${accentColor}CC`;
+    // Left Sub: Spoken English Practice with clean gap
+    const sublineX = brandX + labelWidth + 24 * scale;
+    ctx.fillStyle = '#94A3B8';
+    ctx.font = `600 ${20 * scale}px "DM Sans", sans-serif`;
+    ctx.fillText('·  Spoken English Journey', sublineX, textBaselineY);
+
+    // Right: Format Spec (NO resolution size value shown)
+    ctx.fillStyle = `${accentColor}DD`;
     ctx.font = `800 ${20 * scale}px "JetBrains Mono", monospace`;
     ctx.textAlign = 'right';
-    ctx.fillText('UNSCRIPTED RETELLINGS · 1080P AUDIO DRILL', headlineStartX + barW - 30 * scale, barY + 50 * scale);
+    ctx.fillText('UNSCRIPTED RETELLINGS · DAILY PRACTICE', headlineStartX + barW - 30 * scale, textBaselineY);
     ctx.restore();
 
     return canvas;
@@ -531,6 +538,9 @@ export const ThumbnailDesignStudio: React.FC<ThumbnailDesignStudioProps> = ({ ac
   const handleDownload = async (targetRes: ThumbnailResolution) => {
     setIsExporting(true);
     try {
+      if (document.fonts && document.fonts.ready) {
+        await document.fonts.ready;
+      }
       const canvas = generateCanvas(targetRes);
       if (!canvas) return;
 
@@ -553,6 +563,9 @@ export const ThumbnailDesignStudio: React.FC<ThumbnailDesignStudioProps> = ({ ac
   // Copy Image to Clipboard Handler
   const handleCopyToClipboard = async () => {
     try {
+      if (document.fonts && document.fonts.ready) {
+        await document.fonts.ready;
+      }
       const canvas = generateCanvas('1080p');
       if (!canvas) return;
 
@@ -1039,7 +1052,7 @@ export const ThumbnailDesignStudio: React.FC<ThumbnailDesignStudioProps> = ({ ac
               </div>
 
               <div className="font-mono text-[10px] sm:text-xs text-stone-400">
-                <span style={{ color: accentColor }}>AUDIO DRILL</span> · 1080P
+                <span style={{ color: accentColor }}>AUDIO DRILL</span> · DAILY PRACTICE
               </div>
             </div>
 
