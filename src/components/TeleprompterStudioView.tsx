@@ -155,13 +155,16 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
     const storyMap = new Map<number, PracticeStory>();
     SAMPLE_STORIES.forEach((s) => storyMap.set(s.day, s));
 
-    // 2. Overlay user edited stories (only for valid days)
+    // 2. Overlay user edited stories (only for valid days that match or exceed 5 paragraphs)
     Object.values(editedStoriesMap).forEach((edited) => {
       if (edited && typeof edited.day === 'number' && edited.day >= 1) {
-        storyMap.set(edited.day, {
-          ...edited,
-          level: edited.level || getLevelFromDay(edited.day),
-        });
+        // Prevent stale 3-paragraph legacy cache from overwriting the official 5-paragraph curriculum
+        if (!edited.storyParagraphs || edited.storyParagraphs.length >= 5) {
+          storyMap.set(edited.day, {
+            ...edited,
+            level: edited.level || getLevelFromDay(edited.day),
+          });
+        }
       }
     });
 

@@ -10,6 +10,14 @@
  * - Days 61–80:  B2 (Upper Intermediate Executive Strategy)
  * - Days 81–100: C1 (Advanced Leadership & Diplomacy)
  * - Days 101–120: C2 (Capstone Mastery & Statesmanship Orations)
+ *
+ * Each day contains:
+ * 1. Exactly 5 rich paragraphs for immersive teleprompter reading.
+ * 2. A distinct, non-repetitive opening hook.
+ * 3. A 15-second conversational voiceover intro hook.
+ * 4. 3 conversational expressions with pronunciation tips.
+ * 5. 4 memory trigger anchors for unscripted retelling.
+ * 6. Daily reflection prompts.
  */
 
 import { PracticeStory } from '../../types';
