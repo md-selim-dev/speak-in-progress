@@ -145,7 +145,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       </header>
 
       {/* Main Public Hero */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 space-y-14 sm:space-y-20 lg:space-y-24">
+      <main
+        itemScope
+        itemType="https://schema.org/WebPage"
+        className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 space-y-14 sm:space-y-20 lg:space-y-24"
+      >
         {/* Hero Section */}
         <div className="text-center max-w-4xl mx-auto space-y-5 sm:space-y-6">
           <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider border border-emerald-500/30 bg-emerald-950/40 text-emerald-300 max-w-full text-center leading-snug">
@@ -153,7 +157,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <span className="truncate sm:whitespace-normal">Faceless Screen-Recording Studio · PC & OBS Ready</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight font-brand leading-[1.18] sm:leading-[1.15]">
+          <h1
+            itemProp="name"
+            className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight font-brand leading-[1.18] sm:leading-[1.15]"
+          >
             Documenting Real English Fluency,{' '}
             <span
               className="bg-clip-text text-transparent bg-gradient-to-r"
@@ -165,7 +172,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </span>
           </h1>
 
-          <p className="text-sm sm:text-base lg:text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed px-1">
+          <p
+            itemProp="description"
+            className="speakable-summary text-sm sm:text-base lg:text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed px-1"
+          >
             A specialized YouTube production suite and deliberate spoken practice framework. Built for PC screen recording, calibrated teleprompter pacing, unscripted memory retellings, and consistent fluency gains.
           </p>
 
@@ -174,6 +184,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <button
               onClick={handlePrimaryAction}
               disabled={isLoggingIn}
+              aria-label={isAuthenticated ? 'Enter creator studio' : 'Sign in to studio'}
               className="w-full sm:w-auto px-7 py-3.5 min-h-[46px] text-sm font-black rounded-xl transition-all hover:scale-[1.02] active:scale-95 shadow-modern-glow flex items-center justify-center gap-2.5"
               style={{
                 backgroundColor: activeBrand.colors.accent.hex,
@@ -196,6 +207,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
             <button
               onClick={scrollToInsights}
+              aria-label="View methodology insights and speech research"
               className="w-full sm:w-auto px-6 py-3.5 min-h-[46px] text-sm font-bold rounded-xl text-stone-200 bg-stone-900/80 hover:bg-stone-800 border border-white/10 hover:border-white/20 transition-all flex items-center justify-center gap-2"
             >
               <Lightbulb className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -218,15 +230,20 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         </div>
 
         {/* 5-Step Workflow Interactive Timeline */}
-        <section className="bg-stone-900/60 border border-white/[0.08] rounded-3xl p-5 sm:p-8 lg:p-10 shadow-card-elevated backdrop-blur-xl space-y-6">
+        <section
+          id="workflow"
+          itemScope
+          itemType="https://schema.org/HowTo"
+          className="bg-stone-900/60 border border-white/[0.08] rounded-3xl p-5 sm:p-8 lg:p-10 shadow-card-elevated backdrop-blur-xl space-y-6"
+        >
           <div className="space-y-1 text-center sm:text-left">
             <span className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest">
               Daily Practice Architecture
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white font-brand">
+            <h2 itemProp="name" className="text-2xl sm:text-3xl font-extrabold text-white font-brand">
               The 5-Step Screen Recording Workflow
             </h2>
-            <p className="text-xs sm:text-sm text-stone-400">
+            <p itemProp="description" className="text-xs sm:text-sm text-stone-400">
               Structured specifically for recording clean, faceless YouTube videos on PC with OBS or Loom.
             </p>
           </div>
@@ -266,12 +283,16 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             ].map((item, idx) => {
               const Icon = item.icon;
               return (
-                <div
+                <article
                   key={idx}
+                  itemProp="step"
+                  itemScope
+                  itemType="https://schema.org/HowToStep"
                   className={`p-4 sm:p-5 rounded-2xl bg-stone-950/70 border border-white/5 space-y-2 hover:border-emerald-500/30 transition-all flex flex-col justify-between ${
                     idx === 4 ? 'sm:col-span-2 lg:col-span-1' : ''
                   }`}
                 >
+                  <meta itemProp="position" content={String(idx + 1)} />
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-wider">
@@ -279,17 +300,17 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                       </span>
                       <Icon className="w-4 h-4 text-stone-400" />
                     </div>
-                    <h3 className="text-sm font-bold text-white font-brand">{item.title}</h3>
-                    <p className="text-xs text-stone-400 leading-relaxed">{item.desc}</p>
+                    <h3 itemProp="name" className="text-sm font-bold text-white font-brand">{item.title}</h3>
+                    <p itemProp="text" className="text-xs text-stone-400 leading-relaxed">{item.desc}</p>
                   </div>
-                </div>
+                </article>
               );
             })}
           </div>
         </section>
 
         {/* Feature Grid: 4 Studio Modules */}
-        <section className="space-y-6">
+        <section id="features" className="space-y-6">
           <div className="text-center max-w-2xl mx-auto space-y-1">
             <span className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest">
               Creator Toolkit
@@ -304,7 +325,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {/* Feature 1 */}
-            <div className="p-5 sm:p-7 lg:p-8 rounded-3xl bg-stone-900/60 border border-white/[0.08] space-y-4 hover:border-emerald-500/40 transition-all">
+            <article className="p-5 sm:p-7 lg:p-8 rounded-3xl bg-stone-900/60 border border-white/[0.08] space-y-4 hover:border-emerald-500/40 transition-all">
               <div className="w-10 h-10 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                 <Sliders className="w-5 h-5" />
               </div>
@@ -319,10 +340,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <span>· Paragraph Focus</span>
                 <span>· Audio Practice Rehearsal</span>
               </div>
-            </div>
+            </article>
 
             {/* Feature 2 */}
-            <div className="p-5 sm:p-7 lg:p-8 rounded-3xl bg-stone-900/60 border border-white/[0.08] space-y-4 hover:border-emerald-500/40 transition-all">
+            <article className="p-5 sm:p-7 lg:p-8 rounded-3xl bg-stone-900/60 border border-white/[0.08] space-y-4 hover:border-emerald-500/40 transition-all">
               <div className="w-10 h-10 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                 <Zap className="w-5 h-5" />
               </div>
@@ -337,10 +358,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <span>· Stumble-Rate Analytics</span>
                 <span>· Private Firestore Vault</span>
               </div>
-            </div>
+            </article>
 
             {/* Feature 3 */}
-            <div className="p-5 sm:p-7 lg:p-8 rounded-3xl bg-stone-900/60 border border-white/[0.08] space-y-4 hover:border-emerald-500/40 transition-all">
+            <article className="p-5 sm:p-7 lg:p-8 rounded-3xl bg-stone-900/60 border border-white/[0.08] space-y-4 hover:border-emerald-500/40 transition-all">
               <div className="w-10 h-10 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                 <ImageIcon className="w-5 h-5" />
               </div>
@@ -355,10 +376,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <span>· Word Highlighting</span>
                 <span>· Instant PNG Download</span>
               </div>
-            </div>
+            </article>
 
             {/* Feature 4 */}
-            <div className="p-5 sm:p-7 lg:p-8 rounded-3xl bg-stone-900/60 border border-white/[0.08] space-y-4 hover:border-emerald-500/40 transition-all">
+            <article className="p-5 sm:p-7 lg:p-8 rounded-3xl bg-stone-900/60 border border-white/[0.08] space-y-4 hover:border-emerald-500/40 transition-all">
               <div className="w-10 h-10 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                 <Film className="w-5 h-5" />
               </div>
@@ -373,16 +394,18 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <span>· Channel Banner Exporter</span>
                 <span>· SVG Logo Generator</span>
               </div>
-            </div>
+            </article>
           </div>
         </section>
 
         {/* ====================================================
-            SEO & METHODOLOGY INSIGHTS SECTION (#insights)
+            SEO, AEO & METHODOLOGY INSIGHTS SECTION (#insights)
             Provides rich, indexed educational content without revealing private data
             ==================================================== */}
         <section
           id="insights"
+          itemScope
+          itemType="https://schema.org/Article"
           className="scroll-mt-24 bg-stone-900/40 border border-white/[0.08] rounded-3xl p-5 sm:p-8 lg:p-12 space-y-8 sm:space-y-12 backdrop-blur-xl"
         >
           <div className="text-center max-w-3xl mx-auto space-y-3">
@@ -390,17 +413,17 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               <Lightbulb className="w-3.5 h-3.5 shrink-0" />
               <span>Public Methodology & Research</span>
             </div>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-white font-brand">
+            <h2 itemProp="headline" className="text-2xl sm:text-4xl font-extrabold text-white font-brand">
               The Cognitive Cadence Method
             </h2>
-            <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
+            <p itemProp="description" className="speakable-methodology text-xs sm:text-sm text-stone-300 leading-relaxed">
               Why passive listening and vocabulary lists fail to produce spontaneous speech, and how deliberate screen recording forces synaptic myelination.
             </p>
           </div>
 
           {/* 4 In-Depth Research Insights Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            <div className="p-5 sm:p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3 hover:border-emerald-500/30 transition-all">
+            <article className="p-5 sm:p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3 hover:border-emerald-500/30 transition-all">
               <div className="flex items-center gap-3">
                 <span className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center font-mono font-bold text-emerald-400 text-xs shrink-0">
                   01
@@ -412,9 +435,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">
                 Reading comprehension relies on passive recognition. True fluency, however, requires rapid memory retrieval under time pressure. By enforcing a 90-second unscripted retelling immediately after teleprompter practice, speakers train the brain to construct grammatical structures dynamically without relying on visual text crutches.
               </p>
-            </div>
+            </article>
 
-            <div className="p-5 sm:p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3 hover:border-emerald-500/30 transition-all">
+            <article className="p-5 sm:p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3 hover:border-emerald-500/30 transition-all">
               <div className="flex items-center gap-3">
                 <span className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center font-mono font-bold text-emerald-400 text-xs shrink-0">
                   02
@@ -426,9 +449,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">
                 Most language learners speak either too quickly from anxiety or excessively slow due to cognitive hesitation. A calibrated teleprompter moving at 130–150 words per minute (WPM) establishes a steady respiratory rhythm, trains natural syntactic pauses, and eliminates monotone vocal fatigue.
               </p>
-            </div>
+            </article>
 
-            <div className="p-5 sm:p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3 hover:border-emerald-500/30 transition-all">
+            <article className="p-5 sm:p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3 hover:border-emerald-500/30 transition-all">
               <div className="flex items-center gap-3">
                 <span className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center font-mono font-bold text-emerald-400 text-xs shrink-0">
                   03
@@ -440,9 +463,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">
                 On-camera video production introduces severe appearance anxiety, lighting friction, and cosmetic self-consciousness. Faceless PC screen recording with OBS or Loom channels 100% of cognitive energy into articulation, intonation, and authentic storytelling, yielding 10x higher recording consistency.
               </p>
-            </div>
+            </article>
 
-            <div className="p-5 sm:p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3 hover:border-emerald-500/30 transition-all">
+            <article className="p-5 sm:p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3 hover:border-emerald-500/30 transition-all">
               <div className="flex items-center gap-3">
                 <span className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center font-mono font-bold text-emerald-400 text-xs shrink-0">
                   04
@@ -454,11 +477,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">
                 In traditional language learning, a pause or stumble is stigmatized as a failure. In deliberate practice, stumbles are celebrated as neurological evidence of operating at the edge of competence. Tracking daily stumble rates turns vocal vulnerability into an objective metric of progress.
               </p>
-            </div>
+            </article>
           </div>
 
           {/* Interactive Cadence & Pacing Calculator (Interactive Tool) */}
-          <div className="p-5 sm:p-7 lg:p-8 rounded-2xl sm:rounded-3xl bg-stone-950/90 border border-emerald-500/20 space-y-6">
+          <div
+            id="pacing-tool"
+            className="p-5 sm:p-7 lg:p-8 rounded-2xl sm:rounded-3xl bg-stone-950/90 border border-emerald-500/20 space-y-6"
+          >
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <span className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">
@@ -473,11 +499,16 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               </div>
 
               {/* Responsive Pacing Segment Control */}
-              <div className="grid grid-cols-3 sm:flex items-center gap-1 sm:gap-2 bg-stone-900 p-1 rounded-xl border border-white/10 w-full sm:w-auto shrink-0">
+              <div
+                role="group"
+                aria-label="Teleprompter speech pacing selection"
+                className="grid grid-cols-3 sm:flex items-center gap-1 sm:gap-2 bg-stone-900 p-1 rounded-xl border border-white/10 w-full sm:w-auto shrink-0"
+              >
                 {(['conversational', 'presentation', 'executive'] as const).map((mode) => (
                   <button
                     key={mode}
                     onClick={() => setSelectedPace(mode)}
+                    aria-pressed={selectedPace === mode}
                     className={`px-2.5 sm:px-3 py-2 min-h-[36px] rounded-lg text-[11px] sm:text-xs font-medium capitalize transition-all text-center truncate ${
                       selectedPace === mode
                         ? 'bg-emerald-500 text-black font-bold shadow'
@@ -502,6 +533,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 max={600}
                 step={20}
                 value={sampleWordCount}
+                aria-label="Target script length in words"
                 onChange={(e) => setSampleWordCount(parseInt(e.target.value, 10))}
                 className="w-full accent-emerald-400 bg-stone-800 rounded-lg cursor-pointer h-2"
               />
@@ -550,8 +582,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </div>
           </div>
 
-          {/* Frequently Asked Questions (Structured for Google Search Engine FAQ Schema) */}
-          <div className="space-y-6 pt-4">
+          {/* Frequently Asked Questions (Structured for Google Search Engine FAQ Schema & AEO) */}
+          <div id="faq" className="space-y-6 pt-4">
             <div className="space-y-1 text-center sm:text-left">
               <span className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest">
                 Common Inquiries
@@ -561,42 +593,96 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               </h3>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-4">
-              <div className="p-5 rounded-2xl bg-stone-950/70 border border-white/5 space-y-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
+              <article
+                itemScope
+                itemType="https://schema.org/Question"
+                className="p-5 rounded-2xl bg-stone-950/70 border border-white/5 space-y-2"
+              >
                 <div className="flex items-center gap-2 text-emerald-400">
                   <HelpCircle className="w-4 h-4 shrink-0" />
-                  <h4 className="text-sm font-bold text-white font-brand">
+                  <h4 itemProp="name" className="text-sm font-bold text-white font-brand">
                     What is Speak in Progress?
                   </h4>
                 </div>
-                <p className="text-xs text-stone-400 leading-relaxed">
-                  A dedicated production workspace built for creators documenting their spoken English journey on YouTube through faceless screen recording, teleprompter practice, and unscripted memory retellings.
-                </p>
-              </div>
+                <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
+                  <p itemProp="text" className="speakable-faq text-xs text-stone-400 leading-relaxed">
+                    A dedicated production workspace built for creators documenting their spoken English journey on YouTube through faceless screen recording, teleprompter practice, and unscripted memory retellings.
+                  </p>
+                </div>
+              </article>
 
-              <div className="p-5 rounded-2xl bg-stone-950/70 border border-white/5 space-y-2">
+              <article
+                itemScope
+                itemType="https://schema.org/Question"
+                className="p-5 rounded-2xl bg-stone-950/70 border border-white/5 space-y-2"
+              >
                 <div className="flex items-center gap-2 text-emerald-400">
                   <HelpCircle className="w-4 h-4 shrink-0" />
-                  <h4 className="text-sm font-bold text-white font-brand">
+                  <h4 itemProp="name" className="text-sm font-bold text-white font-brand">
+                    What is the Cognitive Cadence Method?
+                  </h4>
+                </div>
+                <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
+                  <p itemProp="text" className="speakable-faq text-xs text-stone-400 leading-relaxed">
+                    A language acquisition framework that pairs calibrated teleprompter pacing (130-150 words per minute) with immediate unscripted recall, building active synaptic retrieval pathways under gentle time pressure.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                itemScope
+                itemType="https://schema.org/Question"
+                className="p-5 rounded-2xl bg-stone-950/70 border border-white/5 space-y-2"
+              >
+                <div className="flex items-center gap-2 text-emerald-400">
+                  <HelpCircle className="w-4 h-4 shrink-0" />
+                  <h4 itemProp="name" className="text-sm font-bold text-white font-brand">
                     Why faceless screen-recording?
                   </h4>
                 </div>
-                <p className="text-xs text-stone-400 leading-relaxed">
-                  Removing face-camera pressure eliminates lighting, makeup, and framing friction, letting you dedicate 100% of cognitive energy to voice projection, idiom usage, and continuous speech flow.
-                </p>
-              </div>
+                <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
+                  <p itemProp="text" className="speakable-faq text-xs text-stone-400 leading-relaxed">
+                    Removing face-camera pressure eliminates lighting, makeup, and framing friction, letting you dedicate 100% of cognitive energy to voice projection, idiom usage, and continuous speech flow.
+                  </p>
+                </div>
+              </article>
 
-              <div className="p-5 rounded-2xl bg-stone-950/70 border border-white/5 space-y-2">
+              <article
+                itemScope
+                itemType="https://schema.org/Question"
+                className="p-5 rounded-2xl bg-stone-950/70 border border-white/5 space-y-2"
+              >
                 <div className="flex items-center gap-2 text-emerald-400">
                   <HelpCircle className="w-4 h-4 shrink-0" />
-                  <h4 className="text-sm font-bold text-white font-brand">
+                  <h4 itemProp="name" className="text-sm font-bold text-white font-brand">
+                    Why are speech pauses and stumbles encouraged?
+                  </h4>
+                </div>
+                <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
+                  <p itemProp="text" className="speakable-faq text-xs text-stone-400 leading-relaxed">
+                    In deliberate practice, vocal stumbles indicate that the speaker is practicing at the frontier of their competence. Tracking daily stumble rates replaces anxiety with objective neuro-linguistic metrics.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                itemScope
+                itemType="https://schema.org/Question"
+                className="p-5 rounded-2xl bg-stone-950/70 border border-white/5 space-y-2 md:col-span-2 lg:col-span-2"
+              >
+                <div className="flex items-center gap-2 text-emerald-400">
+                  <HelpCircle className="w-4 h-4 shrink-0" />
+                  <h4 itemProp="name" className="text-sm font-bold text-white font-brand">
                     Is internal studio data secure?
                   </h4>
                 </div>
-                <p className="text-xs text-stone-400 leading-relaxed">
-                  Yes. All personal recordings, teleprompter drafts, stumble logs, and studio progress are stored securely in a private, encrypted Cloud Firestore database. Only this public overview is indexable by search engines.
-                </p>
-              </div>
+                <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
+                  <p itemProp="text" className="speakable-faq text-xs text-stone-400 leading-relaxed">
+                    Yes. All personal recordings, teleprompter drafts, stumble logs, and studio progress are stored securely in a private, encrypted Cloud Firestore database. Only this public overview is indexable by search engines.
+                  </p>
+                </div>
+              </article>
             </div>
           </div>
         </section>

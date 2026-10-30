@@ -1,10 +1,43 @@
+# ==============================================================================
 # Robots.txt for Speak in Progress
-# Public landing page is indexable; all internal application routes and API endpoints are strictly disbarred.
+# Public landing page and educational insights are fully indexable by search engines & AI crawlers.
+# Internal studio routes, API proxies, and user workspaces are strictly restricted.
+# ==============================================================================
 
 User-agent: *
 Allow: /$
+Allow: /#*
+Allow: /assets/
 Disallow: /api/
 Disallow: /studio
 Disallow: /workspace
 Disallow: /teleprompter
-Disallow: /*?*
+Disallow: /*?*token=*
+Disallow: /*?*auth=*
+
+# AI & LLM Search Engine Crawlers (AEO / GEO indexing allowed for public landing content)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /$
+Disallow: /api/
+Disallow: /studio
+
+User-agent: PerplexityBot
+Allow: /$
+Disallow: /api/
+Disallow: /studio
+
+User-agent: ClaudeBot
+Allow: /$
+Disallow: /api/
+Disallow: /studio
+
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/sitemap.xml

@@ -68,15 +68,38 @@
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#030705" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="author" content="Speak in Progress" />
+    <meta name="publisher" content="Speak in Progress" />
+    <meta
+      name="keywords"
+      content="English fluency, deliberate practice, teleprompter studio, faceless YouTube recording, spoken English practice, unscripted retelling, speech cadence, cognitive retrieval, OBS recording prompter, 120 days fluency"
+    />
+
     <title>Speak in Progress — Spoken English Fluency & Recording Studio</title>
     <meta
       name="description"
       content="Master real-world English fluency through deliberate practice, calibrated teleprompter pacing, unscripted memory retelling, and PC screen-recording."
     />
-    <link rel="canonical" href="https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/" />
 
-    <!-- OpenGraph Tags -->
+    <!-- Canonical URL dynamically synchronized -->
+    <link rel="canonical" id="canonical-url" href="https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/" />
+    <script>
+      (function() {
+        try {
+          var can = document.getElementById('canonical-url');
+          if (can && window.location.origin) {
+            can.setAttribute('href', window.location.origin + window.location.pathname);
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- OpenGraph Social Cards -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Speak in Progress" />
     <meta property="og:title" content="Speak in Progress — Spoken English Fluency & Recording Studio" />
@@ -84,32 +107,106 @@
       property="og:description"
       content="Master real-world English fluency through deliberate practice, calibrated teleprompter pacing, unscripted memory retelling, and PC screen-recording."
     />
+    <meta property="og:url" content="https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/" />
+    <meta property="og:image" content="https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Speak in Progress — Spoken English Fluency & Recording Studio" />
+    <meta property="og:locale" content="en_US" />
 
-    <!-- Twitter Card -->
+    <!-- Twitter / X Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Speak in Progress — Spoken English Fluency & Recording Studio" />
     <meta
       name="twitter:description"
       content="Master real-world English fluency through deliberate practice, calibrated teleprompter pacing, unscripted memory retelling, and PC screen-recording."
     />
+    <meta name="twitter:image" content="https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/og-image.svg" />
+    <meta name="twitter:image:alt" content="Speak in Progress Studio Preview" />
 
-    <!-- Schema.org Structured Data (JSON-LD) for Search Engine Rich Results -->
+    <!-- Schema.org Structured Data (JSON-LD) for Search Engine Rich Results, AEO & GEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "WebSite",
+          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#website",
+          "url": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/",
+          "name": "Speak in Progress",
+          "alternateName": ["Speak in Progress Studio", "SpeakInProgress"],
+          "description": "Deliberate spoken English practice framework, calibrated teleprompter studio, and faceless YouTube recording architecture.",
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#organization",
+          "name": "Speak in Progress",
+          "url": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/",
+          "slogan": "Progress, not perfection.",
+          "description": "Language acquisition research and deliberate speech production methodology designed to eliminate communicative hesitation."
+        },
+        {
           "@type": "WebApplication",
           "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#webapp",
-          "name": "Speak in Progress",
+          "name": "Speak in Progress — Spoken English Fluency & Recording Studio",
           "applicationCategory": "EducationalApplication",
-          "operatingSystem": "All",
-          "description": "A specialized YouTube production suite and deliberate spoken English practice architecture featuring calibrated teleprompter pacing and unscripted memory retelling.",
+          "applicationSubCategory": "Language Learning & Video Production Studio",
+          "operatingSystem": "All modern browsers (Chrome, Edge, Firefox, Safari)",
+          "browserRequirements": "Requires modern JavaScript-enabled browser with Web Audio API support",
+          "description": "A specialized YouTube production suite and deliberate spoken practice framework. Built for PC screen recording, calibrated teleprompter pacing, unscripted memory retellings, and consistent fluency gains.",
+          "featureList": [
+            "Continuous and paragraph auto-scroll teleprompter (15-75 px/s, 130-160 WPM)",
+            "5-step deliberate speech recording workflow",
+            "Cognitive retrieval anchor triggers for 90-second unscripted retelling",
+            "16:9 YouTube thumbnail generator (2K and 1080p)",
+            "Acoustic animated video sting generator",
+            "Private encrypted Cloud Firestore session sync"
+          ],
           "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
           }
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#howto-workflow",
+          "name": "How to Practice Spoken English Fluency with the 5-Step Screen Recording Workflow",
+          "description": "A structured 5-step daily routine for recording authentic faceless YouTube practice sessions with calibrated pacing and unscripted recall.",
+          "totalTime": "PT15M",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "Voiceover Intro Hook",
+              "text": "Deliver a 15-second opening hook to introduce the day's session and engage viewers with vocal energy."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "Story Reading with Calibrated Prompter",
+              "text": "Read the 5-paragraph narrative at 130-150 words per minute using the eye-line focus beam to maintain natural syntactic pauses."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "Key Expressions and Vocal Intonation",
+              "text": "Analyze and articulate 3 high-impact idiomatic expressions and collocations in full sentences."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "90-Second Unscripted Memory Retelling",
+              "text": "Speak freely from memory for 90 seconds using structured anchor cues without reading from the script."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 5,
+              "name": "Private Log and Stumble Review",
+              "text": "Record script independence rating, stumbling friction, and the win-of-the-day to track neuro-linguistic progress."
+            }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -120,26 +217,52 @@
               "name": "What is Speak in Progress?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Speak in Progress is a deliberate spoken English practice and screen-recording framework designed for creators documenting real-world language fluency, authentic stumbling, and cognitive speaking cadence."
+                "text": "Speak in Progress is a dedicated spoken English fluency framework and screen-recording studio designed for creators who want to build real communicative fluency through deliberate teleprompter reading, calibrated speech cadence, and unscripted memory retrieval."
               }
             },
             {
               "@type": "Question",
-              "name": "How does the 5-step practice workflow work?",
+              "name": "What is the Cognitive Cadence Method?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The workflow consists of: 1) Voiceover opening hook, 2) Calibrated 5-paragraph teleprompter reading, 3) Key idiomatic expressions, 4) 90-second unscripted memory retelling, and 5) Daily stumbling and independence logging."
+                "text": "The Cognitive Cadence Method is a language acquisition framework that pairs calibrated teleprompter pacing (130-150 words per minute) with immediate unscripted recall. By forcing the speaker to produce spontaneous speech without text crutches within 90 seconds of reading, it builds active synaptic retrieval pathways."
               }
             },
             {
               "@type": "Question",
-              "name": "Is my internal studio data and recordings private?",
+              "name": "Why choose faceless PC screen recording over on-camera recording?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Speak in Progress studio operates in private single-user mode with encrypted Cloud Firestore security rules. Internal studio documents, scripts, and logs are completely restricted from public indexing."
+                "text": "Faceless PC screen recording with OBS or Loom removes cosmetic friction, lighting setups, and camera anxiety. This directs 100% of cognitive focus toward vocal projection, pronunciation, intonation, and authentic syntax formation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why are speech pauses and stumbles encouraged?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In deliberate practice, vocal stumbles indicate that the speaker is practicing at the frontier of their competence. Tracking daily stumble rates replaces anxiety with objective neuro-linguistic metrics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is my internal studio data, scripts, and practice logs secure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Speak in Progress maintains strict privacy. Internal curriculum data, private voice notes, stumble ratings, and custom scripts are locked in a single-user Cloud Firestore vault with private security rules and are never publicly indexed."
               }
             }
           ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#webpage",
+          "url": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/",
+          "name": "Speak in Progress — Spoken English Fluency & Recording Studio",
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".speakable-summary", ".speakable-methodology", ".speakable-faq"]
+          }
         }
       ]
     }

@@ -1,0 +1,60 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with dark emerald gradient -->
+  <rect width="1200" height="630" fill="#030705"/>
+  <circle cx="600" cy="180" r="400" fill="#10B981" fill-opacity="0.12" filter="blur(140px)"/>
+  
+  <!-- Subtle decorative grid -->
+  <path d="M0 126H1200M0 252H1200M0 378H1200M0 504H1200" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+  <path d="M240 0V630M480 0V630M720 0V630M960 0V630" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Logo Mark -->
+  <g transform="translate(100, 100)">
+    <circle cx="48" cy="48" r="48" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.3" stroke-width="2"/>
+    <path d="M30 32C30 25.3726 35.3726 20 42 20H56C62.6274 20 68 25.3726 68 32C68 38.6274 62.6274 44 56 44H42C35.3726 44 30 49.3726 30 56C30 62.6274 35.3726 68 42 68H56" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M44 44H64C71.732 44 78 50.268 78 58C78 65.732 71.732 72 64 72H46" stroke="#10B981" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="70" cy="27" r="4.5" fill="#10B981"/>
+  </g>
+
+  <!-- Brand Title -->
+  <text x="220" y="145" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="36" letter-spacing="-0.02em">
+    Speak in Progress
+  </text>
+  <rect x="540" y="122" width="130" height="28" rx="14" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.3"/>
+  <text x="555" y="141" fill="#34D399" font-family="monospace" font-weight="700" font-size="11" letter-spacing="0.1em">
+    CREATOR STUDIO
+  </text>
+
+  <!-- Main Headline -->
+  <text x="100" y="270" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="54" letter-spacing="-0.03em">
+    Documenting Real English Fluency
+  </text>
+  <text x="100" y="340" fill="#10B981" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="54" letter-spacing="-0.03em">
+    One Authentic Day at a Time.
+  </text>
+
+  <!-- Value proposition description -->
+  <text x="100" y="420" fill="#A8A29E" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="24">
+    Calibrated Teleprompter · 90s Unscripted Retelling · PC Screen-Recording
+  </text>
+
+  <!-- Badges / Pillars -->
+  <g transform="translate(100, 480)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="220" height="52" rx="16" fill="#1C1917" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="24" y="32" fill="#E7E5E4" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="16">
+      5-Step Daily Routine
+    </text>
+
+    <!-- Pill 2 -->
+    <rect x="240" y="0" width="240" height="52" rx="16" fill="#1C1917" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="264" y="32" fill="#E7E5E4" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="16">
+      130-150 WPM Pacing
+    </text>
+
+    <!-- Pill 3 -->
+    <rect x="500" y="0" width="230" height="52" rx="16" fill="#1C1917" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="524" y="32" fill="#E7E5E4" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="16">
+      Faceless OBS Ready
+    </text>
+  </g>
+</svg>
