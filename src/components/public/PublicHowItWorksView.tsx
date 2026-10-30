@@ -217,12 +217,16 @@ export const PublicHowItWorksView: React.FC<PublicHowItWorksViewProps> = ({
             <span>{isAuthenticated ? 'Enter Personal Workspace' : 'Sign In with Authorized Google ID'}</span>
             <ArrowRight className="w-4 h-4" />
           </button>
-          <button
-            onClick={() => onNavigate('features')}
-            className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 border border-white/10 text-stone-200 font-mono text-xs uppercase tracking-wider transition-all"
+          <a
+            href="/features"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('features');
+            }}
+            className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 border border-white/10 text-stone-200 font-mono text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center"
           >
             Explore Feature Breakdown →
-          </button>
+          </a>
         </div>
       </section>
     </div>

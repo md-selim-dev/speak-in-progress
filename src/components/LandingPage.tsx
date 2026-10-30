@@ -32,11 +32,12 @@ import {
   Home,
 } from 'lucide-react';
 import { SITE_CONFIG, PublicPageId } from '../config/site';
-import { updatePageSEO } from '../lib/seoHelper';
+import { updatePageSEO, PageRouteId } from '../lib/seoHelper';
 import { PublicFeaturesView } from './public/PublicFeaturesView';
 import { PublicHowItWorksView } from './public/PublicHowItWorksView';
 import { PublicAboutView } from './public/PublicAboutView';
 import { PublicFaqView } from './public/PublicFaqView';
+import { PublicNotFoundView } from './public/PublicNotFoundView';
 
 interface LandingPageProps {
   activeBrand: BrandIdentity;
@@ -65,17 +66,18 @@ export const LandingPage: React.FC<LandingPageProps> = ({
   unauthorizedDomain,
   onDismissDomainError,
 }) => {
-  const getPageFromPath = (pathname: string): PublicPageId => {
+  const getPageFromPath = (pathname: string): PageRouteId => {
     if (typeof window === 'undefined') return 'home';
     const clean = pathname.toLowerCase().replace(/\/+$/, '');
+    if (clean === '' || clean === '/') return 'home';
     if (clean === '/features') return 'features';
     if (clean === '/how-it-works' || clean === '/howitworks') return 'howItWorks';
     if (clean === '/about') return 'about';
     if (clean === '/faq') return 'faq';
-    return 'home';
+    return 'notFound';
   };
 
-  const [currentPage, setCurrentPage] = useState<PublicPageId>(() => {
+  const [currentPage, setCurrentPage] = useState<PageRouteId>(() => {
     return typeof window !== 'undefined' ? getPageFromPath(window.location.pathname) : 'home';
   });
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -91,10 +93,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  const navigateTo = (page: PublicPageId) => {
+  const navigateTo = (page: PageRouteId) => {
     setCurrentPage(page);
     setIsMobileMenuOpen(false);
-    const targetPath = SITE_CONFIG.pages[page]?.path || '/';
+    const targetPath = page === 'notFound' ? '/404' : (SITE_CONFIG.pages[page]?.path || '/');
     if (typeof window !== 'undefined' && window.location.pathname !== targetPath) {
       window.history.pushState({}, '', targetPath);
     }
@@ -162,9 +164,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       <header className="sticky top-0 z-40 w-full border-b border-white/[0.08] bg-stone-950/90 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3 sm:py-3.5">
           {/* Logo & Brand Identity */}
-          <button
-            onClick={() => navigateTo('home')}
+          <a
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo('home');
+            }}
             className="flex items-center gap-2.5 sm:gap-3 min-w-0 text-left group cursor-pointer focus:outline-none"
+            aria-label="Speak in Progress — Home"
           >
             <LogoMark brand={activeBrand} size="xs" layout="icon-only" isAnimated={true} />
             <div className="flex items-center gap-2 min-w-0">
@@ -178,24 +185,29 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 CREATOR STUDIO
               </span>
             </div>
-          </button>
+          </a>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-1 lg:gap-1.5 bg-stone-900/60 p-1 rounded-xl border border-white/5">
+          {/* Desktop Navigation Links (Crawlable <a> tags for SEO) */}
+          <nav aria-label="Main Navigation" className="hidden md:flex items-center gap-1 lg:gap-1.5 bg-stone-900/60 p-1 rounded-xl border border-white/5">
             {navLinks.map((link) => {
               const isActive = currentPage === link.id;
+              const linkPath = SITE_CONFIG.pages[link.id]?.path || '/';
               return (
-                <button
+                <a
                   key={link.id}
-                  onClick={() => navigateTo(link.id)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-mono transition-all ${
+                  href={linkPath}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigateTo(link.id);
+                  }}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-mono transition-all cursor-pointer ${
                     isActive
                       ? 'bg-emerald-500/15 text-emerald-300 font-bold border border-emerald-500/30 shadow-sm'
                       : 'text-stone-300 hover:text-white hover:bg-white/[0.04]'
                   }`}
                 >
                   {link.label}
-                </button>
+                </a>
               );
             })}
           </nav>
@@ -206,7 +218,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             {currentPage === 'home' && (
               <button
                 onClick={scrollToInsights}
-                className="hidden sm:flex text-xs font-semibold text-stone-300 hover:text-white px-3 py-2 min-h-[38px] rounded-xl border border-white/10 hover:border-white/20 hover:bg-white/[0.03] transition-all items-center gap-1.5"
+                className="hidden sm:flex text-xs font-semibold text-stone-300 hover:text-white px-3 py-2 min-h-[38px] rounded-xl border border-white/10 hover:border-white/20 hover:bg-white/[0.03] transition-all items-center gap-1.5 cursor-pointer"
               >
                 <Lightbulb className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                 <span>Insights</span>
@@ -217,7 +229,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <button
               onClick={handlePrimaryAction}
               disabled={isLoggingIn}
-              className="px-3.5 sm:px-4 py-2 min-h-[38px] text-xs font-bold rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-95 whitespace-nowrap flex items-center gap-1.5 sm:gap-2 shadow-modern-glow disabled:opacity-50"
+              className="px-3.5 sm:px-4 py-2 min-h-[38px] text-xs font-bold rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-95 whitespace-nowrap flex items-center gap-1.5 sm:gap-2 shadow-modern-glow disabled:opacity-50 cursor-pointer"
               style={{
                 backgroundColor: activeBrand.colors.accent.hex,
                 color: activeBrand.colors.accent.textDark ? '#061210' : '#FFFFFF',
@@ -240,23 +252,28 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle navigation menu"
-              className="md:hidden p-2 min-h-[38px] rounded-xl text-stone-300 hover:text-white border border-white/10 bg-stone-900/60"
+              className="md:hidden p-2 min-h-[38px] rounded-xl text-stone-300 hover:text-white border border-white/10 bg-stone-900/60 cursor-pointer"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5 text-emerald-400" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Navigation Drawer */}
+        {/* Mobile Navigation Drawer (Crawlable <a> tags) */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-white/[0.08] bg-stone-950/95 backdrop-blur-2xl px-4 py-4 space-y-2 animate-fade-in">
+          <nav aria-label="Mobile Navigation" className="md:hidden border-t border-white/[0.08] bg-stone-950/95 backdrop-blur-2xl px-4 py-4 space-y-2 animate-fade-in">
             {navLinks.map((link) => {
               const isActive = currentPage === link.id;
+              const linkPath = SITE_CONFIG.pages[link.id]?.path || '/';
               return (
-                <button
+                <a
                   key={link.id}
-                  onClick={() => navigateTo(link.id)}
-                  className={`w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-mono flex items-center justify-between transition-all ${
+                  href={linkPath}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigateTo(link.id);
+                  }}
+                  className={`w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-mono flex items-center justify-between transition-all cursor-pointer ${
                     isActive
                       ? 'bg-emerald-500/15 text-emerald-400 font-bold border border-emerald-500/30'
                       : 'text-stone-300 hover:text-white hover:bg-white/[0.04]'
@@ -264,7 +281,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 >
                   <span>{link.label}</span>
                   {isActive && <ChevronRight className="w-4 h-4 text-emerald-400" />}
-                </button>
+                </a>
               );
             })}
             <div className="pt-2 border-t border-white/5 flex flex-col gap-2">
@@ -275,7 +292,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <span>Support: support@mdselim.com</span>
               </a>
             </div>
-          </div>
+          </nav>
         )}
       </header>
 
@@ -289,20 +306,33 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <div className="space-y-8">
             {/* Accessible Breadcrumb Trail */}
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-mono text-stone-400">
-              <button
-                onClick={() => navigateTo('home')}
+              <a
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateTo('home');
+                }}
                 className="hover:text-emerald-400 transition-colors flex items-center gap-1.5 cursor-pointer"
               >
                 <Home className="w-3.5 h-3.5" />
                 <span>Home</span>
-              </button>
+              </a>
               <ChevronRight className="w-3.5 h-3.5 text-stone-600" />
               <span className="text-emerald-400 font-bold">
-                {SITE_CONFIG.pages[currentPage]?.title.split('—')[0].trim() || currentPage}
+                {currentPage === 'notFound'
+                  ? 'Page Not Found (404)'
+                  : SITE_CONFIG.pages[currentPage]?.title.split('—')[0].trim() || currentPage}
               </span>
             </nav>
 
-            {/* Subpage Views */}
+            {/* Subpage & Error Views */}
+            {currentPage === 'notFound' && (
+              <PublicNotFoundView
+                activeBrand={activeBrand}
+                onNavigate={navigateTo}
+              />
+            )}
+
             {currentPage === 'features' && (
               <PublicFeaturesView
                 activeBrand={activeBrand}
@@ -951,24 +981,31 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               </p>
             </div>
 
-            {/* Col 2: Public Navigation */}
+            {/* Col 2: Public Navigation (Crawlable <a> links for internal link equity) */}
             <div className="space-y-3">
               <div className="text-[11px] font-mono font-bold text-stone-200 uppercase tracking-wider">
                 Public Suite
               </div>
               <ul className="space-y-2 text-xs">
-                {navLinks.map((link) => (
-                  <li key={link.id}>
-                    <button
-                      onClick={() => navigateTo(link.id)}
-                      className={`hover:text-emerald-400 transition-colors cursor-pointer ${
-                        currentPage === link.id ? 'text-emerald-400 font-bold' : 'text-stone-400'
-                      }`}
-                    >
-                      {link.label}
-                    </button>
-                  </li>
-                ))}
+                {navLinks.map((link) => {
+                  const linkPath = SITE_CONFIG.pages[link.id]?.path || '/';
+                  return (
+                    <li key={link.id}>
+                      <a
+                        href={linkPath}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          navigateTo(link.id);
+                        }}
+                        className={`hover:text-emerald-400 transition-colors cursor-pointer ${
+                          currentPage === link.id ? 'text-emerald-400 font-bold' : 'text-stone-400'
+                        }`}
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
 
@@ -992,15 +1029,60 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               © {new Date().getFullYear()} Speak in Progress · Founded by Md. Selim. All rights reserved.
             </div>
             <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-              <button onClick={() => navigateTo('home')} className="hover:text-emerald-400 cursor-pointer">Home</button>
+              <a
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateTo('home');
+                }}
+                className="hover:text-emerald-400 cursor-pointer"
+              >
+                Home
+              </a>
               <span>·</span>
-              <button onClick={() => navigateTo('features')} className="hover:text-emerald-400 cursor-pointer">Features</button>
+              <a
+                href="/features"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateTo('features');
+                }}
+                className="hover:text-emerald-400 cursor-pointer"
+              >
+                Features
+              </a>
               <span>·</span>
-              <button onClick={() => navigateTo('howItWorks')} className="hover:text-emerald-400 cursor-pointer">How It Works</button>
+              <a
+                href="/how-it-works"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateTo('howItWorks');
+                }}
+                className="hover:text-emerald-400 cursor-pointer"
+              >
+                How It Works
+              </a>
               <span>·</span>
-              <button onClick={() => navigateTo('about')} className="hover:text-emerald-400 cursor-pointer">About</button>
+              <a
+                href="/about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateTo('about');
+                }}
+                className="hover:text-emerald-400 cursor-pointer"
+              >
+                About
+              </a>
               <span>·</span>
-              <button onClick={() => navigateTo('faq')} className="hover:text-emerald-400 cursor-pointer">FAQ</button>
+              <a
+                href="/faq"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateTo('faq');
+                }}
+                className="hover:text-emerald-400 cursor-pointer"
+              >
+                FAQ
+              </a>
             </div>
           </div>
         </div>

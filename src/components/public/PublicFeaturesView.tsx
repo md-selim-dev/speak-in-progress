@@ -224,13 +224,17 @@ export const PublicFeaturesView: React.FC<PublicFeaturesViewProps> = ({
           Explore the exact 5-step daily workflow used to produce authentic video sessions.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-          <button
-            onClick={() => onNavigate('howItWorks')}
-            className="w-full sm:w-auto px-6 py-3 min-h-[44px] text-xs font-bold rounded-xl text-stone-200 bg-stone-800 hover:bg-stone-700 border border-white/10 transition-all flex items-center justify-center gap-2"
+          <a
+            href="/how-it-works"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('howItWorks');
+            }}
+            className="w-full sm:w-auto px-6 py-3 min-h-[44px] text-xs font-bold rounded-xl text-stone-200 bg-stone-800 hover:bg-stone-700 border border-white/10 transition-all flex items-center justify-center gap-2 cursor-pointer"
           >
             <span>Explore 5-Step Workflow</span>
             <ArrowRight className="w-3.5 h-3.5 text-emerald-400" />
-          </button>
+          </a>
           <button
             onClick={onPrimaryAction}
             className="w-full sm:w-auto px-7 py-3 min-h-[44px] text-xs font-black rounded-xl transition-all shadow-modern-glow flex items-center justify-center gap-2"

@@ -185,19 +185,27 @@ export const PublicAboutView: React.FC<PublicAboutViewProps> = ({
           Read the 5-step daily blueprint or explore the full technical studio breakdown.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-          <button
-            onClick={() => onNavigate('howItWorks')}
-            className="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-bold font-mono text-sm shadow-lg shadow-emerald-500/20 transition-all flex items-center justify-center gap-2"
+          <a
+            href="/how-it-works"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('howItWorks');
+            }}
+            className="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-bold font-mono text-sm shadow-lg shadow-emerald-500/20 transition-all flex items-center justify-center gap-2 cursor-pointer"
           >
             <span>See the Daily 5-Step Blueprint</span>
             <ArrowRight className="w-4 h-4" />
-          </button>
-          <button
-            onClick={() => onNavigate('faq')}
-            className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 border border-white/10 text-stone-200 font-mono text-xs uppercase tracking-wider transition-all"
+          </a>
+          <a
+            href="/faq"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('faq');
+            }}
+            className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-stone-900 hover:bg-stone-800 border border-white/10 text-stone-200 font-mono text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center"
           >
             Frequently Asked Questions →
-          </button>
+          </a>
         </div>
       </section>
     </div>

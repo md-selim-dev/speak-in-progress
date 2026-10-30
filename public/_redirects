@@ -1,3 +1,8 @@
-# Cloudflare Pages & Netlify SPA Routing
-# Ensure all client-side navigation falls back to index.html with HTTP 200
-/*    /index.html   200
+# Cloudflare Pages Static Route Mapping & SPA Fallback
+/features        /features/index.html    200
+/how-it-works    /how-it-works/index.html 200
+/about           /about/index.html       200
+/faq             /faq/index.html         200
+
+# Client-side fallback for dynamic studio routes
+/*               /index.html             200

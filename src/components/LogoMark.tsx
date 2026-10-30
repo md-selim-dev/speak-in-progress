@@ -51,6 +51,8 @@ export const LogoMark: React.FC<LogoMarkProps> = ({
         )}
 
         <svg
+          role="img"
+          aria-label="Speak in Progress Emblem"
           width={dim}
           height={dim}
           viewBox="0 0 100 100"

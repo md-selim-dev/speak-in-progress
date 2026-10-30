@@ -5,10 +5,12 @@
 
 import { SITE_CONFIG, PublicPageId } from '../config/site';
 
+export type PageRouteId = PublicPageId | 'notFound';
+
 /**
- * Updates document head metadata dynamically for public pages and private workspace.
+ * Updates document head metadata dynamically for public pages, private workspace, and 404 states.
  */
-export function updatePageSEO(pageId: PublicPageId, isPrivateWorkspace: boolean = false) {
+export function updatePageSEO(pageId: PageRouteId, isPrivateWorkspace: boolean = false) {
   if (typeof document === 'undefined') return;
 
   const robotsMeta = document.querySelector('meta[name="robots"]');
@@ -26,6 +28,20 @@ export function updatePageSEO(pageId: PublicPageId, isPrivateWorkspace: boolean 
     document.title = 'Speak in Progress · Creator Workspace (Private)';
     robotsMeta?.setAttribute('content', 'noindex, nofollow, noarchive, nosnippet');
     googlebotMeta?.setAttribute('content', 'noindex, nofollow, noarchive, nosnippet');
+    return;
+  }
+
+  if (pageId === 'notFound') {
+    // Strictly instruct search engine crawlers not to index 404 routes (prevents soft-404 penalty)
+    document.title = 'Page Not Found (404) — Speak in Progress';
+    descMeta?.setAttribute(
+      'content',
+      'The requested page could not be found. Return to the Speak in Progress home page.'
+    );
+    robotsMeta?.setAttribute('content', 'noindex, nofollow, noarchive, nosnippet');
+    googlebotMeta?.setAttribute('content', 'noindex, nofollow, noarchive, nosnippet');
+    const existingScript = document.getElementById('schema-breadcrumbs');
+    if (existingScript) existingScript.remove();
     return;
   }
 
