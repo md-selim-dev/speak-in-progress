@@ -1,60 +1,259 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background with dark emerald gradient -->
-  <rect width="1200" height="630" fill="#030705"/>
-  <circle cx="600" cy="180" r="400" fill="#10B981" fill-opacity="0.12" filter="blur(140px)"/>
-  
-  <!-- Subtle decorative grid -->
-  <path d="M0 126H1200M0 252H1200M0 378H1200M0 504H1200" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
-  <path d="M240 0V630M480 0V630M720 0V630M960 0V630" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+  <defs>
+    <!-- Background Radial Gradients -->
+    <radialGradient id="bgGlow" cx="25%" cy="30%" r="75%">
+      <stop offset="0%" stopColor="#0B2B21" stop-opacity="0.95"/>
+      <stop offset="55%" stopColor="#04130E" stop-opacity="0.98"/>
+      <stop offset="100%" stopColor="#020806" stop-opacity="1"/>
+    </radialGradient>
+    
+    <radialGradient id="cardGlowRight" cx="80%" cy="45%" r="45%">
+      <stop offset="0%" stopColor="#10B981" stop-opacity="0.22"/>
+      <stop offset="70%" stopColor="#020806" stop-opacity="0"/>
+    </radialGradient>
 
-  <!-- Logo Mark -->
-  <g transform="translate(100, 100)">
-    <circle cx="48" cy="48" r="48" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.3" stroke-width="2"/>
-    <path d="M30 32C30 25.3726 35.3726 20 42 20H56C62.6274 20 68 25.3726 68 32C68 38.6274 62.6274 44 56 44H42C35.3726 44 30 49.3726 30 56C30 62.6274 35.3726 68 42 68H56" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M44 44H64C71.732 44 78 50.268 78 58C78 65.732 71.732 72 64 72H46" stroke="#10B981" stroke-width="6" stroke-linecap="round"/>
+    <radialGradient id="logoGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#10B981" stop-opacity="0.4"/>
+      <stop offset="100%" stopColor="#10B981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Linear Gradients -->
+    <linearGradient id="spAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF"/>
+      <stop offset="35%" stopColor="#34D399"/>
+      <stop offset="100%" stopColor="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0D221B" stop-opacity="0.96"/>
+      <stop offset="100%" stopColor="#06140F" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#34D399" stop-opacity="0.45"/>
+      <stop offset="50%" stopColor="#10B981" stop-opacity="0.2"/>
+      <stop offset="100%" stopColor="#047857" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <linearGradient id="outerBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#34D399" stop-opacity="0.3"/>
+      <stop offset="50%" stopColor="#10B981" stop-opacity="0.1"/>
+      <stop offset="100%" stopColor="#059669" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Obsidian Canvas -->
+  <rect width="1200" height="630" fill="url(#bgGlow)"/>
+  <rect width="1200" height="630" fill="url(#cardGlowRight)"/>
+
+  <!-- Subtle Blueprint Grid -->
+  <g opacity="0.035" stroke="#FFFFFF" stroke-width="1">
+    <path d="M0 70H1200M0 140H1200M0 210H1200M0 280H1200M0 350H1200M0 420H1200M0 490H1200M0 560H1200"/>
+    <path d="M100 0V630M200 0V630M300 0V630M400 0V630M500 0V630M600 0V630M700 0V630M800 0V630M900 0V630M1000 0V630M1100 0V630"/>
+  </g>
+
+  <!-- Ambient Outer Framing Border -->
+  <rect x="20" y="20" width="1160" height="590" rx="24" fill="none" stroke="url(#outerBorder)" stroke-width="1.5"/>
+
+  <!-- ================= LEFT COLUMN: BRAND & VALUE PROP ================= -->
+
+  <!-- Logo Glow Circle -->
+  <circle cx="108" cy="98" r="46" fill="url(#logoGlow)"/>
+
+  <!-- Official LogoMark Glyph -->
+  <g transform="translate(68, 58) scale(0.8)">
+    <!-- Standalone S & P Continuous Ribbon -->
+    <path d="M30 32C30 25.3726 35.3726 20 42 20H56C62.6274 20 68 25.3726 68 32C68 38.6274 62.6274 44 56 44H42C35.3726 44 30 49.3726 30 56C30 62.6274 35.3726 68 42 68H56"
+          stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <path d="M44 44H64C71.732 44 78 50.268 78 58C78 65.732 71.732 72 64 72H46"
+          stroke="url(#spAccentGrad)" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Ascending Momentum Arrow -->
+    <path d="M62 20L78 20M78 20L78 36M78 20L60 38"
+          stroke="#10B981" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Waveform Bars inside Acoustic Core -->
+    <rect x="36" y="48" width="3.5" height="10" rx="1.75" fill="#10B981"/>
+    <rect x="43" y="44" width="3.5" height="18" rx="1.75" fill="#FFFFFF"/>
+    <rect x="50" y="40" width="3.5" height="26" rx="1.75" fill="#10B981"/>
+    <rect x="57" y="46" width="3.5" height="14" rx="1.75" fill="#FFFFFF"/>
+
+    <!-- Origin Dot -->
     <circle cx="70" cy="27" r="4.5" fill="#10B981"/>
   </g>
 
   <!-- Brand Title -->
-  <text x="220" y="145" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="36" letter-spacing="-0.02em">
+  <text x="156" y="98" fill="#FFFFFF" font-family="Inter, Roboto, system-ui, sans-serif" font-weight="800" font-size="29" letter-spacing="-0.02em">
     Speak in Progress
   </text>
-  <rect x="540" y="122" width="130" height="28" rx="14" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-opacity="0.3"/>
-  <text x="555" y="141" fill="#34D399" font-family="monospace" font-weight="700" font-size="11" letter-spacing="0.1em">
-    CREATOR STUDIO
+  <rect x="420" y="78" width="168" height="26" rx="13" fill="#0C261E" stroke="#10B981" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="434" y="95" fill="#34D399" font-family="Inter, Roboto, monospace" font-weight="700" font-size="10.5" letter-spacing="0.1em">
+    SPOKEN ENGLISH STUDIO
   </text>
 
-  <!-- Main Headline -->
-  <text x="100" y="270" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="54" letter-spacing="-0.03em">
+  <!-- Main Headline (Scaled for perfect breathing room & zero collision) -->
+  <text x="68" y="178" fill="#FFFFFF" font-family="Inter, Roboto, system-ui, sans-serif" font-weight="900" font-size="33" letter-spacing="-0.03em">
     Documenting Real English Fluency
   </text>
-  <text x="100" y="340" fill="#10B981" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="54" letter-spacing="-0.03em">
+  <text x="68" y="224" fill="#34D399" font-family="Inter, Roboto, system-ui, sans-serif" font-weight="900" font-size="33" letter-spacing="-0.03em">
     One Authentic Day at a Time.
   </text>
 
-  <!-- Value proposition description -->
-  <text x="100" y="420" fill="#A8A29E" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="24">
-    Calibrated Teleprompter · 90s Unscripted Retelling · PC Screen-Recording
+  <!-- Subheadline -->
+  <text x="68" y="278" fill="#CBD5E1" font-family="Inter, Roboto, system-ui, sans-serif" font-weight="400" font-size="17">
+    The deliberate practice studio engineered to eliminate hesitations
+  </text>
+  <text x="68" y="304" fill="#CBD5E1" font-family="Inter, Roboto, system-ui, sans-serif" font-weight="400" font-size="17">
+    through calibrated teleprompter pacing &amp; 90s unscripted recall.
   </text>
 
-  <!-- Badges / Pillars -->
-  <g transform="translate(100, 480)">
-    <!-- Pill 1 -->
-    <rect x="0" y="0" width="220" height="52" rx="16" fill="#1C1917" stroke="#FFFFFF" stroke-opacity="0.1"/>
-    <text x="24" y="32" fill="#E7E5E4" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="16">
+  <!-- Feature Pills Matrix (2x2 Grid) -->
+  <g transform="translate(68, 345)">
+    <!-- Pill 1: Teleprompter -->
+    <rect x="0" y="0" width="260" height="48" rx="14" fill="#0A1A14" stroke="#10B981" stroke-opacity="0.3" stroke-width="1.2"/>
+    <circle cx="24" cy="24" r="5" fill="#10B981"/>
+    <text x="38" y="30" fill="#F1F5F9" font-family="Inter, Roboto, system-ui, sans-serif" font-weight="600" font-size="14">
+      130–160 WPM Teleprompter
+    </text>
+
+    <!-- Pill 2: 90s Recall -->
+    <rect x="275" y="0" width="245" height="48" rx="14" fill="#0A1A14" stroke="#10B981" stroke-opacity="0.3" stroke-width="1.2"/>
+    <circle cx="299" cy="24" r="5" fill="#34D399"/>
+    <text x="313" y="30" fill="#F1F5F9" font-family="Inter, Roboto, system-ui, sans-serif" font-weight="600" font-size="14">
+      90s Unscripted Recall
+    </text>
+
+    <!-- Pill 3: Screen Recording -->
+    <rect x="0" y="60" width="260" height="48" rx="14" fill="#0A1A14" stroke="#10B981" stroke-opacity="0.3" stroke-width="1.2"/>
+    <circle cx="24" cy="84" r="5" fill="#10B981"/>
+    <text x="38" y="90" fill="#F1F5F9" font-family="Inter, Roboto, system-ui, sans-serif" font-weight="600" font-size="14">
+      OBS Screen-Recording
+    </text>
+
+    <!-- Pill 4: Daily Routine -->
+    <rect x="275" y="60" width="245" height="48" rx="14" fill="#0A1A14" stroke="#10B981" stroke-opacity="0.3" stroke-width="1.2"/>
+    <circle cx="299" cy="84" r="5" fill="#34D399"/>
+    <text x="313" y="90" fill="#F1F5F9" font-family="Inter, Roboto, system-ui, sans-serif" font-weight="600" font-size="14">
       5-Step Daily Routine
     </text>
+  </g>
 
-    <!-- Pill 2 -->
-    <rect x="240" y="0" width="240" height="52" rx="16" fill="#1C1917" stroke="#FFFFFF" stroke-opacity="0.1"/>
-    <text x="264" y="32" fill="#E7E5E4" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="16">
-      130-150 WPM Pacing
+  <!-- Footer Metadata Bar (Left) -->
+  <g transform="translate(68, 550)">
+    <text x="0" y="0" font-family="Inter, Roboto, system-ui, sans-serif" font-size="15">
+      <tspan fill="#64748B" font-weight="500">Founded by </tspan>
+      <tspan fill="#F8FAFC" font-weight="700">Md. Selim</tspan>
+      <tspan fill="#334155" font-weight="400">    •    </tspan>
+      <tspan fill="#34D399" font-family="Inter, Roboto, monospace" font-weight="600">speak-in-progress.pages.dev</tspan>
+    </text>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: LIVE STUDIO UI PREVIEW ================= -->
+  <g transform="translate(660, 75)">
+    <!-- Studio Mockup Container -->
+    <rect width="460" height="475" rx="20" fill="url(#cardGrad)" stroke="url(#cardBorder)" stroke-width="1.5"/>
+    
+    <!-- Window Header -->
+    <rect width="460" height="44" rx="20" fill="#091A14"/>
+    <!-- Window dots -->
+    <circle cx="24" cy="22" r="5" fill="#EF4444" opacity="0.8"/>
+    <circle cx="40" cy="22" r="5" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="56" cy="22" r="5" fill="#10B981" opacity="0.8"/>
+
+    <text x="76" y="27" fill="#94A3B8" font-family="Inter, Roboto, sans-serif" font-weight="600" font-size="11.5" letter-spacing="0.08em">
+      PACING MONITOR &amp; STUDIO
     </text>
 
-    <!-- Pill 3 -->
-    <rect x="500" y="0" width="230" height="52" rx="16" fill="#1C1917" stroke="#FFFFFF" stroke-opacity="0.1"/>
-    <text x="524" y="32" fill="#E7E5E4" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="16">
-      Faceless OBS Ready
+    <!-- Speed Indicator Badge -->
+    <rect x="350" y="10" width="90" height="24" rx="12" fill="#10B981" fill-opacity="0.2"/>
+    <text x="364" y="26" fill="#34D399" font-family="Inter, Roboto, monospace" font-weight="700" font-size="11.5">
+      145 WPM
+    </text>
+
+    <!-- Teleprompter Screen Content -->
+    <rect x="22" y="60" width="416" height="155" rx="12" fill="#030A08" stroke="#10B981" stroke-opacity="0.2" stroke-width="1"/>
+    
+    <text x="40" y="92" fill="#94A3B8" font-family="Inter, Roboto, sans-serif" font-weight="500" font-size="13">
+      Welcome back to your deliberate speaking block.
+    </text>
+    
+    <!-- Active Highlighted Line -->
+    <rect x="30" y="105" width="396" height="34" rx="6" fill="#10B981" fill-opacity="0.18"/>
+    <text x="40" y="127" fill="#34D399" font-family="Inter, Roboto, sans-serif" font-weight="700" font-size="14.5">
+      "Fluency is not speed; it is consistent pacing."
+    </text>
+
+    <text x="40" y="166" fill="#CBD5E1" font-family="Inter, Roboto, sans-serif" font-weight="500" font-size="13">
+      Breathe naturally between ideas. Avoid filler pauses.
+    </text>
+    <text x="40" y="190" fill="#64748B" font-family="Inter, Roboto, sans-serif" font-weight="400" font-size="12">
+      Now recall this insight in your own 90s unscripted turn.
+    </text>
+
+    <!-- Audio Waveform Live Visualizer Box -->
+    <rect x="22" y="230" width="416" height="110" rx="12" fill="#05120D" stroke="#10B981" stroke-opacity="0.3" stroke-width="1"/>
+    
+    <!-- Waveform title & status -->
+    <circle cx="42" cy="254" r="4.5" fill="#EF4444"/>
+    <text x="56" y="258" fill="#F8FAFC" font-family="Inter, Roboto, sans-serif" font-weight="700" font-size="12">
+      ACTIVE MIC &amp; OBS AUDIO
+    </text>
+    <text x="330" y="258" fill="#34D399" font-family="Inter, Roboto, monospace" font-weight="700" font-size="12">
+      01:18 / 01:30
+    </text>
+
+    <!-- Dynamic Audio Spectrum Waveform Bars (High-contrast emerald) -->
+    <g transform="translate(38, 276)">
+      <rect x="0" y="12" width="7" height="18" rx="3.5" fill="#059669"/>
+      <rect x="15" y="6" width="7" height="28" rx="3.5" fill="#10B981"/>
+      <rect x="30" y="2" width="7" height="38" rx="3.5" fill="#34D399"/>
+      <rect x="45" y="8" width="7" height="24" rx="3.5" fill="#10B981"/>
+      <rect x="60" y="0" width="7" height="42" rx="3.5" fill="#34D399"/>
+      <rect x="75" y="5" width="7" height="30" rx="3.5" fill="#10B981"/>
+      <rect x="90" y="14" width="7" height="14" rx="3.5" fill="#059669"/>
+      <rect x="105" y="3" width="7" height="36" rx="3.5" fill="#34D399"/>
+      <rect x="120" y="0" width="7" height="42" rx="3.5" fill="#34D399"/>
+      <rect x="135" y="7" width="7" height="26" rx="3.5" fill="#10B981"/>
+      <rect x="150" y="2" width="7" height="38" rx="3.5" fill="#34D399"/>
+      <rect x="165" y="10" width="7" height="20" rx="3.5" fill="#10B981"/>
+      <rect x="180" y="15" width="7" height="12" rx="3.5" fill="#059669"/>
+      <rect x="195" y="4" width="7" height="34" rx="3.5" fill="#34D399"/>
+      <rect x="210" y="1" width="7" height="40" rx="3.5" fill="#34D399"/>
+      <rect x="225" y="8" width="7" height="24" rx="3.5" fill="#10B981"/>
+      <rect x="240" y="13" width="7" height="14" rx="3.5" fill="#059669"/>
+      <rect x="255" y="3" width="7" height="36" rx="3.5" fill="#34D399"/>
+      <rect x="270" y="7" width="7" height="26" rx="3.5" fill="#10B981"/>
+      <rect x="285" y="16" width="7" height="10" rx="3.5" fill="#059669"/>
+      <rect x="300" y="5" width="7" height="30" rx="3.5" fill="#10B981"/>
+      <rect x="315" y="1" width="7" height="40" rx="3.5" fill="#34D399"/>
+      <rect x="330" y="9" width="7" height="22" rx="3.5" fill="#10B981"/>
+      <rect x="345" y="13" width="7" height="14" rx="3.5" fill="#059669"/>
+      <rect x="360" y="6" width="7" height="28" rx="3.5" fill="#10B981"/>
+      <rect x="375" y="12" width="7" height="16" rx="3.5" fill="#059669"/>
+    </g>
+
+    <!-- Bottom Metrics Cards inside Mockup -->
+    <rect x="22" y="355" width="198" height="96" rx="12" fill="#030A08" stroke="#10B981" stroke-opacity="0.25" stroke-width="1"/>
+    <text x="38" y="385" fill="#64748B" font-family="Inter, Roboto, sans-serif" font-weight="700" font-size="11" letter-spacing="0.08em">
+      ACTIVE SPEAKING PACE
+    </text>
+    <text x="38" y="424" fill="#10B981" font-family="Inter, Roboto, sans-serif" font-weight="900" font-size="28">
+      142 <tspan font-size="14" font-weight="600" fill="#94A3B8">WPM</tspan>
+    </text>
+    <text x="38" y="442" fill="#34D399" font-family="Inter, Roboto, sans-serif" font-weight="600" font-size="11">
+      Optimal Range (130-150)
+    </text>
+
+    <rect x="238" y="355" width="200" height="96" rx="12" fill="#030A08" stroke="#10B981" stroke-opacity="0.25" stroke-width="1"/>
+    <text x="254" y="385" fill="#64748B" font-family="Inter, Roboto, sans-serif" font-weight="700" font-size="11" letter-spacing="0.08em">
+      RECORDING FORMAT
+    </text>
+    <text x="254" y="424" fill="#F8FAFC" font-family="Inter, Roboto, sans-serif" font-weight="900" font-size="24">
+      OBS Faceless
+    </text>
+    <text x="254" y="442" fill="#94A3B8" font-family="Inter, Roboto, sans-serif" font-weight="600" font-size="11">
+      1080p 60fps Synchronized
     </text>
   </g>
 </svg>
