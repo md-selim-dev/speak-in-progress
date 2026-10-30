@@ -86,20 +86,19 @@
       content="Master real-world English fluency through deliberate practice, calibrated teleprompter pacing, unscripted memory retelling, and PC screen-recording."
     />
 
-    <!-- Canonical URL dynamically synchronized -->
-    <link rel="canonical" id="canonical-url" href="https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/" />
-    <script>
-      (function() {
-        try {
-          var can = document.getElementById('canonical-url');
-          if (can && window.location.origin) {
-            can.setAttribute('href', window.location.origin + window.location.pathname);
-          }
-        } catch (e) {}
-      })();
-    </script>
+    <!-- Favicons & Mobile Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-    <!-- OpenGraph Social Cards -->
+    <!-- LLM Context & Specification Links (/llms.txt standard) -->
+    <link rel="alternate" type="text/markdown" title="LLM Context (llms.txt)" href="/llms.txt" />
+    <link rel="alternate" type="text/markdown" title="Full System Specification (llms-full.txt)" href="/llms-full.txt" />
+
+    <!-- Canonical URL dynamically synchronized -->
+    <link rel="canonical" id="canonical-url" href="https://speak-in-progress.pages.dev/" />
+
+    <!-- OpenGraph Social Cards (Facebook, LinkedIn, WhatsApp, Telegram, Discord, Slack) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Speak in Progress" />
     <meta property="og:title" content="Speak in Progress — Spoken English Fluency & Recording Studio" />
@@ -107,8 +106,10 @@
       property="og:description"
       content="Master real-world English fluency through deliberate practice, calibrated teleprompter pacing, unscripted memory retelling, and PC screen-recording."
     />
-    <meta property="og:url" content="https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/" />
-    <meta property="og:image" content="https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/og-image.svg" />
+    <meta property="og:url" content="https://speak-in-progress.pages.dev/" />
+    <meta property="og:image" content="https://speak-in-progress.pages.dev/og-image.png" />
+    <meta property="og:image:secure_url" content="https://speak-in-progress.pages.dev/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Speak in Progress — Spoken English Fluency & Recording Studio" />
@@ -121,8 +122,33 @@
       name="twitter:description"
       content="Master real-world English fluency through deliberate practice, calibrated teleprompter pacing, unscripted memory retelling, and PC screen-recording."
     />
-    <meta name="twitter:image" content="https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/og-image.svg" />
+    <meta name="twitter:image" content="https://speak-in-progress.pages.dev/og-image.png" />
     <meta name="twitter:image:alt" content="Speak in Progress Studio Preview" />
+
+    <script>
+      (function() {
+        try {
+          var origin = window.location.origin;
+          var pathname = window.location.pathname;
+          if (origin && !origin.includes('localhost') && !origin.includes('127.0.0.1')) {
+            var can = document.getElementById('canonical-url');
+            if (can) can.setAttribute('href', origin + pathname);
+
+            var ogUrl = document.querySelector('meta[property="og:url"]');
+            if (ogUrl) ogUrl.setAttribute('content', origin + pathname);
+
+            var ogImg = document.querySelector('meta[property="og:image"]');
+            if (ogImg) ogImg.setAttribute('content', origin + '/og-image.png');
+
+            var ogImgSec = document.querySelector('meta[property="og:image:secure_url"]');
+            if (ogImgSec) ogImgSec.setAttribute('content', origin + '/og-image.png');
+
+            var twImg = document.querySelector('meta[name="twitter:image"]');
+            if (twImg) twImg.setAttribute('content', origin + '/og-image.png');
+          }
+        } catch (e) {}
+      })();
+    </script>
 
     <!-- Schema.org Structured Data (JSON-LD) for Search Engine Rich Results, AEO & GEO -->
     <script type="application/ld+json">
@@ -131,8 +157,8 @@
       "@graph": [
         {
           "@type": "WebSite",
-          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#website",
-          "url": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/",
+          "@id": "https://speak-in-progress.pages.dev/#website",
+          "url": "https://speak-in-progress.pages.dev/",
           "name": "Speak in Progress",
           "alternateName": ["Speak in Progress Studio", "SpeakInProgress"],
           "description": "Deliberate spoken English practice framework, calibrated teleprompter studio, and faceless YouTube recording architecture.",
@@ -140,15 +166,15 @@
         },
         {
           "@type": "EducationalOrganization",
-          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#organization",
+          "@id": "https://speak-in-progress.pages.dev/#organization",
           "name": "Speak in Progress",
-          "url": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/",
+          "url": "https://speak-in-progress.pages.dev/",
           "slogan": "Progress, not perfection.",
           "description": "Language acquisition research and deliberate speech production methodology designed to eliminate communicative hesitation."
         },
         {
           "@type": "WebApplication",
-          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#webapp",
+          "@id": "https://speak-in-progress.pages.dev/#webapp",
           "name": "Speak in Progress — Spoken English Fluency & Recording Studio",
           "applicationCategory": "EducationalApplication",
           "applicationSubCategory": "Language Learning & Video Production Studio",
@@ -171,7 +197,7 @@
         },
         {
           "@type": "HowTo",
-          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#howto-workflow",
+          "@id": "https://speak-in-progress.pages.dev/#howto-workflow",
           "name": "How to Practice Spoken English Fluency with the 5-Step Screen Recording Workflow",
           "description": "A structured 5-step daily routine for recording authentic faceless YouTube practice sessions with calibrated pacing and unscripted recall.",
           "totalTime": "PT15M",
@@ -210,7 +236,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#faq",
+          "@id": "https://speak-in-progress.pages.dev/#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -256,8 +282,8 @@
         },
         {
           "@type": "WebPage",
-          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#webpage",
-          "url": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/",
+          "@id": "https://speak-in-progress.pages.dev/#webpage",
+          "url": "https://speak-in-progress.pages.dev/",
           "name": "Speak in Progress — Spoken English Fluency & Recording Studio",
           "speakable": {
             "@type": "SpeakableSpecification",

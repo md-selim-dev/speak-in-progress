@@ -1,0 +1,54 @@
+# Speak in Progress — Complete System & Methodology Specification
+
+> Official LLM & AI agent documentation for the Speak in Progress spoken fluency production suite.
+
+## 1. Overview
+Speak in Progress is a dedicated desktop YouTube recording studio and deliberate practice framework engineered specifically for English learners documenting their communicative fluency journey.
+
+Rather than relying on passive listening, traditional vocabulary apps, or grammar drills, Speak in Progress couples continuous teleprompter reading with instant 90-second unscripted memory retellings, tracking daily stumble rates and script independence over time.
+
+## 2. The 5-Step Screen-Recording Workflow
+Each daily practice session follows a standardized sequence structured for OBS Studio and Loom screen-recording:
+
+### Step 1: Voiceover Intro (15 seconds)
+A high-energy opening hook introducing the topic, day number, and personal progress goal. Designed to establish vocal projection and engage viewers within the first 10 seconds of a YouTube video.
+
+### Step 2: Story Reading (2–3 minutes)
+A continuous 5-paragraph leveled narrative read aloud from the teleprompter:
+- Conversational Cadence: 130 WPM (28 px/s drift rate)
+- Presentation Cadence: 145 WPM (34 px/s drift rate)
+- Executive Cadence: 160 WPM (42 px/s drift rate)
+Features an eye-line focus beam, paragraph focus mode, and fullscreen recording view (`F`).
+
+### Step 3: Key Expressions (1–2 minutes)
+Deep dive into 3 high-impact idioms or collocations contextualized within the daily story:
+- Expression 1: Core conceptual collocation
+- Expression 2: Action or momentum phrase
+- Expression 3: Reflective or strategic verbal idiom
+Includes contextual definitions, usage examples, and vocal intonation guidance.
+
+### Step 4: Unscripted Retelling (90 seconds)
+The script scrolls out of view. The speaker must verbalize the story from memory within a 90-second countdown using 4 structured cognitive anchor triggers. This forces the brain to construct grammar dynamically under gentle time pressure, bridging the gap between passive comprehension and spontaneous speech.
+
+### Step 5: Private Log (1 minute)
+Personal neuro-linguistic self-assessment:
+- Script Independence Score (1 to 5 stars)
+- Stumble & Friction Notes (phonemes, hesitation points)
+- Win of the Day (pronunciation breakthrough, phrasing milestone)
+Stored in private Cloud Firestore.
+
+## 3. Tool Suite
+- **Interactive Teleprompter Studio**: Real-time adjustable speed, audio practice recorder, fullscreen screen-recording canvas.
+- **16:9 Thumbnail Studio**: 2K (2560×1440) and FHD (1920×1080) YouTube thumbnail builder with bold editorial typography, customizable highlight words, and instant PNG download.
+- **Video Intro & Channel Banner Suite**: 3–4 second animated video stings with real audio chords, 2560×1440 channel banners with desktop/mobile TV safe zones, and SVG branding logos.
+- **Voice & Tone Guidelines**: Creator vocal pacing, articulation guidelines, and production standards.
+
+## 4. Privacy & Authorization Model
+- Public Landing Page: Fully indexed by search engines (`index, follow`).
+- Internal Studio: Strictly restricted to authorized owner credentials (`smselimreja77@gmail.com`).
+- Once authenticated into the studio, the runtime automatically toggles search robots to `noindex, nofollow, noarchive, nosnippet`, ensuring personal recordings and draft logs are never indexed.
+- Other accounts attempting to log in receive a polite notice directing inquiries to `support@mdselim.com`.
+
+## 5. Contact & Support
+- Founder & Creator: smselimreja77@gmail.com
+- Support & General Inquiries: support@mdselim.com

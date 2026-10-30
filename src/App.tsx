@@ -161,7 +161,7 @@ export default function App() {
         const currentDomain =
           typeof window !== 'undefined' && window.location.hostname
             ? window.location.hostname
-            : 'speak-in-progress.netlify.app';
+            : 'speak-in-progress.pages.dev';
         setUnauthorizedDomain(currentDomain);
         setLoginError(
           `Domain "${currentDomain}" is not yet authorized in Firebase Auth. Add it to Authorized Domains in Firebase Console to enable login.`

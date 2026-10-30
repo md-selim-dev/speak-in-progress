@@ -1,0 +1,42 @@
+# Speak in Progress
+
+> A specialized YouTube production suite and deliberate spoken practice framework. Built for PC screen recording, calibrated teleprompter pacing, unscripted memory retellings, and consistent fluency gains.
+
+Speak in Progress is designed for creators documenting their English fluency journey through faceless PC screen recording (OBS / Loom), deliberate teleprompter practice, and immediate unscripted recall.
+
+## Core Capabilities
+
+- **Interactive Teleprompter Studio**: Calibrated speaking rate (130–160 WPM), continuous vertical auto-scroll (15–75 px/s), paragraph focus mode, eye-line focus beam, and clean screen-recording mode (`F` shortcut).
+- **5-Step Practice Workflow**:
+  1. *Voiceover Intro*: 15-second opening hook tailored for session greeting.
+  2. *Story Reading*: Calibrated 5-paragraph teleprompter reading at broadcast cadence.
+  3. *Key Expressions*: 3 curated collocations and idioms with contextual meaning, example, and vocal tip.
+  4. *Unscripted Retelling*: 90-second spontaneous memory recall using structured anchor cues without reading.
+  5. *Private Log*: Script independence rating (1–5), stumble friction notes, and win-of-the-day log.
+- **16:9 Thumbnail Studio**: Instant 2K (2560×1440) and 1080p high-CTR YouTube thumbnail generator with contrast typography, word highlighting, and PNG export.
+- **Video Intro & Channel Banner Suite**: 3–4 second animated video stings with real audio chords, 2560×1440 channel banners with mobile/TV safe zones, and SVG branding logos.
+- **Private Cloud Vault**: Single-user Cloud Firestore persistence secured with attribute-based security rules.
+
+## The Cognitive Cadence Method
+
+Traditional language learning over-indexes on passive comprehension. Fluency requires rapid memory retrieval under communicative time pressure:
+- **Calibrated Pacing (130–150 WPM)**: Stabilizes respiratory cadence and eliminates anxiety-driven rushing or hesitation.
+- **Immediate Active Retrieval (90s Window)**: Forcing spontaneous verbalization immediately following reading builds myelinated synaptic pathways.
+- **Normalizing Stumble Rates**: Treats vocal pauses and pronunciation friction as objective proof of neuro-linguistic progress rather than failure.
+- **Faceless Screen-Recording Freedom**: Channels 100% of cognitive energy into vocal projection, idiom usage, and articulation without camera appearance anxiety.
+
+## Technical Architecture & Integrations
+
+- **Framework**: React 19, TypeScript, Vite 8
+- **Styling**: Tailwind CSS v4, Lucide React, Framer Motion
+- **Authentication**: Firebase Authentication (Google OAuth 2.0) with strict owner verification
+- **Database**: Cloud Firestore with zero-trust ABAC rules
+- **Media**: Web Audio API (microphone rehearsal recorder), HTML5 Canvas API (thumbnail generator)
+- **Deployment**: Static SPA hosted on Cloudflare Pages (https://speak-in-progress.pages.dev/)
+
+## Support & Inquiries
+
+- Primary Owner & Creator: smselimreja77@gmail.com
+- Inquiries & Support: support@mdselim.com
+- Canonical URL: https://speak-in-progress.pages.dev/
+- Public Documentation: https://speak-in-progress.pages.dev/llms-full.txt

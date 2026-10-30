@@ -8,6 +8,13 @@ User-agent: *
 Allow: /$
 Allow: /#*
 Allow: /assets/
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /favicon.svg
+Allow: /favicon-32x32.png
+Allow: /apple-touch-icon.png
+Allow: /og-image.png
+Allow: /og-image.svg
 Disallow: /api/
 Disallow: /studio
 Disallow: /workspace
@@ -40,4 +47,4 @@ Disallow: /studio
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/sitemap.xml
+Sitemap: https://speak-in-progress.pages.dev/sitemap.xml
