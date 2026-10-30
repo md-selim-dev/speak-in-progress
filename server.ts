@@ -132,6 +132,9 @@ app.get('/api/health', (_req, res) => {
 async function startServer() {
   const isProd = process.env.NODE_ENV === 'production';
 
+  // Directly serve public directory assets with proper content types
+  app.use(express.static(path.resolve('public')));
+
   if (!isProd) {
     const vite = await createViteServer({
       server: {

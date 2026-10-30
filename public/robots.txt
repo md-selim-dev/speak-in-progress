@@ -17,6 +17,7 @@ Allow: /favicon.svg
 Allow: /favicon-32x32.png
 Allow: /apple-touch-icon.png
 Allow: /og-image.png
+Allow: /og-image.jpg
 Allow: /og-image.svg
 Disallow: /api/
 Disallow: /studio
@@ -24,6 +25,22 @@ Disallow: /workspace
 Disallow: /teleprompter
 Disallow: /*?*token=*
 Disallow: /*?*auth=*
+
+# Social Media Link Preview Bots (Always permitted to fetch OG metadata and preview cards)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
 
 # Search Engine & AI Crawlers (AEO / GEO indexing allowed for public pages)
 User-agent: Googlebot

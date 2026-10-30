@@ -27,7 +27,8 @@ export const SITE_CONFIG = {
 
   // Social & Asset paths (relative to domain)
   assets: {
-    ogImage: '/og-image.png',
+    ogImage: '/og-image.jpg',
+    ogImagePng: '/og-image.png',
     ogImageAlt: 'Speak in Progress — Spoken English Fluency & Recording Studio Preview',
     ogWidth: 1200,
     ogHeight: 630,
