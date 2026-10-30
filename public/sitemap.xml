@@ -3,11 +3,43 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- Homepage & Public Studio Overview on Cloudflare Pages -->
+  <!-- 1. Homepage & Studio Overview -->
   <url>
     <loc>https://speak-in-progress.pages.dev/</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- 2. Studio Features Overview -->
+  <url>
+    <loc>https://speak-in-progress.pages.dev/features</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 3. The 5-Step Daily Workflow -->
+  <url>
+    <loc>https://speak-in-progress.pages.dev/how-it-works</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 4. About the Journey & Cognitive Cadence Method -->
+  <url>
+    <loc>https://speak-in-progress.pages.dev/about</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 5. Frequently Asked Questions -->
+  <url>
+    <loc>https://speak-in-progress.pages.dev/faq</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

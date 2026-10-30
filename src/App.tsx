@@ -17,6 +17,7 @@ import { User } from 'firebase/auth';
 import { onAuthUserChanged, signInWithGoogle, signOutUser } from './lib/firebase';
 import { isAuthorizedOwner, OWNER_EMAIL } from './lib/authConfig';
 import { LogoMark } from './components/LogoMark';
+import { updatePageSEO } from './lib/seoHelper';
 
 export default function App() {
   const [activeBrand, setActiveBrand] = useState<BrandIdentity>(() => {
@@ -81,26 +82,12 @@ export default function App() {
   const isAuthorized = !!(currentUser && isAuthorizedOwner(currentUser.email));
 
   // Strict SEO Indexing Policy:
-  // Public facing landing page is indexed (index, follow).
+  // Public facing landing pages are indexed (index, follow).
   // Once the creator enters the private studio workspace, dynamically set 'noindex, nofollow, noarchive'
   // to guarantee internal recordings, stumble notes, and teleprompter drafts are never indexed by Google.
   useEffect(() => {
-    const robotsMeta = document.querySelector('meta[name="robots"]');
-    const googlebotMeta = document.querySelector('meta[name="googlebot"]');
-    const canonicalLink = document.querySelector('link[rel="canonical"]');
-
-    if (canonicalLink && typeof window !== 'undefined' && window.location) {
-      canonicalLink.setAttribute('href', window.location.origin + window.location.pathname);
-    }
-
     if (isAuthorized && inStudio) {
-      robotsMeta?.setAttribute('content', 'noindex, nofollow, noarchive, nosnippet');
-      googlebotMeta?.setAttribute('content', 'noindex, nofollow, noarchive, nosnippet');
-      document.title = 'Speak in Progress · Creator Workspace (Private)';
-    } else {
-      robotsMeta?.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
-      googlebotMeta?.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
-      document.title = 'Speak in Progress — Spoken English Fluency & Recording Studio';
+      updatePageSEO('home', true);
     }
   }, [isAuthorized, inStudio]);
 

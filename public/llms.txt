@@ -36,7 +36,7 @@ Traditional language learning over-indexes on passive comprehension. Fluency req
 
 ## Support & Inquiries
 
-- Primary Owner & Creator: smselimreja77@gmail.com
+- Founder & Creator: Md. Selim
 - Inquiries & Support: support@mdselim.com
-- Canonical URL: https://speak-in-progress.pages.dev/
+- Official Domain: https://speak-in-progress.pages.dev/
 - Public Documentation: https://speak-in-progress.pages.dev/llms-full.txt

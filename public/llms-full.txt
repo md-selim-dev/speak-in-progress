@@ -45,10 +45,10 @@ Stored in private Cloud Firestore.
 
 ## 4. Privacy & Authorization Model
 - Public Landing Page: Fully indexed by search engines (`index, follow`).
-- Internal Studio: Strictly restricted to authorized owner credentials (`smselimreja77@gmail.com`).
+- Internal Studio: Strictly restricted to authorized creator credentials.
 - Once authenticated into the studio, the runtime automatically toggles search robots to `noindex, nofollow, noarchive, nosnippet`, ensuring personal recordings and draft logs are never indexed.
 - Other accounts attempting to log in receive a polite notice directing inquiries to `support@mdselim.com`.
 
 ## 5. Contact & Support
-- Founder & Creator: smselimreja77@gmail.com
+- Founder & Creator: Md. Selim
 - Support & General Inquiries: support@mdselim.com

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrandIdentity } from '../types';
 import { LogoMark } from './LogoMark';
 import {
@@ -27,7 +27,16 @@ import {
   Zap,
   Globe,
   ExternalLink,
+  Menu,
+  X,
+  Home,
 } from 'lucide-react';
+import { SITE_CONFIG, PublicPageId } from '../config/site';
+import { updatePageSEO } from '../lib/seoHelper';
+import { PublicFeaturesView } from './public/PublicFeaturesView';
+import { PublicHowItWorksView } from './public/PublicHowItWorksView';
+import { PublicAboutView } from './public/PublicAboutView';
+import { PublicFaqView } from './public/PublicFaqView';
 
 interface LandingPageProps {
   activeBrand: BrandIdentity;
@@ -56,6 +65,43 @@ export const LandingPage: React.FC<LandingPageProps> = ({
   unauthorizedDomain,
   onDismissDomainError,
 }) => {
+  const getPageFromPath = (pathname: string): PublicPageId => {
+    if (typeof window === 'undefined') return 'home';
+    const clean = pathname.toLowerCase().replace(/\/+$/, '');
+    if (clean === '/features') return 'features';
+    if (clean === '/how-it-works' || clean === '/howitworks') return 'howItWorks';
+    if (clean === '/about') return 'about';
+    if (clean === '/faq') return 'faq';
+    return 'home';
+  };
+
+  const [currentPage, setCurrentPage] = useState<PublicPageId>(() => {
+    return typeof window !== 'undefined' ? getPageFromPath(window.location.pathname) : 'home';
+  });
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const page = getPageFromPath(window.location.pathname);
+      setCurrentPage(page);
+      updatePageSEO(page);
+    };
+    window.addEventListener('popstate', handlePopState);
+    updatePageSEO(currentPage);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const navigateTo = (page: PublicPageId) => {
+    setCurrentPage(page);
+    setIsMobileMenuOpen(false);
+    const targetPath = SITE_CONFIG.pages[page]?.path || '/';
+    if (typeof window !== 'undefined' && window.location.pathname !== targetPath) {
+      window.history.pushState({}, '', targetPath);
+    }
+    updatePageSEO(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   // Interactive Cadence Calculator for SEO & Methodology Showcase
   const [sampleWordCount, setSampleWordCount] = useState<number>(240);
   const [selectedPace, setSelectedPace] = useState<'conversational' | 'presentation' | 'executive'>(
@@ -74,6 +120,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
   const calculatedRemSeconds = calculatedSeconds % 60;
 
   const scrollToInsights = () => {
+    if (currentPage !== 'home') {
+      navigateTo('home');
+      setTimeout(() => {
+        const el = document.getElementById('insights');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+      return;
+    }
     const el = document.getElementById('insights');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
@@ -88,6 +142,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
     }
   };
 
+  const navLinks: { id: PublicPageId; label: string }[] = [
+    { id: 'home', label: 'Home' },
+    { id: 'features', label: 'Features' },
+    { id: 'howItWorks', label: 'How It Works' },
+    { id: 'about', label: 'About' },
+    { id: 'faq', label: 'FAQ' },
+  ];
+
   return (
     <div className="min-h-screen bg-[#030705] text-stone-100 flex flex-col selection:bg-emerald-400/25 selection:text-emerald-200 relative overflow-x-hidden">
       {/* Ambient background glow */}
@@ -97,38 +159,65 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       />
 
       {/* Top Public Header */}
-      <header className="sticky top-0 z-40 w-full border-b border-white/[0.08] bg-stone-950/85 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
-          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+      <header className="sticky top-0 z-40 w-full border-b border-white/[0.08] bg-stone-950/90 backdrop-blur-xl">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3 sm:py-3.5">
+          {/* Logo & Brand Identity */}
+          <button
+            onClick={() => navigateTo('home')}
+            className="flex items-center gap-2.5 sm:gap-3 min-w-0 text-left group cursor-pointer focus:outline-none"
+          >
             <LogoMark brand={activeBrand} size="xs" layout="icon-only" isAnimated={true} />
             <div className="flex items-center gap-2 min-w-0">
               <span
-                className="text-base sm:text-lg font-extrabold tracking-tight text-white truncate font-brand"
+                className="text-base sm:text-lg font-extrabold tracking-tight text-white truncate font-brand group-hover:text-emerald-300 transition-colors"
                 style={{ textShadow: `0 0 20px ${activeBrand.colors.accent.hex}33` }}
               >
                 Speak in Progress
               </span>
-              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full border border-white/10 uppercase tracking-widest text-stone-400 bg-white/[0.03] hidden sm:inline shrink-0">
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full border border-white/10 uppercase tracking-widest text-stone-400 bg-white/[0.03] hidden lg:inline shrink-0">
                 CREATOR STUDIO
               </span>
             </div>
-          </div>
+          </button>
 
+          {/* Desktop Navigation Links */}
+          <nav className="hidden md:flex items-center gap-1 lg:gap-1.5 bg-stone-900/60 p-1 rounded-xl border border-white/5">
+            {navLinks.map((link) => {
+              const isActive = currentPage === link.id;
+              return (
+                <button
+                  key={link.id}
+                  onClick={() => navigateTo(link.id)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-mono transition-all ${
+                    isActive
+                      ? 'bg-emerald-500/15 text-emerald-300 font-bold border border-emerald-500/30 shadow-sm'
+                      : 'text-stone-300 hover:text-white hover:bg-white/[0.04]'
+                  }`}
+                >
+                  {link.label}
+                </button>
+              );
+            })}
+          </nav>
+
+          {/* Header Action Buttons */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            {/* Insights Anchor Button */}
-            <button
-              onClick={scrollToInsights}
-              className="text-xs font-semibold text-stone-300 hover:text-white px-3 sm:px-3.5 py-2 min-h-[40px] rounded-xl border border-white/10 hover:border-white/20 hover:bg-white/[0.03] transition-all flex items-center gap-1.5"
-            >
-              <Lightbulb className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-              <span>Insights</span>
-            </button>
+            {/* Insights Anchor Button (shown if on home) */}
+            {currentPage === 'home' && (
+              <button
+                onClick={scrollToInsights}
+                className="hidden sm:flex text-xs font-semibold text-stone-300 hover:text-white px-3 py-2 min-h-[38px] rounded-xl border border-white/10 hover:border-white/20 hover:bg-white/[0.03] transition-all items-center gap-1.5"
+              >
+                <Lightbulb className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                <span>Insights</span>
+              </button>
+            )}
 
             {/* Primary Action Button: 'Enter Studio' once authenticated, or 'Sign In' */}
             <button
               onClick={handlePrimaryAction}
               disabled={isLoggingIn}
-              className="px-3.5 sm:px-4 py-2 min-h-[40px] text-xs font-bold rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-95 whitespace-nowrap flex items-center gap-1.5 sm:gap-2 shadow-modern-glow disabled:opacity-50"
+              className="px-3.5 sm:px-4 py-2 min-h-[38px] text-xs font-bold rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-95 whitespace-nowrap flex items-center gap-1.5 sm:gap-2 shadow-modern-glow disabled:opacity-50"
               style={{
                 backgroundColor: activeBrand.colors.accent.hex,
                 color: activeBrand.colors.accent.textDark ? '#061210' : '#FFFFFF',
@@ -146,17 +235,113 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 </>
               )}
             </button>
+
+            {/* Mobile Hamburger Menu Toggle */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle navigation menu"
+              className="md:hidden p-2 min-h-[38px] rounded-xl text-stone-300 hover:text-white border border-white/10 bg-stone-900/60"
+            >
+              {isMobileMenuOpen ? <X className="w-5 h-5 text-emerald-400" /> : <Menu className="w-5 h-5" />}
+            </button>
           </div>
         </div>
+
+        {/* Mobile Navigation Drawer */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden border-t border-white/[0.08] bg-stone-950/95 backdrop-blur-2xl px-4 py-4 space-y-2 animate-fade-in">
+            {navLinks.map((link) => {
+              const isActive = currentPage === link.id;
+              return (
+                <button
+                  key={link.id}
+                  onClick={() => navigateTo(link.id)}
+                  className={`w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-mono flex items-center justify-between transition-all ${
+                    isActive
+                      ? 'bg-emerald-500/15 text-emerald-400 font-bold border border-emerald-500/30'
+                      : 'text-stone-300 hover:text-white hover:bg-white/[0.04]'
+                  }`}
+                >
+                  <span>{link.label}</span>
+                  {isActive && <ChevronRight className="w-4 h-4 text-emerald-400" />}
+                </button>
+              );
+            })}
+            <div className="pt-2 border-t border-white/5 flex flex-col gap-2">
+              <a
+                href="mailto:support@mdselim.com"
+                className="text-xs text-stone-400 hover:text-emerald-400 px-3.5 py-1.5 flex items-center gap-2 font-mono"
+              >
+                <span>Support: support@mdselim.com</span>
+              </a>
+            </div>
+          </div>
+        )}
       </header>
 
-      {/* Main Public Hero */}
+      {/* Main Public Body (Switches seamlessly between Home and Subpages without page reload) */}
       <main
         itemScope
         itemType="https://schema.org/WebPage"
-        className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 lg:py-20 space-y-14 sm:space-y-20 lg:space-y-24"
+        className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 space-y-12 sm:space-y-16"
       >
-        {/* Hero Section */}
+        {currentPage !== 'home' ? (
+          <div className="space-y-8">
+            {/* Accessible Breadcrumb Trail */}
+            <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-mono text-stone-400">
+              <button
+                onClick={() => navigateTo('home')}
+                className="hover:text-emerald-400 transition-colors flex items-center gap-1.5 cursor-pointer"
+              >
+                <Home className="w-3.5 h-3.5" />
+                <span>Home</span>
+              </button>
+              <ChevronRight className="w-3.5 h-3.5 text-stone-600" />
+              <span className="text-emerald-400 font-bold">
+                {SITE_CONFIG.pages[currentPage]?.title.split('—')[0].trim() || currentPage}
+              </span>
+            </nav>
+
+            {/* Subpage Views */}
+            {currentPage === 'features' && (
+              <PublicFeaturesView
+                activeBrand={activeBrand}
+                onNavigate={navigateTo}
+                onPrimaryAction={handlePrimaryAction}
+                isAuthenticated={isAuthenticated}
+              />
+            )}
+
+            {currentPage === 'howItWorks' && (
+              <PublicHowItWorksView
+                activeBrand={activeBrand}
+                onNavigate={navigateTo}
+                onPrimaryAction={handlePrimaryAction}
+                isAuthenticated={isAuthenticated}
+              />
+            )}
+
+            {currentPage === 'about' && (
+              <PublicAboutView
+                activeBrand={activeBrand}
+                onNavigate={navigateTo}
+                onPrimaryAction={handlePrimaryAction}
+                isAuthenticated={isAuthenticated}
+              />
+            )}
+
+            {currentPage === 'faq' && (
+              <PublicFaqView
+                activeBrand={activeBrand}
+                onNavigate={navigateTo}
+                onPrimaryAction={handlePrimaryAction}
+                isAuthenticated={isAuthenticated}
+              />
+            )}
+          </div>
+        ) : (
+          <div className="space-y-14 sm:space-y-20 lg:space-y-24">
+            {/* Hero Section */}
         <div className="text-center max-w-4xl mx-auto space-y-5 sm:space-y-6">
           <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider border border-emerald-500/30 bg-emerald-950/40 text-emerald-300 max-w-full text-center leading-snug">
             <Radio className="w-3.5 h-3.5 text-emerald-400 animate-pulse shrink-0" />
@@ -685,7 +870,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 </div>
                 <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
                   <p itemProp="text" className="speakable-faq text-xs text-stone-400 leading-relaxed">
-                    Yes. All personal recordings, teleprompter drafts, stumble logs, and studio progress are stored securely in a private, encrypted Cloud Firestore database. Only this public overview is indexable by search engines.
+                    Yes. All personal recordings, teleprompter drafts, stumble logs, and studio progress are stored securely in a private, encrypted database. Only this public overview is indexable by search engines.
                   </p>
                 </div>
               </article>
@@ -704,7 +889,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <p className="text-xs sm:text-sm text-stone-300 max-w-xl mx-auto leading-relaxed">
             {isAuthenticated
               ? 'You are signed in as creator. Jump straight into the teleprompter studio, recording suite, or thumbnail generator.'
-              : 'Sign in to access your personalized teleprompter studio, daily unscripted prompts, and Cloud Firestore sync.'}
+              : 'Sign in to access your personalized teleprompter studio, daily unscripted prompts, and private cloud sync.'}
           </p>
           <div className="pt-2">
             <button
@@ -730,26 +915,81 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </button>
           </div>
         </section>
+          </div>
+        )}
       </main>
 
-      {/* Public Footer */}
-      <footer className="border-t border-white/[0.08] bg-stone-950 py-6 sm:py-8 px-4 sm:px-6 lg:px-8 text-xs text-stone-400 mt-12 sm:mt-16">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <span
-              className="w-2.5 h-2.5 rounded-full shrink-0"
-              style={{
-                backgroundColor: activeBrand.colors.accent.hex,
-                boxShadow: `0 0 10px ${activeBrand.colors.accent.hex}`,
-              }}
-            />
-            <span className="font-bold text-stone-200 font-brand">Speak in Progress</span>
-            <span className="text-stone-600">·</span>
-            <span>Spoken English Journey & Studio</span>
+      {/* Clean Public Footer (Without Internal Infrastructure Jargon) */}
+      <footer className="border-t border-white/[0.08] bg-stone-950/95 py-10 sm:py-14 px-4 sm:px-6 lg:px-8 text-xs text-stone-400 mt-16 sm:mt-24">
+        <div className="max-w-7xl mx-auto space-y-10">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
+            {/* Col 1: Brand & Slogan */}
+            <div className="space-y-4 md:col-span-2">
+              <div className="flex items-center gap-2.5">
+                <LogoMark brand={activeBrand} size="xs" layout="icon-only" isAnimated={false} />
+                <span className="font-extrabold text-base text-white font-brand">
+                  Speak in Progress
+                </span>
+              </div>
+              <p className="text-xs text-stone-400 leading-relaxed max-w-md">
+                A specialized YouTube production suite and deliberate spoken practice framework. Built for PC screen recording, calibrated teleprompter pacing (15–75 px/s, 130–160 WPM), unscripted memory retellings, and consistent fluency gains.
+              </p>
+              <p className="text-[11px] text-stone-400">
+                Progress, not perfection · Built for PC screen recording & public storytelling
+              </p>
+            </div>
+
+            {/* Col 2: Public Navigation */}
+            <div className="space-y-3">
+              <div className="text-[11px] font-mono font-bold text-stone-200 uppercase tracking-wider">
+                Public Suite
+              </div>
+              <ul className="space-y-2 text-xs">
+                {navLinks.map((link) => (
+                  <li key={link.id}>
+                    <button
+                      onClick={() => navigateTo(link.id)}
+                      className={`hover:text-emerald-400 transition-colors cursor-pointer ${
+                        currentPage === link.id ? 'text-emerald-400 font-bold' : 'text-stone-400'
+                      }`}
+                    >
+                      {link.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Col 3: Direct Inquiries */}
+            <div className="space-y-3">
+              <div className="text-[11px] font-mono font-bold text-stone-200 uppercase tracking-wider">
+                Creator & Inquiries
+              </div>
+              <div className="space-y-2 text-xs text-stone-400">
+                <p>Founder: <span className="text-stone-200 font-semibold">{SITE_CONFIG.creator.name}</span></p>
+                <p>Inquiries: <a href={`mailto:${SITE_CONFIG.supportEmail}`} className="text-emerald-400 hover:underline">{SITE_CONFIG.supportEmail}</a></p>
+                <p className="text-[11px] text-stone-400 pt-1">
+                  Focused on spoken English cadence, active memory recall, and faceless YouTube content creation.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="text-stone-400 text-center sm:text-right">
-            Progress, not perfection · Built for PC screen recording & public storytelling
+          <div className="pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-400">
+            <div>
+              © {new Date().getFullYear()} Speak in Progress · Founded by Md. Selim. All rights reserved.
+            </div>
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+              <button onClick={() => navigateTo('home')} className="hover:text-emerald-400 cursor-pointer">Home</button>
+              <span>·</span>
+              <button onClick={() => navigateTo('features')} className="hover:text-emerald-400 cursor-pointer">Features</button>
+              <span>·</span>
+              <button onClick={() => navigateTo('howItWorks')} className="hover:text-emerald-400 cursor-pointer">How It Works</button>
+              <span>·</span>
+              <button onClick={() => navigateTo('about')} className="hover:text-emerald-400 cursor-pointer">About</button>
+              <span>·</span>
+              <button onClick={() => navigateTo('faq')} className="hover:text-emerald-400 cursor-pointer">FAQ</button>
+            </div>
           </div>
         </div>
       </footer>
@@ -828,9 +1068,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </div>
 
             <div className="space-y-1.5">
-              <h3 className="text-xl font-bold text-white font-brand">Authorize Netlify Domain in Firebase</h3>
+              <h3 className="text-xl font-bold text-white font-brand">Authorize Domain for Studio Access</h3>
               <p className="text-xs text-stone-300 leading-relaxed">
-                Firebase Authentication blocked login because{' '}
+                Authentication blocked access because{' '}
                 <strong className="text-emerald-400 font-mono break-all">{unauthorizedDomain}</strong>{' '}
                 has not yet been added to your project’s Authorized Domains list.
               </p>

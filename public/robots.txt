@@ -1,12 +1,15 @@
 # ==============================================================================
-# Robots.txt for Speak in Progress
-# Public landing page and educational insights are fully indexable by search engines & AI crawlers.
-# Internal studio routes, API proxies, and user workspaces are strictly restricted.
+# Robots.txt for Speak in Progress (https://speak-in-progress.pages.dev/)
+# All public educational pages and assets are fully crawlable by search engines & AI bots.
+# Private creator workspace, recordings, internal drafts, and API routes are strictly restricted.
 # ==============================================================================
 
 User-agent: *
 Allow: /$
-Allow: /#*
+Allow: /features
+Allow: /how-it-works
+Allow: /about
+Allow: /faq
 Allow: /assets/
 Allow: /llms.txt
 Allow: /llms-full.txt
@@ -22,29 +25,35 @@ Disallow: /teleprompter
 Disallow: /*?*token=*
 Disallow: /*?*auth=*
 
-# AI & LLM Search Engine Crawlers (AEO / GEO indexing allowed for public landing content)
+# Search Engine & AI Crawlers (AEO / GEO indexing allowed for public pages)
 User-agent: Googlebot
 Allow: /
+Disallow: /api/
+Disallow: /studio
 
 User-agent: Bingbot
 Allow: /
+Disallow: /api/
+Disallow: /studio
 
 User-agent: GPTBot
-Allow: /$
+Allow: /
 Disallow: /api/
 Disallow: /studio
 
 User-agent: PerplexityBot
-Allow: /$
+Allow: /
 Disallow: /api/
 Disallow: /studio
 
 User-agent: ClaudeBot
-Allow: /$
+Allow: /
 Disallow: /api/
 Disallow: /studio
 
 User-agent: Applebot
 Allow: /
+Disallow: /api/
+Disallow: /studio
 
 Sitemap: https://speak-in-progress.pages.dev/sitemap.xml
