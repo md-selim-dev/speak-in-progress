@@ -879,23 +879,35 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         </section>
 
         {/* Bottom CTA Card */}
-        <section className="bg-gradient-to-b from-stone-900/80 to-stone-950 border border-white/10 rounded-3xl p-6 sm:p-10 lg:p-12 text-center space-y-4 sm:space-y-5">
-          <LogoMark brand={activeBrand} size="sm" layout="icon-only" />
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-brand">
+        <section className="bg-gradient-to-b from-stone-900/80 to-stone-950 border border-white/10 rounded-3xl p-8 sm:p-12 lg:p-14 text-center space-y-5 sm:space-y-6 relative overflow-hidden">
+          {/* Subtle ambient accent glow behind enlarged logo */}
+          <div
+            className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-36 rounded-full blur-[80px] opacity-25 pointer-events-none"
+            style={{ backgroundColor: activeBrand.colors.accent.hex }}
+          />
+
+          {/* Prominent Logo Container */}
+          <div className="flex justify-center relative z-10">
+            <div className="p-3.5 sm:p-4 rounded-3xl bg-stone-950/80 border border-white/10 shadow-2xl inline-flex items-center justify-center transition-transform hover:scale-105 duration-300">
+              <LogoMark brand={activeBrand} size="lg" layout="icon-only" isAnimated={true} />
+            </div>
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-brand relative z-10">
             {isAuthenticated
               ? 'Ready to Record Today’s Session?'
               : 'Begin Your Spoken English Practice'}
           </h2>
-          <p className="text-xs sm:text-sm text-stone-300 max-w-xl mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm text-stone-300 max-w-xl mx-auto leading-relaxed relative z-10">
             {isAuthenticated
               ? 'You are signed in as creator. Jump straight into the teleprompter studio, recording suite, or thumbnail generator.'
               : 'Sign in to access your personalized teleprompter studio, daily unscripted prompts, and private cloud sync.'}
           </p>
-          <div className="pt-2">
+          <div className="pt-2 relative z-10">
             <button
               onClick={handlePrimaryAction}
               disabled={isLoggingIn}
-              className="w-full sm:w-auto px-8 py-3.5 min-h-[46px] text-sm font-black rounded-xl transition-all hover:scale-[1.02] active:scale-95 shadow-modern-glow inline-flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-3.5 min-h-[46px] text-sm font-black rounded-xl transition-all hover:scale-[1.02] active:scale-95 shadow-modern-glow inline-flex items-center justify-center gap-2 cursor-pointer"
               style={{
                 backgroundColor: activeBrand.colors.accent.hex,
                 color: activeBrand.colors.accent.textDark ? '#061210' : '#FFFFFF',
