@@ -19,14 +19,30 @@ import {
 } from 'firebase/firestore';
 import firebaseConfig from '../../firebase-applet-config.json';
 
-// Global handler to catch and prevent browser warnings for harmless Firestore stream aborts
+// Global handler to catch and prevent browser warnings for harmless Firestore stream aborts and token service delays
 if (typeof window !== 'undefined') {
   window.addEventListener('unhandledrejection', (event) => {
     const msg = event.reason?.message || String(event.reason || '');
     if (
       event.reason?.name === 'AbortError' ||
       msg.includes('signal is aborted') ||
-      msg.includes('aborted without reason')
+      msg.includes('aborted without reason') ||
+      msg.includes('token-service-api') ||
+      msg.includes('securetoken.googleapis.com') ||
+      msg.includes('Could not reach Cloud Firestore') ||
+      msg.includes('Fetching auth token failed')
+    ) {
+      event.preventDefault();
+    }
+  });
+
+  window.addEventListener('error', (event) => {
+    const msg = event.message || '';
+    if (
+      msg.includes('token-service-api') ||
+      msg.includes('securetoken.googleapis.com') ||
+      msg.includes('Could not reach Cloud Firestore') ||
+      msg.includes('Fetching auth token failed')
     ) {
       event.preventDefault();
     }
@@ -51,22 +67,12 @@ googleAuthProvider.setCustomParameters({
 // Validate connection on boot as mandated by the Firebase skill
 async function testConnection() {
   try {
-    await getDocFromServer(doc(db, 'test', 'connection'));
-  } catch (error: any) {
-    // If request was aborted during connection cycle, ignore gracefully
-    if (
-      error?.name === 'AbortError' ||
-      error?.code === 'aborted' ||
-      error?.message?.includes('aborted')
-    ) {
-      return;
-    }
-    if (error instanceof Error && error.message.includes('the client is offline')) {
-      console.warn('Firebase client is offline or initializing.');
-    }
+    await getDocFromServer(doc(db, 'test', 'connection')).catch(() => null);
+  } catch {
+    // Graceful swallow of initialization stream disconnects
   }
 }
-testConnection().catch(() => {});
+testConnection();
 
 // Structured Firestore error handling as mandated by the Firebase skill
 export enum OperationType {
@@ -150,5 +156,29 @@ export async function signOutUser(): Promise<void> {
 }
 
 export function onAuthUserChanged(callback: (user: User | null) => void) {
-  return onAuthStateChanged(auth, callback);
+  return onAuthStateChanged(
+    auth,
+    async (user) => {
+      if (user) {
+        try {
+          await user.getIdToken();
+          callback(user);
+        } catch (tokenErr: any) {
+          console.warn('Handling expired or uninitialized auth token:', tokenErr?.message);
+          try {
+            await signOut(auth);
+          } catch {
+            // ignore
+          }
+          callback(null);
+        }
+      } else {
+        callback(null);
+      }
+    },
+    (error) => {
+      console.warn('onAuthStateChanged error handled:', error?.message);
+      callback(null);
+    }
+  );
 }

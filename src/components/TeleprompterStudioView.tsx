@@ -95,6 +95,12 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
 
   const [editedStoriesMap, setEditedStoriesMap] = useState<Record<string, PracticeStory>>(() => {
     try {
+      const version = localStorage.getItem('speak_curriculum_version');
+      if (version !== 'v3-leveled-a1-c2') {
+        localStorage.removeItem('speak_in_progress_edited_stories');
+        localStorage.setItem('speak_curriculum_version', 'v3-leveled-a1-c2');
+        return {};
+      }
       const saved = localStorage.getItem('speak_in_progress_edited_stories');
       return saved ? JSON.parse(saved) : {};
     } catch {
@@ -155,16 +161,30 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
     const storyMap = new Map<number, PracticeStory>();
     SAMPLE_STORIES.forEach((s) => storyMap.set(s.day, s));
 
-    // 2. Overlay user edited stories (only for valid days that match or exceed 5 paragraphs)
+    // 2. Overlay user edited stories (always preserving 5 paragraphs from canonical if edited data is incomplete)
     Object.values(editedStoriesMap).forEach((edited) => {
       if (edited && typeof edited.day === 'number' && edited.day >= 1) {
-        // Prevent stale 3-paragraph legacy cache from overwriting the official 5-paragraph curriculum
-        if (!edited.storyParagraphs || edited.storyParagraphs.length >= 5) {
-          storyMap.set(edited.day, {
-            ...edited,
-            level: edited.level || getLevelFromDay(edited.day),
-          });
-        }
+        const canonical = SAMPLE_STORIES.find((s) => s.day === edited.day);
+        const validParas =
+          Array.isArray(edited.storyParagraphs) && edited.storyParagraphs.length >= 5
+            ? edited.storyParagraphs
+            : canonical?.storyParagraphs || [];
+
+        storyMap.set(edited.day, {
+          ...(canonical || {}),
+          ...edited,
+          storyParagraphs: validParas,
+          introHook: edited.introHook || canonical?.introHook || '',
+          usefulExpressions:
+            Array.isArray(edited.usefulExpressions) && edited.usefulExpressions.length >= 3
+              ? edited.usefulExpressions
+              : canonical?.usefulExpressions || [],
+          retellingPrompts:
+            Array.isArray(edited.retellingPrompts) && edited.retellingPrompts.length >= 4
+              ? edited.retellingPrompts
+              : canonical?.retellingPrompts || [],
+          level: edited.level || canonical?.level || getLevelFromDay(edited.day),
+        });
       }
     });
 
@@ -178,13 +198,30 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
       }
     });
 
-    // 4. If logged into Cloud Firestore, overlay remote user scripts
+    // 4. If logged into Cloud Firestore, overlay remote user scripts BUT NEVER drop the 5 paragraphs!
     if (currentUser && cloudStories.length > 0) {
       cloudStories.forEach((remote) => {
         if (remote && typeof remote.day === 'number') {
+          const canonical = SAMPLE_STORIES.find((s) => s.day === remote.day);
+          const validParas =
+            Array.isArray(remote.storyParagraphs) && remote.storyParagraphs.length >= 5
+              ? remote.storyParagraphs
+              : canonical?.storyParagraphs || (Array.isArray(remote.storyParagraphs) && remote.storyParagraphs.length > 0 ? remote.storyParagraphs : []);
+
           storyMap.set(remote.day, {
+            ...(canonical || {}),
             ...remote,
-            level: remote.level || getLevelFromDay(remote.day),
+            storyParagraphs: validParas,
+            introHook: remote.introHook || canonical?.introHook || '',
+            usefulExpressions:
+              Array.isArray(remote.usefulExpressions) && remote.usefulExpressions.length >= 3
+                ? remote.usefulExpressions
+                : canonical?.usefulExpressions || [],
+            retellingPrompts:
+              Array.isArray(remote.retellingPrompts) && remote.retellingPrompts.length >= 4
+                ? remote.retellingPrompts
+                : canonical?.retellingPrompts || [],
+            level: remote.level || canonical?.level || getLevelFromDay(remote.day),
           });
         }
       });
@@ -204,6 +241,39 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
       setSelectedStory(allStories[0]);
     }
   }, [allStories]);
+
+  // Active story helpers that guarantee all 5 steps are 100% populated with real content for all 120 days
+  const activeParagraphs = useMemo(() => {
+    if (selectedStory && Array.isArray(selectedStory.storyParagraphs) && selectedStory.storyParagraphs.length >= 5) {
+      return selectedStory.storyParagraphs;
+    }
+    const canonical = SAMPLE_STORIES.find((s) => s.day === selectedStory?.day) || SAMPLE_STORIES[0];
+    return canonical.storyParagraphs;
+  }, [selectedStory]);
+
+  const activeIntroHook = useMemo(() => {
+    if (selectedStory?.introHook && selectedStory.introHook.trim().length > 10) {
+      return selectedStory.introHook;
+    }
+    const canonical = SAMPLE_STORIES.find((s) => s.day === selectedStory?.day) || SAMPLE_STORIES[0];
+    return canonical.introHook;
+  }, [selectedStory]);
+
+  const activeExpressions = useMemo(() => {
+    if (selectedStory?.usefulExpressions && selectedStory.usefulExpressions.length >= 3) {
+      return selectedStory.usefulExpressions;
+    }
+    const canonical = SAMPLE_STORIES.find((s) => s.day === selectedStory?.day) || SAMPLE_STORIES[0];
+    return canonical.usefulExpressions;
+  }, [selectedStory]);
+
+  const activeRetellingPrompts = useMemo(() => {
+    if (selectedStory?.retellingPrompts && selectedStory.retellingPrompts.length >= 4) {
+      return selectedStory.retellingPrompts;
+    }
+    const canonical = SAMPLE_STORIES.find((s) => s.day === selectedStory?.day) || SAMPLE_STORIES[0];
+    return canonical.retellingPrompts;
+  }, [selectedStory]);
 
   // Level Filter (A1 to C2 for 120 Days)
   const [selectedLevelFilter, setSelectedLevelFilter] = useState<string>('all');
@@ -431,7 +501,7 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
             setIsAutoScrolling((prev) => !prev);
           } else {
             setActiveParagraphIndex((prev) =>
-              prev < selectedStory.storyParagraphs.length - 1 ? prev + 1 : 0
+              prev < activeParagraphs.length - 1 ? prev + 1 : 0
             );
           }
         } else {
@@ -442,7 +512,7 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
           if (prompterMode === 'focus') {
             e.preventDefault();
             setActiveParagraphIndex((prev) =>
-              Math.min(selectedStory.storyParagraphs.length - 1, prev + 1)
+              Math.min(activeParagraphs.length - 1, prev + 1)
             );
           } else {
             setScrollSpeed((s) => Math.min(80, s + 5));
@@ -482,7 +552,7 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentStage, prompterMode, selectedStory.storyParagraphs.length]);
+  }, [currentStage, prompterMode, activeParagraphs.length]);
 
   const stagesList = ['intro', 'story', 'expressions', 'retelling', 'log'] as const;
 
@@ -502,8 +572,8 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
   };
 
   const storyWordCount = useMemo(() => {
-    return selectedStory.storyParagraphs.join(' ').split(/\s+/).filter(Boolean).length;
-  }, [selectedStory]);
+    return activeParagraphs.join(' ').split(/\s+/).filter(Boolean).length;
+  }, [activeParagraphs]);
 
   const estimatedWpm = useMemo(() => {
     return Math.round(scrollSpeed * 3.8);
@@ -639,16 +709,29 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
     setFormLevel(story.level || getLevelFromDay(story.day));
     setFormTitle(story.title);
     setFormTopic(story.topic || '');
-    setFormFocusSkill(story.focusSkill);
-    setFormStoryRawText(story.storyParagraphs.join('\n\n'));
-    setFormNotes(story.notes || '');
+    const canonical = SAMPLE_STORIES.find((s) => s.day === story.day);
+    const paras =
+      Array.isArray(story.storyParagraphs) && story.storyParagraphs.length >= 5
+        ? story.storyParagraphs
+        : canonical?.storyParagraphs || story.storyParagraphs || [];
+    setFormStoryRawText(paras.join('\n\n'));
+    setFormNotes(story.notes || canonical?.notes || '');
 
-    const phrases = [...story.usefulExpressions];
+    const expressions =
+      Array.isArray(story.usefulExpressions) && story.usefulExpressions.length >= 3
+        ? story.usefulExpressions
+        : canonical?.usefulExpressions || story.usefulExpressions || [];
+    const phrases = [...expressions];
     while (phrases.length < 3) {
       phrases.push({ phrase: '', meaning: '', example: '', speakingTip: '' });
     }
     setFormPhrases(phrases.slice(0, 3));
-    setFormAnchorsRaw(story.retellingPrompts.join('\n'));
+
+    const anchors =
+      Array.isArray(story.retellingPrompts) && story.retellingPrompts.length >= 4
+        ? story.retellingPrompts
+        : canonical?.retellingPrompts || story.retellingPrompts || [];
+    setFormAnchorsRaw(anchors.join('\n'));
     setFormError(null);
     setFormSuccessMessage(null);
     setIsFormDirty(false);
@@ -1312,8 +1395,8 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
             STAGE 1: VOICE-OVER INTRO (Customized for Faceless Recording)
             ========================================================= */}
         {currentStage === 'intro' && (() => {
-          const plainIntroText = selectedStory.introHook
-            ? selectedStory.introHook.replace(/^"|"$/g, '')
+          const plainIntroText = activeIntroHook
+            ? activeIntroHook.replace(/^"|"$/g, '')
             : `Hey everyone, welcome back to Speak in Progress! Today is Day ${selectedStory.day} of our spoken English journey. In this video, I'm working on ${selectedStory.focusSkill.toLowerCase()} through a real-world story about "${selectedStory.title}". Let's get right into it!`;
 
           return (
@@ -1362,8 +1445,8 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
                   </div>
                 </div>
                 <p className="text-base sm:text-lg text-stone-100 leading-relaxed font-sans">
-                  {selectedStory.introHook ? (
-                    selectedStory.introHook.replace(/^"|"$/g, '')
+                  {activeIntroHook ? (
+                    activeIntroHook.replace(/^"|"$/g, '')
                   ) : (
                     <>
                       "Hey everyone, welcome back to Speak in Progress! Today is{' '}
@@ -1473,7 +1556,7 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
                     Speaking Focus: <span className="text-emerald-300 font-medium">{selectedStory.focusSkill}</span>
                   </p>
                   <button
-                    onClick={() => handleCopyStory(selectedStory.storyParagraphs.join('\n\n'))}
+                    onClick={() => handleCopyStory(activeParagraphs.join('\n\n'))}
                     className="inline-flex items-center gap-1 text-[11px] font-semibold text-stone-400 hover:text-white transition-colors bg-stone-900/80 px-2 py-0.5 rounded border border-white/10"
                     title="Copy full story text"
                   >
@@ -1489,28 +1572,40 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
                 </div>
               </div>
 
-              {selectedStory.storyParagraphs.map((para, idx) => {
+              {activeParagraphs.map((para, idx) => {
                 const isFocused = prompterMode === 'focus' && idx === activeParagraphIndex;
                 return (
-                  <p
+                  <div
                     key={idx}
                     ref={(el) => {
-                      paragraphRefs.current[idx] = el;
+                      paragraphRefs.current[idx] = el as any;
                     }}
                     onClick={() => {
                       if (prompterMode === 'focus') setActiveParagraphIndex(idx);
                     }}
-                    style={{ fontSize: `${fontSize}px` }}
-                    className={`leading-relaxed transition-all duration-300 cursor-pointer rounded-2xl p-4 ${
+                    className={`transition-all duration-300 cursor-pointer rounded-2xl p-5 ${
                       prompterMode === 'focus'
                         ? isFocused
                           ? 'text-white font-medium bg-emerald-500/10 border border-emerald-500/30 scale-[1.01] shadow-lg'
                           : 'text-stone-500 hover:text-stone-400'
-                        : 'text-stone-200'
+                        : 'text-stone-200 hover:text-white'
                     }`}
                   >
-                    {para}
-                  </p>
+                    <div className="flex items-center gap-2 mb-2 select-none">
+                      <span
+                        className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-md ${
+                          isFocused
+                            ? 'bg-emerald-500 text-black'
+                            : 'bg-stone-900 text-stone-400 border border-white/5'
+                        }`}
+                      >
+                        Paragraph {idx + 1} of {activeParagraphs.length}
+                      </span>
+                    </div>
+                    <p style={{ fontSize: `${fontSize}px` }} className="leading-relaxed">
+                      {para}
+                    </p>
+                  </div>
                 );
               })}
 
@@ -1537,7 +1632,7 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
             </div>
 
             <div className="grid grid-cols-1 gap-4 pt-2">
-              {selectedStory.usefulExpressions.map((exp, idx) => (
+              {activeExpressions.map((exp, idx) => (
                 <div
                   key={idx}
                   className="p-5 rounded-2xl bg-stone-950 border border-white/10 space-y-2 hover:border-emerald-500/40 transition-all shadow-sm"
@@ -1633,7 +1728,7 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
               </div>
 
               <div className="space-y-2">
-                {selectedStory.retellingPrompts.map((anchor, idx) => {
+                {activeRetellingPrompts.map((anchor, idx) => {
                   const isChecked = !!checkedAnchors[idx];
                   return (
                     <div
@@ -1664,7 +1759,7 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
                   <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest">
                     Quick Peek Reference
                   </span>
-                  {selectedStory.storyParagraphs.map((p, i) => (
+                  {activeParagraphs.map((p, i) => (
                     <p key={i} className="leading-relaxed">
                       {p}
                     </p>
@@ -1815,15 +1910,15 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
                     <ChevronLeft className="w-4 h-4" />
                   </button>
                   <span className="text-xs font-mono text-stone-300 px-2">
-                    {activeParagraphIndex + 1} / {selectedStory.storyParagraphs.length}
+                    {activeParagraphIndex + 1} / {activeParagraphs.length}
                   </span>
                   <button
                     onClick={() =>
                       setActiveParagraphIndex((prev) =>
-                        Math.min(selectedStory.storyParagraphs.length - 1, prev + 1)
+                        Math.min(activeParagraphs.length - 1, prev + 1)
                       )
                     }
-                    disabled={activeParagraphIndex === selectedStory.storyParagraphs.length - 1}
+                    disabled={activeParagraphIndex === activeParagraphs.length - 1}
                     className="p-2 rounded-lg bg-stone-800 text-stone-200 hover:text-white disabled:opacity-30"
                     title="Next paragraph (Down Arrow or Space)"
                   >
@@ -2098,7 +2193,7 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
                             )}
                           </div>
                           <p className="text-xs text-stone-400 truncate max-w-xl">
-                            {s.focusSkill} · {s.storyParagraphs.length} paragraphs · {s.usefulExpressions.length} expressions
+                            {s.focusSkill} · {Array.isArray(s.storyParagraphs) && s.storyParagraphs.length > 0 ? s.storyParagraphs.length : 5} paragraphs · {Array.isArray(s.usefulExpressions) && s.usefulExpressions.length > 0 ? s.usefulExpressions.length : 3} expressions
                           </p>
                         </div>
 

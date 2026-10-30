@@ -14,6 +14,12 @@ import { randomUUID } from 'crypto';
 const app = express();
 const PORT = 3000;
 
+// Security & SEO: Guarantee all API routes are never indexed or archived by web crawlers
+app.use('/api', (_req, res, next) => {
+  res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
+  next();
+});
+
 // Handle raw binary video bodies up to 100MB
 app.use('/api/convert-video', express.raw({ type: '*/*', limit: '100mb' }));
 

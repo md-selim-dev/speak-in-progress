@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  * 
  * 120-Day Spoken English Curriculum - Days 1–30: A1 Foundations & A2 Real-World Fluency
+ * Strictly leveled from A1 beginner ease to C2 capstone mastery.
  * Each day features 5 rich paragraphs, unique conversational openings, and curated expressions.
  */
 
@@ -16,47 +17,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Habits & Daily Life",
     "focusSkill": "Describing routines & time transitions",
-    "estimatedReadTime": "2 min 30 sec",
-    "introHook": "Morning everyone! Day 1 is finally here on Speak in Progress. Today I'm tackling morning routines and how putting our phones away can completely reset the way we think and speak. Let's get right into it!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Good morning everyone, welcome to Day 1 of Speak in Progress! Today I'm talking about simple morning habits and how waking up without your phone can help you think and speak more clearly. Let's get right into it!",
     "storyParagraphs": [
-      "For three straight years, my alarm would buzz at 6:30 AM, and my fingers would instinctively reach for my phone before my eyelids were even fully open. Without realizing it, forty-five precious minutes would evaporate into mindless social media feeds and urgent work emails.",
-      "By the time I finally dragged myself out of bed, my mind felt cluttered, rushed, and anxious before the day had even officially begun. I noticed that my speech in early meetings was hesitant, scattered, and lacking genuine enthusiasm.",
-      "Last month, I reached a breaking point and decided on a simple rule: no screens for the first thirty minutes of each morning. I bought a retro analog alarm clock, banished my phone to the kitchen counter overnight, and swapped screen time for a large glass of water and ten quiet minutes of journaling.",
-      "The initial three days were surprisingly uncomfortable because the urge to check notifications was almost magnetic. But by the end of the first week, a profound calm settled in. My thoughts became clearer, my breathing slowed down, and I felt in control of my time rather than constantly reacting to external noise.",
-      "That subtle routine shift transformed my spoken confidence. Consequently, my mornings stopped feeling like a frantic race, and I gradually reclaimed the mental bandwidth needed to communicate with intention and poise."
+      "For a long time, my mornings were very disorganized. Every day, my alarm went off at 6:30 AM, and the first thing I did was pick up my phone. I would lie in bed and scroll through social media for forty-five minutes without noticing the time.",
+      "Because of this, I always started my day in a big rush. I felt tired, hurried, and stressed before I even left the house. In my morning meetings, I found it hard to speak clearly because my mind was still half asleep.",
+      "One day, I decided to make a real change in my daily routine. I bought a simple alarm clock and put my smartphone in the kitchen before going to bed. In the morning, instead of looking at a screen, I drank a glass of water and wrote in my journal for ten minutes.",
+      "The first few mornings felt a bit difficult. My hands wanted to reach for my phone automatically. But after one week, I noticed a big difference. I felt much calmer, my breathing was steady, and my thoughts were clear.",
+      "This small shift completely changed my mornings. Consequently, I started each day with more focus and energy. Gradually, I became more confident when speaking to others, proving that a calm morning leads to a better day."
     ],
     "usefulExpressions": [
       {
-        "phrase": "reclaim mental bandwidth",
-        "meaning": "to regain cognitive energy and mental clarity",
-        "example": "Turning off phone notifications helped me reclaim mental bandwidth for deep work.",
-        "speakingTip": "Stress 'reclaim' and 'bandwidth' with clean enunciation."
+        "phrase": "pick up",
+        "meaning": "to take something into your hand",
+        "example": "The first thing I did was pick up my phone.",
+        "speakingTip": "Link 'pick' and 'up' together smoothly: pick-up."
       },
       {
-        "phrase": "reach a breaking point",
-        "meaning": "to arrive at a moment where a situation can no longer be tolerated",
-        "example": "After weeks of poor sleep, I reached a breaking point and changed my schedule.",
-        "speakingTip": "Link 'breaking' and 'point' smoothly without a pause."
+        "phrase": "in a rush",
+        "meaning": "hurrying because you have very little time",
+        "example": "I was in a rush, so I almost missed the bus.",
+        "speakingTip": "Keep the rhythm steady and stress 'rush'."
       },
       {
-        "phrase": "consequently",
-        "meaning": "as a direct result or consequence; therefore",
-        "example": "I practiced speaking daily; consequently, my hesitation disappeared.",
-        "speakingTip": "Clear stress on the first syllable: CON-se-quent-ly."
+        "phrase": "gradually",
+        "meaning": "slowly over time, step by step",
+        "example": "Gradually, my speaking confidence improved every single day.",
+        "speakingTip": "Pronounce clearly: GRAD-u-al-ly."
       }
     ],
     "retellingPrompts": [
-      "The old 6:30 AM automatic phone-scrolling habit",
-      "Feeling rushed and mentally cluttered before work started",
-      "Moving the phone to the kitchen and using an analog clock",
-      "The uncomfortable first week of breaking the digital impulse",
-      "Reclaiming calm, focus, and conversational confidence"
+      "Waking up at 6:30 AM and scrolling on the phone",
+      "Feeling hurried, tired, and hesitant to speak in meetings",
+      "Moving the phone to the kitchen and using an alarm clock",
+      "Feeling calmer, more focused, and speaking with steady energy"
     ],
     "reflectionPrompts": [
-      "Did I use transitions like 'consequently' and 'gradually' naturally?",
-      "Was my pacing calm and unhurried throughout all 5 paragraphs?"
+      "How naturally did I express today's takeaway: \"Smooth retelling; practiced transitions ('consequently', 'gradually')\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 1: Foundations · CEFR A1 · Core Takeaway: Smooth retelling; practiced transitions ('consequently', 'gradually')"
+    "notes": "Phase 1: Foundations · CEFR A1 · Delivery: Smooth retelling; practiced transitions ('consequently', 'gradually')"
   },
   {
     "id": "day-2",
@@ -65,47 +65,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Travel & Commuting",
     "focusSkill": "Sequencing past events & delays",
-    "estimatedReadTime": "2 min 30 sec",
-    "introHook": "What happens when your everyday commute turns into an unexpected test of patience? Today on Day 2 of Speak in Progress, we're diving into sequencing delays and keeping your cool. Let's jump into the story!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 2! Commuting to work or school can be unpredictable. Today's story is about dealing with a sudden train delay without losing your patience. Let's begin!",
     "storyParagraphs": [
-      "Last Thursday, what was supposed to be a breezy twenty-minute subway ride into the city center turned into an unexpected lesson in human nature. Just as our express train entered the underground tunnel between two major stations, the brakes hissed violently and the carriages ground to a sudden halt.",
-      "A collective sigh rippled through the crowded train cars as the overhead fluorescent lights flickered twice and switched to faint amber emergency power. In the dim lighting, commuters exchanged nervous glances, murmuring quiet complaints and tapping their watches with growing impatience.",
-      "Ten agonizing minutes passed with no announcement until the conductor's crackling voice finally echoed through the speakers, explaining that a mechanical signal failure on the tracks ahead was being urgently repaired. The initial tension in the carriage slowly dissolved into shared resignation.",
-      "Instead of letting frustration stew inside me, I decided to observe the small gestures unfolding around me. A young college student stood up to offer his seat to an elderly woman holding heavy groceries, and two strangers nearby struck up an impromptu conversation about their favorite coffee shops.",
-      "By the time the train finally lurched forward and daylight spilled through the windows again, I had learned something valuable. We cannot control train signals or unexpected delays, but taking disruptions in stride is what keeps our peace of mind intact."
+      "Yesterday morning, I walked to the train station as usual at 8:00 AM. The weather was cool and sunny, and I expected to arrive at my office twenty minutes before my shift started.",
+      "However, while I was waiting on the platform, a loud announcement came over the speakers. The station manager announced that the train was delayed by forty minutes due to a track issue.",
+      "At first, many passengers around me looked upset and started complaining. I felt my chest tighten because I had an important team presentation scheduled for 9:30 AM.",
+      "Instead of panicking, I took three slow breaths and sent a quick message to my manager explaining the delay. Then, I found an empty bench, opened my notebook, and practiced reviewing my presentation notes aloud.",
+      "When the train finally arrived, I felt completely prepared. Using that unexpected delay for calm practice turned an annoying problem into a productive morning."
     ],
     "usefulExpressions": [
       {
-        "phrase": "grind to a sudden halt",
-        "meaning": "to stop abruptly after slowing down with friction",
-        "example": "The bus ground to a sudden halt when the traffic light flashed red.",
-        "speakingTip": "Crisp ending 'd' on 'ground' and sharp 't' on 'halt'."
+        "phrase": "as usual",
+        "meaning": "in the normal or customary way",
+        "example": "I walked to the station at eight o'clock as usual.",
+        "speakingTip": "Link 'as' and 'usual' together naturally."
       },
       {
-        "phrase": "strike up a conversation",
-        "meaning": "to begin speaking with someone in a casual and friendly way",
-        "example": "While waiting in line, she struck up a conversation with the barista.",
-        "speakingTip": "Blend 'strike' and 'up' into a smooth verbal flow: stry-kup."
+        "phrase": "due to",
+        "meaning": "because of a specific reason",
+        "example": "The train was delayed due to heavy rain.",
+        "speakingTip": "Do not stop between 'due' and 'to'."
       },
       {
-        "phrase": "take in stride",
-        "meaning": "to deal with a difficult situation calmly and without getting upset",
-        "example": "A seasoned traveler takes unexpected flight delays in stride.",
-        "speakingTip": "Keep the rhythm flowing: take-it-in-stride."
+        "phrase": "turn into",
+        "meaning": "to transform or change into something else",
+        "example": "A simple delay turned into a great practice session.",
+        "speakingTip": "Stress 'turn' and softly blend 'into'."
       }
     ],
     "retellingPrompts": [
-      "The train grinding to a halt in the dark tunnel",
-      "The lights flickering and the conductor's announcement",
-      "The transition from irritation to collective patience",
-      "Strangers helping each other and striking up conversation",
-      "The realization that attitude matters more than the delay"
+      "Walking to the train station on a sunny morning",
+      "Hearing the announcement about a 40-minute train delay",
+      "Sending a polite message to the manager instead of panicking",
+      "Practicing speaking notes on the bench and arriving prepared"
     ],
     "reflectionPrompts": [
-      "Did I contrast past simple and past continuous naturally?",
-      "Did my vocal tone reflect the shift from tension to calm?"
+      "How naturally did I express today's takeaway: \"Used past continuous effectively when describing train delay\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 1: Foundations · CEFR A1 · Core Takeaway: Used past continuous effectively when describing train delay"
+    "notes": "Phase 1: Foundations · CEFR A1 · Delivery: Used past continuous effectively when describing train delay"
   },
   {
     "id": "day-3",
@@ -114,47 +113,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Food & Culture",
     "focusSkill": "Giving step-by-step instructions",
-    "estimatedReadTime": "2 min 30 sec",
-    "introHook": "Have you ever stumbled across an old handwritten recipe that immediately brought back your childhood? In Day 3 of Speak in Progress, we're exploring food, family memories, and giving clear step-by-step instructions. Let's get cooking!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Welcome to Day 3 of Speak in Progress! Cooking is one of the best ways to practice step-by-step English instructions. Today I'm sharing the story of rediscovering my grandmother's soup recipe!",
     "storyParagraphs": [
-      "Tucked away behind the torn cardboard spine of an old family cookbook, I discovered a yellowed, grease-stained index card written in my grandmother's delicate cursive script. It was her legendary recipe for slow-cooked spiced beef stew—a dish that used to fill our home with warmth every Sunday evening.",
-      "Determined to recreate that unforgettable flavor, I spent the afternoon hunting down authentic spices at the local grocery store. The recipe notes were brief but strict: you could not rush the preparation, and every single step required deliberate patience.",
-      "First, I heated olive oil in a heavy Dutch oven, sautéing finely diced shallots and crushed garlic until they turned rich and translucent. Next, I seared the seasoned meat over high heat to lock in the juices before adding roasted cumin, cracked pepper, and a cinnamon stick that instantly perfumed the entire apartment.",
-      "Once the broth was brought to a gentle boil, I turned the flame down and let the stew simmer quietly on low heat for nearly three hours. As steam escaped the heavy lid, the savory aroma transported me straight back to my grandmother's wooden dining table twenty years ago.",
-      "Serving the finished dish to my family that night was pure magic. It wasn't one hundred percent identical to my grandmother's masterpiece, but it proved that learning to describe processes with sensory details makes storytelling come alive."
+      "Last Sunday afternoon, I found a yellowed recipe card tucked inside an old cookbook. It was my grandmother's handwritten recipe for homemade vegetable soup, which I had not tasted in years.",
+      "First, I went to the grocery store and bought fresh carrots, potatoes, onions, and garlic. Back in my kitchen, I washed the vegetables thoroughly and chopped them into small, even pieces.",
+      "Next, I heated a spoonful of olive oil in a large pot and gently sautéed the onions until they turned soft and golden. Then, I added the vegetables and poured in warm vegetable broth.",
+      "I let the soup simmer on low heat for forty-five minutes. As the aroma filled my apartment, fond childhood memories came rushing back of Sunday family dinners.",
+      "Finally, I tasted the soup, added a pinch of black pepper, and served it warm. Preparing that simple meal taught me that clear step-by-step instructions make both cooking and speaking enjoyable."
     ],
     "usefulExpressions": [
       {
-        "phrase": "sauté until translucent",
-        "meaning": "to cook vegetables quickly in oil until they appear soft and clear",
-        "example": "Sauté the chopped onions until translucent before adding the spices.",
-        "speakingTip": "French loanword: saw-TAY with stress on the second syllable."
+        "phrase": "step by step",
+        "meaning": "moving forward one stage at a time in order",
+        "example": "I followed the recipe step by step.",
+        "speakingTip": "Keep an even rhythm across all three words."
       },
       {
         "phrase": "simmer on low heat",
-        "meaning": "to cook gently just below the boiling point",
-        "example": "Let the sauce simmer on low heat so the rich flavors can meld together.",
-        "speakingTip": "Crisp short 'i' in simmer."
+        "meaning": "to cook gently just below boiling point",
+        "example": "Let the soup simmer on low heat for thirty minutes.",
+        "speakingTip": "Soft 's' sound in simmer; don't rush."
       },
       {
-        "phrase": "transport someone back",
-        "meaning": "to evoke strong sensory memories of a past time or place",
-        "example": "The scent of cedar always transports me back to summer camp.",
-        "speakingTip": "Link 'transports' and 'me' with clean rhythm."
+        "phrase": "a pinch of",
+        "meaning": "a tiny amount taken between your finger and thumb",
+        "example": "Add a pinch of salt to balance the flavor.",
+        "speakingTip": "Link 'pinch' and 'of': pinch-of."
       }
     ],
     "retellingPrompts": [
-      "Finding the yellowed recipe card in grandmother's script",
-      "Gathering the fresh spices and reading the strict notes",
-      "Sautéing shallots and searing the meat over high heat",
-      "Letting the stew simmer quietly on low heat for hours",
-      "Sharing the meal and discovering the joy of sensory descriptions"
+      "Finding grandmother's old handwritten recipe card",
+      "Washing and chopping fresh vegetables in the kitchen",
+      "Sautéing onions and letting the broth simmer slowly",
+      "Tasting the warm soup and enjoying childhood memories"
     ],
     "reflectionPrompts": [
-      "Did I use sequential connectors (first, next, once, finally) cleanly?",
-      "Did my descriptive words evoke taste and smell effectively?"
+      "How naturally did I express today's takeaway: \"Reviewing step-by-step culinary verbs ('simmer', 'sauté')\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 1: Foundations · CEFR A1 · Core Takeaway: Reviewing step-by-step culinary verbs ('simmer', 'sauté')"
+    "notes": "Phase 1: Foundations · CEFR A1 · Delivery: Reviewing step-by-step culinary verbs ('simmer', 'sauté')"
   },
   {
     "id": "day-4",
@@ -163,47 +161,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Community & Local Life",
     "focusSkill": "Describing sensory details & places",
-    "estimatedReadTime": "2 min 30 sec",
-    "introHook": "Hey everyone! Day 4 is all about sensory language—capturing the vivid colors, rich aromas, and bustling energy of a Saturday neighborhood market. If you want your English to sound descriptive and alive, let's explore this together!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey guys, welcome to Day 4! Today we're exploring sensory descriptions. Come along with me to our local neighborhood market on a bustling Saturday morning!",
     "storyParagraphs": [
-      "Before the morning fog has even cleared from the riverbanks, our neighborhood open-air market is already buzzing with vibrant activity. Wooden crates are stacked high along cobblestone walkways, overflowing with crisp crisp heirloom apples, earthy rosemary bunches, and warm sourdough loaves fresh from the stone oven.",
-      "What always draws me to this weekend market isn't merely the need for organic groceries; it is the rich, multidimensional sensory experience. The sharp, roasted scent of freshly ground espresso mingles with the damp perfume of cut wildflowers and sweet cinnamon pastries.",
-      "Farmers in canvas aprons greet regular customers by name, offering thin slices of aged cheddar cheese and juicy stone fruits on wooden toothpicks. Nearby, a local street musician strums a mellow bossa nova melody on an acoustic guitar, adding a warm soundtrack to the morning rush.",
-      "I paused by a honey vendor's stall, where jars of wildflower and clover honey glowed like amber under the soft morning sunlight. The beekeeper excitedly explained how seasonal rainfall had changed the nectar's floral profile this year, speaking with genuine pride about his craft.",
-      "Walking away with a basket full of fresh greens and warm bread, I felt a deep sense of contentment. Describing places using sights, sounds, and textures is the fastest way to make your spoken English feel authentic, colorful, and engaging."
+      "Every Saturday at nine in the morning, our local neighborhood square turns into a lively outdoor market. You can hear chatter from friendly vendors calling out their daily specials.",
+      "As soon as you walk in, the rich smell of freshly roasted coffee beans and warm cinnamon bread catches your attention. Colorful stalls are packed with ripe strawberries, yellow lemons, and crisp green lettuce.",
+      "I stopped at my favorite fruit stall where an elderly vendor named Marco greeted me with a warm smile. He offered me a fresh slice of sweet orange to sample before I made my purchase.",
+      "I enjoyed practicing small conversational questions with him. I asked about where the fruits were grown and thanked him warmly for his friendly recommendation.",
+      "Walking through the bustling market energized all my senses. Describing what I saw, smelled, and heard gave me plenty of natural vocabulary for everyday conversation."
     ],
     "usefulExpressions": [
       {
-        "phrase": "buzz with activity",
-        "meaning": "to be full of lively movement, sound, and energy",
-        "example": "The airport terminal was buzzing with holiday activity.",
-        "speakingTip": "Emphasize the vibrant 'z' buzz sound."
+        "phrase": "bustling",
+        "meaning": "full of lively activity and busy people",
+        "example": "The Saturday market was bustling with excited shoppers.",
+        "speakingTip": "The 't' is silent: pronounce it BUS-ling."
       },
       {
-        "phrase": "mingle with",
-        "meaning": "to mix or combine smoothly with other elements",
-        "example": "The aroma of roasted coffee mingled with the salty ocean breeze.",
-        "speakingTip": "Soft 'g' sound in mingle: MING-guhl."
+        "phrase": "catch one's attention",
+        "meaning": "to make someone notice something interesting",
+        "example": "The colorful fruit display immediately caught my attention.",
+        "speakingTip": "Stress 'caught' and 'attention'."
       },
       {
-        "phrase": "sense of contentment",
-        "meaning": "a state of peaceful satisfaction and happiness",
-        "example": "After finishing the project, she felt a profound sense of contentment.",
-        "speakingTip": "Even stress across 'con-TENT-ment'."
+        "phrase": "greet with a smile",
+        "meaning": "to welcome someone in a warm, friendly way",
+        "example": "The shopkeeper greeted every customer with a friendly smile.",
+        "speakingTip": "Say this with a warm, open tone."
       }
     ],
     "retellingPrompts": [
-      "The market waking up under the early morning fog",
-      "Sensory descriptions of bread, espresso, and wildflowers",
-      "Friendly interactions between local farmers and neighbors",
-      "The beekeeper explaining how rain affected his clover honey",
-      "How sensory vocabulary brings spoken storytelling to life"
+      "The neighborhood square turning into a market on Saturday",
+      "The smell of fresh coffee and sight of colorful fruit stalls",
+      "Chatting with the friendly fruit vendor Marco",
+      "Using sensory details to describe sights, sounds, and smells"
     ],
     "reflectionPrompts": [
-      "Did I emphasize sensory adjectives without sounding like a list?",
-      "Was my pacing lively and expressive?"
+      "How naturally did I express today's takeaway: \"Vid 4 recorded; high vocal energy and clear cadence\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 1: Foundations · CEFR A1 · Core Takeaway: Vid 4 recorded; high vocal energy and clear cadence"
+    "notes": "Phase 1: Foundations · CEFR A1 · Delivery: Vid 4 recorded; high vocal energy and clear cadence"
   },
   {
     "id": "day-5",
@@ -212,47 +209,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Personal Narratives",
     "focusSkill": "Using past simple & continuous smoothly",
-    "estimatedReadTime": "2 min 30 sec",
-    "introHook": "Do you have a childhood memory that still feels completely vivid decades later? Today on Day 5 of Speak in Progress, we're exploring personal narratives and mastering the contrast between past simple and past continuous. Let's travel back in time!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Welcome to Day 5 on Speak in Progress! Personal stories are the heart of human connection. Today I'm looking back at a memorable childhood summer afternoon.",
     "storyParagraphs": [
-      "Whenever the midsummer humidity reaches its peak, my mind inevitably wanders back to a specific lazy afternoon when I was ten years old. In the far corner of my grandfather's garden stood an ancient, sprawling banyan tree whose knotted branches reached outward like welcoming arms.",
-      "My cousin and I had spent the entire morning constructing an imaginary pirate lookout on the widest horizontal branch. While we were sitting high above the sunbaked clay tiles, watching bright red dragonflies dart across the garden pond, the world felt infinitely safe and endlessly exciting.",
-      "Suddenly, a sharp crack echoed through the foliage, and the thin branch supporting our wooden treasure box gave way. The box plummeted into the soft flowerbed below, scattering our collection of polished river pebbles, plastic action figures, and secret hand-drawn maps across the grass.",
-      "We held our breath for a few terrified seconds before looking at each other's wide eyes, and then we burst into uncontrollable laughter that echoed down the quiet village lane. My grandfather walked out, saw the scattered toys, chuckled softly, and handed us two chilled slices of sweet watermelon.",
-      "Looking back now, I realize that true happiness rarely comes from elaborate arrangements, but from being completely present in simple, unscripted moments. Using past continuous to set the background of your stories gives listeners a vivid movie in their minds."
+      "When I was nine years old, summer holidays felt like they lasted forever. My best friend Leo and I spent almost every afternoon riding our bicycles down the quiet gravel paths near our hometown.",
+      "One warm July afternoon, we decided to build a wooden treehouse at the edge of the community forest. We gathered old wooden planks from my neighbor's yard and carried a small toolbox.",
+      "While we were hammering the base into a sturdy oak tree, dark rain clouds suddenly rolled across the sky. Within minutes, a heavy summer thunderstorm began pouring down.",
+      "We took shelter under the thick branches of the tree, laughing as the rain drummed against the leaves. Even though our clothes were soaked, we felt completely adventurous and happy.",
+      "Looking back at that afternoon reminds me that simple childhood moments create lasting stories. Talking about memories helps us practice natural past tense sentences with genuine emotion."
     ],
     "usefulExpressions": [
       {
-        "phrase": "wander back to",
-        "meaning": "to drift in thought back to an earlier memory or time",
-        "example": "My mind often wanders back to those quiet summer evenings.",
-        "speakingTip": "Soft open 'w' sound; distinct from 'wonder'."
+        "phrase": "look back at",
+        "meaning": "to remember or reflect on past events",
+        "example": "When I look back at my childhood, I smile.",
+        "speakingTip": "Link 'look' and 'back' smoothly."
       },
       {
-        "phrase": "give way",
-        "meaning": "to break, collapse, or yield under pressure",
-        "example": "The old wooden bridge gave way after the heavy rainstorm.",
-        "speakingTip": "Short, crisp phrasing: give-way."
+        "phrase": "take shelter",
+        "meaning": "to find a safe place from bad weather or danger",
+        "example": "We took shelter under the tree until the rain stopped.",
+        "speakingTip": "Stress 'shelter' with a clear 'sh' sound."
       },
       {
-        "phrase": "burst into laughter",
-        "meaning": "to suddenly start laughing loudly and uncontrollably",
-        "example": "The entire room burst into laughter at the comedian's punchline.",
-        "speakingTip": "Sharp initial 'b' followed by crisp 't' in burst."
+        "phrase": "within minutes",
+        "meaning": "in a very short period of time",
+        "example": "Within minutes, the sky turned dark and rain began.",
+        "speakingTip": "Keep the cadence fast and lively."
       }
     ],
     "retellingPrompts": [
-      "The ancient banyan tree in grandfather's village garden",
-      "Building an imaginary pirate lookout with my cousin",
-      "The branch giving way and the treasure box dropping",
-      "Grandfather's warm reaction and chilled watermelon",
-      "Setting background scenes with past continuous tense"
+      "Riding bicycles during endless summer holidays at age nine",
+      "Deciding to build a wooden treehouse with friend Leo",
+      "The sudden summer thunderstorm soaking the forest",
+      "Taking shelter under the oak branches and sharing laughs"
     ],
     "reflectionPrompts": [
-      "Did I smoothly transition between background actions and sudden events?",
-      "Did my voice convey nostalgia and warmth?"
+      "How naturally did I express today's takeaway: \"Focus on fluid emotional pacing and past continuous\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 1: Foundations · CEFR A1 · Core Takeaway: Focus on fluid emotional pacing and past continuous"
+    "notes": "Phase 1: Foundations · CEFR A1 · Delivery: Focus on fluid emotional pacing and past continuous"
   },
   {
     "id": "day-6",
@@ -261,47 +257,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Problem Solving",
     "focusSkill": "Explaining cause, effect & relief",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey friends! Day 6 is here, and today we're exploring \"The Lost Wallet\". We're zeroing in on explaining cause, effect & relief and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hello friends, welcome to Day 6! Have you ever lost your wallet? Today I'm narrating a nerve-racking problem-solving story and the sweet feeling of relief when it was solved.",
     "storyParagraphs": [
-      "Standing at the doorway before heading into the lost wallet, my immediate instinct was to overthink every single detail. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Practice building narrative tension and relief. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "Last Friday afternoon, I got off the city bus and reached into my coat pocket to grab my bus pass. To my sudden shock, my pocket was completely empty and my leather wallet was gone.",
+      "My heart started racing because my wallet contained my driver's license, credit cards, and some emergency cash. I retraced my footsteps back to the bus stop, but the bus had already driven away.",
+      "I immediately sat down on a nearby bench, took a deep breath, and thought about the next logical step. Instead of panicking, I used my mobile banking app to temporarily freeze my credit cards.",
+      "Then, I called the city transit customer service desk and politely described the exact bus route and the black leather wallet I had lost. The agent told me that the bus driver had just handed it in.",
+      "An hour later, I picked up my wallet from the central transit office with everything inside untouched. That experience taught me to explain problems clearly and stay calm under pressure."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "to one's shock",
+        "meaning": "feeling very surprised and upset",
+        "example": "To my shock, my wallet was missing from my bag.",
+        "speakingTip": "Say 'shock' with short, crisp emphasis."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "take a deep breath",
+        "meaning": "to pause and inhale slowly to calm yourself",
+        "example": "Before calling customer service, I took a deep breath.",
+        "speakingTip": "Elongate the vowel sound in 'deep'."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "hand in",
+        "meaning": "to give something to someone in authority",
+        "example": "An honest passenger handed in the lost wallet to the driver.",
+        "speakingTip": "Link 'hand' and 'in': hand-in."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the lost wallet",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Practice building narrative tension and relie..."
+      "Reaching into coat pocket and realizing the wallet was missing",
+      "Feeling anxious about cards and driver's license",
+      "Freezing credit cards calmly on the phone app",
+      "Calling transit office and collecting the wallet with relief"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Practice building narrative tension and relief\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 1: Foundations · CEFR A1 · Difficulty: B1 Easy · Takeaway: Practice building narrative tension and relief"
+    "notes": "Phase 1: Foundations · CEFR A1 · Delivery: Practice building narrative tension and relief"
   },
   {
     "id": "day-7",
@@ -310,47 +305,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Wellbeing & Lifestyle",
     "focusSkill": "Expressing personal opinions & habits",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey everyone, welcome to Day 7 on Speak in Progress! Today's story centers on \"Sunday Digital Detox\". If you've ever felt tested while handling wellbeing & lifestyle, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Welcome to Day 7 of Speak in Progress! We live in a world of constant notifications. Today's story is about my first Sunday digital detox and how it refreshed my mind.",
     "storyParagraphs": [
-      "If someone had warned me that sunday digital detox would test my patience this week, I probably would have laughed it off. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Expressing lifestyle trade-offs and mindfulness. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "Two weeks ago, I realized that I was looking at phone screens for over six hours every single day. My eyes were strained, and my mind felt constantly distracted even during quiet evenings.",
+      "So last Sunday morning, I decided to do a complete digital detox. I switched off my smartphone, shut down my laptop, and put both devices inside my desk drawer for twenty-four hours.",
+      "At first, the silence in my apartment felt strange. I caught myself reaching into my empty pocket several times out of pure habit.",
+      "To fill my day, I took a long afternoon walk in the city botanical garden without listening to any podcasts or checking the news. I sat on a bench, listened to the birds, and read forty pages of a paper book.",
+      "By Sunday night, my mind felt deeply refreshed and peaceful. Giving up digital screens for just one day proved that quiet time gives us the mental space to speak with clarity."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "digital detox",
+        "meaning": "a period of time when you avoid using electronic devices",
+        "example": "I do a digital detox every Sunday to rest my eyes.",
+        "speakingTip": "Clear stress on 'digital' and 'detox'."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "out of habit",
+        "meaning": "doing something automatically without thinking",
+        "example": "I checked my watch out of habit even though it was broken.",
+        "speakingTip": "Link 'out', 'of', and 'habit' smoothly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "give up",
+        "meaning": "to stop using or doing something",
+        "example": "Giving up screens for a day helped me sleep much better.",
+        "speakingTip": "Blend 'give' and 'up': give-up."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of sunday digital detox",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Expressing lifestyle trade-offs and mindfulne..."
+      "Realizing daily screen time was over six hours",
+      "Turning off phone and laptop and putting them in a drawer",
+      "Overcoming the habit of constantly reaching for the phone",
+      "Walking in the botanical garden and feeling refreshed"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Expressing lifestyle trade-offs and mindfulness\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 1: Foundations · CEFR A1 · Difficulty: B1 Easy · Takeaway: Expressing lifestyle trade-offs and mindfulness"
+    "notes": "Phase 1: Foundations · CEFR A1 · Delivery: Expressing lifestyle trade-offs and mindfulness"
   },
   {
     "id": "day-8",
@@ -359,47 +353,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Workplace & Career",
     "focusSkill": "Introducing ideas & polite agreeing",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 8 of Speak in Progress, we're exploring \"The First Team Meeting\" and practicing introducing ideas & polite agreeing through real-life scenarios. Hit that play button and let's practice together!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 8! Team meetings can be intimidating when you're a new member. Today I'm sharing how I handled my very first project team meeting with confidence.",
     "storyParagraphs": [
-      "There is an unwritten rule in modern workplace & career that nobody really talks about until the first team meeting forces the issue. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Professional diplomatic language and interjections. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "On my third day at my new job, my manager invited me to join the weekly department strategy meeting. Eight senior colleagues were seated around a large conference table discussing upcoming goals.",
+      "At first, I felt nervous that my English would sound awkward or hesitant in front of experienced professionals. My palms were sweaty, and I mostly focused on taking careful notes in my notepad.",
+      "About halfway through the meeting, the project leader turned to me and asked for my perspective on user feedback. My heart leaped, but I reminded myself to speak slowly and clearly.",
+      "I began by politely agreeing with a colleague's earlier point, saying, 'I completely agree with Sarah, and I'd like to add one simple observation.' Then I shared two concise examples from my notes.",
+      "My teammates nodded approvingly and thanked me for the useful insight. That experience showed me that active listening and polite phrasing make introducing ideas feel natural."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "take notes",
+        "meaning": "to write down important information to remember later",
+        "example": "I took careful notes during the whole presentation.",
+        "speakingTip": "Link 'take' and 'notes' cleanly."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "I'd like to add",
+        "meaning": "a polite way to introduce your opinion in a discussion",
+        "example": "I'd like to add one quick suggestion before we move on.",
+        "speakingTip": "Keep the tone respectful, light, and confident."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "nod approvingly",
+        "meaning": "to move your head up and down to show agreement",
+        "example": "The manager nodded approvingly when I shared my idea.",
+        "speakingTip": "Stress the second syllable: ap-PROV-ing-ly."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the first team meeting",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Professional diplomatic language and interjec..."
+      "Joining the weekly strategy meeting on my third day at work",
+      "Feeling nervous about speaking in front of senior colleagues",
+      "Being asked for perspective by the project leader",
+      "Agreeing politely with Sarah and sharing clear examples"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Professional diplomatic language and interjections\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 1: Foundations · CEFR A1 · Difficulty: B1 Easy · Takeaway: Professional diplomatic language and interjections"
+    "notes": "Phase 1: Foundations · CEFR A1 · Delivery: Professional diplomatic language and interjections"
   },
   {
     "id": "day-9",
@@ -408,47 +401,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Workplace & Career",
     "focusSkill": "Expressing urgency & prioritization",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Welcome back to Day 9 of our spoken English journey! Today we are tackling \"Navigating a Project Deadline\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Welcome to Day 9! Deadlines are part of every job. Today's story is about prioritizing tasks when a tight project deadline arrives unexpectedly.",
     "storyParagraphs": [
-      "The moment the email landed in my inbox regarding navigating a project deadline, I knew this was not going to be a routine afternoon. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Expressing trade-offs, milestones, and urgency. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "On Tuesday morning, our client contacted our team requesting an urgent summary report by Thursday afternoon. We originally expected to have two full weeks to deliver the completed work.",
+      "With only forty-eight hours remaining, the atmosphere in our workspace became tense. Everyone began talking at once, and confusion started spreading about who should do what.",
+      "Recognizing the urgency, our team leader called a five-minute huddle. She drew three columns on the whiteboard: 'Must Do Now', 'Can Wait Until Friday', and 'Nice to Have'.",
+      "We quickly divided the primary tasks according to our individual strengths. My responsibility was reviewing the customer data charts and drafting the executive summary section.",
+      "By focusing only on high-priority milestones, we submitted the polished report three hours before the client's deadline. When urgency strikes, clear prioritization prevents unnecessary stress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "tight deadline",
+        "meaning": "a deadline that allows very little time to finish work",
+        "example": "We worked late because we had a very tight deadline.",
+        "speakingTip": "Crisp 't' sound at the end of 'tight'."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "prioritize",
+        "meaning": "to treat something as more important than other things",
+        "example": "When time is short, you must prioritize your top tasks.",
+        "speakingTip": "Stress the first syllable: pri-OR-i-tize."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "ahead of schedule",
+        "meaning": "finished earlier than the planned time",
+        "example": "Our team finished the project three hours ahead of schedule.",
+        "speakingTip": "Pronounce 'schedule' as SKED-jule."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of navigating a project deadline",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Expressing trade-offs, milestones, and urgenc..."
+      "A client suddenly asking for a report within 48 hours",
+      "Tension and confusion spreading in the workspace",
+      "The team leader drawing three clear priority columns on the board",
+      "Submitting the finished report hours ahead of the deadline"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Expressing trade-offs, milestones, and urgency\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 1: Foundations · CEFR A1 · Difficulty: B1 Easy · Takeaway: Expressing trade-offs, milestones, and urgency"
+    "notes": "Phase 1: Foundations · CEFR A1 · Delivery: Expressing trade-offs, milestones, and urgency"
   },
   {
     "id": "day-10",
@@ -457,47 +449,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Professional Communication",
     "focusSkill": "Asking clarifying questions politely",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hello and welcome to Day 10! Today we're diving into \"The Client Clarification Call\" within the world of professional communication. Our main speaking focus today is asking clarifying questions politely. Let's speak with confidence and natural rhythm!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey guys, welcome to Day 10 of Speak in Progress! Asking clarifying questions is a superpower. Today I'm sharing how a quick phone call saved our team from a major misunderstanding.",
     "storyParagraphs": [
-      "I used to believe that handling the client clarification call was mostly a matter of technical know-how, but reality taught me otherwise. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Diplomatic circumlocution and confirmation. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "Last Wednesday, we received a confusing email from an international client. Their project instructions had several contradictory details about delivery dates and product specifications.",
+      "Some of my colleagues wanted to guess their meaning and start working immediately to save time. However, I knew that guessing often leads to expensive mistakes and frustrated clients.",
+      "I volunteered to call the client's project manager to clarify the requirements directly. Before dialing, I wrote down three polite, specific questions in my notebook.",
+      "During the call, I used diplomatic questions like, 'Just to make sure we are on the same page, do you prefer delivery on Monday or Wednesday?' The client was very grateful for the clarification.",
+      "In less than ten minutes, we cleared up every single question and avoided days of wasted effort. Asking clarifying questions politely is never a weakness; it builds mutual trust."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "on the same page",
+        "meaning": "having the same understanding or agreement",
+        "example": "Let's review the timeline so we are all on the same page.",
+        "speakingTip": "Link 'same' and 'page' in a warm, collaborative tone."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "make sure",
+        "meaning": "to check something so you are certain about it",
+        "example": "Please make sure to double-check the final numbers.",
+        "speakingTip": "Stress 'sure'."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "clear up",
+        "meaning": "to explain or solve a misunderstanding or doubt",
+        "example": "That five-minute phone call cleared up all our doubts.",
+        "speakingTip": "Link 'clear' and 'up': clear-up."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the client clarification call",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Diplomatic circumlocution and confirmation..."
+      "Receiving a confusing email with contradictory project dates",
+      "Resisting the urge to guess and avoid making mistakes",
+      "Writing down three polite clarifying questions before calling",
+      "Confirming all requirements and building client trust in 10 minutes"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Diplomatic circumlocution and confirmation\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 1: Foundations · CEFR A1 · Difficulty: B1 Easy · Takeaway: Diplomatic circumlocution and confirmation"
+    "notes": "Phase 1: Foundations · CEFR A1 · Delivery: Diplomatic circumlocution and confirmation"
   },
   {
     "id": "day-11",
@@ -506,47 +497,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Team Collaboration",
     "focusSkill": "Giving and receiving feedback tactfully",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Today is Day 11 on Speak in Progress, and we have an exciting real-world story about \"A Constructive Feedback Session\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Welcome to Day 11 on Speak in Progress! Feedback helps us grow, but it can be uncomfortable. Today I'm sharing a story about a constructive feedback session that changed how I communicate.",
     "storyParagraphs": [
-      "We were halfway through our weekly sprint when an unexpected obstacle surrounding a constructive feedback session brought everything to a temporary pause. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Constructive phrasing and active listening. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "A few months ago, I gave a twenty-minute presentation on marketing strategies to my department. I felt proud of the colorful slides, but I wasn't sure how effectively my message came across.",
+      "The next morning, my senior colleague David invited me for coffee. He smiled warmly and asked if I would be open to hearing some quick observations about my presentation style.",
+      "David started by praising my clear visual examples and vocal energy. Then, he gently pointed out that I spoke too quickly during key points and rarely paused to let the audience digest important numbers.",
+      "At first, hearing that critique made me feel slightly self-conscious. But David explained that pausing shows confidence, not hesitation. He even showed me how to take a deliberate breath after key sentences.",
+      "In my very next presentation, I practiced pausing between major points. The audience was much more engaged, proving that constructive feedback is a gift when you listen with an open mind."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "come across",
+        "meaning": "to be understood or perceived in a particular way",
+        "example": "I wanted my message to come across clearly and kindly.",
+        "speakingTip": "Blend 'come' and 'across' smoothly."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "open to",
+        "meaning": "willing to receive ideas, advice, or suggestions",
+        "example": "I am always open to constructive feedback from my peers.",
+        "speakingTip": "Link 'open' and 'to' naturally."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "self-conscious",
+        "meaning": "worried about what other people think of you",
+        "example": "I felt self-conscious when I made a small pronunciation error.",
+        "speakingTip": "Pronounce clearly: self-CON-scious."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of a constructive feedback session",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Constructive phrasing and active listening..."
+      "Giving a departmental marketing presentation with colorful slides",
+      "Meeting colleague David for a constructive feedback coffee chat",
+      "Learning that speaking too fast without pausing weakens the message",
+      "Practicing deliberate pauses in the next meeting with great results"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Constructive phrasing and active listening\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Difficulty: B1 Easy · Takeaway: Constructive phrasing and active listening"
+    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Delivery: Constructive phrasing and active listening"
   },
   {
     "id": "day-12",
@@ -555,47 +545,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Casual Office Life",
     "focusSkill": "Small talk & conversational humor",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey friends! Day 12 is here, and today we're exploring \"The Coffee Machine Malfunction\". We're zeroing in on small talk & conversational humor and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 12! Workplace humor brings teams closer together. Today's story is about a funny coffee machine malfunction that turned strangers into friends.",
     "storyParagraphs": [
-      "Stepping out of my usual comfort zone, I found myself right in the middle of the coffee machine malfunction, looking for the right words to say. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Spontaneous banter and situational humor. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "Every office has a central meeting spot, and in ours, it was definitely the shiny Italian espresso machine in the fourth-floor breakroom. It was famous for making delicious coffee and occasionally behaving unpredictably.",
+      "Last Thursday at 8:45 AM, I stood in line behind our quiet financial controller, Thomas. He pressed the button for a double espresso, but the machine made a strange gurgling sound and began shaking.",
+      "Suddenly, a tiny stream of frothy milk sprayed directly across the counter and lightly splashed Thomas's sleeve. We both froze in surprise for a second, wondering what on earth had just happened.",
+      "Instead of getting angry, Thomas looked at his wet cuff, smiled, and said, 'Well, I guess the machine thinks I need a shower more than coffee today!' The whole room erupted into warm laughter.",
+      "We worked together to unplug the machine and wipe down the counter. That small moment of shared humor broke the ice and made Thomas one of my favorite morning conversation partners."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "break the ice",
+        "meaning": "to make people feel relaxed and comfortable in a social setting",
+        "example": "A light joke helped break the ice before our interview started.",
+        "speakingTip": "Stress 'ice' with a crisp 's' sound."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "burst into laughter",
+        "meaning": "to suddenly start laughing out loud",
+        "example": "Everyone in the kitchen burst into laughter after his funny comment.",
+        "speakingTip": "Say 'burst' with energetic momentum."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "wipe down",
+        "meaning": "to clean a surface thoroughly using a cloth",
+        "example": "We helped each other wipe down the kitchen counter.",
+        "speakingTip": "Link 'wipe' and 'down'."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the coffee machine malfunction",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Spontaneous banter and situational humor..."
+      "Waiting in line for coffee at the office espresso machine",
+      "The machine gurgling and accidentally spraying milk on Thomas",
+      "Thomas making a lighthearted joke instead of getting frustrated",
+      "Cleaning the counter together and becoming great friends"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Spontaneous banter and situational humor\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Difficulty: B1 Easy · Takeaway: Spontaneous banter and situational humor"
+    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Delivery: Spontaneous banter and situational humor"
   },
   {
     "id": "day-13",
@@ -604,47 +593,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Professional Communication",
     "focusSkill": "Persuasion & presenting clear benefits",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey everyone, welcome to Day 13 on Speak in Progress! Today's story centers on \"Pitching a Simple Process Improvement\". If you've ever felt tested while handling professional communication, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Welcome to Day 13! Big changes start with small improvements. Today's story is about pitching a simple file-organization idea that saved our team hours every week.",
     "storyParagraphs": [
-      "I never realized how much was riding on pitching a simple process improvement until a normal workday suddenly shifted out of nowhere. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Structuring value propositions and ROI. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "In our creative department, finding shared project files on our shared drive was always a headache. Everyone had their own naming system, so searching for old client logos took fifteen minutes of frustration.",
+      "I noticed that our team wasted at least two hours each week simply looking for misplaced documents. I decided to propose a simple, standardized folder structure to solve the issue.",
+      "Instead of writing a long boring email, I created a short one-page visual guide with three clear rules: year first, client name second, and version number last.",
+      "At our Friday stand-up meeting, I presented the idea in two minutes. I showed a quick before-and-after comparison and highlighted the benefit: saving each person twenty minutes every single day.",
+      "The team loved the simplicity of the plan and adopted the new naming rules that very afternoon. Presenting ideas with clear benefits and visual simplicity makes persuasion easy."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "a headache",
+        "meaning": "a continuous cause of worry, difficulty, or annoyance",
+        "example": "Finding old invoices was always a huge headache for the team.",
+        "speakingTip": "Stress the first syllable: HEAD-ache."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "before-and-after",
+        "meaning": "comparing the previous state with the improved result",
+        "example": "A before-and-after chart clearly demonstrated the time savings.",
+        "speakingTip": "Link the words smoothly: before-and-after."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "adopt an idea",
+        "meaning": "to officially accept and start using a suggestion",
+        "example": "Our manager gladly adopted the new organization system.",
+        "speakingTip": "Stress the second syllable: a-DOPT."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of pitching a simple process improvement",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Structuring value propositions and ROI..."
+      "Spending fifteen minutes searching for files in disorganized folders",
+      "Calculating that the team was wasting hours every single week",
+      "Designing a one-page visual guide with three simple naming rules",
+      "Presenting the solution at Friday standup and getting instant adoption"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Structuring value propositions and ROI\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Difficulty: B1 Easy · Takeaway: Structuring value propositions and ROI"
+    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Delivery: Structuring value propositions and ROI"
   },
   {
     "id": "day-14",
@@ -653,47 +641,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Self-Reflection",
     "focusSkill": "Summarizing progress & key lessons",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 14 of Speak in Progress, we're exploring \"Reflecting on the First Two Weeks\" and practicing summarizing progress & key lessons through real-life scenarios. Hit that play button and let's practice together!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, Day 14 is here! Two weeks of consistent daily speaking. Today I'm reflecting on my progress, the fears I overcame, and celebrating small victories along the way.",
     "storyParagraphs": [
-      "The clock on the wall read 2:15 PM, and the tension in the room was palpable as we prepared for reflecting on the first two weeks. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Self-critique without anxiety, celebrating wins. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "Two weeks ago, when I began this 120-day speaking journey, turning on the microphone filled me with nervous hesitation. I worried constantly about my accent, my grammar, and stumbling over basic words.",
+      "During the first few recordings, I stopped and restarted the video three or four times whenever I made a tiny pronunciation slip. I was chasing perfection rather than focusing on real communication.",
+      "Around Day 7, I made a conscious mental commitment: no restarting allowed. If I stumbled over a word, I would simply smile, take a breath, correct myself naturally, and keep speaking forward.",
+      "That simple shift liberated my confidence. Today, on Day 14, I notice that my sentences flow much more smoothly, my vocal energy is higher, and I actually look forward to pressing record.",
+      "Reflecting on these first two weeks reminds me that progress comes from persistence, not perfection. Celebrate every small win, because each recorded day brings you closer to effortless fluency."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "look forward to",
+        "meaning": "to feel happy and excited about something that will happen",
+        "example": "I truly look forward to my daily morning speaking practice.",
+        "speakingTip": "Blend 'forward' and 'to' with an upbeat vocal rise."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "stumble over",
+        "meaning": "to hesitate or make an error while speaking",
+        "example": "It is completely normal to stumble over an unfamiliar word.",
+        "speakingTip": "Link 'stumble' and 'over': stum-ble-over."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "step forward",
+        "meaning": "to make positive progress toward a goal",
+        "example": "Every single video you record is a major step forward.",
+        "speakingTip": "Stress 'step' and 'forward' evenly."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of reflecting on the first two weeks",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Self-critique without anxiety, celebrating wi..."
+      "Feeling nervous and restarting videos on the first few days",
+      "Chasing impossible perfection instead of natural communication",
+      "Setting a no-restart rule on Day 7 to embrace natural mistakes",
+      "Noticing smoother speech, higher energy, and celebrating 14 days"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Self-critique without anxiety, celebrating wins\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Difficulty: B1 Easy · Takeaway: Self-critique without anxiety, celebrating wins"
+    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Delivery: Self-critique without anxiety, celebrating wins"
   },
   {
     "id": "day-15",
@@ -702,47 +689,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Travel & Exploration",
     "focusSkill": "Negotiating solutions at service counters",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Welcome back to Day 15 of our spoken English journey! Today we are tackling \"Booking the Wrong Train\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Welcome to Day 15 on Speak in Progress! Travel always brings unexpected surprises. Today I'm sharing the story of booking the wrong train ticket and negotiating a polite solution at the station.",
     "storyParagraphs": [
-      "Two weeks ago, an unexpected conversation about booking the wrong train completely challenged how I approach travel & exploration. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Live problem solving and polite assertiveness. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "Last month, I planned a weekend trip to visit an old university friend in Chicago. In a rush while booking tickets on my phone late at night, I accidentally selected 6:00 AM instead of 6:00 PM.",
+      "I only noticed the embarrassing mistake when I arrived at the train station on Friday evening with my packed suitcase. The ticket scanner beeped red, and the screen flashed 'Expired Ticket'.",
+      "My stomach dropped, but I knew that getting angry would not fix the situation. I walked over to the customer service counter where a busy station agent named David was answering queries.",
+      "I smiled politely and explained my honest mistake clearly: 'Excuse me, sir. I mistakenly booked the morning train instead of the evening one. Could you please check if there is an open seat on the next departure?'",
+      "David appreciated my polite tone and calm attitude. He checked his terminal and waived the transfer fee, rebooking me onto the 7:15 PM train. Polite assertiveness always opens doors."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "in a rush",
+        "meaning": "hurrying because you have very little time",
+        "example": "I booked the wrong ticket because I was in a rush.",
+        "speakingTip": "Keep the rhythm flowing without pauses."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "honest mistake",
+        "meaning": "an unintentional error made without bad intentions",
+        "example": "I made an honest mistake with the departure time.",
+        "speakingTip": "Stress 'honest' with a silent 'h': ON-est."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "waive a fee",
+        "meaning": "to officially remove or forgive a standard charge",
+        "example": "The kind agent agreed to waive the rebooking fee.",
+        "speakingTip": "Clear 'w' sound: WAIVE."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of booking the wrong train",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Live problem solving and polite assertiveness..."
+      "Accidentally booking a 6:00 AM ticket instead of 6:00 PM",
+      "The ticket scanner beeping red on Friday evening at the station",
+      "Approaching the customer service agent with a polite explanation",
+      "Getting rebooked on the next train with the transfer fee waived"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Live problem solving and polite assertiveness\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Difficulty: B1 Easy · Takeaway: Live problem solving and polite assertiveness"
+    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Delivery: Live problem solving and polite assertiveness"
   },
   {
     "id": "day-16",
@@ -751,47 +737,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Food & Culture",
     "focusSkill": "Describing flavors & cultural novelties",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hello and welcome to Day 16! Today we're diving into \"A Taste of Street Food in Bangkok\" within the world of food & culture. Our main speaking focus today is describing flavors & cultural novelties. Let's speak with confidence and natural rhythm!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome to Day 16! Food connects all cultures. Today's story takes us to the vibrant night markets of Bangkok, Thailand, where I tasted authentic street food for the first time!",
     "storyParagraphs": [
-      "Few everyday dilemmas cause as much hesitation as a taste of street food in bangkok, especially when everyone is watching how you respond. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Sensory descriptions, textures, and enthusiasm. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "During my first evening in Bangkok, the bustling streets were alive with the sounds of sizzling woks and honking tuk-tuks. The warm evening air was filled with sweet coconut milk and spicy chili aromas.",
+      "My local friend guide led me down a narrow alley to a busy wooden cart surrounded by hungry diners. The vendor was tossing fresh flat noodles into a smoking hot wok with incredible speed.",
+      "She served us two steaming bowls of authentic Pad Thai topped with crunchy peanuts, fresh lime, and golden scrambled eggs. The vibrant presentation looked like a work of culinary art.",
+      "Taking my first bite was an explosion of contrasting flavors. The tanginess of the tamarind juice balanced perfectly with the sweetness of palm sugar and the subtle heat of red chili flakes.",
+      "Describing international food experiences teaches us expressive sensory words like 'tangy', 'crispy', and 'aromatic'. Eating street food together proved that delicious food needs no translation."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "an explosion of flavors",
+        "meaning": "a sudden and intense combination of delicious tastes",
+        "example": "That first spoonful was an explosion of sweet and spicy flavors.",
+        "speakingTip": "Stress 'explosion' with enthusiasm."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "balance perfectly",
+        "meaning": "to combine two elements in equal, pleasing harmony",
+        "example": "The fresh lime balanced the rich sweetness perfectly.",
+        "speakingTip": "Link 'balance' and 'perfectlyn cleanly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "work of art",
+        "meaning": "something created with exceptional beauty or skill",
+        "example": "The vibrant street food dish looked like a work of art.",
+        "speakingTip": "Say with genuine appreciation."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of a taste of street food in bangkok",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Sensory descriptions, textures, and enthusias..."
+      "Walking through the lively, aromatic night markets of Bangkok",
+      "Finding a busy street cart with a vendor tossing fresh noodles",
+      "Serving steaming bowls of Pad Thai with peanuts and fresh lime",
+      "Experiencing the rich balance of tangy and savory flavors"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Sensory descriptions, textures, and enthusiasm\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Difficulty: B1 Intermediate · Takeaway: Sensory descriptions, textures, and enthusiasm"
+    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Delivery: Sensory descriptions, textures, and enthusiasm"
   },
   {
     "id": "day-17",
@@ -800,47 +785,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Interpersonal Skills",
     "focusSkill": "Setting boundaries with tact & grace",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Today is Day 17 on Speak in Progress, and we have an exciting real-world story about \"The Art of Saying No\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Welcome to Day 17! Saying yes to everything leads to exhaustion. Today's story is about the interpersonal art of saying 'no' politely without damaging relationships.",
     "storyParagraphs": [
-      "It started with an offhand remark by the coffee machine that soon escalated into a serious discussion about the art of saying no. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Firm yet respectful boundary-setting. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "For most of my early career, I was a chronic people-pleaser. Whenever a colleague asked me to help with an extra project or cover their shift, I instinctively said yes, even when my own schedule was overflowing.",
+      "Inevitably, taking on too much work led to late nights, poor sleep, and rising frustration. I realized that saying yes to everyone else meant saying no to my own health and priorities.",
+      "I decided to practice setting boundaries with tact and grace. I memorized a simple, professional script: 'Thank you for thinking of me! I would love to help, but my current commitments won't allow me to give this the attention it deserves.'",
+      "The first time I used that response with a teammate, I held my breath, fearing they would be offended. To my relief, they smiled warmly, completely understood, and found another volunteer.",
+      "Learning to say no politely protects your mental energy and earns genuine respect from your colleagues. Respectful boundaries are essential for sustainable professional growth."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "people-pleaser",
+        "meaning": "someone who tries too hard to make everyone else happy",
+        "example": "Being a people-pleaser made my daily workload unmanageable.",
+        "speakingTip": "Stress 'people' and link into 'pleaser'."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "set boundaries",
+        "meaning": "to establish clear limits on what you will accept or do",
+        "example": "It is healthy to set boundaries between work and personal life.",
+        "speakingTip": "Stress the first syllable: BOUN-da-ries."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "with tact",
+        "meaning": "with careful diplomacy and consideration for other feelings",
+        "example": "She declined the invitation with tact and grace.",
+        "speakingTip": "Short, crisp 'tact'."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the art of saying no",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Firm yet respectful boundary-setting..."
+      "Always saying yes to extra requests due to people-pleasing habits",
+      "Experiencing exhaustion and realizing boundaries were necessary",
+      "Practicing a polite, clear script to decline extra commitments",
+      "Gaining coworker respect and protecting mental energy"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Firm yet respectful boundary-setting\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Difficulty: B1 Intermediate · Takeaway: Firm yet respectful boundary-setting"
+    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Delivery: Firm yet respectful boundary-setting"
   },
   {
     "id": "day-18",
@@ -849,47 +833,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Modern Debates",
     "focusSkill": "Comparing pros and cons with nuance",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey friends! Day 18 is here, and today we're exploring \"Remote Work vs. Office Life\". We're zeroing in on comparing pros and cons with nuance and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey guys, welcome to Day 18 on Speak in Progress! Remote work vs. office life is the debate of our decade. Today I'm sharing balanced perspectives on both working styles.",
     "storyParagraphs": [
-      "Standing at the doorway before heading into remote work vs. office life, my immediate instinct was to overthink every single detail. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Balanced comparative discourse. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "Over the past three years, millions of professionals worldwide transitioned from busy downtown offices to working from home. Like many, I experienced both environments and discovered distinct advantages in each.",
+      "On the one hand, remote work offers unmatched flexibility and time savings. You don't have to battle crowded morning commute trains, and you can prepare healthy meals in your own kitchen at lunchtime.",
+      "On the other hand, working entirely from home can feel isolating. Spontaneous hallway conversations, creative whiteboard brainstorming, and after-work team celebrations are difficult to recreate over video calls.",
+      "Many modern companies are now embracing a hybrid model, allowing employees to work from home two days a week and collaborate in person for the remaining three.",
+      "Comparing pros and cons with nuance is an essential speaking skill. Rather than declaring one way superior, exploring balanced perspectives leads to thoughtful, mature discussions."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "on the one hand",
+        "meaning": "used to introduce the first perspective or argument",
+        "example": "On the one hand, working from home saves hours of travel.",
+        "speakingTip": "Pause slightly after saying this phrase."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "on the other hand",
+        "meaning": "used to balance the previous point with a contrasting one",
+        "example": "On the other hand, in-person meetings foster deeper team bonding.",
+        "speakingTip": "Use a thoughtful, contrasting vocal inflection."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "hybrid model",
+        "meaning": "a system combining both remote and in-office work",
+        "example": "Our company adopted a flexible hybrid model this year.",
+        "speakingTip": "Stress 'hybrid' with a clear 'h': HY-brid."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of remote work vs. office life",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Balanced comparative discourse..."
+      "The global transition from downtown offices to home desks",
+      "The flexibility and commute time saved through remote work",
+      "The social isolation and missed in-person creative energy",
+      "Embracing hybrid balance and practicing comparative speaking"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Balanced comparative discourse\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Difficulty: B1 Intermediate · Takeaway: Balanced comparative discourse"
+    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Delivery: Balanced comparative discourse"
   },
   {
     "id": "day-19",
@@ -898,47 +881,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Modern Debates",
     "focusSkill": "Presenting balanced viewpoints",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey everyone, welcome to Day 19 on Speak in Progress! Today's story centers on \"Smartphones at the Dinner Table\". If you've ever felt tested while handling modern debates, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Welcome to Day 19! Are phones ruining our dinners? Today's story looks at smartphones at the family dinner table and how one simple basket brought conversation back to life.",
     "storyParagraphs": [
-      "If someone had warned me that smartphones at the dinner table would test my patience this week, I probably would have laughed it off. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Nuanced social debate and argumentation. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "A few months ago at our weekly Sunday family dinner, I looked around the dining table and noticed an uncomfortable sight. Four family members were sitting in silence, each staring at a glowing phone screen.",
+      "Instead of discussing our week or laughing over funny stories, people were passively scrolling through sports scores, news updates, and social media notifications.",
+      "My mother gently proposed a new house rule: the 'Dinner Basket'. She placed a small woven basket on the hallway console table, and we all agreed to place our smartphones inside before sitting down to eat.",
+      "At first, there was a few seconds of awkward quiet as everyone adjusted to having empty hands. But within five minutes, my brother shared a hilarious story about his dog, and lively conversation broke out.",
+      "That simple dinner basket revived our connection. Presenting balanced viewpoints on modern technology helps us discuss real human habits with empathy and constructive solutions."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "look around",
+        "meaning": "to look at what is surrounding you in a space",
+        "example": "I looked around the table and saw everyone staring at screens.",
+        "speakingTip": "Link 'look' and 'around': look-around."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "break out",
+        "meaning": "to begin suddenly and energetically",
+        "example": "Laughter broke out after my brother told a funny joke.",
+        "speakingTip": "Stress 'out' with a warm tone."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "revive",
+        "meaning": "to bring new energy and life back into something",
+        "example": "Putting our phones away revived our evening dinner conversations.",
+        "speakingTip": "Clear 'v' sounds: re-VIVE."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of smartphones at the dinner table",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Nuanced social debate and argumentation..."
+      "Noticing everyone staring at phone screens at Sunday dinner",
+      "The absence of real conversation and laughter at the table",
+      "Mother introducing the woven 'Dinner Basket' house rule",
+      "Lively stories breaking out and enjoying genuine human connection"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Nuanced social debate and argumentation\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Difficulty: B1 Intermediate · Takeaway: Nuanced social debate and argumentation"
+    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Delivery: Nuanced social debate and argumentation"
   },
   {
     "id": "day-20",
@@ -947,47 +929,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A1",
     "topic": "Environment & Society",
     "focusSkill": "Discussing impact & long-term value",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 20 of Speak in Progress, we're exploring \"The Sustainable Shopping Habit\" and practicing discussing impact & long-term value through real-life scenarios. Hit that play button and let's practice together!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome to Day 20 on Speak in Progress! We made it to the completion of Level A1! Today's story is about building sustainable shopping habits that protect our planet.",
     "storyParagraphs": [
-      "There is an unwritten rule in modern environment & society that nobody really talks about until the sustainable shopping habit forces the issue. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Discussing long-term systemic impact. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "Every year, billions of single-use plastic bags and disposable packaging containers end up in landfills and oceans, causing long-term harm to wildlife and natural ecosystems.",
+      "Last year, I decided to take personal responsibility for my consumer footprint. I started carrying two washable canvas tote bags and a reusable water bottle in my daily backpack.",
+      "Whenever I go grocery shopping, I choose fresh fruits and vegetables without plastic wrapping and buy dry goods like rice and oats from bulk refill bins.",
+      "At first, remembering to pack clean reusable bags required conscious effort. But after a few weeks, it became second nature, and I felt proud reducing my household waste by nearly half.",
+      "Completing our first twenty days of speaking practice proves that small daily habits create massive transformations. Sustainable speaking, like sustainable living, grows stronger every single day."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "second nature",
+        "meaning": "so familiar that you do it automatically without thinking",
+        "example": "Carrying my reusable bag quickly became second nature.",
+        "speakingTip": "Stress 'second' and link into 'nature'."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "take responsibility",
+        "meaning": "to accept duty and accountability for your actions",
+        "example": "We can all take responsibility for reducing plastic waste.",
+        "speakingTip": "Clear enunciation on 're-spon-si-BIL-i-ty'."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "second to none",
+        "meaning": "better than everything else; the best",
+        "example": "The satisfaction of building a healthy habit is second to none.",
+        "speakingTip": "Smooth rhythm across all three words."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the sustainable shopping habit",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Discussing long-term systemic impact..."
+      "Reflecting on the environmental impact of single-use plastic",
+      "Carrying washable canvas tote bags in my everyday backpack",
+      "Choosing package-free produce and bulk refill groceries",
+      "Celebrating Day 20 milestone and building sustainable habits"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How naturally did I express today's takeaway: \"Discussing long-term systemic impact\"?",
+      "Did I maintain a steady, calm vocal pace across all 5 paragraphs?"
     ],
-    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Difficulty: B1 Intermediate · Takeaway: Discussing long-term systemic impact"
+    "notes": "Phase 2: Fluency & Speed · CEFR A1 · Delivery: Discussing long-term systemic impact"
   },
   {
     "id": "day-21",
@@ -996,47 +977,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A2",
     "topic": "Mindset & Learning",
     "focusSkill": "Narrating emotional growth & resilience",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Welcome back to Day 21 of our spoken English journey! Today we are tackling \"Overcoming Speaking Anxiety\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 21 on Speak in Progress! Today we're working on narrating emotional growth & resilience with a practical story about \"Overcoming Speaking Anxiety\". Let's jump in!",
     "storyParagraphs": [
-      "The moment the email landed in my inbox regarding overcoming speaking anxiety, I knew this was not going to be a routine afternoon. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Storytelling emotional arcs and breakthroughs. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with mindset & learning, many people struggle with narrating emotional growth & resilience. I remember a real-world situation involving overcoming speaking anxiety that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Storytelling emotional arcs and breakthroughs. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "get straight to the point",
+        "meaning": "to speak directly without wasting time on unimportant details",
+        "example": "Let's get straight to the point so we can solve the issue quickly.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "weigh the options",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "on a daily basis",
+        "meaning": "happening every single day as a regular habit",
+        "example": "I practice conversational English on a daily basis.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of overcoming speaking anxiety",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Storytelling emotional arcs and breakthroughs..."
+      "Facing the challenge of overcoming speaking anxiety",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Storytelling emotional arcs and breakthroughs"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Narrating emotional growth & resilience\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Storytelling emotional arcs and breakthroughs\"?"
     ],
-    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Difficulty: B1 Intermediate · Takeaway: Storytelling emotional arcs and breakthroughs"
+    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Takeaway: Storytelling emotional arcs and breakthroughs"
   },
   {
     "id": "day-22",
@@ -1045,47 +1025,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A2",
     "topic": "Customer Service",
     "focusSkill": "De-escalation & offering solutions",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hello and welcome to Day 22! Today we're diving into \"Resolving a Customer Complaint\" within the world of customer service. Our main speaking focus today is de-escalation & offering solutions. Let's speak with confidence and natural rhythm!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 22 on Speak in Progress! Today we're working on de-escalation & offering solutions with a practical story about \"Resolving a Customer Complaint\". Let's jump in!",
     "storyParagraphs": [
-      "I used to believe that handling resolving a customer complaint was mostly a matter of technical know-how, but reality taught me otherwise. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Customer de-escalation and positive framing. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with customer service, many people struggle with de-escalation & offering solutions. I remember a real-world situation involving resolving a customer complaint that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Customer de-escalation and positive framing. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "reach a consensus",
+        "meaning": "to arrive at an agreement shared by all members",
+        "example": "After a short discussion, the team reached a consensus.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "step back",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "in the long run",
+        "meaning": "over an extended period of future time",
+        "example": "Practicing speaking every morning pays off in the long run.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of resolving a customer complaint",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Customer de-escalation and positive framing..."
+      "Facing the challenge of resolving a customer complaint",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Customer de-escalation and positive framing"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"De-escalation & offering solutions\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Customer de-escalation and positive framing\"?"
     ],
-    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Difficulty: B1 Intermediate · Takeaway: Customer de-escalation and positive framing"
+    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Takeaway: Customer de-escalation and positive framing"
   },
   {
     "id": "day-23",
@@ -1094,47 +1073,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A2",
     "topic": "Business Strategy",
     "focusSkill": "Justifying costs & trade-offs",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Today is Day 23 on Speak in Progress, and we have an exciting real-world story about \"The Budget Allocation Debate\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 23 on Speak in Progress! Today we're working on justifying costs & trade-offs with a practical story about \"The Budget Allocation Debate\". Let's jump in!",
     "storyParagraphs": [
-      "We were halfway through our weekly sprint when an unexpected obstacle surrounding the budget allocation debate brought everything to a temporary pause. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Financial reasoning and priority defense. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with business strategy, many people struggle with justifying costs & trade-offs. I remember a real-world situation involving the budget allocation debate that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Financial reasoning and priority defense. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "get straight to the point",
+        "meaning": "to speak directly without wasting time on unimportant details",
+        "example": "Let's get straight to the point so we can solve the issue quickly.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "figure out",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "on a daily basis",
+        "meaning": "happening every single day as a regular habit",
+        "example": "I practice conversational English on a daily basis.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the budget allocation debate",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Financial reasoning and priority defense..."
+      "Facing the challenge of the budget allocation debate",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Financial reasoning and priority defense"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Justifying costs & trade-offs\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Financial reasoning and priority defense\"?"
     ],
-    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Difficulty: B1 Intermediate · Takeaway: Financial reasoning and priority defense"
+    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Takeaway: Financial reasoning and priority defense"
   },
   {
     "id": "day-24",
@@ -1143,47 +1121,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A2",
     "topic": "Career Development",
     "focusSkill": "STAR technique (Situation, Task, Action, Result)",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey friends! Day 24 is here, and today we're exploring \"Interviewing for the Dream Job\". We're zeroing in on star technique (situation, task, action, result) and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 24 on Speak in Progress! Today we're working on star technique (situation, task, action, result) with a practical story about \"Interviewing for the Dream Job\". Let's jump in!",
     "storyParagraphs": [
-      "Stepping out of my usual comfort zone, I found myself right in the middle of interviewing for the dream job, looking for the right words to say. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Concise, structured career storytelling. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with career development, many people struggle with star technique (situation, task, action, result). I remember a real-world situation involving interviewing for the dream job that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Concise, structured career storytelling. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "reach a consensus",
+        "meaning": "to arrive at an agreement shared by all members",
+        "example": "After a short discussion, the team reached a consensus.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "weigh the options",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "in the long run",
+        "meaning": "over an extended period of future time",
+        "example": "Practicing speaking every morning pays off in the long run.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of interviewing for the dream job",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Concise, structured career storytelling..."
+      "Facing the challenge of interviewing for the dream job",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Concise, structured career storytelling"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"STAR technique (Situation, Task, Action, Result)\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Concise, structured career storytelling\"?"
     ],
-    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Difficulty: B1 Intermediate · Takeaway: Concise, structured career storytelling"
+    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Takeaway: Concise, structured career storytelling"
   },
   {
     "id": "day-25",
@@ -1192,47 +1169,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A2",
     "topic": "Agile Problem Solving",
     "focusSkill": "Explaining change management calmly",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey everyone, welcome to Day 25 on Speak in Progress! Today's story centers on \"Managing a Sudden Project Pivot\". If you've ever felt tested while handling agile problem solving, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 25 on Speak in Progress! Today we're working on explaining change management calmly with a practical story about \"Managing a Sudden Project Pivot\". Let's jump in!",
     "storyParagraphs": [
-      "I never realized how much was riding on managing a sudden project pivot until a normal workday suddenly shifted out of nowhere. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Communicating agility under pressure. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with agile problem solving, many people struggle with explaining change management calmly. I remember a real-world situation involving managing a sudden project pivot that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Communicating agility under pressure. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "get straight to the point",
+        "meaning": "to speak directly without wasting time on unimportant details",
+        "example": "Let's get straight to the point so we can solve the issue quickly.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "step back",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "on a daily basis",
+        "meaning": "happening every single day as a regular habit",
+        "example": "I practice conversational English on a daily basis.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of managing a sudden project pivot",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Communicating agility under pressure..."
+      "Facing the challenge of managing a sudden project pivot",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Communicating agility under pressure"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Explaining change management calmly\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Communicating agility under pressure\"?"
     ],
-    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Difficulty: B1 Intermediate · Takeaway: Communicating agility under pressure"
+    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Takeaway: Communicating agility under pressure"
   },
   {
     "id": "day-26",
@@ -1241,47 +1217,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A2",
     "topic": "Cross-Cultural Communication",
     "focusSkill": "Clarifying intent & building empathy",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 26 of Speak in Progress, we're exploring \"A Cultural Misunderstanding Cleared\" and practicing clarifying intent & building empathy through real-life scenarios. Hit that play button and let's practice together!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 26 on Speak in Progress! Today we're working on clarifying intent & building empathy with a practical story about \"A Cultural Misunderstanding Cleared\". Let's jump in!",
     "storyParagraphs": [
-      "The clock on the wall read 2:15 PM, and the tension in the room was palpable as we prepared for a cultural misunderstanding cleared. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Empathy-building and cross-cultural clarity. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with cross-cultural communication, many people struggle with clarifying intent & building empathy. I remember a real-world situation involving a cultural misunderstanding cleared that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Empathy-building and cross-cultural clarity. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "reach a consensus",
+        "meaning": "to arrive at an agreement shared by all members",
+        "example": "After a short discussion, the team reached a consensus.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "figure out",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "in the long run",
+        "meaning": "over an extended period of future time",
+        "example": "Practicing speaking every morning pays off in the long run.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of a cultural misunderstanding cleared",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Empathy-building and cross-cultural clarity..."
+      "Facing the challenge of a cultural misunderstanding cleared",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Empathy-building and cross-cultural clarity"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Clarifying intent & building empathy\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Empathy-building and cross-cultural clarity\"?"
     ],
-    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Difficulty: B1 Intermediate · Takeaway: Empathy-building and cross-cultural clarity"
+    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Takeaway: Empathy-building and cross-cultural clarity"
   },
   {
     "id": "day-27",
@@ -1290,47 +1265,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A2",
     "topic": "Productivity",
     "focusSkill": "Structuring advice & best practices",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Welcome back to Day 27 of our spoken English journey! Today we are tackling \"Designing an Effective Daily Schedule\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 27 on Speak in Progress! Today we're working on structuring advice & best practices with a practical story about \"Designing an Effective Daily Schedule\". Let's jump in!",
     "storyParagraphs": [
-      "Two weeks ago, an unexpected conversation about designing an effective daily schedule completely challenged how I approach productivity. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Actionable advisory rhetoric and cadence. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with productivity, many people struggle with structuring advice & best practices. I remember a real-world situation involving designing an effective daily schedule that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Actionable advisory rhetoric and cadence. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "get straight to the point",
+        "meaning": "to speak directly without wasting time on unimportant details",
+        "example": "Let's get straight to the point so we can solve the issue quickly.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "weigh the options",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "on a daily basis",
+        "meaning": "happening every single day as a regular habit",
+        "example": "I practice conversational English on a daily basis.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of designing an effective daily schedule",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Actionable advisory rhetoric and cadence..."
+      "Facing the challenge of designing an effective daily schedule",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Actionable advisory rhetoric and cadence"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Structuring advice & best practices\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Actionable advisory rhetoric and cadence\"?"
     ],
-    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Difficulty: B1 Intermediate · Takeaway: Actionable advisory rhetoric and cadence"
+    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Takeaway: Actionable advisory rhetoric and cadence"
   },
   {
     "id": "day-28",
@@ -1339,47 +1313,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A2",
     "topic": "Public Speaking",
     "focusSkill": "Delivering punchy, concise messaging",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hello and welcome to Day 28! Today we're diving into \"The Elevator Pitch Challenge\" within the world of public speaking. Our main speaking focus today is delivering punchy, concise messaging. Let's speak with confidence and natural rhythm!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 28 on Speak in Progress! Today we're working on delivering punchy, concise messaging with a practical story about \"The Elevator Pitch Challenge\". Let's jump in!",
     "storyParagraphs": [
-      "Few everyday dilemmas cause as much hesitation as the elevator pitch challenge, especially when everyone is watching how you respond. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: High-impact hook and value proposition. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with public speaking, many people struggle with delivering punchy, concise messaging. I remember a real-world situation involving the elevator pitch challenge that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: High-impact hook and value proposition. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "reach a consensus",
+        "meaning": "to arrive at an agreement shared by all members",
+        "example": "After a short discussion, the team reached a consensus.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "step back",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "in the long run",
+        "meaning": "over an extended period of future time",
+        "example": "Practicing speaking every morning pays off in the long run.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the elevator pitch challenge",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: High-impact hook and value proposition..."
+      "Facing the challenge of the elevator pitch challenge",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: High-impact hook and value proposition"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Delivering punchy, concise messaging\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"High-impact hook and value proposition\"?"
     ],
-    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Difficulty: B1 Intermediate · Takeaway: High-impact hook and value proposition"
+    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Takeaway: High-impact hook and value proposition"
   },
   {
     "id": "day-29",
@@ -1388,47 +1361,46 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A2",
     "topic": "Leadership & Facilitation",
     "focusSkill": "Guiding group discussions & transitions",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Today is Day 29 on Speak in Progress, and we have an exciting real-world story about \"Hosting a Virtual Workshop\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 29 on Speak in Progress! Today we're working on guiding group discussions & transitions with a practical story about \"Hosting a Virtual Workshop\". Let's jump in!",
     "storyParagraphs": [
-      "It started with an offhand remark by the coffee machine that soon escalated into a serious discussion about hosting a virtual workshop. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Facilitation cues, transitions, and energy. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with leadership & facilitation, many people struggle with guiding group discussions & transitions. I remember a real-world situation involving hosting a virtual workshop that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Facilitation cues, transitions, and energy. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "get straight to the point",
+        "meaning": "to speak directly without wasting time on unimportant details",
+        "example": "Let's get straight to the point so we can solve the issue quickly.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "figure out",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "on a daily basis",
+        "meaning": "happening every single day as a regular habit",
+        "example": "I practice conversational English on a daily basis.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of hosting a virtual workshop",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Facilitation cues, transitions, and energy..."
+      "Facing the challenge of hosting a virtual workshop",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Facilitation cues, transitions, and energy"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Guiding group discussions & transitions\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Facilitation cues, transitions, and energy\"?"
     ],
-    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Difficulty: B1 Intermediate · Takeaway: Facilitation cues, transitions, and energy"
+    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Takeaway: Facilitation cues, transitions, and energy"
   },
   {
     "id": "day-30",
@@ -1437,46 +1409,45 @@ export const CURRICULUM_DAYS_1_TO_30: PracticeStory[] = [
     "level": "A2",
     "topic": "Milestone Celebration",
     "focusSkill": "Inspirational storytelling & future vision",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey friends! Day 30 is here, and today we're exploring \"The 30-Day Transformation Speech\". We're zeroing in on inspirational storytelling & future vision and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 30 on Speak in Progress! Today we're working on inspirational storytelling & future vision with a practical story about \"The 30-Day Transformation Speech\". Let's jump in!",
     "storyParagraphs": [
-      "Standing at the doorway before heading into the 30-day transformation speech, my immediate instinct was to overthink every single detail. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Inspiring narrative closure and milestone reflection. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with milestone celebration, many people struggle with inspirational storytelling & future vision. I remember a real-world situation involving the 30-day transformation speech that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Inspiring narrative closure and milestone reflection. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "reach a consensus",
+        "meaning": "to arrive at an agreement shared by all members",
+        "example": "After a short discussion, the team reached a consensus.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "weigh the options",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "in the long run",
+        "meaning": "over an extended period of future time",
+        "example": "Practicing speaking every morning pays off in the long run.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the 30-day transformation speech",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Inspiring narrative closure and milestone ref..."
+      "Facing the challenge of the 30-day transformation speech",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Inspiring narrative closure and milestone reflection"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Inspirational storytelling & future vision\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Inspiring narrative closure and milestone reflection\"?"
     ],
-    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Difficulty: B1 Intermediate · Takeaway: Inspiring narrative closure and milestone reflection"
+    "notes": "Phase 3: Advanced Mastery · CEFR A2 · Takeaway: Inspiring narrative closure and milestone reflection"
   }
 ];

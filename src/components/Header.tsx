@@ -6,13 +6,16 @@
 import React from 'react';
 import { BrandIdentity } from '../types';
 import { LogoMark } from './LogoMark';
-import { Radio } from 'lucide-react';
+import { User } from 'firebase/auth';
+import { LogOut, Globe, UserCheck } from 'lucide-react';
 
 interface HeaderProps {
   activeBrand: BrandIdentity;
   activeTab: 'identity' | 'tone' | 'channel' | 'teleprompter' | 'export';
   setActiveTab: (tab: 'identity' | 'tone' | 'channel' | 'teleprompter' | 'export') => void;
   onQuickRecord: () => void;
+  currentUser?: User | null;
+  onSignOut?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -20,6 +23,8 @@ export const Header: React.FC<HeaderProps> = ({
   activeTab,
   setActiveTab,
   onQuickRecord,
+  currentUser,
+  onSignOut,
 }) => {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-white/[0.08] bg-stone-950/85 backdrop-blur-xl shadow-card-elevated">
@@ -55,10 +60,10 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Zone 2: 4-5 single-line navigation links with animated active state */}
         <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-stone-400">
           {[
-            { id: 'identity', label: 'Brand Identity' },
-            { id: 'tone', label: 'Tone Bible' },
-            { id: 'channel', label: 'Banner & Channel' },
             { id: 'teleprompter', label: 'Teleprompter Studio' },
+            { id: 'identity', label: 'Brand Identity' },
+            { id: 'tone', label: 'Voice & Tone' },
+            { id: 'channel', label: 'Banner & Channel' },
             { id: 'export', label: 'Export Kit' },
           ].map((item) => {
             const isActive = activeTab === item.id;
@@ -87,8 +92,8 @@ export const Header: React.FC<HeaderProps> = ({
           })}
         </nav>
 
-        {/* Zone 3: 1 primary action with glowing modern depth */}
-        <div className="flex items-center gap-3 shrink-0">
+        {/* Zone 3: Actions & Quick Record */}
+        <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
           <button
             onClick={onQuickRecord}
             className="group relative px-4 py-2 text-xs font-bold text-white rounded-xl transition-all duration-300 hover:scale-[1.03] active:scale-95 whitespace-nowrap shrink-0 flex items-center gap-2 overflow-hidden shadow-modern-glow"
@@ -106,16 +111,28 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
             <span className="relative font-extrabold">Record Screen</span>
           </button>
+
+          {/* Clean, quiet Sign Out action */}
+          {onSignOut && (
+            <button
+              onClick={onSignOut}
+              className="px-3 py-2 text-xs font-semibold text-stone-400 hover:text-white bg-stone-900/90 hover:bg-stone-800 rounded-xl border border-white/10 transition-all flex items-center gap-1.5"
+              title="Sign Out"
+            >
+              <LogOut className="w-3.5 h-3.5 text-stone-400" />
+              <span className="hidden sm:inline">Sign Out</span>
+            </button>
+          )}
         </div>
       </div>
 
       {/* Mobile nav strip */}
       <div className="md:hidden flex items-center justify-between border-t border-white/[0.06] px-4 py-2 bg-stone-950/90 overflow-x-auto text-xs font-medium text-stone-400 gap-4">
         {[
+          { id: 'teleprompter', label: 'Teleprompter' },
           { id: 'identity', label: 'Identity' },
           { id: 'tone', label: 'Tone' },
           { id: 'channel', label: 'Channel' },
-          { id: 'teleprompter', label: 'Teleprompter' },
           { id: 'export', label: 'Export' },
         ].map((item) => (
           <button

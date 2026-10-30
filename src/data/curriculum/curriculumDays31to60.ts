@@ -2,7 +2,8 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  * 
- * 120-Day Spoken English Curriculum - Days 31–60: A2 Elementary to B1 Intermediate Strategy
+ * 120-Day Spoken English Curriculum - Days 31–60: A2 Social Dynamics & B1 Workplace Dialogue
+ * Strictly leveled from A1 beginner ease to C2 capstone mastery.
  * Each day features 5 rich paragraphs, unique conversational openings, and curated expressions.
  */
 
@@ -16,47 +17,46 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "level": "A2",
     "topic": "Workplace Dynamics",
     "focusSkill": "Navigating competing priorities between departments",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey everyone, welcome to Day 31 on Speak in Progress! Today's story centers on \"The Cross-Functional Conflict\". If you've ever felt tested while handling workplace dynamics, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 31 on Speak in Progress! Today we're working on navigating competing priorities between departments with a practical story about \"The Cross-Functional Conflict\". Let's jump in!",
     "storyParagraphs": [
-      "If someone had warned me that the cross-functional conflict would test my patience this week, I probably would have laughed it off. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Cross-functional alignment and diplomatic framing. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with workplace dynamics, many people struggle with navigating competing priorities between departments. I remember a real-world situation involving the cross-functional conflict that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Cross-functional alignment and diplomatic framing. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "get straight to the point",
+        "meaning": "to speak directly without wasting time on unimportant details",
+        "example": "Let's get straight to the point so we can solve the issue quickly.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "step back",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "on a daily basis",
+        "meaning": "happening every single day as a regular habit",
+        "example": "I practice conversational English on a daily basis.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the cross-functional conflict",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Cross-functional alignment and diplomatic fra..."
+      "Facing the challenge of the cross-functional conflict",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Cross-functional alignment and diplomatic framing"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Navigating competing priorities between departments\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Cross-functional alignment and diplomatic framing\"?"
     ],
-    "notes": "Phase 4: Professional Communication · CEFR A2 · Difficulty: B1 Advanced · Takeaway: Cross-functional alignment and diplomatic framing"
+    "notes": "Phase 4: Professional Communication · CEFR A2 · Takeaway: Cross-functional alignment and diplomatic framing"
   },
   {
     "id": "day-32",
@@ -65,47 +65,46 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "level": "A2",
     "topic": "Travel & Crisis Management",
     "focusSkill": "Handling unexpected travel disruptions and rebooking",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 32 of Speak in Progress, we're exploring \"The Missed Flight Connection\" and practicing handling unexpected travel disruptions and rebooking through real-life scenarios. Hit that play button and let's practice together!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 32 on Speak in Progress! Today we're working on handling unexpected travel disruptions and rebooking with a practical story about \"The Missed Flight Connection\". Let's jump in!",
     "storyParagraphs": [
-      "There is an unwritten rule in modern travel & crisis management that nobody really talks about until the missed flight connection forces the issue. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Crisis sequencing and assertive problem solving. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with travel & crisis management, many people struggle with handling unexpected travel disruptions and rebooking. I remember a real-world situation involving the missed flight connection that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Crisis sequencing and assertive problem solving. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "reach a consensus",
+        "meaning": "to arrive at an agreement shared by all members",
+        "example": "After a short discussion, the team reached a consensus.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "figure out",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "in the long run",
+        "meaning": "over an extended period of future time",
+        "example": "Practicing speaking every morning pays off in the long run.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the missed flight connection",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Crisis sequencing and assertive problem solvi..."
+      "Facing the challenge of the missed flight connection",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Crisis sequencing and assertive problem solving"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Handling unexpected travel disruptions and rebooking\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Crisis sequencing and assertive problem solving\"?"
     ],
-    "notes": "Phase 4: Professional Communication · CEFR A2 · Difficulty: B1 Advanced · Takeaway: Crisis sequencing and assertive problem solving"
+    "notes": "Phase 4: Professional Communication · CEFR A2 · Takeaway: Crisis sequencing and assertive problem solving"
   },
   {
     "id": "day-33",
@@ -114,47 +113,46 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "level": "A2",
     "topic": "Business Communication",
     "focusSkill": "Polite bargaining and clarifying terms of service",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Welcome back to Day 33 of our spoken English journey! Today we are tackling \"Negotiating a Service Contract\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 33 on Speak in Progress! Today we're working on polite bargaining and clarifying terms of service with a practical story about \"Negotiating a Service Contract\". Let's jump in!",
     "storyParagraphs": [
-      "The moment the email landed in my inbox regarding negotiating a service contract, I knew this was not going to be a routine afternoon. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Conditional offers and commercial negotiation cadence. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with business communication, many people struggle with polite bargaining and clarifying terms of service. I remember a real-world situation involving negotiating a service contract that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Conditional offers and commercial negotiation cadence. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "get straight to the point",
+        "meaning": "to speak directly without wasting time on unimportant details",
+        "example": "Let's get straight to the point so we can solve the issue quickly.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "weigh the options",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "on a daily basis",
+        "meaning": "happening every single day as a regular habit",
+        "example": "I practice conversational English on a daily basis.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of negotiating a service contract",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Conditional offers and commercial negotiation..."
+      "Facing the challenge of negotiating a service contract",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Conditional offers and commercial negotiation cadence"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Polite bargaining and clarifying terms of service\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Conditional offers and commercial negotiation cadence\"?"
     ],
-    "notes": "Phase 4: Professional Communication · CEFR A2 · Difficulty: B1 Advanced · Takeaway: Conditional offers and commercial negotiation cadence"
+    "notes": "Phase 4: Professional Communication · CEFR A2 · Takeaway: Conditional offers and commercial negotiation cadence"
   },
   {
     "id": "day-34",
@@ -163,47 +161,46 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "level": "A2",
     "topic": "Team Collaboration",
     "focusSkill": "Evaluating outcomes and celebrating team contributions",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hello and welcome to Day 34! Today we're diving into \"The Product Launch Retrospective\" within the world of team collaboration. Our main speaking focus today is evaluating outcomes and celebrating team contributions. Let's speak with confidence and natural rhythm!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 34 on Speak in Progress! Today we're working on evaluating outcomes and celebrating team contributions with a practical story about \"The Product Launch Retrospective\". Let's jump in!",
     "storyParagraphs": [
-      "I used to believe that handling the product launch retrospective was mostly a matter of technical know-how, but reality taught me otherwise. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Retrospective synthesis, acknowledging team wins. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with team collaboration, many people struggle with evaluating outcomes and celebrating team contributions. I remember a real-world situation involving the product launch retrospective that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Retrospective synthesis, acknowledging team wins. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "reach a consensus",
+        "meaning": "to arrive at an agreement shared by all members",
+        "example": "After a short discussion, the team reached a consensus.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "step back",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "in the long run",
+        "meaning": "over an extended period of future time",
+        "example": "Practicing speaking every morning pays off in the long run.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the product launch retrospective",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Retrospective synthesis, acknowledging team w..."
+      "Facing the challenge of the product launch retrospective",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Retrospective synthesis, acknowledging team wins"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Evaluating outcomes and celebrating team contributions\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Retrospective synthesis, acknowledging team wins\"?"
     ],
-    "notes": "Phase 4: Professional Communication · CEFR A2 · Difficulty: B1 Advanced · Takeaway: Retrospective synthesis, acknowledging team wins"
+    "notes": "Phase 4: Professional Communication · CEFR A2 · Takeaway: Retrospective synthesis, acknowledging team wins"
   },
   {
     "id": "day-35",
@@ -212,47 +209,46 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "level": "A2",
     "topic": "Technology & Ethics",
     "focusSkill": "Expressing nuanced stance on technological impact",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Today is Day 35 on Speak in Progress, and we have an exciting real-world story about \"Debating AI in Daily Life\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 35 on Speak in Progress! Today we're working on expressing nuanced stance on technological impact with a practical story about \"Debating AI in Daily Life\". Let's jump in!",
     "storyParagraphs": [
-      "We were halfway through our weekly sprint when an unexpected obstacle surrounding debating ai in daily life brought everything to a temporary pause. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Balanced dialectic structure, weighing ethical trade-offs. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with technology & ethics, many people struggle with expressing nuanced stance on technological impact. I remember a real-world situation involving debating ai in daily life that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Balanced dialectic structure, weighing ethical trade-offs. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "get straight to the point",
+        "meaning": "to speak directly without wasting time on unimportant details",
+        "example": "Let's get straight to the point so we can solve the issue quickly.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "figure out",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "on a daily basis",
+        "meaning": "happening every single day as a regular habit",
+        "example": "I practice conversational English on a daily basis.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of debating ai in daily life",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Balanced dialectic structure, weighing ethica..."
+      "Facing the challenge of debating ai in daily life",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Balanced dialectic structure, weighing ethical trade-offs"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Expressing nuanced stance on technological impact\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Balanced dialectic structure, weighing ethical trade-offs\"?"
     ],
-    "notes": "Phase 4: Professional Communication · CEFR A2 · Difficulty: B1 Advanced · Takeaway: Balanced dialectic structure, weighing ethical trade-offs"
+    "notes": "Phase 4: Professional Communication · CEFR A2 · Takeaway: Balanced dialectic structure, weighing ethical trade-offs"
   },
   {
     "id": "day-36",
@@ -261,47 +257,46 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "level": "A2",
     "topic": "Community & Environment",
     "focusSkill": "Mobilizing local volunteers and articulating goals",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey friends! Day 36 is here, and today we're exploring \"The Neighborhood Sustainability Initiative\". We're zeroing in on mobilizing local volunteers and articulating goals and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 36 on Speak in Progress! Today we're working on mobilizing local volunteers and articulating goals with a practical story about \"The Neighborhood Sustainability Initiative\". Let's jump in!",
     "storyParagraphs": [
-      "Stepping out of my usual comfort zone, I found myself right in the middle of the neighborhood sustainability initiative, looking for the right words to say. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Inspiring call-to-action and community engagement. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with community & environment, many people struggle with mobilizing local volunteers and articulating goals. I remember a real-world situation involving the neighborhood sustainability initiative that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Inspiring call-to-action and community engagement. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "reach a consensus",
+        "meaning": "to arrive at an agreement shared by all members",
+        "example": "After a short discussion, the team reached a consensus.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "weigh the options",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "in the long run",
+        "meaning": "over an extended period of future time",
+        "example": "Practicing speaking every morning pays off in the long run.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the neighborhood sustainability initiative",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Inspiring call-to-action and community engage..."
+      "Facing the challenge of the neighborhood sustainability initiative",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Inspiring call-to-action and community engagement"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Mobilizing local volunteers and articulating goals\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Inspiring call-to-action and community engagement\"?"
     ],
-    "notes": "Phase 4: Professional Communication · CEFR A2 · Difficulty: B1 Advanced · Takeaway: Inspiring call-to-action and community engagement"
+    "notes": "Phase 4: Professional Communication · CEFR A2 · Takeaway: Inspiring call-to-action and community engagement"
   },
   {
     "id": "day-37",
@@ -310,47 +305,46 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "level": "A2",
     "topic": "Business Strategy",
     "focusSkill": "Interpreting trends, charts, and financial data clearly",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hey everyone, welcome to Day 37 on Speak in Progress! Today's story centers on \"Presenting Quarterly Key Performance Indicators\". If you've ever felt tested while handling business strategy, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 37 on Speak in Progress! Today we're working on interpreting trends, charts, and financial data clearly with a practical story about \"Presenting Quarterly Key Performance Indicators\". Let's jump in!",
     "storyParagraphs": [
-      "I never realized how much was riding on presenting quarterly key performance indicators until a normal workday suddenly shifted out of nowhere. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Data commentary, explaining trends and performance. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with business strategy, many people struggle with interpreting trends, charts, and financial data clearly. I remember a real-world situation involving presenting quarterly key performance indicators that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Data commentary, explaining trends and performance. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "get straight to the point",
+        "meaning": "to speak directly without wasting time on unimportant details",
+        "example": "Let's get straight to the point so we can solve the issue quickly.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "step back",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "on a daily basis",
+        "meaning": "happening every single day as a regular habit",
+        "example": "I practice conversational English on a daily basis.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of presenting quarterly key performance indicators",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Data commentary, explaining trends and perfor..."
+      "Facing the challenge of presenting quarterly key performance indicators",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Data commentary, explaining trends and performance"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Interpreting trends, charts, and financial data clearly\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Data commentary, explaining trends and performance\"?"
     ],
-    "notes": "Phase 4: Professional Communication · CEFR A2 · Difficulty: B1 Advanced · Takeaway: Data commentary, explaining trends and performance"
+    "notes": "Phase 4: Professional Communication · CEFR A2 · Takeaway: Data commentary, explaining trends and performance"
   },
   {
     "id": "day-38",
@@ -359,47 +353,46 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "level": "A2",
     "topic": "Personal Growth",
     "focusSkill": "Reflecting on self-doubt and building professional resilience",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 38 of Speak in Progress, we're exploring \"Overcoming Imposter Syndrome\" and practicing reflecting on self-doubt and building professional resilience through real-life scenarios. Hit that play button and let's practice together!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 38 on Speak in Progress! Today we're working on reflecting on self-doubt and building professional resilience with a practical story about \"Overcoming Imposter Syndrome\". Let's jump in!",
     "storyParagraphs": [
-      "The clock on the wall read 2:15 PM, and the tension in the room was palpable as we prepared for overcoming imposter syndrome. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Authentic vulnerability and confident mindset reframing. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with personal growth, many people struggle with reflecting on self-doubt and building professional resilience. I remember a real-world situation involving overcoming imposter syndrome that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Authentic vulnerability and confident mindset reframing. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "reach a consensus",
+        "meaning": "to arrive at an agreement shared by all members",
+        "example": "After a short discussion, the team reached a consensus.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "figure out",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "in the long run",
+        "meaning": "over an extended period of future time",
+        "example": "Practicing speaking every morning pays off in the long run.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of overcoming imposter syndrome",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Authentic vulnerability and confident mindset..."
+      "Facing the challenge of overcoming imposter syndrome",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Authentic vulnerability and confident mindset reframing"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Reflecting on self-doubt and building professional resilience\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Authentic vulnerability and confident mindset reframing\"?"
     ],
-    "notes": "Phase 4: Professional Communication · CEFR A2 · Difficulty: B1 Advanced · Takeaway: Authentic vulnerability and confident mindset reframing"
+    "notes": "Phase 4: Professional Communication · CEFR A2 · Takeaway: Authentic vulnerability and confident mindset reframing"
   },
   {
     "id": "day-39",
@@ -408,47 +401,46 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "level": "A2",
     "topic": "Customer Relations",
     "focusSkill": "Empathic active listening and diplomatic de-escalation",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Welcome back to Day 39 of our spoken English journey! Today we are tackling \"Managing a High-Stakes Customer Complaint\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 39 on Speak in Progress! Today we're working on empathic active listening and diplomatic de-escalation with a practical story about \"Managing a High-Stakes Customer Complaint\". Let's jump in!",
     "storyParagraphs": [
-      "Two weeks ago, an unexpected conversation about managing a high-stakes customer complaint completely challenged how I approach customer relations. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: De-escalation tone and reflective listening. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with customer relations, many people struggle with empathic active listening and diplomatic de-escalation. I remember a real-world situation involving managing a high-stakes customer complaint that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: De-escalation tone and reflective listening. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "get straight to the point",
+        "meaning": "to speak directly without wasting time on unimportant details",
+        "example": "Let's get straight to the point so we can solve the issue quickly.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "weigh the options",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "on a daily basis",
+        "meaning": "happening every single day as a regular habit",
+        "example": "I practice conversational English on a daily basis.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of managing a high-stakes customer complaint",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: De-escalation tone and reflective listening..."
+      "Facing the challenge of managing a high-stakes customer complaint",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: De-escalation tone and reflective listening"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Empathic active listening and diplomatic de-escalation\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"De-escalation tone and reflective listening\"?"
     ],
-    "notes": "Phase 4: Professional Communication · CEFR A2 · Difficulty: B1 Advanced · Takeaway: De-escalation tone and reflective listening"
+    "notes": "Phase 4: Professional Communication · CEFR A2 · Takeaway: De-escalation tone and reflective listening"
   },
   {
     "id": "day-40",
@@ -457,47 +449,46 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "level": "A2",
     "topic": "Professional Communication",
     "focusSkill": "Challenging ideas respectfully without personal friction",
-    "estimatedReadTime": "2 min 15 sec",
-    "introHook": "Hello and welcome to Day 40! Today we're diving into \"The Art of Constructive Disagreement\" within the world of professional communication. Our main speaking focus today is challenging ideas respectfully without personal friction. Let's speak with confidence and natural rhythm!",
+    "estimatedReadTime": "2 min",
+    "introHook": "Hey everyone, welcome back to Day 40 on Speak in Progress! Today we're working on challenging ideas respectfully without personal friction with a practical story about \"The Art of Constructive Disagreement\". Let's jump in!",
     "storyParagraphs": [
-      "Few everyday dilemmas cause as much hesitation as the art of constructive disagreement, especially when everyone is watching how you respond. What seemed like a simple task on paper quickly became an exercise in expressing myself clearly without panicking or apologizing for minor mistakes.",
-      "At first, my inner critic wanted to take over. I found myself searching my mental dictionary for complicated vocabulary and worrying about grammar rules, which only made me pause awkwardly and feel self-conscious.",
-      "Then I remembered the core principle of authentic spoken English: speak directly, keep sentences manageable, and focus on the listener. I took a steady breath, leaned forward, and communicated what needed to be said step by step.",
-      "To my genuine surprise, the other person responded with immediate warmth and understanding. They didn't care about flawless prepositions; they simply appreciated that the message was honest, respectful, and delivered with clarity.",
-      "Reflecting on this experience, the lesson is clear: Constructive disagreement frames and objective critique. Real fluency begins the moment we stop trying to sound perfect and start speaking with genuine, human connection."
+      "When dealing with professional communication, many people struggle with challenging ideas respectfully without personal friction. I remember a real-world situation involving the art of constructive disagreement that completely changed my perspective on communicating under pressure.",
+      "At the beginning of that experience, I felt hesitant because I was trying too hard to avoid mistakes. I was worried that my listeners would focus on my grammar rather than the core message I was trying to deliver.",
+      "However, as the conversation progressed, I shifted my focus toward active listening and clear, honest phrasing. Instead of freezing, I used simple connective transitions to organize my thoughts one sentence at a time.",
+      "That change in approach immediately relaxed the mood. The other person appreciated my clear explanation, and we reached a positive outcome much faster than I initially expected.",
+      "The key takeaway from that day was clear: Constructive disagreement frames and objective critique. When you speak with steady pacing and genuine intent, conversational fluency follows naturally."
     ],
     "usefulExpressions": [
       {
-        "phrase": "take a steady breath",
-        "meaning": "to inhale deeply to regain composure and mental focus",
-        "example": "Before presenting my idea, I took a steady breath to calm my racing thoughts.",
-        "speakingTip": "Pronounce 'steady' smoothly with an open vowel."
+        "phrase": "reach a consensus",
+        "meaning": "to arrive at an agreement shared by all members",
+        "example": "After a short discussion, the team reached a consensus.",
+        "speakingTip": "Keep the words linked together with an even vocal cadence."
       },
       {
-        "phrase": "step by step",
-        "meaning": "gradually and systematically, one stage at a time",
-        "example": "He explained the new software setup step by step so everyone could follow.",
-        "speakingTip": "Keep 'step-by-step' connected with a brisk, rhythmic cadence."
+        "phrase": "step back",
+        "meaning": "to carefully evaluate different choices before deciding",
+        "example": "Before responding, I paused to weigh the options carefully.",
+        "speakingTip": "Stress the main action verb clearly."
       },
       {
-        "phrase": "appreciate the honesty",
-        "meaning": "to value someone's directness and genuine transparency",
-        "example": "Our team lead really appreciated the honesty when we flagged the delay early.",
-        "speakingTip": "Soft 'sh' sound in appreciate: uh-PREE-shee-ayt."
+        "phrase": "in the long run",
+        "meaning": "over an extended period of future time",
+        "example": "Practicing speaking every morning pays off in the long run.",
+        "speakingTip": "Smooth rhythmic delivery without hesitating."
       }
     ],
     "retellingPrompts": [
-      "The initial challenge and awkwardness of the art of constructive disagreement",
-      "The mental impulse to overthink grammar and freeze up",
-      "Taking a breath and choosing simple, direct phrasing",
-      "The positive, collaborative reaction from the listener",
-      "Key practical takeaway: Constructive disagreement frames and objectiv..."
+      "Facing the challenge of the art of constructive disagreement",
+      "Feeling initial hesitation and managing self-doubt",
+      "Using active listening and simple connective phrases",
+      "Achieving a positive outcome and mastering: Constructive disagreement frames and objective critique"
     ],
     "reflectionPrompts": [
-      "Did I retell the story without pausing to translate from my native language?",
-      "Did my speaking sound relaxed and conversational?"
+      "How effectively did I demonstrate today's core focus: \"Challenging ideas respectfully without personal friction\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Constructive disagreement frames and objective critique\"?"
     ],
-    "notes": "Phase 4: Professional Communication · CEFR A2 · Difficulty: B1 Advanced · Takeaway: Constructive disagreement frames and objective critique"
+    "notes": "Phase 4: Professional Communication · CEFR A2 · Takeaway: Constructive disagreement frames and objective critique"
   },
   {
     "id": "day-41",
@@ -507,46 +498,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Future of Work",
     "focusSkill": "Comparing asynchronous communication with synchronous work",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Today is Day 41 on Speak in Progress, and we have an exciting real-world story about \"Adapting to a Hybrid Workplace Model\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "introHook": "Welcome to Day 41 on Speak in Progress! Today's focus is comparing asynchronous communication with synchronous work. We're exploring \"Adapting to a Hybrid Workplace Model\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "It started with an offhand remark by the coffee machine that soon escalated into a serious discussion about adapting to a hybrid workplace model. In fast-moving environments, our ability to balance comparing asynchronous communication with synchronous work with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Comparative discourse and pros/cons synthesis. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, future of work requires both strategic thinking and clear spoken articulation. When navigating adapting to a hybrid workplace model, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Comparative discourse and pros/cons synthesis. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Adapting to a Hybrid Workplace Model",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Comparative discourse and pros/cons synthesis..."
+      "Understanding the workplace context of adapting to a hybrid workplace model",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Comparative discourse and pros/cons synthesis"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Comparing asynchronous communication with synchronous work\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Comparative discourse and pros/cons synthesis\"?"
     ],
-    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Difficulty: B1 Advanced · Takeaway: Comparative discourse and pros/cons synthesis"
+    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Takeaway: Comparative discourse and pros/cons synthesis"
   },
   {
     "id": "day-42",
@@ -556,46 +546,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Cross-Cultural Communication",
     "focusSkill": "Understanding subtle social etiquette and conversational boundaries",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey friends! Day 42 is here, and today we're exploring \"Navigating Cultural Norms at an International Dinner\". We're zeroing in on understanding subtle social etiquette and conversational boundaries and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "introHook": "Welcome to Day 42 on Speak in Progress! Today's focus is understanding subtle social etiquette and conversational boundaries. We're exploring \"Navigating Cultural Norms at an International Dinner\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "Standing at the doorway before heading into navigating cultural norms at an international dinner, my immediate instinct was to overthink every single detail. In fast-moving environments, our ability to balance understanding subtle social etiquette and conversational boundaries with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Cross-cultural etiquette and diplomatic circumlocution. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, cross-cultural communication requires both strategic thinking and clear spoken articulation. When navigating navigating cultural norms at an international dinner, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Cross-cultural etiquette and diplomatic circumlocution. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Navigating Cultural Norms at an International Dinner",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Cross-cultural etiquette and diplomatic circumlocu..."
+      "Understanding the workplace context of navigating cultural norms at an international dinner",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Cross-cultural etiquette and diplomatic circumlocution"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Understanding subtle social etiquette and conversational boundaries\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Cross-cultural etiquette and diplomatic circumlocution\"?"
     ],
-    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Difficulty: B1 Advanced · Takeaway: Cross-cultural etiquette and diplomatic circumlocution"
+    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Takeaway: Cross-cultural etiquette and diplomatic circumlocution"
   },
   {
     "id": "day-43",
@@ -605,46 +594,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Problem Solving",
     "focusSkill": "Describing brainstorming methods and cognitive shifts",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey everyone, welcome to Day 43 on Speak in Progress! Today's story centers on \"The Creative Block Breakthrough\". If you've ever felt tested while handling problem solving, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "introHook": "Welcome to Day 43 on Speak in Progress! Today's focus is describing brainstorming methods and cognitive shifts. We're exploring \"The Creative Block Breakthrough\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "If someone had warned me that the creative block breakthrough would test my patience this week, I probably would have laughed it off. In fast-moving environments, our ability to balance describing brainstorming methods and cognitive shifts with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Explaining ideation processes and cognitive shifts. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, problem solving requires both strategic thinking and clear spoken articulation. When navigating the creative block breakthrough, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Explaining ideation processes and cognitive shifts. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Creative Block Breakthrough",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Explaining ideation processes and cognitive shifts..."
+      "Understanding the workplace context of the creative block breakthrough",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Explaining ideation processes and cognitive shifts"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Describing brainstorming methods and cognitive shifts\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Explaining ideation processes and cognitive shifts\"?"
     ],
-    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Difficulty: B1 Advanced · Takeaway: Explaining ideation processes and cognitive shifts"
+    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Takeaway: Explaining ideation processes and cognitive shifts"
   },
   {
     "id": "day-44",
@@ -654,46 +642,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Business Strategy",
     "focusSkill": "Structuring an economic and environmental business case",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 44 of Speak in Progress, we're exploring \"Pitching a Sustainable Supply Chain\" and practicing structuring an economic and environmental business case through real-life scenarios. Hit that play button and let's practice together!",
+    "introHook": "Welcome to Day 44 on Speak in Progress! Today's focus is structuring an economic and environmental business case. We're exploring \"Pitching a Sustainable Supply Chain\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "There is an unwritten rule in modern business strategy that nobody really talks about until pitching a sustainable supply chain forces the issue. In fast-moving environments, our ability to balance structuring an economic and environmental business case with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Pitching dual-bottom-line ROI and business case. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, business strategy requires both strategic thinking and clear spoken articulation. When navigating pitching a sustainable supply chain, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Pitching dual-bottom-line ROI and business case. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Pitching a Sustainable Supply Chain",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Pitching dual-bottom-line ROI and business case..."
+      "Understanding the workplace context of pitching a sustainable supply chain",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Pitching dual-bottom-line ROI and business case"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Structuring an economic and environmental business case\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Pitching dual-bottom-line ROI and business case\"?"
     ],
-    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Difficulty: B1 Advanced · Takeaway: Pitching dual-bottom-line ROI and business case"
+    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Takeaway: Pitching dual-bottom-line ROI and business case"
   },
   {
     "id": "day-45",
@@ -703,46 +690,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Language Mastery",
     "focusSkill": "Analyzing language learning stagnation and setting next goals",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Welcome back to Day 45 of our spoken English journey! Today we are tackling \"Midpoint Reflection: The Fluency Plateau\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "introHook": "Welcome to Day 45 on Speak in Progress! Today's focus is analyzing language learning stagnation and setting next goals. We're exploring \"Midpoint Reflection: The Fluency Plateau\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "The moment the email landed in my inbox regarding midpoint reflection: the fluency plateau, I knew this was not going to be a routine afternoon. In fast-moving environments, our ability to balance analyzing language learning stagnation and setting next goals with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Midpoint self-audit, vocal pacing, and goal setting. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, language mastery requires both strategic thinking and clear spoken articulation. When navigating midpoint reflection: the fluency plateau, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Midpoint self-audit, vocal pacing, and goal setting. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Midpoint Reflection: The Fluency Plateau",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Midpoint self-audit, vocal pacing, and goal settin..."
+      "Understanding the workplace context of midpoint reflection: the fluency plateau",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Midpoint self-audit, vocal pacing, and goal setting"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Analyzing language learning stagnation and setting next goals\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Midpoint self-audit, vocal pacing, and goal setting\"?"
     ],
-    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Difficulty: B1 Advanced · Takeaway: Midpoint self-audit, vocal pacing, and goal setting"
+    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Takeaway: Midpoint self-audit, vocal pacing, and goal setting"
   },
   {
     "id": "day-46",
@@ -752,46 +738,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Technology & Law",
     "focusSkill": "Balancing user privacy rights with business personalization",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hello and welcome to Day 46! Today we're diving into \"The Ethics of Data Privacy in Consumer Apps\" within the world of technology & law. Our main speaking focus today is balancing user privacy rights with business personalization. Let's speak with confidence and natural rhythm!",
+    "introHook": "Welcome to Day 46 on Speak in Progress! Today's focus is balancing user privacy rights with business personalization. We're exploring \"The Ethics of Data Privacy in Consumer Apps\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "I used to believe that handling the ethics of data privacy in consumer apps was mostly a matter of technical know-how, but reality taught me otherwise. In fast-moving environments, our ability to balance balancing user privacy rights with business personalization with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Ethical reasoning and balancing compliance with value. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, technology & law requires both strategic thinking and clear spoken articulation. When navigating the ethics of data privacy in consumer apps, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Ethical reasoning and balancing compliance with value. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Ethics of Data Privacy in Consumer Apps",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Ethical reasoning and balancing compliance with va..."
+      "Understanding the workplace context of the ethics of data privacy in consumer apps",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Ethical reasoning and balancing compliance with value"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Balancing user privacy rights with business personalization\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Ethical reasoning and balancing compliance with value\"?"
     ],
-    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Difficulty: B1 Advanced · Takeaway: Ethical reasoning and balancing compliance with value"
+    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Takeaway: Ethical reasoning and balancing compliance with value"
   },
   {
     "id": "day-47",
@@ -801,46 +786,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Leadership & Facilitation",
     "focusSkill": "Guiding diverse stakeholders toward actionable consensus",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Today is Day 47 on Speak in Progress, and we have an exciting real-world story about \"Facilitating an Executive Brainstorming Session\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "introHook": "Welcome to Day 47 on Speak in Progress! Today's focus is guiding diverse stakeholders toward actionable consensus. We're exploring \"Facilitating an Executive Brainstorming Session\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "We were halfway through our weekly sprint when an unexpected obstacle surrounding facilitating an executive brainstorming session brought everything to a temporary pause. In fast-moving environments, our ability to balance guiding diverse stakeholders toward actionable consensus with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Meeting facilitation cues, summarizing disparate inputs. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, leadership & facilitation requires both strategic thinking and clear spoken articulation. When navigating facilitating an executive brainstorming session, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Meeting facilitation cues, summarizing disparate inputs. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Facilitating an Executive Brainstorming Session",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Meeting facilitation cues, summarizing disparate i..."
+      "Understanding the workplace context of facilitating an executive brainstorming session",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Meeting facilitation cues, summarizing disparate inputs"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Guiding diverse stakeholders toward actionable consensus\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Meeting facilitation cues, summarizing disparate inputs\"?"
     ],
-    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Difficulty: B1 Advanced · Takeaway: Meeting facilitation cues, summarizing disparate inputs"
+    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Takeaway: Meeting facilitation cues, summarizing disparate inputs"
   },
   {
     "id": "day-48",
@@ -850,46 +834,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Entrepreneurship",
     "focusSkill": "Articulating market valuation, traction, and competitive moat",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey friends! Day 48 is here, and today we're exploring \"The Startup Angel Investor Pitch\". We're zeroing in on articulating market valuation, traction, and competitive moat and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "introHook": "Welcome to Day 48 on Speak in Progress! Today's focus is articulating market valuation, traction, and competitive moat. We're exploring \"The Startup Angel Investor Pitch\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "Stepping out of my usual comfort zone, I found myself right in the middle of the startup angel investor pitch, looking for the right words to say. In fast-moving environments, our ability to balance articulating market valuation, traction, and competitive moat with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Investor pitch gravitas and concise value propositions. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, entrepreneurship requires both strategic thinking and clear spoken articulation. When navigating the startup angel investor pitch, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Investor pitch gravitas and concise value propositions. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Startup Angel Investor Pitch",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Investor pitch gravitas and concise value proposit..."
+      "Understanding the workplace context of the startup angel investor pitch",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Investor pitch gravitas and concise value propositions"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Articulating market valuation, traction, and competitive moat\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Investor pitch gravitas and concise value propositions\"?"
     ],
-    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Difficulty: B1 Advanced · Takeaway: Investor pitch gravitas and concise value propositions"
+    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Takeaway: Investor pitch gravitas and concise value propositions"
   },
   {
     "id": "day-49",
@@ -899,46 +882,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Change Management",
     "focusSkill": "Communicating structural shifts with transparency and empathy",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey everyone, welcome to Day 49 on Speak in Progress! Today's story centers on \"Weathering an Organizational Restructuring\". If you've ever felt tested while handling change management, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "introHook": "Welcome to Day 49 on Speak in Progress! Today's focus is communicating structural shifts with transparency and empathy. We're exploring \"Weathering an Organizational Restructuring\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "I never realized how much was riding on weathering an organizational restructuring until a normal workday suddenly shifted out of nowhere. In fast-moving environments, our ability to balance communicating structural shifts with transparency and empathy with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Change leadership messaging and empathetic delivery. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, change management requires both strategic thinking and clear spoken articulation. When navigating weathering an organizational restructuring, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Change leadership messaging and empathetic delivery. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Weathering an Organizational Restructuring",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Change leadership messaging and empathetic deliver..."
+      "Understanding the workplace context of weathering an organizational restructuring",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Change leadership messaging and empathetic delivery"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Communicating structural shifts with transparency and empathy\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Change leadership messaging and empathetic delivery\"?"
     ],
-    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Difficulty: B1 Advanced · Takeaway: Change leadership messaging and empathetic delivery"
+    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Takeaway: Change leadership messaging and empathetic delivery"
   },
   {
     "id": "day-50",
@@ -948,46 +930,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Environment & Policy",
     "focusSkill": "Synthesizing municipal policy trade-offs and citizen impact",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 50 of Speak in Progress, we're exploring \"The Urban Renewable Energy Transition\" and practicing synthesizing municipal policy trade-offs and citizen impact through real-life scenarios. Hit that play button and let's practice together!",
+    "introHook": "Welcome to Day 50 on Speak in Progress! Today's focus is synthesizing municipal policy trade-offs and citizen impact. We're exploring \"The Urban Renewable Energy Transition\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "The clock on the wall read 2:15 PM, and the tension in the room was palpable as we prepared for the urban renewable energy transition. In fast-moving environments, our ability to balance synthesizing municipal policy trade-offs and citizen impact with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Macro policy analysis and articulate public discourse. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, environment & policy requires both strategic thinking and clear spoken articulation. When navigating the urban renewable energy transition, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Macro policy analysis and articulate public discourse. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Urban Renewable Energy Transition",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Macro policy analysis and articulate public discou..."
+      "Understanding the workplace context of the urban renewable energy transition",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Macro policy analysis and articulate public discourse"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Synthesizing municipal policy trade-offs and citizen impact\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Macro policy analysis and articulate public discourse\"?"
     ],
-    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Difficulty: B1 Advanced · Takeaway: Macro policy analysis and articulate public discourse"
+    "notes": "Phase 5: Leadership & Strategy · CEFR B1 · Takeaway: Macro policy analysis and articulate public discourse"
   },
   {
     "id": "day-51",
@@ -997,46 +978,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Supply Chain & Operations",
     "focusSkill": "Asserting contract benchmarks while preserving vendor relationships",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Welcome back to Day 51 of our spoken English journey! Today we are tackling \"Resolving a Supplier Quality Dispute\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "introHook": "Welcome to Day 51 on Speak in Progress! Today's focus is asserting contract benchmarks while preserving vendor relationships. We're exploring \"Resolving a Supplier Quality Dispute\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "Two weeks ago, an unexpected conversation about resolving a supplier quality dispute completely challenged how I approach supply chain & operations. In fast-moving environments, our ability to balance asserting contract benchmarks while preserving vendor relationships with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Firm contractual assertion paired with collaborative tone. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, supply chain & operations requires both strategic thinking and clear spoken articulation. When navigating resolving a supplier quality dispute, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Firm contractual assertion paired with collaborative tone. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Resolving a Supplier Quality Dispute",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Firm contractual assertion paired with collaborati..."
+      "Understanding the workplace context of resolving a supplier quality dispute",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Firm contractual assertion paired with collaborative tone"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Asserting contract benchmarks while preserving vendor relationships\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Firm contractual assertion paired with collaborative tone\"?"
     ],
-    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Difficulty: B2 Intermediate · Takeaway: Firm contractual assertion paired with collaborative tone"
+    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Takeaway: Firm contractual assertion paired with collaborative tone"
   },
   {
     "id": "day-52",
@@ -1046,46 +1026,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Workplace Economics",
     "focusSkill": "Evaluating productivity metrics against employee wellbeing",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hello and welcome to Day 52! Today we're diving into \"Debating the 4-Day Work Week\" within the world of workplace economics. Our main speaking focus today is evaluating productivity metrics against employee wellbeing. Let's speak with confidence and natural rhythm!",
+    "introHook": "Welcome to Day 52 on Speak in Progress! Today's focus is evaluating productivity metrics against employee wellbeing. We're exploring \"Debating the 4-Day Work Week\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "Few everyday dilemmas cause as much hesitation as debating the 4-day work week, especially when everyone is watching how you respond. In fast-moving environments, our ability to balance evaluating productivity metrics against employee wellbeing with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Presenting economic data and work-life balance arguments. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, workplace economics requires both strategic thinking and clear spoken articulation. When navigating debating the 4-day work week, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Presenting economic data and work-life balance arguments. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Debating the 4-Day Work Week",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Presenting economic data and work-life balance arg..."
+      "Understanding the workplace context of debating the 4-day work week",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Presenting economic data and work-life balance arguments"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Evaluating productivity metrics against employee wellbeing\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Presenting economic data and work-life balance arguments\"?"
     ],
-    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Difficulty: B2 Intermediate · Takeaway: Presenting economic data and work-life balance arguments"
+    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Takeaway: Presenting economic data and work-life balance arguments"
   },
   {
     "id": "day-53",
@@ -1095,46 +1074,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Crisis Communication",
     "focusSkill": "Issuing immediate containment directives without inducing panic",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Today is Day 53 on Speak in Progress, and we have an exciting real-world story about \"The Ransomware Cybersecurity Alert\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "introHook": "Welcome to Day 53 on Speak in Progress! Today's focus is issuing immediate containment directives without inducing panic. We're exploring \"The Ransomware Cybersecurity Alert\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "It started with an offhand remark by the coffee machine that soon escalated into a serious discussion about the ransomware cybersecurity alert. In fast-moving environments, our ability to balance issuing immediate containment directives without inducing panic with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Calm, directive crisis communication with actionable steps. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, crisis communication requires both strategic thinking and clear spoken articulation. When navigating the ransomware cybersecurity alert, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Calm, directive crisis communication with actionable steps. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Ransomware Cybersecurity Alert",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Calm, directive crisis communication with actionab..."
+      "Understanding the workplace context of the ransomware cybersecurity alert",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Calm, directive crisis communication with actionable steps"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Issuing immediate containment directives without inducing panic\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Calm, directive crisis communication with actionable steps\"?"
     ],
-    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Difficulty: B2 Intermediate · Takeaway: Calm, directive crisis communication with actionable steps"
+    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Takeaway: Calm, directive crisis communication with actionable steps"
   },
   {
     "id": "day-54",
@@ -1144,46 +1122,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "People Management",
     "focusSkill": "Delivering developmental critique paired with structured empowerment",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey friends! Day 54 is here, and today we're exploring \"Mentoring a Struggling Direct Report\". We're zeroing in on delivering developmental critique paired with structured empowerment and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "introHook": "Welcome to Day 54 on Speak in Progress! Today's focus is delivering developmental critique paired with structured empowerment. We're exploring \"Mentoring a Struggling Direct Report\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "Standing at the doorway before heading into mentoring a struggling direct report, my immediate instinct was to overthink every single detail. In fast-moving environments, our ability to balance delivering developmental critique paired with structured empowerment with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Actionable coaching feedback and developmental empathy. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, people management requires both strategic thinking and clear spoken articulation. When navigating mentoring a struggling direct report, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Actionable coaching feedback and developmental empathy. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Mentoring a Struggling Direct Report",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Actionable coaching feedback and developmental emp..."
+      "Understanding the workplace context of mentoring a struggling direct report",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Actionable coaching feedback and developmental empathy"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Delivering developmental critique paired with structured empowerment\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Actionable coaching feedback and developmental empathy\"?"
     ],
-    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Difficulty: B2 Intermediate · Takeaway: Actionable coaching feedback and developmental empathy"
+    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Takeaway: Actionable coaching feedback and developmental empathy"
   },
   {
     "id": "day-55",
@@ -1193,46 +1170,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Corporate Strategy",
     "focusSkill": "Framing synergy benefits while addressing cultural anxieties",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey everyone, welcome to Day 55 on Speak in Progress! Today's story centers on \"The Cross-Border Merger Announcement\". If you've ever felt tested while handling corporate strategy, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "introHook": "Welcome to Day 55 on Speak in Progress! Today's focus is framing synergy benefits while addressing cultural anxieties. We're exploring \"The Cross-Border Merger Announcement\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "If someone had warned me that the cross-border merger announcement would test my patience this week, I probably would have laughed it off. In fast-moving environments, our ability to balance framing synergy benefits while addressing cultural anxieties with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Corporate M&A narrative, uniting diverse team identities. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, corporate strategy requires both strategic thinking and clear spoken articulation. When navigating the cross-border merger announcement, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Corporate M&A narrative, uniting diverse team identities. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Cross-Border Merger Announcement",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Corporate M&A narrative, uniting diverse team iden..."
+      "Understanding the workplace context of the cross-border merger announcement",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Corporate M&A narrative, uniting diverse team identities"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Framing synergy benefits while addressing cultural anxieties\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Corporate M&A narrative, uniting diverse team identities\"?"
     ],
-    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Difficulty: B2 Intermediate · Takeaway: Corporate M&A narrative, uniting diverse team identities"
+    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Takeaway: Corporate M&A narrative, uniting diverse team identities"
   },
   {
     "id": "day-56",
@@ -1242,46 +1218,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Behavioral Economics",
     "focusSkill": "Explaining cognitive biases and emotional triggers in sales",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 56 of Speak in Progress, we're exploring \"The Psychology of Consumer Purchasing Habits\" and practicing explaining cognitive biases and emotional triggers in sales through real-life scenarios. Hit that play button and let's practice together!",
+    "introHook": "Welcome to Day 56 on Speak in Progress! Today's focus is explaining cognitive biases and emotional triggers in sales. We're exploring \"The Psychology of Consumer Purchasing Habits\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "There is an unwritten rule in modern behavioral economics that nobody really talks about until the psychology of consumer purchasing habits forces the issue. In fast-moving environments, our ability to balance explaining cognitive biases and emotional triggers in sales with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Behavioral economics storytelling and sales psychology. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, behavioral economics requires both strategic thinking and clear spoken articulation. When navigating the psychology of consumer purchasing habits, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Behavioral economics storytelling and sales psychology. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Psychology of Consumer Purchasing Habits",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Behavioral economics storytelling and sales psycho..."
+      "Understanding the workplace context of the psychology of consumer purchasing habits",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Behavioral economics storytelling and sales psychology"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Explaining cognitive biases and emotional triggers in sales\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Behavioral economics storytelling and sales psychology\"?"
     ],
-    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Difficulty: B2 Intermediate · Takeaway: Behavioral economics storytelling and sales psychology"
+    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Takeaway: Behavioral economics storytelling and sales psychology"
   },
   {
     "id": "day-57",
@@ -1291,46 +1266,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Public Speaking",
     "focusSkill": "Synthesizing speaker viewpoints and framing probing audience questions",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Welcome back to Day 57 of our spoken English journey! Today we are tackling \"Hosting an Industry Panel on Renewable Materials\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "introHook": "Welcome to Day 57 on Speak in Progress! Today's focus is synthesizing speaker viewpoints and framing probing audience questions. We're exploring \"Hosting an Industry Panel on Renewable Materials\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "The moment the email landed in my inbox regarding hosting an industry panel on renewable materials, I knew this was not going to be a routine afternoon. In fast-moving environments, our ability to balance synthesizing speaker viewpoints and framing probing audience questions with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Panel moderation agility, seamless speaker transitions. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, public speaking requires both strategic thinking and clear spoken articulation. When navigating hosting an industry panel on renewable materials, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Panel moderation agility, seamless speaker transitions. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Hosting an Industry Panel on Renewable Materials",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Panel moderation agility, seamless speaker transit..."
+      "Understanding the workplace context of hosting an industry panel on renewable materials",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Panel moderation agility, seamless speaker transitions"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Synthesizing speaker viewpoints and framing probing audience questions\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Panel moderation agility, seamless speaker transitions\"?"
     ],
-    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Difficulty: B2 Intermediate · Takeaway: Panel moderation agility, seamless speaker transitions"
+    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Takeaway: Panel moderation agility, seamless speaker transitions"
   },
   {
     "id": "day-58",
@@ -1340,46 +1314,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Workplace Wellbeing",
     "focusSkill": "Advocating sustainable pace and psychological safety",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hello and welcome to Day 58! Today we're diving into \"Managing Burnout in High-Pressure Teams\" within the world of workplace wellbeing. Our main speaking focus today is advocating sustainable pace and psychological safety. Let's speak with confidence and natural rhythm!",
+    "introHook": "Welcome to Day 58 on Speak in Progress! Today's focus is advocating sustainable pace and psychological safety. We're exploring \"Managing Burnout in High-Pressure Teams\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "I used to believe that handling managing burnout in high-pressure teams was mostly a matter of technical know-how, but reality taught me otherwise. In fast-moving environments, our ability to balance advocating sustainable pace and psychological safety with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Workplace wellbeing advocacy and vocal warmth. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, workplace wellbeing requires both strategic thinking and clear spoken articulation. When navigating managing burnout in high-pressure teams, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Workplace wellbeing advocacy and vocal warmth. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Managing Burnout in High-Pressure Teams",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Workplace wellbeing advocacy and vocal warmth..."
+      "Understanding the workplace context of managing burnout in high-pressure teams",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Workplace wellbeing advocacy and vocal warmth"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Advocating sustainable pace and psychological safety\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Workplace wellbeing advocacy and vocal warmth\"?"
     ],
-    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Difficulty: B2 Intermediate · Takeaway: Workplace wellbeing advocacy and vocal warmth"
+    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Takeaway: Workplace wellbeing advocacy and vocal warmth"
   },
   {
     "id": "day-59",
@@ -1389,46 +1362,45 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Corporate Governance",
     "focusSkill": "Weighing litigation risks versus out-of-court settlement",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Today is Day 59 on Speak in Progress, and we have an exciting real-world story about \"The Intellectual Property Infringement Dilemma\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "introHook": "Welcome to Day 59 on Speak in Progress! Today's focus is weighing litigation risks versus out-of-court settlement. We're exploring \"The Intellectual Property Infringement Dilemma\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "We were halfway through our weekly sprint when an unexpected obstacle surrounding the intellectual property infringement dilemma brought everything to a temporary pause. In fast-moving environments, our ability to balance weighing litigation risks versus out-of-court settlement with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Legal risk assessment and measured corporate counsel tone. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, corporate governance requires both strategic thinking and clear spoken articulation. When navigating the intellectual property infringement dilemma, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: Legal risk assessment and measured corporate counsel tone. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Intellectual Property Infringement Dilemma",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Legal risk assessment and measured corporate couns..."
+      "Understanding the workplace context of the intellectual property infringement dilemma",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: Legal risk assessment and measured corporate counsel tone"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Weighing litigation risks versus out-of-court settlement\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Legal risk assessment and measured corporate counsel tone\"?"
     ],
-    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Difficulty: B2 Intermediate · Takeaway: Legal risk assessment and measured corporate counsel tone"
+    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Takeaway: Legal risk assessment and measured corporate counsel tone"
   },
   {
     "id": "day-60",
@@ -1438,45 +1410,44 @@ export const CURRICULUM_DAYS_31_TO_60: PracticeStory[] = [
     "topic": "Milestone Celebration",
     "focusSkill": "Delivering an executive-ready 60-second value proposition",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey friends! Day 60 is here, and today we're exploring \"Sixty-Day Milestone: The Elevator Pitch Upgrade\". We're zeroing in on delivering an executive-ready 60-second value proposition and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "introHook": "Welcome to Day 60 on Speak in Progress! Today's focus is delivering an executive-ready 60-second value proposition. We're exploring \"Sixty-Day Milestone: The Elevator Pitch Upgrade\" to practice professional fluency. Let's begin!",
     "storyParagraphs": [
-      "Stepping out of my usual comfort zone, I found myself right in the middle of sixty-day milestone: the elevator pitch upgrade, looking for the right words to say. In fast-moving environments, our ability to balance delivering an executive-ready 60-second value proposition with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: High-impact elevator pitch and executive presence. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "In today's fast-moving professional world, milestone celebration requires both strategic thinking and clear spoken articulation. When navigating sixty-day milestone: the elevator pitch upgrade, professionals often encounter competing priorities that demand tactful negotiation.",
+      "During a recent project milestone, our team had to address this exact challenge. Some stakeholders wanted immediate, rapid delivery, while others insisted on comprehensive quality assurance and risk mitigation.",
+      "To resolve the tension, we scheduled a focused thirty-minute alignment session. Instead of defending entrenched positions, we mapped out the objective trade-offs and agreed on measurable milestones.",
+      "By framing the discussion around collaborative problem-solving rather than personal disagreement, we reached a unanimous roadmap that satisfied all departments.",
+      "This experience reinforced today's core delivery takeaway: High-impact elevator pitch and executive presence. Clear articulation of shared objectives transforms organizational friction into shared progress."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "strike a balance",
+        "meaning": "to find a compromise between two desirable but conflicting things",
+        "example": "We managed to strike a balance between rapid delivery and thorough testing.",
+        "speakingTip": "Link 'strike' and 'a' smoothly: strike-a-balance."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "iron out the details",
+        "meaning": "to resolve the remaining small problems or specifics of a plan",
+        "example": "Our team met yesterday to iron out the details of the launch schedule.",
+        "speakingTip": "Light stress on 'iron' and 'details'."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "bring to the table",
+        "meaning": "to provide a useful skill, benefit, or perspective to a group",
+        "example": "Every team member brought valuable industry insights to the table.",
+        "speakingTip": "Keep the cadence steady with a confident tone."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Sixty-Day Milestone: The Elevator Pitch Upgrade",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: High-impact elevator pitch and executive presence..."
+      "Understanding the workplace context of sixty-day milestone: the elevator pitch upgrade",
+      "Identifying competing priorities between speed and quality",
+      "Facilitating an alignment meeting focused on objective milestones",
+      "Executing the shared solution and practicing: High-impact elevator pitch and executive presence"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Delivering an executive-ready 60-second value proposition\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"High-impact elevator pitch and executive presence\"?"
     ],
-    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Difficulty: B2 Intermediate · Takeaway: High-impact elevator pitch and executive presence"
+    "notes": "Phase 6: Executive Dialogue · CEFR B1 · Takeaway: High-impact elevator pitch and executive presence"
   }
 ];

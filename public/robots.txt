@@ -1,0 +1,10 @@
+# Robots.txt for Speak in Progress
+# Public landing page is indexable; all internal application routes and API endpoints are strictly disbarred.
+
+User-agent: *
+Allow: /$
+Disallow: /api/
+Disallow: /studio
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /*?*

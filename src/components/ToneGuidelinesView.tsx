@@ -7,11 +7,11 @@ import React, { useState } from 'react';
 import { BrandIdentity } from '../types';
 import { Copy, Check, MessageSquare, ShieldAlert, CheckCircle2, Wand2, Sparkles } from 'lucide-react';
 
-interface ToneScriptBibleViewProps {
+interface ToneGuidelinesViewProps {
   activeBrand: BrandIdentity;
 }
 
-export const ToneScriptBibleView: React.FC<ToneScriptBibleViewProps> = ({ activeBrand }) => {
+export const ToneGuidelinesView: React.FC<ToneGuidelinesViewProps> = ({ activeBrand }) => {
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
 
   // Hook generator states
@@ -53,7 +53,7 @@ export const ToneScriptBibleView: React.FC<ToneScriptBibleViewProps> = ({ active
             <span>Voice, Personality & Delivery</span>
           </div>
           <h1 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-brand">
-            Speak in Progress · Voice & Tone Bible
+            Speak in Progress · Voice & Tone Guidelines
           </h1>
           <p className="text-xs sm:text-sm md:text-base text-stone-300 leading-relaxed font-sans">
             The foundation of <strong>Speak in Progress</strong> is radical authenticity. You create videos based on your own schedule and comfort. The goal is steady, sustainable growth—making mistakes, learning, and documenting real fluency reps in public view.

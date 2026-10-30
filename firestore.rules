@@ -21,7 +21,7 @@ service cloud.firestore {
     }
 
     function isOwner(userId) {
-      return isSignedIn() && request.auth.uid == userId;
+      return isSignedIn() && request.auth.uid == userId && request.auth.token.email == "smselimreja77@gmail.com";
     }
 
     function isAdmin() {
@@ -35,10 +35,10 @@ service cloud.firestore {
         && data.userId == request.auth.uid;
     }
 
-    // User Profile
+    // User Profile - strictly restricted to authorized owner
     match /users/{userId} {
       allow get, update: if isOwner(userId) && isValidId(userId);
-      allow create: if isOwner(userId) && isValidId(userId) && request.resource.data.email is string;
+      allow create: if isOwner(userId) && isValidId(userId) && request.resource.data.email == "smselimreja77@gmail.com";
       allow delete: if false;
 
       // Personal Teleprompter Scripts

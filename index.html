@@ -3,6 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <script>
+      // Early suppression of harmless AbortError from aborted fetch streams / Firestore channel resets
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event && event.reason;
+        var msg = (reason && (reason.message || reason.toString())) || '';
+        if (
+          (reason && (reason.name === 'AbortError' || reason.code === 'aborted')) ||
+          msg.indexOf('signal is aborted') !== -1 ||
+          msg.indexOf('aborted without reason') !== -1
+        ) {
+          event.preventDefault();
+          if (typeof event.stopImmediatePropagation === 'function') {
+            event.stopImmediatePropagation();
+          }
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = (event && (event.message || (event.error && event.error.message))) || '';
+        if (
+          (event && event.error && (event.error.name === 'AbortError' || event.error.code === 'aborted')) ||
+          msg.indexOf('signal is aborted') !== -1 ||
+          msg.indexOf('aborted without reason') !== -1
+        ) {
+          event.preventDefault();
+          if (typeof event.stopImmediatePropagation === 'function') {
+            event.stopImmediatePropagation();
+          }
+        }
+      });
+
       // Ensure window.fetch has both a getter and setter so that iframe inspector / extension scripts
       // can safely wrap window.fetch without throwing "Cannot set property fetch of #<Window> which has only a getter"
       (function() {
@@ -39,12 +68,83 @@
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Speak in Progress - YouTube Brand & Studio</title>
-    <meta name="description" content="Comprehensive channel branding kit, unique identity systems, vector logo generator, banner exporter, tone guide, and faceless screen-recording teleprompter studio." />
-    <meta property="og:title" content="Speak in Progress - YouTube Brand & Studio" />
-    <meta property="og:description" content="Comprehensive channel branding kit, unique identity systems, vector logo generator, banner exporter, tone guide, and faceless screen-recording teleprompter studio." />
+    <meta name="robots" content="index, follow" />
+    <title>Speak in Progress — Spoken English Fluency & Recording Studio</title>
+    <meta
+      name="description"
+      content="Master real-world English fluency through deliberate practice, calibrated teleprompter pacing, unscripted memory retelling, and PC screen-recording."
+    />
+    <link rel="canonical" href="https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/" />
+
+    <!-- OpenGraph Tags -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Speak in Progress" />
+    <meta property="og:title" content="Speak in Progress — Spoken English Fluency & Recording Studio" />
+    <meta
+      property="og:description"
+      content="Master real-world English fluency through deliberate practice, calibrated teleprompter pacing, unscripted memory retelling, and PC screen-recording."
+    />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Speak in Progress — Spoken English Fluency & Recording Studio" />
+    <meta
+      name="twitter:description"
+      content="Master real-world English fluency through deliberate practice, calibrated teleprompter pacing, unscripted memory retelling, and PC screen-recording."
+    />
+
+    <!-- Schema.org Structured Data (JSON-LD) for Search Engine Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#webapp",
+          "name": "Speak in Progress",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "description": "A specialized YouTube production suite and deliberate spoken English practice architecture featuring calibrated teleprompter pacing and unscripted memory retelling.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://ais-dev-l4x3fa6ubqdpwlwqxs4vuu-627184266077.asia-northeast1.run.app/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Speak in Progress?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Speak in Progress is a deliberate spoken English practice and screen-recording framework designed for creators documenting real-world language fluency, authentic stumbling, and cognitive speaking cadence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the 5-step practice workflow work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The workflow consists of: 1) Voiceover opening hook, 2) Calibrated 5-paragraph teleprompter reading, 3) Key idiomatic expressions, 4) 90-second unscripted memory retelling, and 5) Daily stumbling and independence logging."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is my internal studio data and recordings private?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Speak in Progress studio operates in private single-user mode with encrypted Cloud Firestore security rules. Internal studio documents, scripts, and logs are completely restricted from public indexing."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />

@@ -2,7 +2,8 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  * 
- * 120-Day Spoken English Curriculum - Days 61–90: B2 Upper-Intermediate Leadership & High Stakes
+ * 120-Day Spoken English Curriculum - Days 61–90: B2 Executive Strategy & Epistemology
+ * Strictly leveled from A1 beginner ease to C2 capstone mastery.
  * Each day features 5 rich paragraphs, unique conversational openings, and curated expressions.
  */
 
@@ -17,46 +18,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Global Economics",
     "focusSkill": "Analyzing macroeconomic shocks and alternative shipping routes",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey everyone, welcome to Day 61 on Speak in Progress! Today's story centers on \"The Geopolitical Supply Shock\". If you've ever felt tested while handling global economics, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "introHook": "Good day everyone, welcome to Day 61 of Speak in Progress! Today we are analyzing The Geopolitical Supply Shock through the lens of global economics, focusing on analyzing macroeconomic shocks and alternative shipping routes. Let's dive in!",
     "storyParagraphs": [
-      "I never realized how much was riding on the geopolitical supply shock until a normal workday suddenly shifted out of nowhere. In fast-moving environments, our ability to balance analyzing macroeconomic shocks and alternative shipping routes with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Macroeconomic synthesis and supply chain problem-solving. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving the geopolitical supply shock, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in global economics lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Macroeconomic synthesis and supply chain problem-solving. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Geopolitical Supply Shock",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Macroeconomic synthesis and supply chain problem-s..."
+      "Analyzing the strategic significance of the geopolitical supply shock",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Macroeconomic synthesis and supply chain problem-solving"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Analyzing macroeconomic shocks and alternative shipping routes\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Macroeconomic synthesis and supply chain problem-solving\"?"
     ],
-    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Difficulty: B2 Intermediate · Takeaway: Macroeconomic synthesis and supply chain problem-solving"
+    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Takeaway: Macroeconomic synthesis and supply chain problem-solving"
   },
   {
     "id": "day-62",
@@ -66,46 +66,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Bioethics & Tech",
     "focusSkill": "Weighing algorithmic diagnostic precision against clinical liability",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 62 of Speak in Progress, we're exploring \"Navigating Ethical AI in Medical Diagnosis\" and practicing weighing algorithmic diagnostic precision against clinical liability through real-life scenarios. Hit that play button and let's practice together!",
+    "introHook": "Good day everyone, welcome to Day 62 of Speak in Progress! Today we are analyzing Navigating Ethical AI in Medical Diagnosis through the lens of bioethics & tech, focusing on weighing algorithmic diagnostic precision against clinical liability. Let's dive in!",
     "storyParagraphs": [
-      "The clock on the wall read 2:15 PM, and the tension in the room was palpable as we prepared for navigating ethical ai in medical diagnosis. In fast-moving environments, our ability to balance weighing algorithmic diagnostic precision against clinical liability with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Bioethics argumentation and clinical liability nuance. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving navigating ethical ai in medical diagnosis, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in bioethics & tech lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Bioethics argumentation and clinical liability nuance. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Navigating Ethical AI in Medical Diagnosis",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Bioethics argumentation and clinical liability nua..."
+      "Analyzing the strategic significance of navigating ethical ai in medical diagnosis",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Bioethics argumentation and clinical liability nuance"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Weighing algorithmic diagnostic precision against clinical liability\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Bioethics argumentation and clinical liability nuance\"?"
     ],
-    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Difficulty: B2 Intermediate · Takeaway: Bioethics argumentation and clinical liability nuance"
+    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Takeaway: Bioethics argumentation and clinical liability nuance"
   },
   {
     "id": "day-63",
@@ -115,46 +114,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Financial Leadership",
     "focusSkill": "Using rigorous fiscal data to justify painful resource reallocation",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Welcome back to Day 63 of our spoken English journey! Today we are tackling \"Defending an Unpopular Budgetary Cut\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "introHook": "Good day everyone, welcome to Day 63 of Speak in Progress! Today we are analyzing Defending an Unpopular Budgetary Cut through the lens of financial leadership, focusing on using rigorous fiscal data to justify painful resource reallocation. Let's dive in!",
     "storyParagraphs": [
-      "Two weeks ago, an unexpected conversation about defending an unpopular budgetary cut completely challenged how I approach financial leadership. In fast-moving environments, our ability to balance using rigorous fiscal data to justify painful resource reallocation with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Analytical rigor and defending fiscal discipline. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving defending an unpopular budgetary cut, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in financial leadership lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Analytical rigor and defending fiscal discipline. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Defending an Unpopular Budgetary Cut",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Analytical rigor and defending fiscal discipline..."
+      "Analyzing the strategic significance of defending an unpopular budgetary cut",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Analytical rigor and defending fiscal discipline"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Using rigorous fiscal data to justify painful resource reallocation\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Analytical rigor and defending fiscal discipline\"?"
     ],
-    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Difficulty: B2 Intermediate · Takeaway: Analytical rigor and defending fiscal discipline"
+    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Takeaway: Analytical rigor and defending fiscal discipline"
   },
   {
     "id": "day-64",
@@ -164,46 +162,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Corporate Governance",
     "focusSkill": "Responding to hostile activist motions during an annual general meeting",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hello and welcome to Day 64! Today we're diving into \"The Crisis of Shareholder Activism\" within the world of corporate governance. Our main speaking focus today is responding to hostile activist motions during an annual general meeting. Let's speak with confidence and natural rhythm!",
+    "introHook": "Good day everyone, welcome to Day 64 of Speak in Progress! Today we are analyzing The Crisis of Shareholder Activism through the lens of corporate governance, focusing on responding to hostile activist motions during an annual general meeting. Let's dive in!",
     "storyParagraphs": [
-      "Few everyday dilemmas cause as much hesitation as the crisis of shareholder activism, especially when everyone is watching how you respond. In fast-moving environments, our ability to balance responding to hostile activist motions during an annual general meeting with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Defending strategic vision under hostile questioning. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving the crisis of shareholder activism, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in corporate governance lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Defending strategic vision under hostile questioning. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Crisis of Shareholder Activism",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Defending strategic vision under hostile questioni..."
+      "Analyzing the strategic significance of the crisis of shareholder activism",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Defending strategic vision under hostile questioning"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Responding to hostile activist motions during an annual general meeting\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Defending strategic vision under hostile questioning\"?"
     ],
-    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Difficulty: B2 Intermediate · Takeaway: Defending strategic vision under hostile questioning"
+    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Takeaway: Defending strategic vision under hostile questioning"
   },
   {
     "id": "day-65",
@@ -213,46 +210,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Infrastructure & Urbanism",
     "focusSkill": "Articulating climate-adaptive zoning and civil engineering trade-offs",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Today is Day 65 on Speak in Progress, and we have an exciting real-world story about \"The Architecture of Urban Resilience\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "introHook": "Good day everyone, welcome to Day 65 of Speak in Progress! Today we are analyzing The Architecture of Urban Resilience through the lens of infrastructure & urbanism, focusing on articulating climate-adaptive zoning and civil engineering trade-offs. Let's dive in!",
     "storyParagraphs": [
-      "It started with an offhand remark by the coffee machine that soon escalated into a serious discussion about the architecture of urban resilience. In fast-moving environments, our ability to balance articulating climate-adaptive zoning and civil engineering trade-offs with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Civil engineering narrative and urban planning trade-offs. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving the architecture of urban resilience, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in infrastructure & urbanism lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Civil engineering narrative and urban planning trade-offs. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Architecture of Urban Resilience",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Civil engineering narrative and urban planning tra..."
+      "Analyzing the strategic significance of the architecture of urban resilience",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Civil engineering narrative and urban planning trade-offs"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Articulating climate-adaptive zoning and civil engineering trade-offs\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Civil engineering narrative and urban planning trade-offs\"?"
     ],
-    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Difficulty: B2 Intermediate · Takeaway: Civil engineering narrative and urban planning trade-offs"
+    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Takeaway: Civil engineering narrative and urban planning trade-offs"
   },
   {
     "id": "day-66",
@@ -262,46 +258,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Professional Ethics",
     "focusSkill": "Balancing moral duty, non-disclosure compliance, and personal career risk",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey friends! Day 66 is here, and today we're exploring \"The Whistleblower's Conundrum\". We're zeroing in on balancing moral duty, non-disclosure compliance, and personal career risk and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "introHook": "Good day everyone, welcome to Day 66 of Speak in Progress! Today we are analyzing The Whistleblower's Conundrum through the lens of professional ethics, focusing on balancing moral duty, non-disclosure compliance, and personal career risk. Let's dive in!",
     "storyParagraphs": [
-      "Standing at the doorway before heading into the whistleblower's conundrum, my immediate instinct was to overthink every single detail. In fast-moving environments, our ability to balance balancing moral duty, non-disclosure compliance, and personal career risk with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Ethical whistleblowing dilemma and principled narrative. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving the whistleblower's conundrum, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in professional ethics lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Ethical whistleblowing dilemma and principled narrative. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Whistleblower's Conundrum",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Ethical whistleblowing dilemma and principled narr..."
+      "Analyzing the strategic significance of the whistleblower's conundrum",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Ethical whistleblowing dilemma and principled narrative"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Balancing moral duty, non-disclosure compliance, and personal career risk\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Ethical whistleblowing dilemma and principled narrative\"?"
     ],
-    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Difficulty: B2 Intermediate · Takeaway: Ethical whistleblowing dilemma and principled narrative"
+    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Takeaway: Ethical whistleblowing dilemma and principled narrative"
   },
   {
     "id": "day-67",
@@ -311,46 +306,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Disruptive Innovation",
     "focusSkill": "Evaluating regulatory hurdles and decentralization benefits",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey everyone, welcome to Day 67 on Speak in Progress! Today's story centers on \"Disrupting Legacy Markets with FinTech\". If you've ever felt tested while handling disruptive innovation, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "introHook": "Good day everyone, welcome to Day 67 of Speak in Progress! Today we are analyzing Disrupting Legacy Markets with FinTech through the lens of disruptive innovation, focusing on evaluating regulatory hurdles and decentralization benefits. Let's dive in!",
     "storyParagraphs": [
-      "If someone had warned me that disrupting legacy markets with fintech would test my patience this week, I probably would have laughed it off. In fast-moving environments, our ability to balance evaluating regulatory hurdles and decentralization benefits with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: FinTech innovation narrative and regulatory compliance. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving disrupting legacy markets with fintech, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in disruptive innovation lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: FinTech innovation narrative and regulatory compliance. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Disrupting Legacy Markets with FinTech",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: FinTech innovation narrative and regulatory compli..."
+      "Analyzing the strategic significance of disrupting legacy markets with fintech",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: FinTech innovation narrative and regulatory compliance"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Evaluating regulatory hurdles and decentralization benefits\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"FinTech innovation narrative and regulatory compliance\"?"
     ],
-    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Difficulty: B2 Intermediate · Takeaway: FinTech innovation narrative and regulatory compliance"
+    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Takeaway: FinTech innovation narrative and regulatory compliance"
   },
   {
     "id": "day-68",
@@ -360,46 +354,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "High-Stakes Sales",
     "focusSkill": "Defending pricing tiers, SLA clauses, and penalty caps calmly",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 68 of Speak in Progress, we're exploring \"Negotiating an Enterprise Multi-Year Deal\" and practicing defending pricing tiers, sla clauses, and penalty caps calmly through real-life scenarios. Hit that play button and let's practice together!",
+    "introHook": "Good day everyone, welcome to Day 68 of Speak in Progress! Today we are analyzing Negotiating an Enterprise Multi-Year Deal through the lens of high-stakes sales, focusing on defending pricing tiers, sla clauses, and penalty caps calmly. Let's dive in!",
     "storyParagraphs": [
-      "There is an unwritten rule in modern high-stakes sales that nobody really talks about until negotiating an enterprise multi-year deal forces the issue. In fast-moving environments, our ability to balance defending pricing tiers, sla clauses, and penalty caps calmly with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Enterprise contract defense and commercial composure. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving negotiating an enterprise multi-year deal, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in high-stakes sales lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Enterprise contract defense and commercial composure. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Negotiating an Enterprise Multi-Year Deal",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Enterprise contract defense and commercial composu..."
+      "Analyzing the strategic significance of negotiating an enterprise multi-year deal",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Enterprise contract defense and commercial composure"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Defending pricing tiers, SLA clauses, and penalty caps calmly\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Enterprise contract defense and commercial composure\"?"
     ],
-    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Difficulty: B2 Intermediate · Takeaway: Enterprise contract defense and commercial composure"
+    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Takeaway: Enterprise contract defense and commercial composure"
   },
   {
     "id": "day-69",
@@ -409,46 +402,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Public Persuasion",
     "focusSkill": "Employing anaphora, ethos, and cadence to sway skeptical listeners",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Welcome back to Day 69 of our spoken English journey! Today we are tackling \"The Art of Rhetorical Framing\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "introHook": "Good day everyone, welcome to Day 69 of Speak in Progress! Today we are analyzing The Art of Rhetorical Framing through the lens of public persuasion, focusing on employing anaphora, ethos, and cadence to sway skeptical listeners. Let's dive in!",
     "storyParagraphs": [
-      "The moment the email landed in my inbox regarding the art of rhetorical framing, I knew this was not going to be a routine afternoon. In fast-moving environments, our ability to balance employing anaphora, ethos, and cadence to sway skeptical listeners with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Advanced rhetorical devices, cadence variations, and ethos. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving the art of rhetorical framing, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in public persuasion lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Advanced rhetorical devices, cadence variations, and ethos. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Art of Rhetorical Framing",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Advanced rhetorical devices, cadence variations, a..."
+      "Analyzing the strategic significance of the art of rhetorical framing",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Advanced rhetorical devices, cadence variations, and ethos"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Employing anaphora, ethos, and cadence to sway skeptical listeners\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Advanced rhetorical devices, cadence variations, and ethos\"?"
     ],
-    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Difficulty: B2 Intermediate · Takeaway: Advanced rhetorical devices, cadence variations, and ethos"
+    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Takeaway: Advanced rhetorical devices, cadence variations, and ethos"
   },
   {
     "id": "day-70",
@@ -458,46 +450,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Executive Leadership",
     "focusSkill": "Untangling divergent long-term strategic visions between co-founders",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hello and welcome to Day 70! Today we're diving into \"Resolving Founder Vision Misalignment\" within the world of executive leadership. Our main speaking focus today is untangling divergent long-term strategic visions between co-founders. Let's speak with confidence and natural rhythm!",
+    "introHook": "Good day everyone, welcome to Day 70 of Speak in Progress! Today we are analyzing Resolving Founder Vision Misalignment through the lens of executive leadership, focusing on untangling divergent long-term strategic visions between co-founders. Let's dive in!",
     "storyParagraphs": [
-      "I used to believe that handling resolving founder vision misalignment was mostly a matter of technical know-how, but reality taught me otherwise. In fast-moving environments, our ability to balance untangling divergent long-term strategic visions between co-founders with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Co-founder mediation, resolving vision dissonance with tact. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving resolving founder vision misalignment, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in executive leadership lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Co-founder mediation, resolving vision dissonance with tact. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Resolving Founder Vision Misalignment",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Co-founder mediation, resolving vision dissonance ..."
+      "Analyzing the strategic significance of resolving founder vision misalignment",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Co-founder mediation, resolving vision dissonance with tact"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Untangling divergent long-term strategic visions between co-founders\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Co-founder mediation, resolving vision dissonance with tact\"?"
     ],
-    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Difficulty: B2 Intermediate · Takeaway: Co-founder mediation, resolving vision dissonance with tact"
+    "notes": "Phase 7: Macroeconomics & Governance · CEFR B2 · Takeaway: Co-founder mediation, resolving vision dissonance with tact"
   },
   {
     "id": "day-71",
@@ -507,46 +498,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Global Finance & Geopolitics",
     "focusSkill": "Dissecting risk exposure across emerging market portfolios",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Today is Day 71 on Speak in Progress, and we have an exciting real-world story about \"The Sovereign Wealth Diversification Policy\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "introHook": "Good day everyone, welcome to Day 71 of Speak in Progress! Today we are analyzing The Sovereign Wealth Diversification Policy through the lens of global finance & geopolitics, focusing on dissecting risk exposure across emerging market portfolios. Let's dive in!",
     "storyParagraphs": [
-      "We were halfway through our weekly sprint when an unexpected obstacle surrounding the sovereign wealth diversification policy brought everything to a temporary pause. In fast-moving environments, our ability to balance dissecting risk exposure across emerging market portfolios with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Sovereign risk analysis and sophisticated financial rhetoric. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving the sovereign wealth diversification policy, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in global finance & geopolitics lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Sovereign risk analysis and sophisticated financial rhetoric. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Sovereign Wealth Diversification Policy",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Sovereign risk analysis and sophisticated financia..."
+      "Analyzing the strategic significance of the sovereign wealth diversification policy",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Sovereign risk analysis and sophisticated financial rhetoric"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Dissecting risk exposure across emerging market portfolios\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Sovereign risk analysis and sophisticated financial rhetoric\"?"
     ],
-    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Difficulty: B2 Upper Intermediate · Takeaway: Sovereign risk analysis and sophisticated financial rhetoric"
+    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Takeaway: Sovereign risk analysis and sophisticated financial rhetoric"
   },
   {
     "id": "day-72",
@@ -556,46 +546,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Crisis PR & Reputation",
     "focusSkill": "Pivoting under aggressive journalistic interrogation and controlling narrative",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey friends! Day 72 is here, and today we're exploring \"Handling a Hostile Media Press Conference\". We're zeroing in on pivoting under aggressive journalistic interrogation and controlling narrative and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "introHook": "Good day everyone, welcome to Day 72 of Speak in Progress! Today we are analyzing Handling a Hostile Media Press Conference through the lens of crisis pr & reputation, focusing on pivoting under aggressive journalistic interrogation and controlling narrative. Let's dive in!",
     "storyParagraphs": [
-      "Stepping out of my usual comfort zone, I found myself right in the middle of handling a hostile media press conference, looking for the right words to say. In fast-moving environments, our ability to balance pivoting under aggressive journalistic interrogation and controlling narrative with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Crisis PR bridging techniques and narrative control. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving handling a hostile media press conference, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in crisis pr & reputation lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Crisis PR bridging techniques and narrative control. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Handling a Hostile Media Press Conference",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Crisis PR bridging techniques and narrative contro..."
+      "Analyzing the strategic significance of handling a hostile media press conference",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Crisis PR bridging techniques and narrative control"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Pivoting under aggressive journalistic interrogation and controlling narrative\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Crisis PR bridging techniques and narrative control\"?"
     ],
-    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Difficulty: B2 Upper Intermediate · Takeaway: Crisis PR bridging techniques and narrative control"
+    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Takeaway: Crisis PR bridging techniques and narrative control"
   },
   {
     "id": "day-73",
@@ -605,46 +594,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Legal & Regulatory Strategy",
     "focusSkill": "Delivering precise legal distinctions under congressional scrutiny",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey everyone, welcome to Day 73 on Speak in Progress! Today's story centers on \"The Antitrust Monopolization Inquiry\". If you've ever felt tested while handling legal & regulatory strategy, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "introHook": "Good day everyone, welcome to Day 73 of Speak in Progress! Today we are analyzing The Antitrust Monopolization Inquiry through the lens of legal & regulatory strategy, focusing on delivering precise legal distinctions under congressional scrutiny. Let's dive in!",
     "storyParagraphs": [
-      "I never realized how much was riding on the antitrust monopolization inquiry until a normal workday suddenly shifted out of nowhere. In fast-moving environments, our ability to balance delivering precise legal distinctions under congressional scrutiny with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Precise statutory testimony and measured cadence. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving the antitrust monopolization inquiry, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in legal & regulatory strategy lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Precise statutory testimony and measured cadence. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Antitrust Monopolization Inquiry",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Precise statutory testimony and measured cadence..."
+      "Analyzing the strategic significance of the antitrust monopolization inquiry",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Precise statutory testimony and measured cadence"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Delivering precise legal distinctions under congressional scrutiny\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Precise statutory testimony and measured cadence\"?"
     ],
-    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Difficulty: B2 Upper Intermediate · Takeaway: Precise statutory testimony and measured cadence"
+    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Takeaway: Precise statutory testimony and measured cadence"
   },
   {
     "id": "day-74",
@@ -654,46 +642,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Advanced Epistemology",
     "focusSkill": "Synthesizing theoretical methodologies and critiquing statistical validity",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 74 of Speak in Progress, we're exploring \"Deconstructing Complex Academic Literature\" and practicing synthesizing theoretical methodologies and critiquing statistical validity through real-life scenarios. Hit that play button and let's practice together!",
+    "introHook": "Good day everyone, welcome to Day 74 of Speak in Progress! Today we are analyzing Deconstructing Complex Academic Literature through the lens of advanced epistemology, focusing on synthesizing theoretical methodologies and critiquing statistical validity. Let's dive in!",
     "storyParagraphs": [
-      "The clock on the wall read 2:15 PM, and the tension in the room was palpable as we prepared for deconstructing complex academic literature. In fast-moving environments, our ability to balance synthesizing theoretical methodologies and critiquing statistical validity with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Academic synthesis, methodology critique, and precision. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving deconstructing complex academic literature, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in advanced epistemology lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Academic synthesis, methodology critique, and precision. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Deconstructing Complex Academic Literature",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Academic synthesis, methodology critique, and prec..."
+      "Analyzing the strategic significance of deconstructing complex academic literature",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Academic synthesis, methodology critique, and precision"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Synthesizing theoretical methodologies and critiquing statistical validity\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Academic synthesis, methodology critique, and precision\"?"
     ],
-    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Difficulty: B2 Upper Intermediate · Takeaway: Academic synthesis, methodology critique, and precision"
+    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Takeaway: Academic synthesis, methodology critique, and precision"
   },
   {
     "id": "day-75",
@@ -703,46 +690,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "International Diplomacy",
     "focusSkill": "Drafting diplomatic communiqués with bilateral face-saving compromises",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Welcome back to Day 75 of our spoken English journey! Today we are tackling \"Diplomatic Mediation in Border Trade Disputes\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "introHook": "Good day everyone, welcome to Day 75 of Speak in Progress! Today we are analyzing Diplomatic Mediation in Border Trade Disputes through the lens of international diplomacy, focusing on drafting diplomatic communiqués with bilateral face-saving compromises. Let's dive in!",
     "storyParagraphs": [
-      "Two weeks ago, an unexpected conversation about diplomatic mediation in border trade disputes completely challenged how I approach international diplomacy. In fast-moving environments, our ability to balance drafting diplomatic communiqués with bilateral face-saving compromises with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Bilateral diplomatic negotiation and face-saving rhetoric. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving diplomatic mediation in border trade disputes, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in international diplomacy lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Bilateral diplomatic negotiation and face-saving rhetoric. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Diplomatic Mediation in Border Trade Disputes",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Bilateral diplomatic negotiation and face-saving r..."
+      "Analyzing the strategic significance of diplomatic mediation in border trade disputes",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Bilateral diplomatic negotiation and face-saving rhetoric"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Drafting diplomatic communiqués with bilateral face-saving compromises\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Bilateral diplomatic negotiation and face-saving rhetoric\"?"
     ],
-    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Difficulty: B2 Upper Intermediate · Takeaway: Bilateral diplomatic negotiation and face-saving rhetoric"
+    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Takeaway: Bilateral diplomatic negotiation and face-saving rhetoric"
   },
   {
     "id": "day-76",
@@ -752,46 +738,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Neuroscience & Psychology",
     "focusSkill": "Explaining heuristic biases, executive function, and mental fatigue",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hello and welcome to Day 76! Today we're diving into \"The Cognitive Architecture of Decision Fatigue\" within the world of neuroscience & psychology. Our main speaking focus today is explaining heuristic biases, executive function, and mental fatigue. Let's speak with confidence and natural rhythm!",
+    "introHook": "Good day everyone, welcome to Day 76 of Speak in Progress! Today we are analyzing The Cognitive Architecture of Decision Fatigue through the lens of neuroscience & psychology, focusing on explaining heuristic biases, executive function, and mental fatigue. Let's dive in!",
     "storyParagraphs": [
-      "Few everyday dilemmas cause as much hesitation as the cognitive architecture of decision fatigue, especially when everyone is watching how you respond. In fast-moving environments, our ability to balance explaining heuristic biases, executive function, and mental fatigue with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Cognitive psychology frameworks and clear analogies. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving the cognitive architecture of decision fatigue, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in neuroscience & psychology lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Cognitive psychology frameworks and clear analogies. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Cognitive Architecture of Decision Fatigue",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Cognitive psychology frameworks and clear analogie..."
+      "Analyzing the strategic significance of the cognitive architecture of decision fatigue",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Cognitive psychology frameworks and clear analogies"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Explaining heuristic biases, executive function, and mental fatigue\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Cognitive psychology frameworks and clear analogies\"?"
     ],
-    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Difficulty: B2 Upper Intermediate · Takeaway: Cognitive psychology frameworks and clear analogies"
+    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Takeaway: Cognitive psychology frameworks and clear analogies"
   },
   {
     "id": "day-77",
@@ -801,46 +786,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Enterprise Architecture",
     "focusSkill": "Articulating latency, fault tolerance, and zero-downtime cutovers",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Today is Day 77 on Speak in Progress, and we have an exciting real-world story about \"Orchestrating an Enterprise Cloud Migration\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "introHook": "Good day everyone, welcome to Day 77 of Speak in Progress! Today we are analyzing Orchestrating an Enterprise Cloud Migration through the lens of enterprise architecture, focusing on articulating latency, fault tolerance, and zero-downtime cutovers. Let's dive in!",
     "storyParagraphs": [
-      "It started with an offhand remark by the coffee machine that soon escalated into a serious discussion about orchestrating an enterprise cloud migration. In fast-moving environments, our ability to balance articulating latency, fault tolerance, and zero-downtime cutovers with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Enterprise architecture pitch and technical precision. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving orchestrating an enterprise cloud migration, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in enterprise architecture lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Enterprise architecture pitch and technical precision. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Orchestrating an Enterprise Cloud Migration",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Enterprise architecture pitch and technical precis..."
+      "Analyzing the strategic significance of orchestrating an enterprise cloud migration",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Enterprise architecture pitch and technical precision"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Articulating latency, fault tolerance, and zero-downtime cutovers\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Enterprise architecture pitch and technical precision\"?"
     ],
-    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Difficulty: B2 Upper Intermediate · Takeaway: Enterprise architecture pitch and technical precision"
+    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Takeaway: Enterprise architecture pitch and technical precision"
   },
   {
     "id": "day-78",
@@ -850,46 +834,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Socio-Economic Philosophy",
     "focusSkill": "Deconstructing macroeconomic inflationary feedback loops and welfare efficacy",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey friends! Day 78 is here, and today we're exploring \"Debating Universal Basic Income Viability\". We're zeroing in on deconstructing macroeconomic inflationary feedback loops and welfare efficacy and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "introHook": "Good day everyone, welcome to Day 78 of Speak in Progress! Today we are analyzing Debating Universal Basic Income Viability through the lens of socio-economic philosophy, focusing on deconstructing macroeconomic inflationary feedback loops and welfare efficacy. Let's dive in!",
     "storyParagraphs": [
-      "Standing at the doorway before heading into debating universal basic income viability, my immediate instinct was to overthink every single detail. In fast-moving environments, our ability to balance deconstructing macroeconomic inflationary feedback loops and welfare efficacy with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Macroeconomic theory and socioeconomic discourse. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving debating universal basic income viability, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in socio-economic philosophy lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Macroeconomic theory and socioeconomic discourse. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Debating Universal Basic Income Viability",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Macroeconomic theory and socioeconomic discourse..."
+      "Analyzing the strategic significance of debating universal basic income viability",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Macroeconomic theory and socioeconomic discourse"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Deconstructing macroeconomic inflationary feedback loops and welfare efficacy\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Macroeconomic theory and socioeconomic discourse\"?"
     ],
-    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Difficulty: B2 Upper Intermediate · Takeaway: Macroeconomic theory and socioeconomic discourse"
+    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Takeaway: Macroeconomic theory and socioeconomic discourse"
   },
   {
     "id": "day-79",
@@ -899,46 +882,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "M&A Defense Tactics",
     "focusSkill": "Evaluating poison-pill defenses and fiduciary duties to minority shareholders",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "Hey everyone, welcome to Day 79 on Speak in Progress! Today's story centers on \"Navigating a Hostile Takeover Bid\". If you've ever felt tested while handling m&a defense tactics, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "introHook": "Good day everyone, welcome to Day 79 of Speak in Progress! Today we are analyzing Navigating a Hostile Takeover Bid through the lens of m&a defense tactics, focusing on evaluating poison-pill defenses and fiduciary duties to minority shareholders. Let's dive in!",
     "storyParagraphs": [
-      "If someone had warned me that navigating a hostile takeover bid would test my patience this week, I probably would have laughed it off. In fast-moving environments, our ability to balance evaluating poison-pill defenses and fiduciary duties to minority shareholders with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Hostile takeover defense and corporate governance poise. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving navigating a hostile takeover bid, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in m&a defense tactics lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Hostile takeover defense and corporate governance poise. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding Navigating a Hostile Takeover Bid",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Hostile takeover defense and corporate governance ..."
+      "Analyzing the strategic significance of navigating a hostile takeover bid",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Hostile takeover defense and corporate governance poise"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Evaluating poison-pill defenses and fiduciary duties to minority shareholders\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Hostile takeover defense and corporate governance poise\"?"
     ],
-    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Difficulty: B2 Upper Intermediate · Takeaway: Hostile takeover defense and corporate governance poise"
+    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Takeaway: Hostile takeover defense and corporate governance poise"
   },
   {
     "id": "day-80",
@@ -948,46 +930,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "topic": "Future Foresight",
     "focusSkill": "Exploring probability cascades in frontier technologies and civilization survival",
     "estimatedReadTime": "2 min 45 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 80 of Speak in Progress, we're exploring \"The Philosophy of Existential Risk\" and practicing exploring probability cascades in frontier technologies and civilization survival through real-life scenarios. Hit that play button and let's practice together!",
+    "introHook": "Good day everyone, welcome to Day 80 of Speak in Progress! Today we are analyzing The Philosophy of Existential Risk through the lens of future foresight, focusing on exploring probability cascades in frontier technologies and civilization survival. Let's dive in!",
     "storyParagraphs": [
-      "There is an unwritten rule in modern future foresight that nobody really talks about until the philosophy of existential risk forces the issue. In fast-moving environments, our ability to balance exploring probability cascades in frontier technologies and civilization survival with genuine empathy often determines whether an interaction succeeds or falls flat.",
-      "The stakes were higher than usual because differing expectations had created subtle friction among the stakeholders involved. Everyone arrived at the table with preconceived notions, and a single poorly chosen phrase could have easily derailed constructive dialogue.",
-      "Rather than defensively pushing my own agenda, I deliberately shifted my approach. I validated their primary concerns, asked clarifying questions to uncover unspoken assumptions, and reframed the situation as a shared problem we were equipped to solve together.",
-      "That simple pivot completely transformed the energy in the room. Rigid postures softened, defensive counterarguments gave way to practical brainstorming, and by the end of the conversation, we had drafted a realistic, mutually beneficial roadmap forward.",
-      "Ultimately, this encounter reinforced a timeless speaking truth: Existential risk foresight and philosophical gravity. Executive presence isn't about dominating the floor; it's about projecting calm authority while bringing everyone into alignment."
+      "Navigating modern corporate governance and macroeconomic complexity requires high-level communicative precision. In scenarios involving the philosophy of existential risk, executive decision-makers cannot rely on simplistic formulas; they must synthesize disparate data points under high scrutiny.",
+      "The fundamental tension in future foresight lies between immediate operational resilience and long-term systemic value creation. When unforeseen variables disrupt standard forecasts, leaders must communicate strategic shifts with composure and transparency.",
+      "By deploying structured rhetorical frameworks—such as deconstructing core assumptions, evaluating second-order consequences, and articulating contingency buffers—speakers can anchor stakeholder confidence even amid market volatility.",
+      "Furthermore, effective executive dialogue is defined by the capacity to address counter-arguments proactively. Rather than dismissing divergent viewpoints, seasoned communicators integrate legitimate critiques to fortify their strategic position.",
+      "Ultimately, today's practice reinforces our core takeaway: Existential risk foresight and philosophical gravity. Mastering nuanced delivery elevates your leadership presence from mere technical competency to strategic authority."
     ],
     "usefulExpressions": [
       {
-        "phrase": "shift the approach",
-        "meaning": "to change one's strategy or perspective when facing resistance",
-        "example": "When negotiations stalled, our director shifted the approach to focus on long-term value.",
-        "speakingTip": "Clean ending 't' on 'shift' linked smoothly into 'the'."
+        "phrase": "second-order consequences",
+        "meaning": "the subsequent, indirect effects caused by an initial decision or event",
+        "example": "Executive leaders must weigh second-order consequences before announcing policy pivots.",
+        "speakingTip": "Enunciate 'second-order' with deliberate gravitas."
       },
       {
-        "phrase": "preconceived notions",
-        "meaning": "opinions formed beforehand without adequate evidence or experience",
-        "example": "We set aside our preconceived notions to listen openly to customer feedback.",
-        "speakingTip": "Stress the third syllable: pre-con-CEIVED."
+        "phrase": "fortify the position",
+        "meaning": "to strengthen an argument, stance, or organization against criticism or competition",
+        "example": "Providing empirical performance data fortified our strategic position.",
+        "speakingTip": "Stress 'fortify' and 'position' with crisp consonants."
       },
       {
-        "phrase": "mutually beneficial roadmap",
-        "meaning": "a strategic plan that delivers positive outcomes for all parties involved",
-        "example": "The agreement established a mutually beneficial roadmap for future collaboration.",
-        "speakingTip": "Rhythmic balance: 'MU-tually bene-FI-cial'."
+        "phrase": "amid market volatility",
+        "meaning": "during a period of rapid, unpredictable financial or environmental changes",
+        "example": "The firm preserved shareholder trust amid severe market volatility.",
+        "speakingTip": "Pronounce 'amid' softly and let 'volatility' carry weight."
       }
     ],
     "retellingPrompts": [
-      "The high-stakes backdrop and tension surrounding The Philosophy of Existential Risk",
-      "Differing stakeholder expectations threatening constructive dialogue",
-      "Validating concerns and reframing the core problem collaboratively",
-      "The resulting alignment and mutually agreed-upon roadmap",
-      "Executive takeaway: Existential risk foresight and philosophical gravi..."
+      "Analyzing the strategic significance of the philosophy of existential risk",
+      "Deconstructing immediate resilience versus long-term value creation",
+      "Deploying structured frameworks to evaluate second-order impacts",
+      "Commanding executive presence through: Existential risk foresight and philosophical gravity"
     ],
     "reflectionPrompts": [
-      "Did I use diplomatic language and transitional bridges effortlessly?",
-      "Was my vocal modulation confident and persuasive during the retelling?"
+      "How effectively did I demonstrate today's core focus: \"Exploring probability cascades in frontier technologies and civilization survival\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Existential risk foresight and philosophical gravity\"?"
     ],
-    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Difficulty: B2 Upper Intermediate · Takeaway: Existential risk foresight and philosophical gravity"
+    "notes": "Phase 8: Advanced Epistemology & Forensics · CEFR B2 · Takeaway: Existential risk foresight and philosophical gravity"
   },
   {
     "id": "day-81",
@@ -996,47 +977,46 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "level": "C1",
     "topic": "Executive Rhetoric",
     "focusSkill": "Projecting executive poise, commanding gravitas, and strategic storytelling",
-    "estimatedReadTime": "3 min 15 sec",
-    "introHook": "Welcome back to Day 81 of our spoken English journey! Today we are tackling \"Presenting a Transformative Boardroom Keynote\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "estimatedReadTime": "2 min 45 sec",
+    "introHook": "Distinguished practitioners, welcome to Day 81 of Speak in Progress. Today we dissect the nuances of Presenting a Transformative Boardroom Keynote, cultivating executive gravitas and projecting executive poise, commanding gravitas, and strategic storytelling. Let us begin our practice.",
     "storyParagraphs": [
-      "The moment the email landed in my inbox regarding presenting a transformative boardroom keynote, I knew this was not going to be a routine afternoon. At the highest echelons of professional discourse, presenting a transformative boardroom keynote presents a rigorous test of rhetorical dexterity, analytical composure, and unscripted intellectual gravitas.",
-      "What made this particular scenario exceptionally demanding was the intersection of competing paradigms and systemic complexity. Traditional, cookie-cutter frameworks offered little guidance, requiring participants to navigate ambiguity without defaulting to superficial platitudes.",
-      "During the critical exchange, success hinged on the capacity to deconstruct polarized viewpoints with surgical precision. Rather than succumbing to emotional reactivity, the discourse was elevated by interrogating underlying premises, synthesizing divergent data streams, and articulating principled compromises.",
-      "The resonance of that intervention was immediate. By contextualizing immediate trade-offs within an expansive strategic horizon, skeptical counterparts recognized that intellectual honesty and decisive leadership could coexist harmoniously.",
-      "As this capstone practice demonstrates: Boardroom keynote gravitas, vocal projection, and vision. True oratorical mastery is never a performance of borrowed jargon; it is the spontaneous manifestation of deep clarity, resonant prosody, and authentic moral authority."
+      "At the C1 advanced echelon, spoken fluency transcends grammatical correctness; it demands rhetorical sophistication, conceptual clarity, and dialectic agility. Examining presenting a transformative boardroom keynote within executive rhetoric illuminates how high-stakes communication shapes policy and organizational paradigms.",
+      "In complex multilateral dialogues, friction frequently arises not from antagonistic intent, but from incommensurable epistemological models and implicit cultural assumptions. A skilled orator must decipher these subtextual currents without escalating interpersonal dissonance.",
+      "By employing deliberate cadence modulations, anaphora, and principled circumlocution, a speaker can dismantle entrenched dogma while preserving mutual dignity. The objective is not superficial victory, but establishing an enduring consensus grounded in empirical reality.",
+      "Moreover, ethical statesmanship requires articulating uncomfortable truths with unflinching composure. Addressing trade-offs transparently dispels the illusion of effortless solutions, thereby cultivating profound institutional credibility.",
+      "Reflect deeply upon today's spoken deliverable: Boardroom keynote gravitas, vocal projection, and vision. Command of language at this caliber transforms contentious debates into catalysts for systemic renewal."
     ],
     "usefulExpressions": [
       {
-        "phrase": "surgical precision",
-        "meaning": "exactness, deliberate intentionality, and meticulous care in execution or language",
-        "example": "The keynote speaker dismantled the opposing hypothesis with surgical precision.",
-        "speakingTip": "Crisp initial 's' followed by clean plosive 'p'."
+        "phrase": "dialectic agility",
+        "meaning": "the capacity to analyze opposing arguments logically and synthesize a higher truth",
+        "example": "Her dialectic agility enabled her to bridge deeply polarized ideological factions.",
+        "speakingTip": "Crisp pronunciation: dy-a-LEC-tic a-GIL-i-ty."
       },
       {
-        "phrase": "competing paradigms",
-        "meaning": "divergent fundamental models, philosophies, or worldviews contending for dominance",
-        "example": "The conference highlighted competing paradigms in artificial intelligence governance.",
-        "speakingTip": "Pronounce 'paradigm' with a soft silent 'g': PAIR-uh-dime."
+        "phrase": "dismantle entrenched dogma",
+        "meaning": "to methodically challenge and break down deeply rooted, unquestioned beliefs",
+        "example": "The keynote speaker dismantled entrenched dogma with empirical rigor.",
+        "speakingTip": "Stress 'dismantle' and 'entrenched' with authoritative weight."
       },
       {
-        "phrase": "intellectual gravitas",
-        "meaning": "commanding dignity, profound depth of thought, and authoritative presence",
-        "example": "Her closing remarks resonated with unmistakable intellectual gravitas.",
-        "speakingTip": "Resonate from the lower chest: open 'ah' in 'gravitas'."
+        "phrase": "unflinching composure",
+        "meaning": "absolute calm and self-control when confronted with adversity or hostile questioning",
+        "example": "He maintained unflinching composure throughout the parliamentary inquiry.",
+        "speakingTip": "Smooth, controlled prosody with measured vocal pacing."
       }
     ],
     "retellingPrompts": [
-      "The systemic complexity and philosophical stakes of Presenting a Transformative Boardroom Keynote",
-      "The inadequacy of simplistic frameworks under high scrutiny",
-      "Deconstructing polarized arguments with surgical precision",
-      "Contextualizing trade-offs within a principled strategic horizon",
-      "Mastery takeaway: Boardroom keynote gravitas, vocal projection, and ..."
+      "Examining the conceptual architecture of presenting a transformative boardroom keynote",
+      "Deciphering subtextual frictions and implicit cultural paradigms",
+      "Employing dialectic agility and principled rhetoric to build consensus",
+      "Projecting C1 leadership gravitas through: Boardroom keynote gravitas, vocal projection, and vision"
     ],
     "reflectionPrompts": [
-      "Did I sustain near-native prosody, rhythmic cadence, and unforced vocabulary?",
-      "Did I maintain authoritative oratorical posture and deliberate pauses?"
+      "How effectively did I demonstrate today's core focus: \"Projecting executive poise, commanding gravitas, and strategic storytelling\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Boardroom keynote gravitas, vocal projection, and vision\"?"
     ],
-    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Difficulty: B2 Upper Intermediate · Takeaway: Boardroom keynote gravitas, vocal projection, and vision"
+    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Takeaway: Boardroom keynote gravitas, vocal projection, and vision"
   },
   {
     "id": "day-82",
@@ -1045,47 +1025,46 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "level": "C1",
     "topic": "Civil Liberties & Tech",
     "focusSkill": "Interrogating disproportionate surveillance impact on marginalized groups",
-    "estimatedReadTime": "3 min 15 sec",
-    "introHook": "Hello and welcome to Day 82! Today we're diving into \"The Biometric Surveillance Regulation Hearing\" within the world of civil liberties & tech. Our main speaking focus today is interrogating disproportionate surveillance impact on marginalized groups. Let's speak with confidence and natural rhythm!",
+    "estimatedReadTime": "2 min 45 sec",
+    "introHook": "Distinguished practitioners, welcome to Day 82 of Speak in Progress. Today we dissect the nuances of The Biometric Surveillance Regulation Hearing, cultivating executive gravitas and interrogating disproportionate surveillance impact on marginalized groups. Let us begin our practice.",
     "storyParagraphs": [
-      "I used to believe that handling the biometric surveillance regulation hearing was mostly a matter of technical know-how, but reality taught me otherwise. At the highest echelons of professional discourse, the biometric surveillance regulation hearing presents a rigorous test of rhetorical dexterity, analytical composure, and unscripted intellectual gravitas.",
-      "What made this particular scenario exceptionally demanding was the intersection of competing paradigms and systemic complexity. Traditional, cookie-cutter frameworks offered little guidance, requiring participants to navigate ambiguity without defaulting to superficial platitudes.",
-      "During the critical exchange, success hinged on the capacity to deconstruct polarized viewpoints with surgical precision. Rather than succumbing to emotional reactivity, the discourse was elevated by interrogating underlying premises, synthesizing divergent data streams, and articulating principled compromises.",
-      "The resonance of that intervention was immediate. By contextualizing immediate trade-offs within an expansive strategic horizon, skeptical counterparts recognized that intellectual honesty and decisive leadership could coexist harmoniously.",
-      "As this capstone practice demonstrates: Civil liberties debate and probing cross-examination. True oratorical mastery is never a performance of borrowed jargon; it is the spontaneous manifestation of deep clarity, resonant prosody, and authentic moral authority."
+      "At the C1 advanced echelon, spoken fluency transcends grammatical correctness; it demands rhetorical sophistication, conceptual clarity, and dialectic agility. Examining the biometric surveillance regulation hearing within civil liberties & tech illuminates how high-stakes communication shapes policy and organizational paradigms.",
+      "In complex multilateral dialogues, friction frequently arises not from antagonistic intent, but from incommensurable epistemological models and implicit cultural assumptions. A skilled orator must decipher these subtextual currents without escalating interpersonal dissonance.",
+      "By employing deliberate cadence modulations, anaphora, and principled circumlocution, a speaker can dismantle entrenched dogma while preserving mutual dignity. The objective is not superficial victory, but establishing an enduring consensus grounded in empirical reality.",
+      "Moreover, ethical statesmanship requires articulating uncomfortable truths with unflinching composure. Addressing trade-offs transparently dispels the illusion of effortless solutions, thereby cultivating profound institutional credibility.",
+      "Reflect deeply upon today's spoken deliverable: Civil liberties debate and probing cross-examination. Command of language at this caliber transforms contentious debates into catalysts for systemic renewal."
     ],
     "usefulExpressions": [
       {
-        "phrase": "surgical precision",
-        "meaning": "exactness, deliberate intentionality, and meticulous care in execution or language",
-        "example": "The keynote speaker dismantled the opposing hypothesis with surgical precision.",
-        "speakingTip": "Crisp initial 's' followed by clean plosive 'p'."
+        "phrase": "dialectic agility",
+        "meaning": "the capacity to analyze opposing arguments logically and synthesize a higher truth",
+        "example": "Her dialectic agility enabled her to bridge deeply polarized ideological factions.",
+        "speakingTip": "Crisp pronunciation: dy-a-LEC-tic a-GIL-i-ty."
       },
       {
-        "phrase": "competing paradigms",
-        "meaning": "divergent fundamental models, philosophies, or worldviews contending for dominance",
-        "example": "The conference highlighted competing paradigms in artificial intelligence governance.",
-        "speakingTip": "Pronounce 'paradigm' with a soft silent 'g': PAIR-uh-dime."
+        "phrase": "dismantle entrenched dogma",
+        "meaning": "to methodically challenge and break down deeply rooted, unquestioned beliefs",
+        "example": "The keynote speaker dismantled entrenched dogma with empirical rigor.",
+        "speakingTip": "Stress 'dismantle' and 'entrenched' with authoritative weight."
       },
       {
-        "phrase": "intellectual gravitas",
-        "meaning": "commanding dignity, profound depth of thought, and authoritative presence",
-        "example": "Her closing remarks resonated with unmistakable intellectual gravitas.",
-        "speakingTip": "Resonate from the lower chest: open 'ah' in 'gravitas'."
+        "phrase": "unflinching composure",
+        "meaning": "absolute calm and self-control when confronted with adversity or hostile questioning",
+        "example": "He maintained unflinching composure throughout the parliamentary inquiry.",
+        "speakingTip": "Smooth, controlled prosody with measured vocal pacing."
       }
     ],
     "retellingPrompts": [
-      "The systemic complexity and philosophical stakes of The Biometric Surveillance Regulation Hearing",
-      "The inadequacy of simplistic frameworks under high scrutiny",
-      "Deconstructing polarized arguments with surgical precision",
-      "Contextualizing trade-offs within a principled strategic horizon",
-      "Mastery takeaway: Civil liberties debate and probing cross-examinati..."
+      "Examining the conceptual architecture of the biometric surveillance regulation hearing",
+      "Deciphering subtextual frictions and implicit cultural paradigms",
+      "Employing dialectic agility and principled rhetoric to build consensus",
+      "Projecting C1 leadership gravitas through: Civil liberties debate and probing cross-examination"
     ],
     "reflectionPrompts": [
-      "Did I sustain near-native prosody, rhythmic cadence, and unforced vocabulary?",
-      "Did I maintain authoritative oratorical posture and deliberate pauses?"
+      "How effectively did I demonstrate today's core focus: \"Interrogating disproportionate surveillance impact on marginalized groups\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Civil liberties debate and probing cross-examination\"?"
     ],
-    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Difficulty: B2 Upper Intermediate · Takeaway: Civil liberties debate and probing cross-examination"
+    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Takeaway: Civil liberties debate and probing cross-examination"
   },
   {
     "id": "day-83",
@@ -1094,47 +1073,46 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "level": "C1",
     "topic": "Quantitative Finance",
     "focusSkill": "Explaining liquidity dry-ups, flash crashes, and arbitrage dynamics",
-    "estimatedReadTime": "3 min 15 sec",
-    "introHook": "Today is Day 83 on Speak in Progress, and we have an exciting real-world story about \"Algorithmic High-Frequency Trading Volatility\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "estimatedReadTime": "2 min 45 sec",
+    "introHook": "Distinguished practitioners, welcome to Day 83 of Speak in Progress. Today we dissect the nuances of Algorithmic High-Frequency Trading Volatility, cultivating executive gravitas and explaining liquidity dry-ups, flash crashes, and arbitrage dynamics. Let us begin our practice.",
     "storyParagraphs": [
-      "We were halfway through our weekly sprint when an unexpected obstacle surrounding algorithmic high-frequency trading volatility brought everything to a temporary pause. At the highest echelons of professional discourse, algorithmic high-frequency trading volatility presents a rigorous test of rhetorical dexterity, analytical composure, and unscripted intellectual gravitas.",
-      "What made this particular scenario exceptionally demanding was the intersection of competing paradigms and systemic complexity. Traditional, cookie-cutter frameworks offered little guidance, requiring participants to navigate ambiguity without defaulting to superficial platitudes.",
-      "During the critical exchange, success hinged on the capacity to deconstruct polarized viewpoints with surgical precision. Rather than succumbing to emotional reactivity, the discourse was elevated by interrogating underlying premises, synthesizing divergent data streams, and articulating principled compromises.",
-      "The resonance of that intervention was immediate. By contextualizing immediate trade-offs within an expansive strategic horizon, skeptical counterparts recognized that intellectual honesty and decisive leadership could coexist harmoniously.",
-      "As this capstone practice demonstrates: Quantitative finance concepts explained with dynamic cadence. True oratorical mastery is never a performance of borrowed jargon; it is the spontaneous manifestation of deep clarity, resonant prosody, and authentic moral authority."
+      "At the C1 advanced echelon, spoken fluency transcends grammatical correctness; it demands rhetorical sophistication, conceptual clarity, and dialectic agility. Examining algorithmic high-frequency trading volatility within quantitative finance illuminates how high-stakes communication shapes policy and organizational paradigms.",
+      "In complex multilateral dialogues, friction frequently arises not from antagonistic intent, but from incommensurable epistemological models and implicit cultural assumptions. A skilled orator must decipher these subtextual currents without escalating interpersonal dissonance.",
+      "By employing deliberate cadence modulations, anaphora, and principled circumlocution, a speaker can dismantle entrenched dogma while preserving mutual dignity. The objective is not superficial victory, but establishing an enduring consensus grounded in empirical reality.",
+      "Moreover, ethical statesmanship requires articulating uncomfortable truths with unflinching composure. Addressing trade-offs transparently dispels the illusion of effortless solutions, thereby cultivating profound institutional credibility.",
+      "Reflect deeply upon today's spoken deliverable: Quantitative finance concepts explained with dynamic cadence. Command of language at this caliber transforms contentious debates into catalysts for systemic renewal."
     ],
     "usefulExpressions": [
       {
-        "phrase": "surgical precision",
-        "meaning": "exactness, deliberate intentionality, and meticulous care in execution or language",
-        "example": "The keynote speaker dismantled the opposing hypothesis with surgical precision.",
-        "speakingTip": "Crisp initial 's' followed by clean plosive 'p'."
+        "phrase": "dialectic agility",
+        "meaning": "the capacity to analyze opposing arguments logically and synthesize a higher truth",
+        "example": "Her dialectic agility enabled her to bridge deeply polarized ideological factions.",
+        "speakingTip": "Crisp pronunciation: dy-a-LEC-tic a-GIL-i-ty."
       },
       {
-        "phrase": "competing paradigms",
-        "meaning": "divergent fundamental models, philosophies, or worldviews contending for dominance",
-        "example": "The conference highlighted competing paradigms in artificial intelligence governance.",
-        "speakingTip": "Pronounce 'paradigm' with a soft silent 'g': PAIR-uh-dime."
+        "phrase": "dismantle entrenched dogma",
+        "meaning": "to methodically challenge and break down deeply rooted, unquestioned beliefs",
+        "example": "The keynote speaker dismantled entrenched dogma with empirical rigor.",
+        "speakingTip": "Stress 'dismantle' and 'entrenched' with authoritative weight."
       },
       {
-        "phrase": "intellectual gravitas",
-        "meaning": "commanding dignity, profound depth of thought, and authoritative presence",
-        "example": "Her closing remarks resonated with unmistakable intellectual gravitas.",
-        "speakingTip": "Resonate from the lower chest: open 'ah' in 'gravitas'."
+        "phrase": "unflinching composure",
+        "meaning": "absolute calm and self-control when confronted with adversity or hostile questioning",
+        "example": "He maintained unflinching composure throughout the parliamentary inquiry.",
+        "speakingTip": "Smooth, controlled prosody with measured vocal pacing."
       }
     ],
     "retellingPrompts": [
-      "The systemic complexity and philosophical stakes of Algorithmic High-Frequency Trading Volatility",
-      "The inadequacy of simplistic frameworks under high scrutiny",
-      "Deconstructing polarized arguments with surgical precision",
-      "Contextualizing trade-offs within a principled strategic horizon",
-      "Mastery takeaway: Quantitative finance concepts explained with dynam..."
+      "Examining the conceptual architecture of algorithmic high-frequency trading volatility",
+      "Deciphering subtextual frictions and implicit cultural paradigms",
+      "Employing dialectic agility and principled rhetoric to build consensus",
+      "Projecting C1 leadership gravitas through: Quantitative finance concepts explained with dynamic cadence"
     ],
     "reflectionPrompts": [
-      "Did I sustain near-native prosody, rhythmic cadence, and unforced vocabulary?",
-      "Did I maintain authoritative oratorical posture and deliberate pauses?"
+      "How effectively did I demonstrate today's core focus: \"Explaining liquidity dry-ups, flash crashes, and arbitrage dynamics\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Quantitative finance concepts explained with dynamic cadence\"?"
     ],
-    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Difficulty: B2 Upper Intermediate · Takeaway: Quantitative finance concepts explained with dynamic cadence"
+    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Takeaway: Quantitative finance concepts explained with dynamic cadence"
   },
   {
     "id": "day-84",
@@ -1143,47 +1121,46 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "level": "C1",
     "topic": "Philosophical Discourse",
     "focusSkill": "Employing Socratic questioning to dismantle dogmatic entrenched beliefs",
-    "estimatedReadTime": "3 min 15 sec",
-    "introHook": "Hey friends! Day 84 is here, and today we're exploring \"Overcoming Polarization through Dialectic Inquiry\". We're zeroing in on employing socratic questioning to dismantle dogmatic entrenched beliefs and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "estimatedReadTime": "2 min 45 sec",
+    "introHook": "Distinguished practitioners, welcome to Day 84 of Speak in Progress. Today we dissect the nuances of Overcoming Polarization through Dialectic Inquiry, cultivating executive gravitas and employing socratic questioning to dismantle dogmatic entrenched beliefs. Let us begin our practice.",
     "storyParagraphs": [
-      "Stepping out of my usual comfort zone, I found myself right in the middle of overcoming polarization through dialectic inquiry, looking for the right words to say. At the highest echelons of professional discourse, overcoming polarization through dialectic inquiry presents a rigorous test of rhetorical dexterity, analytical composure, and unscripted intellectual gravitas.",
-      "What made this particular scenario exceptionally demanding was the intersection of competing paradigms and systemic complexity. Traditional, cookie-cutter frameworks offered little guidance, requiring participants to navigate ambiguity without defaulting to superficial platitudes.",
-      "During the critical exchange, success hinged on the capacity to deconstruct polarized viewpoints with surgical precision. Rather than succumbing to emotional reactivity, the discourse was elevated by interrogating underlying premises, synthesizing divergent data streams, and articulating principled compromises.",
-      "The resonance of that intervention was immediate. By contextualizing immediate trade-offs within an expansive strategic horizon, skeptical counterparts recognized that intellectual honesty and decisive leadership could coexist harmoniously.",
-      "As this capstone practice demonstrates: Socratic dialectic questioning and respectful deconstruction. True oratorical mastery is never a performance of borrowed jargon; it is the spontaneous manifestation of deep clarity, resonant prosody, and authentic moral authority."
+      "At the C1 advanced echelon, spoken fluency transcends grammatical correctness; it demands rhetorical sophistication, conceptual clarity, and dialectic agility. Examining overcoming polarization through dialectic inquiry within philosophical discourse illuminates how high-stakes communication shapes policy and organizational paradigms.",
+      "In complex multilateral dialogues, friction frequently arises not from antagonistic intent, but from incommensurable epistemological models and implicit cultural assumptions. A skilled orator must decipher these subtextual currents without escalating interpersonal dissonance.",
+      "By employing deliberate cadence modulations, anaphora, and principled circumlocution, a speaker can dismantle entrenched dogma while preserving mutual dignity. The objective is not superficial victory, but establishing an enduring consensus grounded in empirical reality.",
+      "Moreover, ethical statesmanship requires articulating uncomfortable truths with unflinching composure. Addressing trade-offs transparently dispels the illusion of effortless solutions, thereby cultivating profound institutional credibility.",
+      "Reflect deeply upon today's spoken deliverable: Socratic dialectic questioning and respectful deconstruction. Command of language at this caliber transforms contentious debates into catalysts for systemic renewal."
     ],
     "usefulExpressions": [
       {
-        "phrase": "surgical precision",
-        "meaning": "exactness, deliberate intentionality, and meticulous care in execution or language",
-        "example": "The keynote speaker dismantled the opposing hypothesis with surgical precision.",
-        "speakingTip": "Crisp initial 's' followed by clean plosive 'p'."
+        "phrase": "dialectic agility",
+        "meaning": "the capacity to analyze opposing arguments logically and synthesize a higher truth",
+        "example": "Her dialectic agility enabled her to bridge deeply polarized ideological factions.",
+        "speakingTip": "Crisp pronunciation: dy-a-LEC-tic a-GIL-i-ty."
       },
       {
-        "phrase": "competing paradigms",
-        "meaning": "divergent fundamental models, philosophies, or worldviews contending for dominance",
-        "example": "The conference highlighted competing paradigms in artificial intelligence governance.",
-        "speakingTip": "Pronounce 'paradigm' with a soft silent 'g': PAIR-uh-dime."
+        "phrase": "dismantle entrenched dogma",
+        "meaning": "to methodically challenge and break down deeply rooted, unquestioned beliefs",
+        "example": "The keynote speaker dismantled entrenched dogma with empirical rigor.",
+        "speakingTip": "Stress 'dismantle' and 'entrenched' with authoritative weight."
       },
       {
-        "phrase": "intellectual gravitas",
-        "meaning": "commanding dignity, profound depth of thought, and authoritative presence",
-        "example": "Her closing remarks resonated with unmistakable intellectual gravitas.",
-        "speakingTip": "Resonate from the lower chest: open 'ah' in 'gravitas'."
+        "phrase": "unflinching composure",
+        "meaning": "absolute calm and self-control when confronted with adversity or hostile questioning",
+        "example": "He maintained unflinching composure throughout the parliamentary inquiry.",
+        "speakingTip": "Smooth, controlled prosody with measured vocal pacing."
       }
     ],
     "retellingPrompts": [
-      "The systemic complexity and philosophical stakes of Overcoming Polarization through Dialectic Inquiry",
-      "The inadequacy of simplistic frameworks under high scrutiny",
-      "Deconstructing polarized arguments with surgical precision",
-      "Contextualizing trade-offs within a principled strategic horizon",
-      "Mastery takeaway: Socratic dialectic questioning and respectful deco..."
+      "Examining the conceptual architecture of overcoming polarization through dialectic inquiry",
+      "Deciphering subtextual frictions and implicit cultural paradigms",
+      "Employing dialectic agility and principled rhetoric to build consensus",
+      "Projecting C1 leadership gravitas through: Socratic dialectic questioning and respectful deconstruction"
     ],
     "reflectionPrompts": [
-      "Did I sustain near-native prosody, rhythmic cadence, and unforced vocabulary?",
-      "Did I maintain authoritative oratorical posture and deliberate pauses?"
+      "How effectively did I demonstrate today's core focus: \"Employing Socratic questioning to dismantle dogmatic entrenched beliefs\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Socratic dialectic questioning and respectful deconstruction\"?"
     ],
-    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Difficulty: B2 Upper Intermediate · Takeaway: Socratic dialectic questioning and respectful deconstruction"
+    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Takeaway: Socratic dialectic questioning and respectful deconstruction"
   },
   {
     "id": "day-85",
@@ -1192,47 +1169,46 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "level": "C1",
     "topic": "Enterprise Crisis Management",
     "focusSkill": "Conducting blameless root-cause analysis after mission-critical failures",
-    "estimatedReadTime": "3 min 15 sec",
-    "introHook": "Hey everyone, welcome to Day 85 on Speak in Progress! Today's story centers on \"The Post-Crisis Organizational Post-Mortem\". If you've ever felt tested while handling enterprise crisis management, this session is going to give you practical, conversational tools. Let's get right into it!",
+    "estimatedReadTime": "2 min 45 sec",
+    "introHook": "Distinguished practitioners, welcome to Day 85 of Speak in Progress. Today we dissect the nuances of The Post-Crisis Organizational Post-Mortem, cultivating executive gravitas and conducting blameless root-cause analysis after mission-critical failures. Let us begin our practice.",
     "storyParagraphs": [
-      "I never realized how much was riding on the post-crisis organizational post-mortem until a normal workday suddenly shifted out of nowhere. At the highest echelons of professional discourse, the post-crisis organizational post-mortem presents a rigorous test of rhetorical dexterity, analytical composure, and unscripted intellectual gravitas.",
-      "What made this particular scenario exceptionally demanding was the intersection of competing paradigms and systemic complexity. Traditional, cookie-cutter frameworks offered little guidance, requiring participants to navigate ambiguity without defaulting to superficial platitudes.",
-      "During the critical exchange, success hinged on the capacity to deconstruct polarized viewpoints with surgical precision. Rather than succumbing to emotional reactivity, the discourse was elevated by interrogating underlying premises, synthesizing divergent data streams, and articulating principled compromises.",
-      "The resonance of that intervention was immediate. By contextualizing immediate trade-offs within an expansive strategic horizon, skeptical counterparts recognized that intellectual honesty and decisive leadership could coexist harmoniously.",
-      "As this capstone practice demonstrates: Blameless post-mortem facilitation and systemic learning. True oratorical mastery is never a performance of borrowed jargon; it is the spontaneous manifestation of deep clarity, resonant prosody, and authentic moral authority."
+      "At the C1 advanced echelon, spoken fluency transcends grammatical correctness; it demands rhetorical sophistication, conceptual clarity, and dialectic agility. Examining the post-crisis organizational post-mortem within enterprise crisis management illuminates how high-stakes communication shapes policy and organizational paradigms.",
+      "In complex multilateral dialogues, friction frequently arises not from antagonistic intent, but from incommensurable epistemological models and implicit cultural assumptions. A skilled orator must decipher these subtextual currents without escalating interpersonal dissonance.",
+      "By employing deliberate cadence modulations, anaphora, and principled circumlocution, a speaker can dismantle entrenched dogma while preserving mutual dignity. The objective is not superficial victory, but establishing an enduring consensus grounded in empirical reality.",
+      "Moreover, ethical statesmanship requires articulating uncomfortable truths with unflinching composure. Addressing trade-offs transparently dispels the illusion of effortless solutions, thereby cultivating profound institutional credibility.",
+      "Reflect deeply upon today's spoken deliverable: Blameless post-mortem facilitation and systemic learning. Command of language at this caliber transforms contentious debates into catalysts for systemic renewal."
     ],
     "usefulExpressions": [
       {
-        "phrase": "surgical precision",
-        "meaning": "exactness, deliberate intentionality, and meticulous care in execution or language",
-        "example": "The keynote speaker dismantled the opposing hypothesis with surgical precision.",
-        "speakingTip": "Crisp initial 's' followed by clean plosive 'p'."
+        "phrase": "dialectic agility",
+        "meaning": "the capacity to analyze opposing arguments logically and synthesize a higher truth",
+        "example": "Her dialectic agility enabled her to bridge deeply polarized ideological factions.",
+        "speakingTip": "Crisp pronunciation: dy-a-LEC-tic a-GIL-i-ty."
       },
       {
-        "phrase": "competing paradigms",
-        "meaning": "divergent fundamental models, philosophies, or worldviews contending for dominance",
-        "example": "The conference highlighted competing paradigms in artificial intelligence governance.",
-        "speakingTip": "Pronounce 'paradigm' with a soft silent 'g': PAIR-uh-dime."
+        "phrase": "dismantle entrenched dogma",
+        "meaning": "to methodically challenge and break down deeply rooted, unquestioned beliefs",
+        "example": "The keynote speaker dismantled entrenched dogma with empirical rigor.",
+        "speakingTip": "Stress 'dismantle' and 'entrenched' with authoritative weight."
       },
       {
-        "phrase": "intellectual gravitas",
-        "meaning": "commanding dignity, profound depth of thought, and authoritative presence",
-        "example": "Her closing remarks resonated with unmistakable intellectual gravitas.",
-        "speakingTip": "Resonate from the lower chest: open 'ah' in 'gravitas'."
+        "phrase": "unflinching composure",
+        "meaning": "absolute calm and self-control when confronted with adversity or hostile questioning",
+        "example": "He maintained unflinching composure throughout the parliamentary inquiry.",
+        "speakingTip": "Smooth, controlled prosody with measured vocal pacing."
       }
     ],
     "retellingPrompts": [
-      "The systemic complexity and philosophical stakes of The Post-Crisis Organizational Post-Mortem",
-      "The inadequacy of simplistic frameworks under high scrutiny",
-      "Deconstructing polarized arguments with surgical precision",
-      "Contextualizing trade-offs within a principled strategic horizon",
-      "Mastery takeaway: Blameless post-mortem facilitation and systemic le..."
+      "Examining the conceptual architecture of the post-crisis organizational post-mortem",
+      "Deciphering subtextual frictions and implicit cultural paradigms",
+      "Employing dialectic agility and principled rhetoric to build consensus",
+      "Projecting C1 leadership gravitas through: Blameless post-mortem facilitation and systemic learning"
     ],
     "reflectionPrompts": [
-      "Did I sustain near-native prosody, rhythmic cadence, and unforced vocabulary?",
-      "Did I maintain authoritative oratorical posture and deliberate pauses?"
+      "How effectively did I demonstrate today's core focus: \"Conducting blameless root-cause analysis after mission-critical failures\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Blameless post-mortem facilitation and systemic learning\"?"
     ],
-    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Difficulty: B2 Upper Intermediate · Takeaway: Blameless post-mortem facilitation and systemic learning"
+    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Takeaway: Blameless post-mortem facilitation and systemic learning"
   },
   {
     "id": "day-86",
@@ -1241,47 +1217,46 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "level": "C1",
     "topic": "International Negotiation",
     "focusSkill": "Deciphering unspoken subtexts, deference protocols, and indirect refusal",
-    "estimatedReadTime": "3 min 15 sec",
-    "introHook": "What do you do when unexpected situations catch you off guard? Today on Day 86 of Speak in Progress, we're exploring \"Cross-Cultural High-Context Diplomacy\" and practicing deciphering unspoken subtexts, deference protocols, and indirect refusal through real-life scenarios. Hit that play button and let's practice together!",
+    "estimatedReadTime": "2 min 45 sec",
+    "introHook": "Distinguished practitioners, welcome to Day 86 of Speak in Progress. Today we dissect the nuances of Cross-Cultural High-Context Diplomacy, cultivating executive gravitas and deciphering unspoken subtexts, deference protocols, and indirect refusal. Let us begin our practice.",
     "storyParagraphs": [
-      "The clock on the wall read 2:15 PM, and the tension in the room was palpable as we prepared for cross-cultural high-context diplomacy. At the highest echelons of professional discourse, cross-cultural high-context diplomacy presents a rigorous test of rhetorical dexterity, analytical composure, and unscripted intellectual gravitas.",
-      "What made this particular scenario exceptionally demanding was the intersection of competing paradigms and systemic complexity. Traditional, cookie-cutter frameworks offered little guidance, requiring participants to navigate ambiguity without defaulting to superficial platitudes.",
-      "During the critical exchange, success hinged on the capacity to deconstruct polarized viewpoints with surgical precision. Rather than succumbing to emotional reactivity, the discourse was elevated by interrogating underlying premises, synthesizing divergent data streams, and articulating principled compromises.",
-      "The resonance of that intervention was immediate. By contextualizing immediate trade-offs within an expansive strategic horizon, skeptical counterparts recognized that intellectual honesty and decisive leadership could coexist harmoniously.",
-      "As this capstone practice demonstrates: High-context cross-cultural diplomacy and subtle subtexts. True oratorical mastery is never a performance of borrowed jargon; it is the spontaneous manifestation of deep clarity, resonant prosody, and authentic moral authority."
+      "At the C1 advanced echelon, spoken fluency transcends grammatical correctness; it demands rhetorical sophistication, conceptual clarity, and dialectic agility. Examining cross-cultural high-context diplomacy within international negotiation illuminates how high-stakes communication shapes policy and organizational paradigms.",
+      "In complex multilateral dialogues, friction frequently arises not from antagonistic intent, but from incommensurable epistemological models and implicit cultural assumptions. A skilled orator must decipher these subtextual currents without escalating interpersonal dissonance.",
+      "By employing deliberate cadence modulations, anaphora, and principled circumlocution, a speaker can dismantle entrenched dogma while preserving mutual dignity. The objective is not superficial victory, but establishing an enduring consensus grounded in empirical reality.",
+      "Moreover, ethical statesmanship requires articulating uncomfortable truths with unflinching composure. Addressing trade-offs transparently dispels the illusion of effortless solutions, thereby cultivating profound institutional credibility.",
+      "Reflect deeply upon today's spoken deliverable: High-context cross-cultural diplomacy and subtle subtexts. Command of language at this caliber transforms contentious debates into catalysts for systemic renewal."
     ],
     "usefulExpressions": [
       {
-        "phrase": "surgical precision",
-        "meaning": "exactness, deliberate intentionality, and meticulous care in execution or language",
-        "example": "The keynote speaker dismantled the opposing hypothesis with surgical precision.",
-        "speakingTip": "Crisp initial 's' followed by clean plosive 'p'."
+        "phrase": "dialectic agility",
+        "meaning": "the capacity to analyze opposing arguments logically and synthesize a higher truth",
+        "example": "Her dialectic agility enabled her to bridge deeply polarized ideological factions.",
+        "speakingTip": "Crisp pronunciation: dy-a-LEC-tic a-GIL-i-ty."
       },
       {
-        "phrase": "competing paradigms",
-        "meaning": "divergent fundamental models, philosophies, or worldviews contending for dominance",
-        "example": "The conference highlighted competing paradigms in artificial intelligence governance.",
-        "speakingTip": "Pronounce 'paradigm' with a soft silent 'g': PAIR-uh-dime."
+        "phrase": "dismantle entrenched dogma",
+        "meaning": "to methodically challenge and break down deeply rooted, unquestioned beliefs",
+        "example": "The keynote speaker dismantled entrenched dogma with empirical rigor.",
+        "speakingTip": "Stress 'dismantle' and 'entrenched' with authoritative weight."
       },
       {
-        "phrase": "intellectual gravitas",
-        "meaning": "commanding dignity, profound depth of thought, and authoritative presence",
-        "example": "Her closing remarks resonated with unmistakable intellectual gravitas.",
-        "speakingTip": "Resonate from the lower chest: open 'ah' in 'gravitas'."
+        "phrase": "unflinching composure",
+        "meaning": "absolute calm and self-control when confronted with adversity or hostile questioning",
+        "example": "He maintained unflinching composure throughout the parliamentary inquiry.",
+        "speakingTip": "Smooth, controlled prosody with measured vocal pacing."
       }
     ],
     "retellingPrompts": [
-      "The systemic complexity and philosophical stakes of Cross-Cultural High-Context Diplomacy",
-      "The inadequacy of simplistic frameworks under high scrutiny",
-      "Deconstructing polarized arguments with surgical precision",
-      "Contextualizing trade-offs within a principled strategic horizon",
-      "Mastery takeaway: High-context cross-cultural diplomacy and subtle s..."
+      "Examining the conceptual architecture of cross-cultural high-context diplomacy",
+      "Deciphering subtextual frictions and implicit cultural paradigms",
+      "Employing dialectic agility and principled rhetoric to build consensus",
+      "Projecting C1 leadership gravitas through: High-context cross-cultural diplomacy and subtle subtexts"
     ],
     "reflectionPrompts": [
-      "Did I sustain near-native prosody, rhythmic cadence, and unforced vocabulary?",
-      "Did I maintain authoritative oratorical posture and deliberate pauses?"
+      "How effectively did I demonstrate today's core focus: \"Deciphering unspoken subtexts, deference protocols, and indirect refusal\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"High-context cross-cultural diplomacy and subtle subtexts\"?"
     ],
-    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Difficulty: B2 Upper Intermediate · Takeaway: High-context cross-cultural diplomacy and subtle subtexts"
+    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Takeaway: High-context cross-cultural diplomacy and subtle subtexts"
   },
   {
     "id": "day-87",
@@ -1290,47 +1265,46 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "level": "C1",
     "topic": "Bioengineering & Policy",
     "focusSkill": "Formulating international regulatory oversight for gene editing vectors",
-    "estimatedReadTime": "3 min 15 sec",
-    "introHook": "Welcome back to Day 87 of our spoken English journey! Today we are tackling \"The Future of Synthetic Biology Governance\". Communicating clearly during moments like this is what separates good speakers from great ones. Let's dive straight in!",
+    "estimatedReadTime": "2 min 45 sec",
+    "introHook": "Distinguished practitioners, welcome to Day 87 of Speak in Progress. Today we dissect the nuances of The Future of Synthetic Biology Governance, cultivating executive gravitas and formulating international regulatory oversight for gene editing vectors. Let us begin our practice.",
     "storyParagraphs": [
-      "Two weeks ago, an unexpected conversation about the future of synthetic biology governance completely challenged how I approach bioengineering & policy. At the highest echelons of professional discourse, the future of synthetic biology governance presents a rigorous test of rhetorical dexterity, analytical composure, and unscripted intellectual gravitas.",
-      "What made this particular scenario exceptionally demanding was the intersection of competing paradigms and systemic complexity. Traditional, cookie-cutter frameworks offered little guidance, requiring participants to navigate ambiguity without defaulting to superficial platitudes.",
-      "During the critical exchange, success hinged on the capacity to deconstruct polarized viewpoints with surgical precision. Rather than succumbing to emotional reactivity, the discourse was elevated by interrogating underlying premises, synthesizing divergent data streams, and articulating principled compromises.",
-      "The resonance of that intervention was immediate. By contextualizing immediate trade-offs within an expansive strategic horizon, skeptical counterparts recognized that intellectual honesty and decisive leadership could coexist harmoniously.",
-      "As this capstone practice demonstrates: Bioengineering governance and multilateral consensus. True oratorical mastery is never a performance of borrowed jargon; it is the spontaneous manifestation of deep clarity, resonant prosody, and authentic moral authority."
+      "At the C1 advanced echelon, spoken fluency transcends grammatical correctness; it demands rhetorical sophistication, conceptual clarity, and dialectic agility. Examining the future of synthetic biology governance within bioengineering & policy illuminates how high-stakes communication shapes policy and organizational paradigms.",
+      "In complex multilateral dialogues, friction frequently arises not from antagonistic intent, but from incommensurable epistemological models and implicit cultural assumptions. A skilled orator must decipher these subtextual currents without escalating interpersonal dissonance.",
+      "By employing deliberate cadence modulations, anaphora, and principled circumlocution, a speaker can dismantle entrenched dogma while preserving mutual dignity. The objective is not superficial victory, but establishing an enduring consensus grounded in empirical reality.",
+      "Moreover, ethical statesmanship requires articulating uncomfortable truths with unflinching composure. Addressing trade-offs transparently dispels the illusion of effortless solutions, thereby cultivating profound institutional credibility.",
+      "Reflect deeply upon today's spoken deliverable: Bioengineering governance and multilateral consensus. Command of language at this caliber transforms contentious debates into catalysts for systemic renewal."
     ],
     "usefulExpressions": [
       {
-        "phrase": "surgical precision",
-        "meaning": "exactness, deliberate intentionality, and meticulous care in execution or language",
-        "example": "The keynote speaker dismantled the opposing hypothesis with surgical precision.",
-        "speakingTip": "Crisp initial 's' followed by clean plosive 'p'."
+        "phrase": "dialectic agility",
+        "meaning": "the capacity to analyze opposing arguments logically and synthesize a higher truth",
+        "example": "Her dialectic agility enabled her to bridge deeply polarized ideological factions.",
+        "speakingTip": "Crisp pronunciation: dy-a-LEC-tic a-GIL-i-ty."
       },
       {
-        "phrase": "competing paradigms",
-        "meaning": "divergent fundamental models, philosophies, or worldviews contending for dominance",
-        "example": "The conference highlighted competing paradigms in artificial intelligence governance.",
-        "speakingTip": "Pronounce 'paradigm' with a soft silent 'g': PAIR-uh-dime."
+        "phrase": "dismantle entrenched dogma",
+        "meaning": "to methodically challenge and break down deeply rooted, unquestioned beliefs",
+        "example": "The keynote speaker dismantled entrenched dogma with empirical rigor.",
+        "speakingTip": "Stress 'dismantle' and 'entrenched' with authoritative weight."
       },
       {
-        "phrase": "intellectual gravitas",
-        "meaning": "commanding dignity, profound depth of thought, and authoritative presence",
-        "example": "Her closing remarks resonated with unmistakable intellectual gravitas.",
-        "speakingTip": "Resonate from the lower chest: open 'ah' in 'gravitas'."
+        "phrase": "unflinching composure",
+        "meaning": "absolute calm and self-control when confronted with adversity or hostile questioning",
+        "example": "He maintained unflinching composure throughout the parliamentary inquiry.",
+        "speakingTip": "Smooth, controlled prosody with measured vocal pacing."
       }
     ],
     "retellingPrompts": [
-      "The systemic complexity and philosophical stakes of The Future of Synthetic Biology Governance",
-      "The inadequacy of simplistic frameworks under high scrutiny",
-      "Deconstructing polarized arguments with surgical precision",
-      "Contextualizing trade-offs within a principled strategic horizon",
-      "Mastery takeaway: Bioengineering governance and multilateral consens..."
+      "Examining the conceptual architecture of the future of synthetic biology governance",
+      "Deciphering subtextual frictions and implicit cultural paradigms",
+      "Employing dialectic agility and principled rhetoric to build consensus",
+      "Projecting C1 leadership gravitas through: Bioengineering governance and multilateral consensus"
     ],
     "reflectionPrompts": [
-      "Did I sustain near-native prosody, rhythmic cadence, and unforced vocabulary?",
-      "Did I maintain authoritative oratorical posture and deliberate pauses?"
+      "How effectively did I demonstrate today's core focus: \"Formulating international regulatory oversight for gene editing vectors\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Bioengineering governance and multilateral consensus\"?"
     ],
-    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Difficulty: B2 Upper Intermediate · Takeaway: Bioengineering governance and multilateral consensus"
+    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Takeaway: Bioengineering governance and multilateral consensus"
   },
   {
     "id": "day-88",
@@ -1339,47 +1313,46 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "level": "C1",
     "topic": "Competitive Forensics",
     "focusSkill": "Countering logical fallacies on the fly with crisp counterexamples",
-    "estimatedReadTime": "3 min 15 sec",
-    "introHook": "Hello and welcome to Day 88! Today we're diving into \"Mastering Spontaneous Debate Rebuttal\" within the world of competitive forensics. Our main speaking focus today is countering logical fallacies on the fly with crisp counterexamples. Let's speak with confidence and natural rhythm!",
+    "estimatedReadTime": "2 min 45 sec",
+    "introHook": "Distinguished practitioners, welcome to Day 88 of Speak in Progress. Today we dissect the nuances of Mastering Spontaneous Debate Rebuttal, cultivating executive gravitas and countering logical fallacies on the fly with crisp counterexamples. Let us begin our practice.",
     "storyParagraphs": [
-      "Few everyday dilemmas cause as much hesitation as mastering spontaneous debate rebuttal, especially when everyone is watching how you respond. At the highest echelons of professional discourse, mastering spontaneous debate rebuttal presents a rigorous test of rhetorical dexterity, analytical composure, and unscripted intellectual gravitas.",
-      "What made this particular scenario exceptionally demanding was the intersection of competing paradigms and systemic complexity. Traditional, cookie-cutter frameworks offered little guidance, requiring participants to navigate ambiguity without defaulting to superficial platitudes.",
-      "During the critical exchange, success hinged on the capacity to deconstruct polarized viewpoints with surgical precision. Rather than succumbing to emotional reactivity, the discourse was elevated by interrogating underlying premises, synthesizing divergent data streams, and articulating principled compromises.",
-      "The resonance of that intervention was immediate. By contextualizing immediate trade-offs within an expansive strategic horizon, skeptical counterparts recognized that intellectual honesty and decisive leadership could coexist harmoniously.",
-      "As this capstone practice demonstrates: Spontaneous debate rebuttals and fallacy deconstruction. True oratorical mastery is never a performance of borrowed jargon; it is the spontaneous manifestation of deep clarity, resonant prosody, and authentic moral authority."
+      "At the C1 advanced echelon, spoken fluency transcends grammatical correctness; it demands rhetorical sophistication, conceptual clarity, and dialectic agility. Examining mastering spontaneous debate rebuttal within competitive forensics illuminates how high-stakes communication shapes policy and organizational paradigms.",
+      "In complex multilateral dialogues, friction frequently arises not from antagonistic intent, but from incommensurable epistemological models and implicit cultural assumptions. A skilled orator must decipher these subtextual currents without escalating interpersonal dissonance.",
+      "By employing deliberate cadence modulations, anaphora, and principled circumlocution, a speaker can dismantle entrenched dogma while preserving mutual dignity. The objective is not superficial victory, but establishing an enduring consensus grounded in empirical reality.",
+      "Moreover, ethical statesmanship requires articulating uncomfortable truths with unflinching composure. Addressing trade-offs transparently dispels the illusion of effortless solutions, thereby cultivating profound institutional credibility.",
+      "Reflect deeply upon today's spoken deliverable: Spontaneous debate rebuttals and fallacy deconstruction. Command of language at this caliber transforms contentious debates into catalysts for systemic renewal."
     ],
     "usefulExpressions": [
       {
-        "phrase": "surgical precision",
-        "meaning": "exactness, deliberate intentionality, and meticulous care in execution or language",
-        "example": "The keynote speaker dismantled the opposing hypothesis with surgical precision.",
-        "speakingTip": "Crisp initial 's' followed by clean plosive 'p'."
+        "phrase": "dialectic agility",
+        "meaning": "the capacity to analyze opposing arguments logically and synthesize a higher truth",
+        "example": "Her dialectic agility enabled her to bridge deeply polarized ideological factions.",
+        "speakingTip": "Crisp pronunciation: dy-a-LEC-tic a-GIL-i-ty."
       },
       {
-        "phrase": "competing paradigms",
-        "meaning": "divergent fundamental models, philosophies, or worldviews contending for dominance",
-        "example": "The conference highlighted competing paradigms in artificial intelligence governance.",
-        "speakingTip": "Pronounce 'paradigm' with a soft silent 'g': PAIR-uh-dime."
+        "phrase": "dismantle entrenched dogma",
+        "meaning": "to methodically challenge and break down deeply rooted, unquestioned beliefs",
+        "example": "The keynote speaker dismantled entrenched dogma with empirical rigor.",
+        "speakingTip": "Stress 'dismantle' and 'entrenched' with authoritative weight."
       },
       {
-        "phrase": "intellectual gravitas",
-        "meaning": "commanding dignity, profound depth of thought, and authoritative presence",
-        "example": "Her closing remarks resonated with unmistakable intellectual gravitas.",
-        "speakingTip": "Resonate from the lower chest: open 'ah' in 'gravitas'."
+        "phrase": "unflinching composure",
+        "meaning": "absolute calm and self-control when confronted with adversity or hostile questioning",
+        "example": "He maintained unflinching composure throughout the parliamentary inquiry.",
+        "speakingTip": "Smooth, controlled prosody with measured vocal pacing."
       }
     ],
     "retellingPrompts": [
-      "The systemic complexity and philosophical stakes of Mastering Spontaneous Debate Rebuttal",
-      "The inadequacy of simplistic frameworks under high scrutiny",
-      "Deconstructing polarized arguments with surgical precision",
-      "Contextualizing trade-offs within a principled strategic horizon",
-      "Mastery takeaway: Spontaneous debate rebuttals and fallacy deconstru..."
+      "Examining the conceptual architecture of mastering spontaneous debate rebuttal",
+      "Deciphering subtextual frictions and implicit cultural paradigms",
+      "Employing dialectic agility and principled rhetoric to build consensus",
+      "Projecting C1 leadership gravitas through: Spontaneous debate rebuttals and fallacy deconstruction"
     ],
     "reflectionPrompts": [
-      "Did I sustain near-native prosody, rhythmic cadence, and unforced vocabulary?",
-      "Did I maintain authoritative oratorical posture and deliberate pauses?"
+      "How effectively did I demonstrate today's core focus: \"Countering logical fallacies on the fly with crisp counterexamples\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Spontaneous debate rebuttals and fallacy deconstruction\"?"
     ],
-    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Difficulty: B2 Upper Intermediate · Takeaway: Spontaneous debate rebuttals and fallacy deconstruction"
+    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Takeaway: Spontaneous debate rebuttals and fallacy deconstruction"
   },
   {
     "id": "day-89",
@@ -1388,47 +1361,46 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "level": "C1",
     "topic": "Industry Visionary",
     "focusSkill": "Synthesizing decade-long macro trends into an evocative industry paradigm",
-    "estimatedReadTime": "3 min 15 sec",
-    "introHook": "Today is Day 89 on Speak in Progress, and we have an exciting real-world story about \"Crafting a Compelling Thought Leadership Manifesto\". Whether you're practicing for work or daily conversations, this lesson has phrases you can use right away. Let's do this!",
+    "estimatedReadTime": "2 min 45 sec",
+    "introHook": "Distinguished practitioners, welcome to Day 89 of Speak in Progress. Today we dissect the nuances of Crafting a Compelling Thought Leadership Manifesto, cultivating executive gravitas and synthesizing decade-long macro trends into an evocative industry paradigm. Let us begin our practice.",
     "storyParagraphs": [
-      "It started with an offhand remark by the coffee machine that soon escalated into a serious discussion about crafting a compelling thought leadership manifesto. At the highest echelons of professional discourse, crafting a compelling thought leadership manifesto presents a rigorous test of rhetorical dexterity, analytical composure, and unscripted intellectual gravitas.",
-      "What made this particular scenario exceptionally demanding was the intersection of competing paradigms and systemic complexity. Traditional, cookie-cutter frameworks offered little guidance, requiring participants to navigate ambiguity without defaulting to superficial platitudes.",
-      "During the critical exchange, success hinged on the capacity to deconstruct polarized viewpoints with surgical precision. Rather than succumbing to emotional reactivity, the discourse was elevated by interrogating underlying premises, synthesizing divergent data streams, and articulating principled compromises.",
-      "The resonance of that intervention was immediate. By contextualizing immediate trade-offs within an expansive strategic horizon, skeptical counterparts recognized that intellectual honesty and decisive leadership could coexist harmoniously.",
-      "As this capstone practice demonstrates: Visionary thought leadership manifesto and evocative phrasing. True oratorical mastery is never a performance of borrowed jargon; it is the spontaneous manifestation of deep clarity, resonant prosody, and authentic moral authority."
+      "At the C1 advanced echelon, spoken fluency transcends grammatical correctness; it demands rhetorical sophistication, conceptual clarity, and dialectic agility. Examining crafting a compelling thought leadership manifesto within industry visionary illuminates how high-stakes communication shapes policy and organizational paradigms.",
+      "In complex multilateral dialogues, friction frequently arises not from antagonistic intent, but from incommensurable epistemological models and implicit cultural assumptions. A skilled orator must decipher these subtextual currents without escalating interpersonal dissonance.",
+      "By employing deliberate cadence modulations, anaphora, and principled circumlocution, a speaker can dismantle entrenched dogma while preserving mutual dignity. The objective is not superficial victory, but establishing an enduring consensus grounded in empirical reality.",
+      "Moreover, ethical statesmanship requires articulating uncomfortable truths with unflinching composure. Addressing trade-offs transparently dispels the illusion of effortless solutions, thereby cultivating profound institutional credibility.",
+      "Reflect deeply upon today's spoken deliverable: Visionary thought leadership manifesto and evocative phrasing. Command of language at this caliber transforms contentious debates into catalysts for systemic renewal."
     ],
     "usefulExpressions": [
       {
-        "phrase": "surgical precision",
-        "meaning": "exactness, deliberate intentionality, and meticulous care in execution or language",
-        "example": "The keynote speaker dismantled the opposing hypothesis with surgical precision.",
-        "speakingTip": "Crisp initial 's' followed by clean plosive 'p'."
+        "phrase": "dialectic agility",
+        "meaning": "the capacity to analyze opposing arguments logically and synthesize a higher truth",
+        "example": "Her dialectic agility enabled her to bridge deeply polarized ideological factions.",
+        "speakingTip": "Crisp pronunciation: dy-a-LEC-tic a-GIL-i-ty."
       },
       {
-        "phrase": "competing paradigms",
-        "meaning": "divergent fundamental models, philosophies, or worldviews contending for dominance",
-        "example": "The conference highlighted competing paradigms in artificial intelligence governance.",
-        "speakingTip": "Pronounce 'paradigm' with a soft silent 'g': PAIR-uh-dime."
+        "phrase": "dismantle entrenched dogma",
+        "meaning": "to methodically challenge and break down deeply rooted, unquestioned beliefs",
+        "example": "The keynote speaker dismantled entrenched dogma with empirical rigor.",
+        "speakingTip": "Stress 'dismantle' and 'entrenched' with authoritative weight."
       },
       {
-        "phrase": "intellectual gravitas",
-        "meaning": "commanding dignity, profound depth of thought, and authoritative presence",
-        "example": "Her closing remarks resonated with unmistakable intellectual gravitas.",
-        "speakingTip": "Resonate from the lower chest: open 'ah' in 'gravitas'."
+        "phrase": "unflinching composure",
+        "meaning": "absolute calm and self-control when confronted with adversity or hostile questioning",
+        "example": "He maintained unflinching composure throughout the parliamentary inquiry.",
+        "speakingTip": "Smooth, controlled prosody with measured vocal pacing."
       }
     ],
     "retellingPrompts": [
-      "The systemic complexity and philosophical stakes of Crafting a Compelling Thought Leadership Manifesto",
-      "The inadequacy of simplistic frameworks under high scrutiny",
-      "Deconstructing polarized arguments with surgical precision",
-      "Contextualizing trade-offs within a principled strategic horizon",
-      "Mastery takeaway: Visionary thought leadership manifesto and evocati..."
+      "Examining the conceptual architecture of crafting a compelling thought leadership manifesto",
+      "Deciphering subtextual frictions and implicit cultural paradigms",
+      "Employing dialectic agility and principled rhetoric to build consensus",
+      "Projecting C1 leadership gravitas through: Visionary thought leadership manifesto and evocative phrasing"
     ],
     "reflectionPrompts": [
-      "Did I sustain near-native prosody, rhythmic cadence, and unforced vocabulary?",
-      "Did I maintain authoritative oratorical posture and deliberate pauses?"
+      "How effectively did I demonstrate today's core focus: \"Synthesizing decade-long macro trends into an evocative industry paradigm\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"Visionary thought leadership manifesto and evocative phrasing\"?"
     ],
-    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Difficulty: B2 Upper Intermediate · Takeaway: Visionary thought leadership manifesto and evocative phrasing"
+    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Takeaway: Visionary thought leadership manifesto and evocative phrasing"
   },
   {
     "id": "day-90",
@@ -1437,46 +1409,45 @@ export const CURRICULUM_DAYS_61_TO_90: PracticeStory[] = [
     "level": "C1",
     "topic": "Capstone Achievement",
     "focusSkill": "Delivering an articulate, unscripted speech demonstrating C1 fluency",
-    "estimatedReadTime": "3 min 15 sec",
-    "introHook": "Hey friends! Day 90 is here, and today we're exploring \"The 90-Day Spoken Mastery Valedictory Address\". We're zeroing in on delivering an articulate, unscripted speech demonstrating c1 fluency and building the habit of speaking unscripted without second-guessing. Let's jump right in!",
+    "estimatedReadTime": "2 min 45 sec",
+    "introHook": "Distinguished practitioners, welcome to Day 90 of Speak in Progress. Today we dissect the nuances of The 90-Day Spoken Mastery Valedictory Address, cultivating executive gravitas and delivering an articulate, unscripted speech demonstrating c1 fluency. Let us begin our practice.",
     "storyParagraphs": [
-      "Standing at the doorway before heading into the 90-day spoken mastery valedictory address, my immediate instinct was to overthink every single detail. At the highest echelons of professional discourse, the 90-day spoken mastery valedictory address presents a rigorous test of rhetorical dexterity, analytical composure, and unscripted intellectual gravitas.",
-      "What made this particular scenario exceptionally demanding was the intersection of competing paradigms and systemic complexity. Traditional, cookie-cutter frameworks offered little guidance, requiring participants to navigate ambiguity without defaulting to superficial platitudes.",
-      "During the critical exchange, success hinged on the capacity to deconstruct polarized viewpoints with surgical precision. Rather than succumbing to emotional reactivity, the discourse was elevated by interrogating underlying premises, synthesizing divergent data streams, and articulating principled compromises.",
-      "The resonance of that intervention was immediate. By contextualizing immediate trade-offs within an expansive strategic horizon, skeptical counterparts recognized that intellectual honesty and decisive leadership could coexist harmoniously.",
-      "As this capstone practice demonstrates: C1 valedictory address, spontaneous fluency, and range. True oratorical mastery is never a performance of borrowed jargon; it is the spontaneous manifestation of deep clarity, resonant prosody, and authentic moral authority."
+      "At the C1 advanced echelon, spoken fluency transcends grammatical correctness; it demands rhetorical sophistication, conceptual clarity, and dialectic agility. Examining the 90-day spoken mastery valedictory address within capstone achievement illuminates how high-stakes communication shapes policy and organizational paradigms.",
+      "In complex multilateral dialogues, friction frequently arises not from antagonistic intent, but from incommensurable epistemological models and implicit cultural assumptions. A skilled orator must decipher these subtextual currents without escalating interpersonal dissonance.",
+      "By employing deliberate cadence modulations, anaphora, and principled circumlocution, a speaker can dismantle entrenched dogma while preserving mutual dignity. The objective is not superficial victory, but establishing an enduring consensus grounded in empirical reality.",
+      "Moreover, ethical statesmanship requires articulating uncomfortable truths with unflinching composure. Addressing trade-offs transparently dispels the illusion of effortless solutions, thereby cultivating profound institutional credibility.",
+      "Reflect deeply upon today's spoken deliverable: C1 valedictory address, spontaneous fluency, and range. Command of language at this caliber transforms contentious debates into catalysts for systemic renewal."
     ],
     "usefulExpressions": [
       {
-        "phrase": "surgical precision",
-        "meaning": "exactness, deliberate intentionality, and meticulous care in execution or language",
-        "example": "The keynote speaker dismantled the opposing hypothesis with surgical precision.",
-        "speakingTip": "Crisp initial 's' followed by clean plosive 'p'."
+        "phrase": "dialectic agility",
+        "meaning": "the capacity to analyze opposing arguments logically and synthesize a higher truth",
+        "example": "Her dialectic agility enabled her to bridge deeply polarized ideological factions.",
+        "speakingTip": "Crisp pronunciation: dy-a-LEC-tic a-GIL-i-ty."
       },
       {
-        "phrase": "competing paradigms",
-        "meaning": "divergent fundamental models, philosophies, or worldviews contending for dominance",
-        "example": "The conference highlighted competing paradigms in artificial intelligence governance.",
-        "speakingTip": "Pronounce 'paradigm' with a soft silent 'g': PAIR-uh-dime."
+        "phrase": "dismantle entrenched dogma",
+        "meaning": "to methodically challenge and break down deeply rooted, unquestioned beliefs",
+        "example": "The keynote speaker dismantled entrenched dogma with empirical rigor.",
+        "speakingTip": "Stress 'dismantle' and 'entrenched' with authoritative weight."
       },
       {
-        "phrase": "intellectual gravitas",
-        "meaning": "commanding dignity, profound depth of thought, and authoritative presence",
-        "example": "Her closing remarks resonated with unmistakable intellectual gravitas.",
-        "speakingTip": "Resonate from the lower chest: open 'ah' in 'gravitas'."
+        "phrase": "unflinching composure",
+        "meaning": "absolute calm and self-control when confronted with adversity or hostile questioning",
+        "example": "He maintained unflinching composure throughout the parliamentary inquiry.",
+        "speakingTip": "Smooth, controlled prosody with measured vocal pacing."
       }
     ],
     "retellingPrompts": [
-      "The systemic complexity and philosophical stakes of The 90-Day Spoken Mastery Valedictory Address",
-      "The inadequacy of simplistic frameworks under high scrutiny",
-      "Deconstructing polarized arguments with surgical precision",
-      "Contextualizing trade-offs within a principled strategic horizon",
-      "Mastery takeaway: C1 valedictory address, spontaneous fluency, and r..."
+      "Examining the conceptual architecture of the 90-day spoken mastery valedictory address",
+      "Deciphering subtextual frictions and implicit cultural paradigms",
+      "Employing dialectic agility and principled rhetoric to build consensus",
+      "Projecting C1 leadership gravitas through: C1 valedictory address, spontaneous fluency, and range"
     ],
     "reflectionPrompts": [
-      "Did I sustain near-native prosody, rhythmic cadence, and unforced vocabulary?",
-      "Did I maintain authoritative oratorical posture and deliberate pauses?"
+      "How effectively did I demonstrate today's core focus: \"Delivering an articulate, unscripted speech demonstrating C1 fluency\"?",
+      "Did my speaking rhythm reflect the targeted takeaway: \"C1 valedictory address, spontaneous fluency, and range\"?"
     ],
-    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Difficulty: B2 Upper Intermediate · Takeaway: C1 valedictory address, spontaneous fluency, and range"
+    "notes": "Phase 9: High-Stakes Rhetoric · CEFR C1 · Takeaway: C1 valedictory address, spontaneous fluency, and range"
   }
 ];
