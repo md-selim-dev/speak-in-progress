@@ -6,6 +6,9 @@
 // Designated sole owner of this private Speak in Progress creator workspace
 export const OWNER_EMAIL = 'smselimreja77@gmail.com';
 
+// Official support & inquiry contact email
+export const SUPPORT_EMAIL = 'support@mdselim.com';
+
 /**
  * Validates whether a signed-in user's email matches the authorized owner.
  * Designed to be flexible for future SaaS multi-user extensions.

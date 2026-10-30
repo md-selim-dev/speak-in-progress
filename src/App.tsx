@@ -43,6 +43,7 @@ export default function App() {
   const [isLoggingIn, setIsLoggingIn] = useState<boolean>(false);
   const [loginError, setLoginError] = useState<string | null>(null);
   const [unauthorizedEmail, setUnauthorizedEmail] = useState<string | null>(null);
+  const [unauthorizedDomain, setUnauthorizedDomain] = useState<string | null>(null);
   const [inStudio, setInStudio] = useState<boolean>(() => {
     try {
       return sessionStorage.getItem('speak_in_progress_in_studio') === 'true';
@@ -128,6 +129,7 @@ export default function App() {
     setIsLoggingIn(true);
     setLoginError(null);
     setUnauthorizedEmail(null);
+    setUnauthorizedDomain(null);
 
     try {
       const user = await signInWithGoogle();
@@ -150,7 +152,23 @@ export default function App() {
       }
     } catch (err: any) {
       console.error('Login error:', err);
-      setLoginError(err.message || 'Unable to sign in. Please verify your internet connection.');
+      const isDomainError =
+        err?.code === 'auth/unauthorized-domain' ||
+        err?.message?.includes('unauthorized-domain') ||
+        err?.message?.includes('authorized domain');
+
+      if (isDomainError) {
+        const currentDomain =
+          typeof window !== 'undefined' && window.location.hostname
+            ? window.location.hostname
+            : 'speak-in-progress.netlify.app';
+        setUnauthorizedDomain(currentDomain);
+        setLoginError(
+          `Domain "${currentDomain}" is not yet authorized in Firebase Auth. Add it to Authorized Domains in Firebase Console to enable login.`
+        );
+      } else {
+        setLoginError(err.message || 'Unable to sign in. Please verify your internet connection.');
+      }
     } finally {
       setIsLoggingIn(false);
     }
@@ -192,6 +210,8 @@ export default function App() {
         unauthorizedEmail={unauthorizedEmail}
         onDismissUnauthorized={() => setUnauthorizedEmail(null)}
         onSwitchAccount={handleOwnerLogin}
+        unauthorizedDomain={unauthorizedDomain}
+        onDismissDomainError={() => setUnauthorizedDomain(null)}
       />
     );
   }

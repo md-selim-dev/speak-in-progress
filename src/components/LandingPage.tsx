@@ -25,6 +25,8 @@ import {
   HelpCircle,
   AlertTriangle,
   Zap,
+  Globe,
+  ExternalLink,
 } from 'lucide-react';
 
 interface LandingPageProps {
@@ -37,6 +39,8 @@ interface LandingPageProps {
   unauthorizedEmail: string | null;
   onDismissUnauthorized: () => void;
   onSwitchAccount: () => void;
+  unauthorizedDomain?: string | null;
+  onDismissDomainError?: () => void;
 }
 
 export const LandingPage: React.FC<LandingPageProps> = ({
@@ -49,6 +53,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
   unauthorizedEmail,
   onDismissUnauthorized,
   onSwitchAccount,
+  unauthorizedDomain,
+  onDismissDomainError,
 }) => {
   // Interactive Cadence Calculator for SEO & Methodology Showcase
   const [sampleWordCount, setSampleWordCount] = useState<number>(240);
@@ -749,44 +755,140 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       </footer>
 
       {/* ====================================================
-          MODAL: Unauthorized Account Dialog
+          MODAL: Unauthorized Account Dialog (Polite & Human-Friendly)
           ==================================================== */}
       {unauthorizedEmail && (
         <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
-          <div className="bg-stone-900 border border-rose-500/30 rounded-3xl max-w-md w-full p-5 sm:p-8 space-y-4 shadow-2xl text-center max-h-[92vh] overflow-y-auto">
-            <div className="w-12 h-12 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-400 flex items-center justify-center mx-auto shrink-0">
-              <Shield className="w-6 h-6" />
+          <div className="bg-stone-900 border border-amber-500/30 rounded-3xl max-w-md w-full p-6 sm:p-8 space-y-5 shadow-2xl text-center max-h-[92vh] overflow-y-auto">
+            <div className="w-14 h-14 rounded-2xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center mx-auto shrink-0 shadow-inner">
+              <Lock className="w-7 h-7" />
             </div>
 
-            <div className="space-y-1">
-              <h3 className="text-lg sm:text-xl font-bold text-white font-brand">Private Workspace Restricted</h3>
+            <div className="space-y-1.5">
+              <h3 className="text-xl font-bold text-white font-brand">Private Studio Access</h3>
               <p className="text-xs text-stone-300 leading-relaxed">
-                You signed in with <strong className="text-stone-100 break-all">{unauthorizedEmail}</strong>.
+                You signed in with <strong className="text-stone-100 break-all">{unauthorizedEmail}</strong>
               </p>
             </div>
 
-            <div className="p-3.5 rounded-2xl bg-stone-950 border border-white/10 text-xs text-stone-400 leading-relaxed text-left">
-              This creator studio and Cloud Firestore database are currently in private single-user mode. Access is restricted to authorized credentials.
-              <div className="text-[11px] text-stone-500 mt-2">
-                Public registration and multi-user SaaS accounts will be available in an upcoming release.
-              </div>
+            <div className="p-4 rounded-2xl bg-stone-950/90 border border-white/10 text-xs text-stone-300 leading-relaxed text-left space-y-2">
+              <p className="font-semibold text-stone-100 text-sm">
+                This is only for a private user.
+              </p>
+              <p className="text-xs text-stone-300">
+                To learn more about this, contact:{' '}
+                <a
+                  href="mailto:support@mdselim.com?subject=Inquiry%20about%20Speak%20in%20Progress%20Studio"
+                  className="text-emerald-400 hover:text-emerald-300 underline font-mono font-bold transition-colors inline-block"
+                >
+                  support@mdselim.com
+                </a>
+              </p>
+              <p className="text-[11px] text-stone-400 pt-1 border-t border-white/5">
+                This workspace and teleprompter database are currently reserved for the owner account. Multi-user accounts will be supported in an upcoming release.
+              </p>
             </div>
 
-            <div className="flex flex-col gap-2 pt-2">
-              <button
-                onClick={onSwitchAccount}
+            <div className="flex flex-col gap-2.5 pt-1">
+              <a
+                href="mailto:support@mdselim.com?subject=Inquiry%20about%20Speak%20in%20Progress%20Studio"
                 className="w-full px-4 py-3 min-h-[44px] rounded-xl text-xs font-bold text-black bg-emerald-400 hover:bg-emerald-300 transition-all flex items-center justify-center gap-2 shadow-md"
               >
-                <LogIn className="w-3.5 h-3.5" />
-                <span>Try Another Account</span>
+                <span>Contact: support@mdselim.com</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+
+              <button
+                onClick={onSwitchAccount}
+                className="w-full px-4 py-3 min-h-[44px] rounded-xl text-xs font-semibold text-stone-200 hover:text-white bg-stone-800 hover:bg-stone-700 border border-white/10 transition-all flex items-center justify-center gap-2"
+              >
+                <LogIn className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Try Another Google Account</span>
               </button>
 
               <button
                 onClick={onDismissUnauthorized}
-                className="w-full px-4 py-3 min-h-[44px] rounded-xl text-xs font-medium text-stone-400 hover:text-white bg-stone-800 hover:bg-stone-700 transition-all"
+                className="w-full px-4 py-2.5 min-h-[40px] rounded-xl text-xs font-medium text-stone-400 hover:text-stone-200 transition-all"
               >
-                Return to Public Landing Page
+                Return to Public Home
               </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ====================================================
+          MODAL: Unauthorized Domain Guide (Fix for Netlify domain)
+          ==================================================== */}
+      {unauthorizedDomain && (
+        <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
+          <div className="bg-stone-900 border border-emerald-500/30 rounded-3xl max-w-lg w-full p-6 sm:p-8 space-y-5 shadow-2xl text-center max-h-[92vh] overflow-y-auto">
+            <div className="w-14 h-14 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 flex items-center justify-center mx-auto shrink-0 shadow-inner">
+              <Globe className="w-7 h-7" />
+            </div>
+
+            <div className="space-y-1.5">
+              <h3 className="text-xl font-bold text-white font-brand">Authorize Netlify Domain in Firebase</h3>
+              <p className="text-xs text-stone-300 leading-relaxed">
+                Firebase Authentication blocked login because{' '}
+                <strong className="text-emerald-400 font-mono break-all">{unauthorizedDomain}</strong>{' '}
+                has not yet been added to your project’s Authorized Domains list.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-stone-950/90 border border-white/10 text-xs text-stone-300 leading-relaxed text-left space-y-2.5">
+              <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-400">
+                How to Fix in 30 Seconds:
+              </div>
+              <ol className="list-decimal list-inside space-y-1.5 text-stone-300 text-xs">
+                <li>
+                  Go to Firebase Console: <strong className="text-white font-mono">reverberant-block-5mn89</strong>
+                </li>
+                <li>
+                  Navigate to <strong className="text-white">Authentication</strong> &gt; <strong className="text-white">Settings</strong> &gt; <strong className="text-white">Authorized domains</strong>
+                </li>
+                <li>
+                  Click <strong className="text-white">Add domain</strong> and enter:
+                  <div className="mt-1 px-3 py-1.5 rounded-lg bg-stone-900 border border-emerald-500/30 font-mono text-emerald-300 text-xs select-all flex items-center justify-between">
+                    <span>{unauthorizedDomain}</span>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (typeof navigator !== 'undefined' && navigator.clipboard) {
+                          navigator.clipboard.writeText(unauthorizedDomain);
+                        }
+                      }}
+                      className="text-[10px] text-stone-400 hover:text-white underline ml-2"
+                    >
+                      Copy
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  Click <strong className="text-white">Save</strong>, then come back here and click Sign In!
+                </li>
+              </ol>
+            </div>
+
+            <div className="flex flex-col gap-2 pt-1">
+              <a
+                href="https://console.firebase.google.com/project/reverberant-block-5mn89/authentication/settings"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full px-4 py-3 min-h-[44px] rounded-xl text-xs font-bold text-black bg-emerald-400 hover:bg-emerald-300 transition-all flex items-center justify-center gap-2 shadow-md"
+              >
+                <span>Open Firebase Console Settings</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+
+              {onDismissDomainError && (
+                <button
+                  onClick={onDismissDomainError}
+                  className="w-full px-4 py-2.5 min-h-[40px] rounded-xl text-xs font-medium text-stone-400 hover:text-stone-200 transition-all"
+                >
+                  Dismiss
+                </button>
+              )}
             </div>
           </div>
         </div>
