@@ -26,3 +26,7 @@
 /sitemap.xml
   Access-Control-Allow-Origin: *
   Content-Type: application/xml; charset=utf-8
+
+/googled9411ac887405dc5.html
+  Access-Control-Allow-Origin: *
+  Content-Type: text/html; charset=utf-8

@@ -19,6 +19,7 @@ Allow: /apple-touch-icon.png
 Allow: /og-image.png
 Allow: /og-image.jpg
 Allow: /og-image.svg
+Allow: /googled9411ac887405dc5.html
 Disallow: /api/
 Disallow: /studio
 Disallow: /workspace
