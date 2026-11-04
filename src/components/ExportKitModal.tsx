@@ -3,10 +3,18 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
-import { BrandIdentity } from '../types';
-import { Copy, Check, Download, FileText, Youtube, Sparkles, Tv, ExternalLink, Image as ImageIcon, Film } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { BrandIdentity, PracticeStory } from '../types';
+import { Copy, Check, Download, FileText, Youtube, Sparkles, Tv, ExternalLink, Image as ImageIcon, Film, Clock, Tag } from 'lucide-react';
 import { exportThumbnailPNG } from './ThumbnailDesignStudio';
+import { SAMPLE_STORIES } from '../data/sampleStories';
+import { YouTubeVideoMetadataModal } from './YouTubeVideoMetadataModal';
+import {
+  generateYouTubeTitles,
+  generateYouTubeDescription,
+  generateYouTubeTags,
+  generateYouTubeTimestamps,
+} from '../lib/youtubeMetadataGenerator';
 
 interface ExportKitViewProps {
   activeBrand: BrandIdentity;
@@ -14,6 +22,25 @@ interface ExportKitViewProps {
 
 export const ExportKitView: React.FC<ExportKitViewProps> = ({ activeBrand }) => {
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
+  const [selectedDayNum, setSelectedDayNum] = useState<number>(1);
+  const [showDayUploadModal, setShowDayUploadModal] = useState<boolean>(false);
+
+  const currentDayStory = useMemo(() => {
+    return SAMPLE_STORIES.find((s) => s.day === selectedDayNum) || SAMPLE_STORIES[0];
+  }, [selectedDayNum]);
+
+  const currentDayTitle = useMemo(() => {
+    const titles = generateYouTubeTitles(currentDayStory);
+    return titles[0]?.title || `Day ${currentDayStory.day}: ${currentDayStory.title}`;
+  }, [currentDayStory]);
+
+  const currentDayDescription = useMemo(() => {
+    return generateYouTubeDescription(currentDayStory);
+  }, [currentDayStory]);
+
+  const currentDayTags = useMemo(() => {
+    return generateYouTubeTags(currentDayStory);
+  }, [currentDayStory]);
 
   const handleCopy = (text: string, key: string) => {
     navigator.clipboard.writeText(text);
@@ -262,6 +289,124 @@ export const ExportKitView: React.FC<ExportKitViewProps> = ({ activeBrand }) => 
         </div>
       </section>
 
+      {/* Daily Video Title & Description Generator (Day 1 to 120) */}
+      <section className="bg-stone-900/50 border border-white/[0.08] rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-5 shadow-card-elevated">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.08] pb-4">
+          <div className="space-y-1">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-red-400 font-mono">
+              <Youtube className="w-4 h-4 text-red-500" />
+              <span>Daily Video Upload System (Day 1 to 120)</span>
+            </div>
+            <h3 className="text-base sm:text-lg font-bold text-white font-brand">
+              Instant Title & Description Generator for YouTube Uploads
+            </h3>
+            <p className="text-xs text-stone-400">
+              Pick any day's practice session to get a ready-to-paste Title, structured Description with timestamps and 3 key expressions, and SEO tags.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2 shrink-0">
+            <label htmlFor="export-day-select" className="text-xs text-stone-400 font-mono">Select Day:</label>
+            <select
+              id="export-day-select"
+              value={selectedDayNum}
+              onChange={(e) => setSelectedDayNum(Number(e.target.value))}
+              className="bg-stone-950 border border-white/10 rounded-xl px-3 py-1.5 text-xs text-stone-200 font-mono focus:outline-none focus:border-red-500/50 cursor-pointer"
+            >
+              {SAMPLE_STORIES.map((s) => (
+                <option key={s.day} value={s.day}>
+                  Day {s.day}: {s.title} ({s.level || 'A1'})
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        {/* Live Preview Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {/* Day Title Preview */}
+          <div className="bg-stone-950/80 p-4 sm:p-5 rounded-2xl border border-white/[0.06] space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold text-stone-200 uppercase tracking-wider font-mono flex items-center gap-1.5">
+                <FileText className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Day {currentDayStory.day} Video Title</span>
+              </span>
+              <button
+                type="button"
+                onClick={() => handleCopy(currentDayTitle, 'day-title')}
+                className="px-3 py-1 text-xs font-bold rounded-lg bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-mono flex items-center gap-1.5 transition-all cursor-pointer"
+              >
+                {copiedKey === 'day-title' ? <Check className="w-3 h-3" /> : <Copy className="w-3 h-3" />}
+                <span>{copiedKey === 'day-title' ? 'Copied!' : 'Copy Title'}</span>
+              </button>
+            </div>
+            <div className="p-3 rounded-xl bg-stone-900 border border-white/5 font-mono text-xs text-stone-100 select-all leading-relaxed">
+              {currentDayTitle}
+            </div>
+            <div className="text-[11px] text-stone-400 flex items-center justify-between">
+              <span>{currentDayTitle.length} / 100 characters</span>
+              <span className="text-emerald-400 font-mono font-semibold">CEFR {currentDayStory.level || 'A1'}</span>
+            </div>
+          </div>
+
+          {/* Day Tags Preview */}
+          <div className="bg-stone-950/80 p-4 sm:p-5 rounded-2xl border border-white/[0.06] space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold text-stone-200 uppercase tracking-wider font-mono flex items-center gap-1.5">
+                <Tag className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Day {currentDayStory.day} YouTube Tags</span>
+              </span>
+              <button
+                type="button"
+                onClick={() => handleCopy(currentDayTags, 'day-tags')}
+                className="px-3 py-1 text-xs font-bold rounded-lg bg-stone-800 hover:bg-stone-700 text-stone-200 font-mono flex items-center gap-1.5 transition-all cursor-pointer"
+              >
+                {copiedKey === 'day-tags' ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
+                <span>{copiedKey === 'day-tags' ? 'Copied!' : 'Copy Tags'}</span>
+              </button>
+            </div>
+            <div className="p-3 rounded-xl bg-stone-900 border border-white/5 font-mono text-xs text-stone-300 select-all leading-relaxed max-h-20 overflow-y-auto">
+              {currentDayTags}
+            </div>
+            <div className="text-[11px] text-stone-400">
+              Ready to paste directly into YouTube Studio's tag box.
+            </div>
+          </div>
+        </div>
+
+        {/* Day Description Preview */}
+        <div className="bg-stone-950/80 p-4 sm:p-5 rounded-2xl border border-white/[0.06] space-y-3">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <span className="text-xs font-bold text-stone-200 uppercase tracking-wider font-mono flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Full Video Description (with Timestamps & 3 Expressions)</span>
+            </span>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => handleCopy(currentDayDescription, 'day-desc')}
+                className="px-3 py-1.5 text-xs font-bold rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-mono flex items-center gap-1.5 transition-all cursor-pointer"
+              >
+                {copiedKey === 'day-desc' ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
+                <span>{copiedKey === 'day-desc' ? 'Copied Description!' : 'Copy Description'}</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowDayUploadModal(true)}
+                className="px-3 py-1.5 text-xs font-bold rounded-xl bg-red-600 hover:bg-red-500 text-white font-mono flex items-center gap-1.5 transition-all cursor-pointer"
+              >
+                <Youtube className="w-3.5 h-3.5" />
+                <span>Open Full Upload Kit</span>
+              </button>
+            </div>
+          </div>
+
+          <pre className="bg-stone-900/90 p-3.5 sm:p-4 rounded-2xl border border-white/[0.06] text-xs text-stone-300 whitespace-pre-wrap font-mono leading-relaxed max-h-[300px] overflow-y-auto shadow-badge-inset select-all">
+            {currentDayDescription}
+          </pre>
+        </div>
+      </section>
+
       {/* YouTube Studio Visual Assets Pack */}
       <section className="bg-stone-900/50 border border-white/[0.08] rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-5 shadow-card-elevated">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.08] pb-4">
@@ -427,6 +572,18 @@ export const ExportKitView: React.FC<ExportKitViewProps> = ({ activeBrand }) => 
           </div>
         </div>
       </section>
+
+      {/* YouTube Video Metadata & Description Upload Kit Modal */}
+      {showDayUploadModal && (
+        <YouTubeVideoMetadataModal
+          isOpen={showDayUploadModal}
+          onClose={() => setShowDayUploadModal(false)}
+          activeStory={currentDayStory}
+          allStories={SAMPLE_STORIES}
+          onSelectStory={(s) => setSelectedDayNum(s.day)}
+          activeBrand={activeBrand}
+        />
+      )}
     </div>
   );
 };

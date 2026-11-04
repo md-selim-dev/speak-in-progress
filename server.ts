@@ -14,6 +14,15 @@ import { randomUUID } from 'crypto';
 const app = express();
 const PORT = 3000;
 
+// Security Middleware: modern HTTP headers for defense in depth
+app.use((_req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('Permissions-Policy', 'camera=(), microphone=(self), geolocation=(), payment=()');
+  next();
+});
+
 // Security & SEO: Guarantee all API routes are never indexed or archived by web crawlers
 app.use('/api', (_req, res, next) => {
   res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
@@ -25,8 +34,12 @@ app.use('/api/convert-video', express.raw({ type: '*/*', limit: '100mb' }));
 
 app.post('/api/convert-video', async (req, res) => {
   try {
-    const targetFormat = ((req.headers['x-target-format'] as string) || 'mp4').toLowerCase();
-    const duration = parseFloat((req.headers['x-target-duration'] as string) || '3.5');
+    const rawFormat = ((req.headers['x-target-format'] as string) || 'mp4').toLowerCase();
+    // Strict format whitelist to prevent path traversal or unwanted execution
+    const targetFormat = rawFormat === 'webm' ? 'webm' : 'mp4';
+    const rawDuration = parseFloat((req.headers['x-target-duration'] as string) || '3.5');
+    // Sanitize and clamp duration between 0.5s and 30s to prevent DoS resource exhaustion
+    const duration = isNaN(rawDuration) ? 3.5 : Math.min(Math.max(rawDuration, 0.5), 30);
     const inputBuffer = req.body as Buffer;
 
     if (!inputBuffer || !Buffer.isBuffer(inputBuffer) || inputBuffer.length === 0) {

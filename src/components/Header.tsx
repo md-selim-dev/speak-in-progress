@@ -112,11 +112,12 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="relative font-extrabold">Record Screen</span>
           </button>
 
+
           {/* Clean, quiet Sign Out action */}
           {onSignOut && (
             <button
               onClick={onSignOut}
-              className="px-3 py-2 text-xs font-semibold text-stone-400 hover:text-white bg-stone-900/90 hover:bg-stone-800 rounded-xl border border-white/10 transition-all flex items-center gap-1.5"
+              className="px-3 py-2 text-xs font-semibold text-stone-400 hover:text-white bg-stone-900/90 hover:bg-stone-800 rounded-xl border border-white/10 transition-all flex items-center gap-1.5 cursor-pointer"
               title="Sign Out"
             >
               <LogOut className="w-3.5 h-3.5 text-stone-400" />

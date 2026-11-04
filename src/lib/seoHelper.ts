@@ -47,7 +47,7 @@ export function updatePageSEO(pageId: PageRouteId, isPrivateWorkspace: boolean =
 
   // Public Page SEO
   const page = SITE_CONFIG.pages[pageId] || SITE_CONFIG.pages.home;
-  const fullUrl = `${SITE_CONFIG.domain}${page.path === '/' ? '' : page.path}`;
+  const fullUrl = page.path === '/' ? `${SITE_CONFIG.domain}/` : `${SITE_CONFIG.domain}${page.path}`;
 
   document.title = page.title;
   descMeta?.setAttribute('content', page.description);

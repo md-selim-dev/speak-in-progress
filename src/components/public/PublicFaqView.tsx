@@ -5,7 +5,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { BrandIdentity } from '../../types';
-import { HelpCircle, ChevronDown, Search, Mail, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
+import { HelpCircle, ChevronDown, Search, ArrowRight, ShieldCheck, Sparkles, Youtube, ExternalLink } from 'lucide-react';
 
 interface PublicFaqViewProps {
   activeBrand: BrandIdentity;
@@ -78,8 +78,8 @@ export const PublicFaqView: React.FC<PublicFaqViewProps> = ({
     },
     {
       category: 'General',
-      q: 'How can I contact the creator or report an issue?',
-      a: 'You can contact creator Md. Selim directly via email at support@mdselim.com for feedback, inquiries, or collaboration opportunities.',
+      q: 'Where can I watch Speak in Progress practice sessions and follow the journey?',
+      a: 'You can watch authentic spoken English practice sessions, unscripted retellings, and studio workflow documentation directly on our official YouTube channel: @SpeakInProgress (https://www.youtube.com/@SpeakInProgress).',
     },
   ];
 
@@ -194,24 +194,27 @@ export const PublicFaqView: React.FC<PublicFaqViewProps> = ({
         )}
       </section>
 
-      {/* Contact Support Box */}
+      {/* Official YouTube Channel & Community */}
       <section className="max-w-2xl mx-auto p-6 sm:p-8 rounded-3xl bg-stone-900/80 border border-white/10 text-center space-y-4">
-        <div className="w-12 h-12 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mx-auto">
-          <Mail className="w-6 h-6" />
+        <div className="w-12 h-12 rounded-2xl bg-red-600/15 border border-red-500/30 flex items-center justify-center text-red-500 mx-auto">
+          <Youtube className="w-6 h-6" />
         </div>
         <div>
-          <h2 className="text-xl font-bold text-white font-brand">Have a Specific Question?</h2>
+          <h2 className="text-xl font-bold text-white font-brand">Follow on YouTube</h2>
           <p className="text-xs sm:text-sm text-stone-400 mt-1 max-w-md mx-auto">
-            Need guidance on setting up OBS Studio, teleprompter pacing calibration, or private workspace inquiries?
+            Watch authentic daily spoken practice, pacing routines, unscripted retellings, and fluency documentation on our official YouTube channel.
           </p>
         </div>
         <div className="pt-2">
           <a
-            href="mailto:support@mdselim.com"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-bold font-mono text-xs uppercase tracking-wider transition-all"
+            href="https://www.youtube.com/@SpeakInProgress"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold font-mono text-xs uppercase tracking-wider transition-all shadow-lg shadow-red-600/20"
           >
-            <span>Email Creator: support@mdselim.com</span>
-            <ArrowRight className="w-4 h-4" />
+            <Youtube className="w-4 h-4" />
+            <span>Visit @SpeakInProgress on YouTube</span>
+            <ExternalLink className="w-3.5 h-3.5 ml-0.5 text-white/80" />
           </a>
         </div>
       </section>

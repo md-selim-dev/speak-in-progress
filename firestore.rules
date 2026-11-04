@@ -47,6 +47,12 @@ service cloud.firestore {
         allow create: if isOwner(userId) && isValidId(scriptId) && isValidScript(request.resource.data);
         allow update: if isOwner(userId) && isValidId(scriptId) && isValidScript(request.resource.data) && request.resource.data.userId == resource.data.userId;
       }
+
+      // Personal Practice Reflections & Win Logs
+      match /reflections/{reflectionId} {
+        allow get, list, delete: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(reflectionId);
+      }
     }
 
     // Master Curriculum Library (A1 to C2)

@@ -69,7 +69,9 @@ import {
   AlertTriangle,
   Table,
   Check,
+  Youtube,
 } from 'lucide-react';
+import { YouTubeVideoMetadataModal } from './YouTubeVideoMetadataModal';
 
 interface TeleprompterStudioViewProps {
   activeBrand: BrandIdentity;
@@ -317,6 +319,7 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
 
   // Modals & Panels
   const [showHowToUseModal, setShowHowToUseModal] = useState<boolean>(false);
+  const [showYouTubeUploadModal, setShowYouTubeUploadModal] = useState<boolean>(false);
   const [howToUseTab, setHowToUseTab] = useState<'workflow' | 'obs' | 'speaking' | 'shortcuts'>('workflow');
   const [showContentManagerModal, setShowContentManagerModal] = useState<boolean>(false);
   const [contentManagerTab, setContentManagerTab] = useState<'list' | 'add' | 'edit' | 'sheets' | 'bulk' | 'backup'>('list');
@@ -1381,8 +1384,17 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
 
           <div className="flex items-center gap-2">
             <button
+              onClick={() => setShowYouTubeUploadModal(true)}
+              className="px-2.5 py-1.5 text-red-400 hover:text-white bg-red-600/10 hover:bg-red-600/20 border border-red-500/20 hover:border-red-500/40 rounded-xl transition-all text-xs font-semibold flex items-center gap-1.5 cursor-pointer shadow-sm"
+              title="Get YouTube Video Title, Description, Timestamps & Tags for this Day"
+            >
+              <Youtube className="w-3.5 h-3.5 text-red-500 shrink-0" />
+              <span className="hidden sm:inline font-mono">YouTube Upload Kit</span>
+            </button>
+
+            <button
               onClick={() => handleOpenEditModal(selectedStory)}
-              className="p-1.5 text-stone-400 hover:text-white rounded-lg hover:bg-stone-800 transition-all text-xs flex items-center gap-1"
+              className="p-1.5 text-stone-400 hover:text-white rounded-lg hover:bg-stone-800 transition-all text-xs flex items-center gap-1 cursor-pointer"
               title="Edit this day's story text or vocabulary"
             >
               <Edit3 className="w-3.5 h-3.5" />
@@ -1856,6 +1868,31 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
                   Save Daily Log
                 </button>
               </div>
+            </div>
+
+            {/* Quick YouTube Upload Card */}
+            <div className="p-5 rounded-2xl bg-stone-900/90 border border-red-500/30 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-red-600/15 border border-red-500/30 flex items-center justify-center text-red-500 shrink-0">
+                  <Youtube className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-white font-brand">
+                    Ready to Upload Day {selectedStory.day} to YouTube?
+                  </div>
+                  <div className="text-[11px] text-stone-400">
+                    Get pre-formatted Title, Description, Timestamps & Tags to copy into YouTube Studio in 1 click.
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowYouTubeUploadModal(true)}
+                className="w-full sm:w-auto px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold font-mono text-xs flex items-center justify-center gap-2 transition-all shadow-md cursor-pointer shrink-0"
+              >
+                <Youtube className="w-3.5 h-3.5" />
+                <span>Open Upload Kit</span>
+              </button>
             </div>
           </div>
         )}
@@ -2892,6 +2929,18 @@ Anchors:
             </div>
           </div>
         </div>
+      )}
+
+      {/* YouTube Video Metadata & Description Upload Kit Modal */}
+      {showYouTubeUploadModal && (
+        <YouTubeVideoMetadataModal
+          isOpen={showYouTubeUploadModal}
+          onClose={() => setShowYouTubeUploadModal(false)}
+          activeStory={selectedStory}
+          allStories={allStories}
+          onSelectStory={(story) => setSelectedStory(story)}
+          activeBrand={activeBrand}
+        />
       )}
     </div>
   );

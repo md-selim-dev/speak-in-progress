@@ -252,7 +252,7 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
         <article class="p-8 rounded-3xl bg-stone-900/60 border border-white/10 space-y-4">
           <h2 class="text-2xl font-bold text-white">Creator &amp; Founder Attribution</h2>
           <p class="text-sm text-stone-300 leading-relaxed">
-            Engineered and designed by <strong>Md. Selim</strong>. Built for personal spoken English discipline and designed for creator consistency. For inquiries, contact <a href="mailto:support@mdselim.com" class="text-emerald-400 underline">support@mdselim.com</a>.
+            Engineered and designed by <strong>Md. Selim</strong>. Built for personal spoken English discipline and designed for creator consistency. Watch official practice sessions on YouTube: <a href="https://www.youtube.com/@SpeakInProgress" target="_blank" rel="noopener noreferrer" class="text-red-400 underline font-semibold">@SpeakInProgress</a>.
           </p>
         </article>
       </div>
@@ -499,7 +499,7 @@ function generatePageHtml(template: string, page: PagePrerenderMeta): string {
       <footer class="border-t border-white/[0.08] bg-stone-950/95 py-10 px-4 sm:px-6 lg:px-8 text-xs text-stone-400 mt-16">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            © 2026 Speak in Progress · Founded by <strong>Md. Selim</strong> · <a href="mailto:support@mdselim.com" class="text-emerald-400 underline">support@mdselim.com</a>
+            © 2026 Speak in Progress · Founded by <strong>Md. Selim</strong> · <a href="https://www.youtube.com/@SpeakInProgress" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300">YouTube @SpeakInProgress</a>
           </div>
           <div class="flex flex-wrap items-center gap-3">
             <a href="/" class="hover:text-emerald-400">Home</a>

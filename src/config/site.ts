@@ -17,13 +17,12 @@ export const SITE_CONFIG = {
   locale: 'en_US',
   themeColor: '#030705',
   
-  // Creator & Contact Information (100% factually accurate)
+  // Creator & Channel Information (100% factually accurate)
   creator: {
     name: 'Md. Selim',
-    email: 'support@mdselim.com',
     role: 'Founder & Creator',
   },
-  supportEmail: 'support@mdselim.com',
+  youtubeUrl: 'https://www.youtube.com/@SpeakInProgress',
 
   // Social & Asset paths (relative to domain)
   assets: {

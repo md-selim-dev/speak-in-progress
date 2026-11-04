@@ -47,8 +47,9 @@ Stored in private Cloud Firestore.
 - Public Landing Page: Fully indexed by search engines (`index, follow`).
 - Internal Studio: Strictly restricted to authorized creator credentials.
 - Once authenticated into the studio, the runtime automatically toggles search robots to `noindex, nofollow, noarchive, nosnippet`, ensuring personal recordings and draft logs are never indexed.
-- Other accounts attempting to log in receive a polite notice directing inquiries to `support@mdselim.com`.
+- Other accounts attempting to log in receive a polite notice directing to the official YouTube channel @SpeakInProgress.
 
-## 5. Contact & Support
+## 5. Official Channel & Community
 - Founder & Creator: Md. Selim
-- Support & General Inquiries: support@mdselim.com
+- Official YouTube Channel: https://www.youtube.com/@SpeakInProgress
+- Primary Domain: https://speak-in-progress.pages.dev/

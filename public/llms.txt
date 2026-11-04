@@ -34,9 +34,9 @@ Traditional language learning over-indexes on passive comprehension. Fluency req
 - **Media**: Web Audio API (microphone rehearsal recorder), HTML5 Canvas API (thumbnail generator)
 - **Deployment**: Static SPA hosted on Cloudflare Pages (https://speak-in-progress.pages.dev/)
 
-## Support & Inquiries
+## Official Channel & Community
 
 - Founder & Creator: Md. Selim
-- Inquiries & Support: support@mdselim.com
+- Official YouTube Channel: https://www.youtube.com/@SpeakInProgress
 - Official Domain: https://speak-in-progress.pages.dev/
 - Public Documentation: https://speak-in-progress.pages.dev/llms-full.txt

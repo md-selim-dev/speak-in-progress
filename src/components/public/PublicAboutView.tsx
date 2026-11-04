@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { BrandIdentity } from '../../types';
-import { User, Shield, Terminal, BookOpen, Heart, ArrowRight, CheckCircle2, Lock } from 'lucide-react';
+import { User, Shield, Terminal, BookOpen, Heart, ArrowRight, CheckCircle2, Lock, Youtube } from 'lucide-react';
 
 interface PublicAboutViewProps {
   activeBrand: BrandIdentity;
@@ -96,10 +96,16 @@ export const PublicAboutView: React.FC<PublicAboutViewProps> = ({
             </div>
 
             <div className="pt-2 border-t border-white/5 space-y-3 text-xs text-stone-300">
-              <div className="flex justify-between py-1 border-b border-white/5">
-                <span className="text-stone-400">Direct Inquiries</span>
-                <a href="mailto:support@mdselim.com" className="text-emerald-400 hover:underline font-mono">
-                  support@mdselim.com
+              <div className="flex justify-between items-center py-1 border-b border-white/5">
+                <span className="text-stone-400">YouTube Channel</span>
+                <a
+                  href="https://www.youtube.com/@SpeakInProgress"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 font-mono flex items-center gap-1.5 transition-colors"
+                >
+                  <Youtube className="w-3.5 h-3.5 text-red-500" />
+                  <span>@SpeakInProgress</span>
                 </a>
               </div>
               <div className="flex justify-between py-1 border-b border-white/5">
