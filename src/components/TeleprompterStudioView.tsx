@@ -305,15 +305,20 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
   const [checkedAnchors, setCheckedAnchors] = useState<Record<number, boolean>>({});
   const [retellingTargetSeconds, setRetellingTargetSeconds] = useState<number>(90);
 
-  // Microphone Audio Practice Recorder
+  // Microphone Audio Practice Recorder & In-App Player
   const [isRecordingAudio, setIsRecordingAudio] = useState<boolean>(false);
   const [micNotice, setMicNotice] = useState<string | null>(null);
   const [audioURL, setAudioURL] = useState<string | null>(null);
   const [audioDuration, setAudioDuration] = useState<number>(0);
+  const [isPlayingAudio, setIsPlayingAudio] = useState<boolean>(false);
+  const [audioPlaybackTime, setAudioPlaybackTime] = useState<number>(0);
+  const [audioTotalDuration, setAudioTotalDuration] = useState<number>(0);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioStreamRef = useRef<MediaStream | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
   const audioTimerRef = useRef<any>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioUrlRef = useRef<string | null>(null);
   const teleprompterContainerRef = useRef<HTMLDivElement | null>(null);
   const paragraphRefs = useRef<(HTMLParagraphElement | null)[]>([]);
 
@@ -476,6 +481,10 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
       if (audioTimerRef.current) {
         clearInterval(audioTimerRef.current);
       }
+      if (audioUrlRef.current) {
+        URL.revokeObjectURL(audioUrlRef.current);
+        audioUrlRef.current = null;
+      }
     };
   }, []);
 
@@ -582,10 +591,26 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
     return Math.round(scrollSpeed * 3.8);
   }, [scrollSpeed]);
 
-  // Audio Recording with Microphone
+  // Audio Recording with Microphone (In-App Test & Playback)
+  const clearAudioRecording = () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+    if (audioUrlRef.current) {
+      URL.revokeObjectURL(audioUrlRef.current);
+      audioUrlRef.current = null;
+    }
+    setAudioURL(null);
+    setIsPlayingAudio(false);
+    setAudioPlaybackTime(0);
+    setAudioTotalDuration(0);
+  };
+
   const startAudioRecording = async () => {
     try {
       setMicNotice(null);
+      clearAudioRecording();
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       audioStreamRef.current = stream;
 
@@ -600,9 +625,13 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
       };
 
       recorder.onstop = () => {
-        const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+        const mimeType = recorder.mimeType || 'audio/webm';
+        const audioBlob = new Blob(audioChunksRef.current, { type: mimeType });
         const url = URL.createObjectURL(audioBlob);
+        audioUrlRef.current = url;
         setAudioURL(url);
+        setAudioPlaybackTime(0);
+        setIsPlayingAudio(false);
       };
 
       recorder.start();
@@ -633,14 +662,30 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
     setIsRecordingAudio(false);
   };
 
-  const downloadAudioRecording = () => {
-    if (!audioURL) return;
-    const a = document.createElement('a');
-    a.href = audioURL;
-    a.download = `Day-${selectedStory.day}-Speaking-Rehearsal.webm`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+  const toggleAudioPlayback = async () => {
+    const audioEl = audioRef.current;
+    if (!audioEl || !audioURL) return;
+
+    if (isPlayingAudio) {
+      audioEl.pause();
+      setIsPlayingAudio(false);
+    } else {
+      try {
+        await audioEl.play();
+        setIsPlayingAudio(true);
+      } catch (err) {
+        console.error('Failed to play recorded audio:', err);
+        setMicNotice('Unable to play test audio in this browser.');
+      }
+    }
+  };
+
+  const handleAudioSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newTime = Number(e.target.value);
+    setAudioPlaybackTime(newTime);
+    if (audioRef.current) {
+      audioRef.current.currentTime = newTime;
+    }
   };
 
   // Google Login / Logout handlers
@@ -1981,7 +2026,7 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
             </div>
 
             {/* Stopwatch & Audio Rehearsal */}
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <div className="flex items-center gap-2 bg-stone-900 border border-white/10 px-3 py-1.5 rounded-xl font-mono text-xs">
                 <Clock className="w-3.5 h-3.5 text-emerald-400" />
                 <span className="text-white font-bold">{formatTime(timerSeconds)}</span>
@@ -2006,25 +2051,90 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
               {/* Audio Rehearsal Button */}
               <button
                 onClick={isRecordingAudio ? stopAudioRecording : startAudioRecording}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                   isRecordingAudio
                     ? 'bg-rose-500 text-white animate-pulse'
                     : 'bg-stone-800 hover:bg-stone-700 text-stone-200 border border-white/10'
                 }`}
+                title={isRecordingAudio ? 'Stop microphone test' : 'Record a quick mic test to check your audio'}
               >
                 {isRecordingAudio ? <Square className="w-3 h-3" /> : <Mic className="w-3 h-3 text-emerald-400" />}
                 <span>{isRecordingAudio ? `Stop (${formatTime(audioDuration)})` : 'Rehearse Mic'}</span>
               </button>
 
-              {audioURL && (
-                <button
-                  onClick={downloadAudioRecording}
-                  className="p-2 rounded-xl bg-stone-800 hover:bg-stone-700 text-emerald-400"
-                  title="Download Rehearsal WebM"
-                >
-                  <Download className="w-3.5 h-3.5" />
-                </button>
-              )}
+              {/* In-App Rehearsal Audio Player (No download required) */}
+              {audioURL && !isRecordingAudio && (() => {
+                const effectiveDuration =
+                  audioTotalDuration > 0 && isFinite(audioTotalDuration)
+                    ? audioTotalDuration
+                    : Math.max(audioDuration, 1);
+                return (
+                  <div className="flex items-center gap-2 bg-stone-900 border border-emerald-500/30 px-2.5 py-1 rounded-xl text-xs shadow-sm">
+                    <audio
+                      ref={audioRef}
+                      src={audioURL}
+                      preload="metadata"
+                      onLoadedMetadata={(e) => {
+                        const dur = e.currentTarget.duration;
+                        if (isFinite(dur) && dur > 0) {
+                          setAudioTotalDuration(dur);
+                        }
+                      }}
+                      onDurationChange={(e) => {
+                        const dur = e.currentTarget.duration;
+                        if (isFinite(dur) && dur > 0) {
+                          setAudioTotalDuration(dur);
+                        }
+                      }}
+                      onTimeUpdate={(e) => {
+                        setAudioPlaybackTime(e.currentTarget.currentTime);
+                      }}
+                      onEnded={() => {
+                        setIsPlayingAudio(false);
+                        setAudioPlaybackTime(0);
+                        if (audioRef.current) {
+                          audioRef.current.currentTime = 0;
+                        }
+                      }}
+                    />
+
+                    <button
+                      type="button"
+                      onClick={toggleAudioPlayback}
+                      className="p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-stone-950 transition-all cursor-pointer flex items-center justify-center shrink-0"
+                      aria-label={isPlayingAudio ? 'Pause mic test audio' : 'Play mic test audio'}
+                      title={isPlayingAudio ? 'Pause mic test' : 'Play mic test'}
+                    >
+                      {isPlayingAudio ? <Pause className="w-3 h-3" /> : <Play className="w-3 h-3" />}
+                    </button>
+
+                    <input
+                      type="range"
+                      min={0}
+                      max={effectiveDuration}
+                      step={0.1}
+                      value={Math.min(audioPlaybackTime, effectiveDuration)}
+                      onChange={handleAudioSeek}
+                      aria-label="Seek mic test audio"
+                      className="w-16 sm:w-20 accent-emerald-400 cursor-pointer"
+                    />
+
+                    <span className="font-mono text-[11px] text-stone-300 whitespace-nowrap">
+                      {formatTime(Math.floor(audioPlaybackTime))} / {formatTime(Math.round(effectiveDuration))}
+                    </span>
+
+                    <button
+                      type="button"
+                      onClick={clearAudioRecording}
+                      className="p-1 rounded-lg text-stone-400 hover:text-white hover:bg-stone-800 transition-all cursor-pointer"
+                      aria-label="Discard mic test audio"
+                      title="Discard test audio"
+                    >
+                      <X className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                );
+              })()}
 
               {/* Clean Mode Toggle */}
               {isCleanMode ? (
@@ -2055,6 +2165,19 @@ export const TeleprompterStudioView: React.FC<TeleprompterStudioViewProps> = ({ 
                 <span className="hidden sm:inline">Hide HUD (H)</span>
               </button>
             </div>
+            {micNotice && (
+              <div className="w-full text-[11px] text-amber-300 bg-amber-500/10 border border-amber-500/20 rounded-xl px-3 py-1.5 flex items-center justify-between gap-2">
+                <span>{micNotice}</span>
+                <button
+                  type="button"
+                  onClick={() => setMicNotice(null)}
+                  className="text-amber-300 hover:text-white cursor-pointer"
+                  aria-label="Dismiss microphone notice"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </div>
+            )}
           </div>
         )}
 
