@@ -5,19 +5,14 @@
 
 import React, { useState, useMemo } from 'react';
 import { BrandIdentity } from '../../types';
-import { HelpCircle, ChevronDown, Search, ArrowRight, ShieldCheck, Sparkles, Youtube, ExternalLink } from 'lucide-react';
+import { HelpCircle, ChevronDown, Search, Youtube, ExternalLink } from 'lucide-react';
+import { PUBLIC_FAQ_ITEMS } from '../../config/seoSchemas';
 
 interface PublicFaqViewProps {
   activeBrand: BrandIdentity;
   onNavigate: (page: 'home' | 'features' | 'howItWorks' | 'about') => void;
   onPrimaryAction: () => void;
   isAuthenticated: boolean;
-}
-
-interface FaqItem {
-  q: string;
-  a: string;
-  category: 'General' | 'Prompter & Practice' | 'YouTube & Output' | 'Privacy & Access';
 }
 
 export const PublicFaqView: React.FC<PublicFaqViewProps> = ({
@@ -30,58 +25,7 @@ export const PublicFaqView: React.FC<PublicFaqViewProps> = ({
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [openIndices, setOpenIndices] = useState<number[]>([0, 1]); // first two open by default
 
-  const faqItems: FaqItem[] = [
-    {
-      category: 'General',
-      q: 'What is Speak in Progress?',
-      a: 'Speak in Progress is a purpose-built desktop studio application engineered by Md. Selim for mastering English spoken fluency and YouTube content delivery. It combines an ultra-smooth teleprompter, an impromptu 90-second recall timer, a 2K thumbnail generator, a dynamic video intro suite, and a 120-day progressive CEFR syllabus (A1 to C2).',
-    },
-    {
-      category: 'Prompter & Practice',
-      q: 'Why practice spoken English with a teleprompter?',
-      a: 'Reading along with calibrated auto-scroll (between 15 and 75 pixels per second, targeting 130–160 words per minute) trains neuromuscular speech rhythm and eliminates hesitation pauses. It conditions the speaker to formulate continuous English phrases without stopping to translate in their head.',
-    },
-    {
-      category: 'Prompter & Practice',
-      q: 'What is the 90-second impromptu recall challenge?',
-      a: 'Immediately after reading through a script on the prompter, the text is hidden and a 90-second countdown begins. The speaker must spontaneously summarize the core points aloud using the target vocabulary. This bridges the critical gap between passive reading fluency and active unscripted conversational synthesis.',
-    },
-    {
-      category: 'Prompter & Practice',
-      q: 'Can I customize the teleprompter scroll speed and visual layout?',
-      a: 'Yes. You can fine-tune scroll velocity between 15 and 75 pixels per second to match your natural speech cadence (110 to 165 WPM). You can also scale font size from 24px up to 64px, switch line height, adjust column margins, and toggle eye-level focus guides.',
-    },
-    {
-      category: 'YouTube & Output',
-      q: 'How does the faceless YouTube workflow function?',
-      a: 'Rather than dealing with camera anxiety, studio lighting, or complex webcam rigs, you simply record your computer screen using free capture software like OBS Studio or native Windows/macOS tools while the teleprompter scrolls. Your voice is recorded via your microphone over the high-contrast prompter text, creating clean educational and commentary videos ready for YouTube.',
-    },
-    {
-      category: 'YouTube & Output',
-      q: 'Can I record with screen recorders other than OBS Studio?',
-      a: 'Yes. Speak in Progress runs in any modern desktop browser. You can capture sessions using OBS Studio, native Windows Game Bar (Win+G), macOS QuickTime, Loom, or any PC screen recorder.',
-    },
-    {
-      category: 'YouTube & Output',
-      q: 'How does the Thumbnail & Video Intro suite work without external software?',
-      a: 'The application contains native HTML5 canvas graphic engines. The Thumbnail Studio renders pixel-perfect 2560×1440 (2K) and 1920×1080 (FHD) PNG graphics with customizable titles, level badges, and color presets. The Video Intro Suite renders animated 5-second countdown title sequences directly in the browser with zero external editing required.',
-    },
-    {
-      category: 'General',
-      q: 'What is the 120-Day structured syllabus?',
-      a: 'The application contains a built-in curriculum organized across 6 CEFR difficulty levels (A1 through C2). Each day provides an actionable script, key vocabulary breakdown, structural grammar patterns, and estimated speaking duration, guiding speakers from beginner confidence to executive-level articulation.',
-    },
-    {
-      category: 'Privacy & Access',
-      q: 'Can anyone create an account, or is the private studio restricted?',
-      a: 'The public website, methodology documentation, feature breakdowns, and workflow guides are open to everyone worldwide. The private studio dashboard, personal script library, and recording persistence are currently reserved for the creator account to ensure an uninterrupted, personalized workflow.',
-    },
-    {
-      category: 'General',
-      q: 'Where can I watch Speak in Progress practice sessions and follow the journey?',
-      a: 'You can watch authentic spoken English practice sessions, unscripted retellings, and studio workflow documentation directly on our official YouTube channel: @SpeakInProgress (https://www.youtube.com/@SpeakInProgress).',
-    },
-  ];
+  const faqItems = PUBLIC_FAQ_ITEMS;
 
   const categories = ['All', 'General', 'Prompter & Practice', 'YouTube & Output', 'Privacy & Access'];
 
@@ -113,7 +57,7 @@ export const PublicFaqView: React.FC<PublicFaqViewProps> = ({
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-brand tracking-tight">
           Frequently Asked Questions
         </h1>
-        <p className="text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
+        <p className="speakable-summary text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
           Clear, factual answers regarding the teleprompter studio, the Cognitive Cadence Method, faceless YouTube workflow, and technical architecture.
         </p>
       </section>
@@ -149,7 +93,11 @@ export const PublicFaqView: React.FC<PublicFaqViewProps> = ({
       </section>
 
       {/* FAQ Accordion List */}
-      <section className="max-w-3xl mx-auto space-y-3">
+      <section
+        itemScope
+        itemType="https://schema.org/FAQPage"
+        className="max-w-3xl mx-auto space-y-3"
+      >
         {filteredFaqs.length === 0 ? (
           <div className="p-8 text-center rounded-2xl bg-stone-900/40 border border-white/5 text-stone-400 text-sm">
             No matching questions found for "{searchQuery}". Try a different keyword or reset filters.
@@ -160,6 +108,9 @@ export const PublicFaqView: React.FC<PublicFaqViewProps> = ({
             return (
               <article
                 key={idx}
+                itemScope
+                itemProp="mainEntity"
+                itemType="https://schema.org/Question"
                 className="rounded-2xl bg-stone-900/60 border border-white/[0.08] hover:border-emerald-500/20 transition-all overflow-hidden"
               >
                 <button
@@ -171,7 +122,7 @@ export const PublicFaqView: React.FC<PublicFaqViewProps> = ({
                     <span className="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-widest">
                       {item.category}
                     </span>
-                    <h2 className="text-base sm:text-lg font-bold text-white font-brand">
+                    <h2 itemProp="name" className="text-base sm:text-lg font-bold text-white font-brand">
                       {item.q}
                     </h2>
                   </div>
@@ -183,11 +134,18 @@ export const PublicFaqView: React.FC<PublicFaqViewProps> = ({
                     <ChevronDown className="w-4 h-4" />
                   </div>
                 </button>
-                {isOpen && (
-                  <div className="px-5 sm:px-6 pb-6 pt-1 text-sm sm:text-base text-stone-300 leading-relaxed border-t border-white/5">
-                    <p>{item.a}</p>
-                  </div>
-                )}
+                <div
+                  itemProp="acceptedAnswer"
+                  itemScope
+                  itemType="https://schema.org/Answer"
+                  className={
+                    isOpen
+                      ? 'px-5 sm:px-6 pb-6 pt-1 text-sm sm:text-base text-stone-300 leading-relaxed border-t border-white/5'
+                      : 'hidden'
+                  }
+                >
+                  <p itemProp="text" className="speakable-faq">{item.a}</p>
+                </div>
               </article>
             );
           })

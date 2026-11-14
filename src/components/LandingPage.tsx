@@ -87,12 +87,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
     const handlePopState = () => {
       const page = getPageFromPath(window.location.pathname);
       setCurrentPage(page);
-      updatePageSEO(page);
     };
     window.addEventListener('popstate', handlePopState);
-    updatePageSEO(currentPage);
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
+
+  useEffect(() => {
+    updatePageSEO(currentPage, false);
+  }, [currentPage]);
 
   const navigateTo = (page: PageRouteId) => {
     setCurrentPage(page);

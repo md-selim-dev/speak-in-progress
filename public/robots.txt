@@ -1,15 +1,19 @@
 # ==============================================================================
 # Robots.txt for Speak in Progress (https://speak-in-progress.pages.dev/)
-# All public educational pages and assets are fully crawlable by search engines & AI bots.
-# Private creator workspace, recordings, internal drafts, and API routes are strictly restricted.
+# Public educational & methodology pages are open for Search, Answer & AI Engines.
+# Private studio, dashboard, scripts, recordings, login & API paths are disallowed.
 # ==============================================================================
 
 User-agent: *
 Allow: /$
 Allow: /features
+Allow: /features/
 Allow: /how-it-works
+Allow: /how-it-works/
 Allow: /about
+Allow: /about/
 Allow: /faq
+Allow: /faq/
 Allow: /assets/
 Allow: /llms.txt
 Allow: /llms-full.txt
@@ -22,12 +26,18 @@ Allow: /og-image.svg
 Allow: /googled9411ac887405dc5.html
 Disallow: /api/
 Disallow: /studio
+Disallow: /dashboard
 Disallow: /workspace
 Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
+Disallow: /scripts
+Disallow: /recordings
+Disallow: /404
 Disallow: /*?*token=*
 Disallow: /*?*auth=*
 
-# Social Media Link Preview Bots (Always permitted to fetch OG metadata and preview cards)
+# Social Media Link Preview Crawlers
 User-agent: facebookexternalhit
 Allow: /
 
@@ -43,35 +53,141 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# Search Engine & AI Crawlers (AEO / GEO indexing allowed for public pages)
+User-agent: Discordbot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# Major Search, Answer & Generative AI Engine Crawlers (Public Pages Only)
 User-agent: Googlebot
 Allow: /
 Disallow: /api/
 Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
 
 User-agent: Bingbot
 Allow: /
 Disallow: /api/
 Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
 
 User-agent: GPTBot
 Allow: /
 Disallow: /api/
 Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
 
 User-agent: PerplexityBot
 Allow: /
 Disallow: /api/
 Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
+Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
 
 User-agent: ClaudeBot
 Allow: /
 Disallow: /api/
 Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /api/
+Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
 
 User-agent: Applebot
 Allow: /
 Disallow: /api/
 Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /api/
+Disallow: /studio
+Disallow: /dashboard
+Disallow: /workspace
+Disallow: /teleprompter
+Disallow: /login
+Disallow: /account
 
 Sitemap: https://speak-in-progress.pages.dev/sitemap.xml

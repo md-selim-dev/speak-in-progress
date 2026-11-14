@@ -31,7 +31,7 @@ export const PublicAboutView: React.FC<PublicAboutViewProps> = ({
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-brand tracking-tight">
           About Speak in Progress
         </h1>
-        <p className="text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
+        <p className="speakable-summary text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
           Built by Md. Selim to solve the real friction of mastering spoken English fluency through daily faceless YouTube screen recordings and structured cadence training.
         </p>
       </section>
@@ -83,14 +83,18 @@ export const PublicAboutView: React.FC<PublicAboutViewProps> = ({
 
         {/* Founder Bio Card & Mission Overview */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="p-6 sm:p-8 rounded-3xl bg-stone-900/70 border border-white/[0.08] space-y-6">
+          <div
+            itemScope
+            itemType="https://schema.org/Person"
+            className="p-6 sm:p-8 rounded-3xl bg-stone-900/70 border border-white/[0.08] space-y-6"
+          >
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-emerald-600 to-emerald-400 flex items-center justify-center text-stone-950 font-extrabold text-2xl font-brand shadow-lg shadow-emerald-500/20">
                 MS
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white font-brand">Md. Selim</h3>
-                <p className="text-xs font-mono text-emerald-400">Founder & Creator</p>
+                <h3 itemProp="name" className="text-xl font-bold text-white font-brand">Md. Selim</h3>
+                <p itemProp="jobTitle" className="text-xs font-mono text-emerald-400">Founder & Creator</p>
                 <p className="text-xs text-stone-400 mt-0.5">Spoken Fluency Journey & Architecture</p>
               </div>
             </div>
@@ -145,7 +149,7 @@ export const PublicAboutView: React.FC<PublicAboutViewProps> = ({
           <h2 className="text-xl sm:text-2xl font-extrabold text-white font-brand mt-1">
             The Cognitive Cadence Method
           </h2>
-          <p className="text-sm text-stone-400 mt-1">
+          <p className="speakable-definition speakable-methodology text-sm text-stone-400 mt-1">
             Four interconnected learning feedback loops built directly into the software.
           </p>
         </div>

@@ -6,8 +6,23 @@
 import fs from 'fs';
 import path from 'path';
 import { SITE_CONFIG, PublicPageId } from '../src/config/site';
+import {
+  PUBLIC_FAQ_ITEMS,
+  WORKFLOW_STEPS,
+  STUDIO_MODULES,
+  PACING_CALIBRATION_TABLE,
+  getRouteStructuredData,
+} from '../src/config/seoSchemas';
 
 const DIST_DIR = path.resolve('dist');
+
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
 
 interface PagePrerenderMeta {
   id: PublicPageId | 'notFound';
@@ -15,8 +30,6 @@ interface PagePrerenderMeta {
   title: string;
   description: string;
   isIndexable: boolean;
-  heading: string;
-  subheading: string;
   bodyHtml: string;
 }
 
@@ -27,9 +40,6 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
     title: SITE_CONFIG.pages.home.title,
     description: SITE_CONFIG.pages.home.description,
     isIndexable: true,
-    heading: 'Documenting Real English Fluency, One Authentic Day at a Time.',
-    subheading:
-      'Master spoken cadence, eliminate cognitive hesitation pauses, and build a lasting YouTube speaking archive with our calibrated teleprompter and 90s unscripted recall framework.',
     bodyHtml: `
       <section class="text-center max-w-4xl mx-auto space-y-6">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider border border-emerald-500/30 bg-emerald-950/40 text-emerald-300">
@@ -38,8 +48,8 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
         <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
           Documenting Real English Fluency, <span class="text-emerald-400">One Authentic Day at a Time.</span>
         </h1>
-        <p class="text-base sm:text-xl text-stone-300 max-w-2xl mx-auto leading-relaxed">
-          Master spoken cadence, eliminate cognitive hesitation pauses, and build a lasting YouTube speaking archive with our calibrated teleprompter and 90s unscripted recall framework.
+        <p class="speakable-summary text-base sm:text-xl text-stone-300 max-w-2xl mx-auto leading-relaxed">
+          ${escapeHtml(SITE_CONFIG.pages.home.description)}
         </p>
         <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
           <a href="/features" class="px-6 py-3 rounded-xl bg-emerald-500 text-stone-950 font-bold text-xs uppercase tracking-wider">
@@ -47,6 +57,9 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
           </a>
           <a href="/how-it-works" class="px-6 py-3 rounded-xl bg-stone-900 border border-white/10 text-stone-200 text-xs font-bold uppercase tracking-wider">
             5-Step Daily Routine
+          </a>
+          <a href="/about" class="px-6 py-3 rounded-xl bg-stone-900 border border-white/10 text-stone-200 text-xs font-bold uppercase tracking-wider">
+            About Methodology
           </a>
           <a href="/faq" class="px-6 py-3 rounded-xl bg-stone-900 border border-white/10 text-stone-200 text-xs font-bold uppercase tracking-wider">
             Methodology FAQ
@@ -57,41 +70,45 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
       <section class="p-8 sm:p-12 rounded-3xl bg-stone-900/60 border border-white/10 space-y-6">
         <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Four Integrated Studios Built for Spoken English</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          ${STUDIO_MODULES.map(
+            (mod) => `
           <article class="p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3">
-            <h3 class="text-lg font-bold text-emerald-400">01 · Calibrated Teleprompter</h3>
-            <p class="text-xs sm:text-sm text-stone-300">
-              Smooth auto-scroll between 15 and 75 px/s calibrated for target English speech cadence (130–160 WPM). Eliminate filler pauses and eye wandering.
-            </p>
-          </article>
-          <article class="p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3">
-            <h3 class="text-lg font-bold text-emerald-400">02 · Cognitive Fluency &amp; 90s Recall</h3>
-            <p class="text-xs sm:text-sm text-stone-300">
-              Immediate unscripted retelling timer after teleprompter reading. Builds active conversational synthesis from memory without reading crutches.
-            </p>
-          </article>
-          <article class="p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3">
-            <h3 class="text-lg font-bold text-emerald-400">03 · 16:9 YouTube Thumbnail Generator</h3>
-            <p class="text-xs sm:text-sm text-stone-300">
-              Export pixel-perfect 2K and 1080p thumbnails with dynamic episode numbering, CEFR tags, and topic cues ready for video publishing.
-            </p>
-          </article>
-          <article class="p-6 rounded-2xl bg-stone-950/80 border border-white/5 space-y-3">
-            <h3 class="text-lg font-bold text-emerald-400">04 · Dynamic Video Intro Stinger Suite</h3>
-            <p class="text-xs sm:text-sm text-stone-300">
-              Generate MP4 and WebM intro stingers with sound and acoustic animations directly in browser or transcode cleanly via server.
-            </p>
-          </article>
+            <h3 class="text-lg font-bold text-emerald-400">0${mod.position} · ${escapeHtml(mod.name)}</h3>
+            <p class="text-xs sm:text-sm text-stone-300">${escapeHtml(mod.description)}</p>
+          </article>`
+          ).join('')}
         </div>
       </section>
 
       <section class="p-8 sm:p-12 rounded-3xl bg-stone-900/60 border border-white/10 space-y-6">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">The Cognitive Cadence Method</h2>
+        <p class="speakable-methodology text-sm sm:text-base text-stone-300 leading-relaxed">
+          Speak in Progress pairs calibrated teleprompter pacing (130–160 words per minute) with an immediate 90-second unscripted recall challenge and faceless PC screen recording to eliminate speaking hesitation and build active neural retrieval.
+        </p>
+      </section>
+
+      <section class="p-8 sm:p-12 rounded-3xl bg-stone-900/60 border border-white/10 space-y-6">
         <h2 class="text-2xl sm:text-3xl font-extrabold text-white">The 5-Step Daily Studio Workflow</h2>
-        <div class="space-y-4 text-xs sm:text-sm text-stone-300">
-          <p><strong>Step 1: Voiceover Intro Hook (15s)</strong> — Hook viewers and warm up speaking organs.</p>
-          <p><strong>Step 2: Story Reading with Calibrated Prompter</strong> — Read narrative at 130–150 WPM with steady cadence.</p>
-          <p><strong>Step 3: Key Expressions &amp; Collocations</strong> — Articulate 3 high-impact phrases in context.</p>
-          <p><strong>Step 4: 90-Second Impromptu Memory Retelling</strong> — Speak freely from memory without reading text.</p>
-          <p><strong>Step 5: Private Stumble Log &amp; Fluency Rating</strong> — Track progress, stumbling friction, and daily wins.</p>
+        <ol class="space-y-4 text-xs sm:text-sm text-stone-300 list-decimal list-inside">
+          ${WORKFLOW_STEPS.map(
+            (step) =>
+              `<li><strong>${escapeHtml(step.name)}</strong> — ${escapeHtml(step.text)}</li>`
+          ).join('')}
+        </ol>
+      </section>
+
+      <section class="p-8 sm:p-12 rounded-3xl bg-stone-900/60 border border-white/10 space-y-6">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Frequently Asked Questions Overview</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          ${PUBLIC_FAQ_ITEMS.slice(0, 4)
+            .map(
+              (item) => `
+          <article class="p-5 rounded-2xl bg-stone-950/80 border border-white/5 space-y-2">
+            <h3 class="text-sm font-bold text-white">${escapeHtml(item.q)}</h3>
+            <p class="speakable-faq text-xs text-stone-300 leading-relaxed">${escapeHtml(item.a)}</p>
+          </article>`
+            )
+            .join('')}
         </div>
       </section>
     `,
@@ -102,9 +119,6 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
     title: SITE_CONFIG.pages.features.title,
     description: SITE_CONFIG.pages.features.description,
     isIndexable: true,
-    heading: 'Everything Needed for YouTube Spoken Practice',
-    subheading:
-      'Four purpose-built studios working seamlessly inside a single high-performance workspace. Designed strictly around real, existing features for authentic PC screen recording.',
     bodyHtml: `
       <section class="text-center max-w-3xl mx-auto space-y-4">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest bg-emerald-950/40 border border-emerald-500/30">
@@ -113,36 +127,19 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
         <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
           Everything Needed for YouTube Spoken Practice
         </h1>
-        <p class="text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
+        <p class="speakable-summary text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
           Four purpose-built studios working seamlessly inside a single high-performance workspace. Designed strictly around real, existing features for authentic PC screen recording.
         </p>
       </section>
 
       <div class="space-y-8">
+        ${STUDIO_MODULES.map(
+          (mod) => `
         <article class="p-8 rounded-3xl bg-stone-900/60 border border-white/10 space-y-4">
-          <h2 class="text-2xl font-bold text-white">Module 01: Interactive Teleprompter Studio</h2>
-          <p class="text-sm text-stone-300 leading-relaxed">
-            Engineered specifically to solve spoken English hesitation and unnatural pacing. Smooth continuous scrolling from 15 to 75 px/s targeting 130–160 WPM. Supports eye-level reading guides, customizable font sizing (24–64px), and paragraph stepping.
-          </p>
-        </article>
-        <article class="p-8 rounded-3xl bg-stone-900/60 border border-white/10 space-y-4">
-          <h2 class="text-2xl font-bold text-white">Module 02: Cognitive Cadence &amp; 90s Impromptu Retelling</h2>
-          <p class="text-sm text-stone-300 leading-relaxed">
-            The bridge between reading along and spontaneous speech. Immediately after reading, text vanishes and a 90-second countdown begins with memory anchor prompts. Forces brain to retrieve vocabulary actively without translating mentally.
-          </p>
-        </article>
-        <article class="p-8 rounded-3xl bg-stone-900/60 border border-white/10 space-y-4">
-          <h2 class="text-2xl font-bold text-white">Module 03: 16:9 YouTube Thumbnail Generator</h2>
-          <p class="text-sm text-stone-300 leading-relaxed">
-            High-contrast 2K and 1080p canvas generator adhering strictly to the Speak in Progress brand identity. Instant download ready for YouTube video uploads.
-          </p>
-        </article>
-        <article class="p-8 rounded-3xl bg-stone-900/60 border border-white/10 space-y-4">
-          <h2 class="text-2xl font-bold text-white">Module 04: Dynamic Video Intro Stinger Suite</h2>
-          <p class="text-sm text-stone-300 leading-relaxed">
-            Generates 3.5s to 7s animated brand bumpers with acoustic audio waveforms in both MP4 (H.264+AAC) and WebM formats for seamless video intros.
-          </p>
-        </article>
+          <h2 class="text-2xl font-bold text-white">Module 0${mod.position}: ${escapeHtml(mod.name)}</h2>
+          <p class="speakable-feature text-sm text-stone-300 leading-relaxed">${escapeHtml(mod.description)}</p>
+        </article>`
+        ).join('')}
       </div>
 
       <div class="pt-8 text-center space-y-4">
@@ -158,54 +155,56 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
     title: SITE_CONFIG.pages.howItWorks.title,
     description: SITE_CONFIG.pages.howItWorks.description,
     isIndexable: true,
-    heading: 'The 5-Step Daily Speaking Blueprint',
-    subheading:
-      'A structured routine for recording daily faceless YouTube practice sessions. Each session builds fluency, speech cadence, and cognitive retrieval.',
     bodyHtml: `
       <section class="text-center max-w-3xl mx-auto space-y-4">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest bg-emerald-950/40 border border-emerald-500/30">
-          <span>Daily Production Routine</span>
+          <span>Daily Workflow Blueprint</span>
         </div>
         <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-          The 5-Step Daily Speaking Blueprint
+          How Speak in Progress Works
         </h1>
-        <p class="text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
-          A structured routine for recording daily faceless YouTube practice sessions. Each session builds fluency, speech cadence, and cognitive retrieval.
+        <p class="speakable-summary text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
+          A disciplined, 5-phase daily spoken workout that pairs teleprompter-guided reading with active recall and high-impact YouTube video packaging.
         </p>
       </section>
 
-      <div class="space-y-6">
-        <article class="p-6 sm:p-8 rounded-2xl bg-stone-900/60 border border-white/10 space-y-3">
-          <h2 class="text-xl font-bold text-emerald-400">Step 1: 15-Second Voiceover Intro Hook</h2>
-          <p class="text-xs sm:text-sm text-stone-300">
-            Open the screen recorder, read the daily session greeting with positive vocal energy, and introduce the day's linguistic focus.
-          </p>
-        </article>
-        <article class="p-6 sm:p-8 rounded-2xl bg-stone-900/60 border border-white/10 space-y-3">
-          <h2 class="text-xl font-bold text-emerald-400">Step 2: Calibrated Teleprompter Reading</h2>
-          <p class="text-xs sm:text-sm text-stone-300">
-            Read through the 5-paragraph daily script along with the auto-scroll bar. Target a steady 130–150 words per minute pacing without rushing or freezing.
-          </p>
-        </article>
-        <article class="p-6 sm:p-8 rounded-2xl bg-stone-900/60 border border-white/10 space-y-3">
-          <h2 class="text-xl font-bold text-emerald-400">Step 3: Key Expressions &amp; Collocations Deep-Dive</h2>
-          <p class="text-xs sm:text-sm text-stone-300">
-            Identify 3 high-impact idioms or phrasal verbs from the passage. Pronounce each cleanly and formulate a spontaneous personal example.
-          </p>
-        </article>
-        <article class="p-6 sm:p-8 rounded-2xl bg-stone-900/60 border border-white/10 space-y-3">
-          <h2 class="text-xl font-bold text-emerald-400">Step 4: 90-Second Impromptu Memory Retelling</h2>
-          <p class="text-xs sm:text-sm text-stone-300">
-            Hide the script text. The 90s countdown begins with 3 anchor cues. Summarize the narrative aloud without pausing, forcing active neural language production.
-          </p>
-        </article>
-        <article class="p-6 sm:p-8 rounded-2xl bg-stone-900/60 border border-white/10 space-y-3">
-          <h2 class="text-xl font-bold text-emerald-400">Step 5: Private Stumble Log &amp; Fluency Reflection</h2>
-          <p class="text-xs sm:text-sm text-stone-300">
-            Log your daily independence rating (1–5), note stumbling friction areas, and save your practice entry to the private encrypted database.
-          </p>
-        </article>
-      </div>
+      <section class="space-y-6">
+        ${WORKFLOW_STEPS.map(
+          (step) => `
+        <article id="step-${step.position}" class="p-6 sm:p-8 rounded-2xl bg-stone-900/60 border border-white/10 space-y-3">
+          <div class="text-xs font-mono font-bold text-emerald-400 uppercase">${escapeHtml(step.subtitle)}</div>
+          <h2 class="text-xl font-bold text-white">Step ${step.position}: ${escapeHtml(step.name)}</h2>
+          <p class="speakable-step text-xs sm:text-sm text-stone-300 leading-relaxed">${escapeHtml(step.text)}</p>
+        </article>`
+        ).join('')}
+      </section>
+
+      <section class="p-6 sm:p-10 rounded-3xl bg-stone-900/80 border border-white/10 space-y-6">
+        <h2 class="text-xl sm:text-2xl font-extrabold text-white">Teleprompter Speed vs. Spoken Cadence</h2>
+        <div class="overflow-x-auto">
+          <table aria-label="Teleprompter Scroll Speed and Spoken Cadence Calibration by CEFR Level" class="w-full text-left text-xs sm:text-sm text-stone-300 border-collapse">
+            <thead>
+              <tr class="border-b border-white/10 text-stone-400 text-[11px] uppercase">
+                <th scope="col" class="py-3 px-4">Level</th>
+                <th scope="col" class="py-3 px-4">Prompter Scroll Speed</th>
+                <th scope="col" class="py-3 px-4">Target WPM</th>
+                <th scope="col" class="py-3 px-4">Recommended Tone &amp; Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${PACING_CALIBRATION_TABLE.map(
+                (row) => `
+              <tr class="border-b border-white/5">
+                <td class="py-3 px-4 font-semibold text-white">${escapeHtml(row.level)}</td>
+                <td class="py-3 px-4 font-mono text-emerald-400">${escapeHtml(row.scrollSpeed)}</td>
+                <td class="py-3 px-4 font-mono">${escapeHtml(row.wpm)}</td>
+                <td class="py-3 px-4 text-stone-400">${escapeHtml(row.focus)}</td>
+              </tr>`
+              ).join('')}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       <div class="pt-8 text-center space-y-4">
         <a href="/about" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-stone-900 border border-white/10 text-stone-200 font-bold text-xs uppercase tracking-wider">
@@ -220,41 +219,43 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
     title: SITE_CONFIG.pages.about.title,
     description: SITE_CONFIG.pages.about.description,
     isIndexable: true,
-    heading: 'Behind the Speak in Progress Methodology',
-    subheading:
-      'The philosophy of deliberate practice: overcoming speaking anxiety, normalizing stumbles, and documenting daily progress publicly.',
     bodyHtml: `
       <section class="text-center max-w-3xl mx-auto space-y-4">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest bg-emerald-950/40 border border-emerald-500/30">
-          <span>Philosophy &amp; Foundation</span>
+          <span>Origin &amp; Methodology</span>
         </div>
         <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-          Behind the Speak in Progress Methodology
+          About Speak in Progress
         </h1>
-        <p class="text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
-          The philosophy of deliberate practice: overcoming speaking anxiety, normalizing stumbles, and documenting daily progress publicly.
+        <p class="speakable-summary text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
+          Built by Md. Selim to solve the real friction of mastering spoken English fluency through daily faceless YouTube screen recordings and structured cadence training.
         </p>
       </section>
 
       <div class="space-y-6">
         <article class="p-8 rounded-3xl bg-stone-900/60 border border-white/10 space-y-4">
-          <h2 class="text-2xl font-bold text-white">Why Documenting Progress Beats Perfection</h2>
+          <h2 class="text-2xl font-bold text-white">Fluency as an Engineering Discipline</h2>
           <p class="text-sm text-stone-300 leading-relaxed">
-            Most language learners stay silent for years because they wait to speak "flawlessly." Speak in Progress was founded on the opposite premise: true communicative mastery is forged by speaking aloud every single day, embracing stumbles as cognitive calibration cues, and documenting real-world progress.
+            For non-native English speakers, the bottleneck to spoken fluency is motor-articulatory speed and unprompted cognitive retrieval under time pressure. Speak in Progress removes camera anxiety by pairing a calibrated desktop prompter with PC screen recording and 90-second unscripted recall tests.
           </p>
+          <dl class="speakable-definition grid sm:grid-cols-2 gap-4 pt-2 text-xs text-stone-300">
+            <div class="p-4 rounded-xl bg-stone-950/70 border border-white/5">
+              <dt class="font-bold text-emerald-400">Cognitive Cadence Method</dt>
+              <dd class="mt-1">Four learning feedback loops: subvocal alignment at 130–160 WPM, 90-second spontaneous recall, YouTube output accountability, and integrated studio asset packaging.</dd>
+            </div>
+            <div class="p-4 rounded-xl bg-stone-950/70 border border-white/5">
+              <dt class="font-bold text-emerald-400">Creator &amp; Official Channel</dt>
+              <dd class="mt-1">Founded by <strong>Md. Selim</strong>. Watch authentic practice sessions on YouTube: <a href="${SITE_CONFIG.youtubeUrl}" target="_blank" rel="noopener noreferrer" class="text-red-400 underline font-semibold">@SpeakInProgress</a>.</dd>
+            </div>
+          </dl>
         </article>
-        <article class="p-8 rounded-3xl bg-stone-900/60 border border-white/10 space-y-4">
-          <h2 class="text-2xl font-bold text-white">The Power of Faceless Screen Recording</h2>
-          <p class="text-sm text-stone-300 leading-relaxed">
-            On-camera speaking introduces vanity anxiety, lighting hassles, and posture self-consciousness. By recording the teleprompter screen directly, 100% of cognitive bandwidth is freed to focus purely on speech tempo, vocal resonance, vocabulary retrieval, and cadence.
+
+        <section class="p-8 rounded-3xl bg-stone-900/60 border border-white/10 space-y-4">
+          <h2 class="text-2xl font-bold text-white">The 4 Principles of Cognitive Cadence</h2>
+          <p class="speakable-methodology text-sm text-stone-300">
+            Four interconnected learning feedback loops built directly into the software: 01. Subvocal Alignment (130–160 WPM), 02. 90s Spontaneous Recall, 03. Visual Accountability on YouTube, and 04. Zero Asset Delay via 2K thumbnail and intro generation.
           </p>
-        </article>
-        <article class="p-8 rounded-3xl bg-stone-900/60 border border-white/10 space-y-4">
-          <h2 class="text-2xl font-bold text-white">Creator &amp; Founder Attribution</h2>
-          <p class="text-sm text-stone-300 leading-relaxed">
-            Engineered and designed by <strong>Md. Selim</strong>. Built for personal spoken English discipline and designed for creator consistency. Watch official practice sessions on YouTube: <a href="https://www.youtube.com/@SpeakInProgress" target="_blank" rel="noopener noreferrer" class="text-red-400 underline font-semibold">@SpeakInProgress</a>.
-          </p>
-        </article>
+        </section>
       </div>
 
       <div class="pt-8 text-center space-y-4">
@@ -270,53 +271,28 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
     title: SITE_CONFIG.pages.faq.title,
     description: SITE_CONFIG.pages.faq.description,
     isIndexable: true,
-    heading: 'Frequently Asked Questions',
-    subheading:
-      'Everything you need to know about Speak in Progress, teleprompter pacing, unscripted retelling, faceless YouTube workflows, and data security.',
     bodyHtml: `
       <section class="text-center max-w-3xl mx-auto space-y-4">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest bg-emerald-950/40 border border-emerald-500/30">
-          <span>Direct Answers</span>
+          <span>Knowledge Base</span>
         </div>
         <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
           Frequently Asked Questions
         </h1>
-        <p class="text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
-          Everything you need to know about Speak in Progress, teleprompter pacing, unscripted retelling, faceless YouTube workflows, and data security.
+        <p class="speakable-summary text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
+          Clear, factual answers regarding the teleprompter studio, the Cognitive Cadence Method, faceless YouTube workflow, and technical architecture.
         </p>
       </section>
 
-      <div class="space-y-6">
+      <div class="max-w-3xl mx-auto space-y-4">
+        ${PUBLIC_FAQ_ITEMS.map(
+          (item) => `
         <article class="p-6 rounded-2xl bg-stone-900/60 border border-white/10 space-y-2">
-          <h2 class="text-lg font-bold text-emerald-400">What is Speak in Progress?</h2>
-          <p class="text-xs sm:text-sm text-stone-300">
-            Speak in Progress is a purpose-built desktop studio application engineered by Md. Selim for mastering English spoken fluency and YouTube content delivery. It combines a calibrated teleprompter, an impromptu 90-second recall timer, a thumbnail studio, and video stinger tools.
-          </p>
-        </article>
-        <article class="p-6 rounded-2xl bg-stone-900/60 border border-white/10 space-y-2">
-          <h2 class="text-lg font-bold text-emerald-400">Why practice spoken English with a teleprompter?</h2>
-          <p class="text-xs sm:text-sm text-stone-300">
-            Reading along with calibrated auto-scroll (between 15 and 75 px/s, targeting 130–160 WPM) trains neuromuscular speech rhythm and eliminates hesitation pauses. It conditions the speaker to formulate continuous English phrases without stopping to translate mentally.
-          </p>
-        </article>
-        <article class="p-6 rounded-2xl bg-stone-900/60 border border-white/10 space-y-2">
-          <h2 class="text-lg font-bold text-emerald-400">What is the 90-second impromptu recall challenge?</h2>
-          <p class="text-xs sm:text-sm text-stone-300">
-            Immediately after reading through a script on the prompter, the text is hidden and a 90-second countdown begins. The speaker must spontaneously summarize the core points aloud using the target vocabulary, bridging passive reading with active conversational synthesis.
-          </p>
-        </article>
-        <article class="p-6 rounded-2xl bg-stone-900/60 border border-white/10 space-y-2">
-          <h2 class="text-lg font-bold text-emerald-400">How does the faceless YouTube workflow function?</h2>
-          <p class="text-xs sm:text-sm text-stone-300">
-            Rather than dealing with camera anxiety or lighting rigs, you record your computer screen using OBS Studio or native tools while the teleprompter scrolls. Your voice is recorded over the high-contrast prompter text, creating clean educational videos.
-          </p>
-        </article>
-        <article class="p-6 rounded-2xl bg-stone-900/60 border border-white/10 space-y-2">
-          <h2 class="text-lg font-bold text-emerald-400">Is my practice data and private scripts kept secure?</h2>
-          <p class="text-xs sm:text-sm text-stone-300">
-            Yes. The creator studio workspace, private scripts, stumble ratings, and video recordings are strictly isolated behind Google Firebase Authentication. Public pages never expose private user records.
-          </p>
-        </article>
+          <span class="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-widest">${escapeHtml(item.category)}</span>
+          <h2 class="text-lg font-bold text-white">${escapeHtml(item.q)}</h2>
+          <p class="speakable-faq text-xs sm:text-sm text-stone-300 leading-relaxed">${escapeHtml(item.a)}</p>
+        </article>`
+        ).join('')}
       </div>
 
       <div class="pt-8 text-center space-y-4">
@@ -332,8 +308,6 @@ const PUBLIC_PAGES: PagePrerenderMeta[] = [
     title: 'Page Not Found (404) — Speak in Progress',
     description: 'The requested page could not be found. Return to the Speak in Progress home page.',
     isIndexable: false,
-    heading: 'Lost in the Studio? (Error 404)',
-    subheading: 'The page you requested does not exist, has been removed, or the URL was entered incorrectly.',
     bodyHtml: `
       <section class="text-center max-w-2xl mx-auto py-12 space-y-6">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold text-amber-400 uppercase tracking-widest bg-amber-950/40 border border-amber-500/30">
@@ -371,46 +345,52 @@ function generatePageHtml(template: string, page: PagePrerenderMeta): string {
 
   const fullCanonicalUrl =
     page.id === 'notFound'
-      ? `${SITE_CONFIG.domain}/404.html`
+      ? ''
       : `${SITE_CONFIG.domain}${page.path === '/' ? '/' : page.path}`;
 
   // 1. Update Title
-  html = html.replace(/<title>.*?<\/title>/i, `<title>${page.title}</title>`);
+  html = html.replace(/<title>.*?<\/title>/i, `<title>${escapeHtml(page.title)}</title>`);
 
   // 2. Update Meta Description
   html = html.replace(
-    /<meta\s+name="description"\s+content=".*?"\s*\/?>/i,
-    `<meta name="description" content="${page.description}" />`
+    /<meta\s+name="description"[\s\S]*?content="[\s\S]*?"\s*\/?>/i,
+    `<meta name="description" content="${escapeHtml(page.description)}" />`
   );
 
-  // 3. Update Canonical URL
-  html = html.replace(
-    /<link\s+rel="canonical"\s+id="canonical-url"\s+href=".*?"\s*\/?>/i,
-    `<link rel="canonical" id="canonical-url" href="${fullCanonicalUrl}" />`
-  );
+  // 3. Update or Remove Canonical URL (no canonical on 404 pages)
+  if (page.isIndexable && fullCanonicalUrl) {
+    html = html.replace(
+      /<link\s+rel="canonical"\s+id="canonical-url"\s+href=".*?"\s*\/?>/i,
+      `<link rel="canonical" id="canonical-url" href="${fullCanonicalUrl}" />`
+    );
+  } else {
+    html = html.replace(/<link\s+rel="canonical"\s+id="canonical-url"\s+href=".*?"\s*\/?>\s*/i, '');
+  }
 
   // 4. Update OpenGraph Tags
   html = html.replace(
     /<meta\s+property="og:title"\s+content=".*?"\s*\/?>/i,
-    `<meta property="og:title" content="${page.title}" />`
+    `<meta property="og:title" content="${escapeHtml(page.title)}" />`
   );
   html = html.replace(
-    /<meta\s+property="og:description"\s+content=".*?"\s*\/?>/i,
-    `<meta property="og:description" content="${page.description}" />`
+    /<meta\s+property="og:description"[\s\S]*?content="[\s\S]*?"\s*\/?>/i,
+    `<meta property="og:description" content="${escapeHtml(page.description)}" />`
   );
-  html = html.replace(
-    /<meta\s+property="og:url"\s+content=".*?"\s*\/?>/i,
-    `<meta property="og:url" content="${fullCanonicalUrl}" />`
-  );
+  if (fullCanonicalUrl) {
+    html = html.replace(
+      /<meta\s+property="og:url"\s+content=".*?"\s*\/?>/i,
+      `<meta property="og:url" content="${fullCanonicalUrl}" />`
+    );
+  }
 
   // 5. Update Twitter Card Tags
   html = html.replace(
     /<meta\s+name="twitter:title"\s+content=".*?"\s*\/?>/i,
-    `<meta name="twitter:title" content="${page.title}" />`
+    `<meta name="twitter:title" content="${escapeHtml(page.title)}" />`
   );
   html = html.replace(
-    /<meta\s+name="twitter:description"\s+content=".*?"\s*\/?>/i,
-    `<meta name="twitter:description" content="${page.description}" />`
+    /<meta\s+name="twitter:description"[\s\S]*?content="[\s\S]*?"\s*\/?>/i,
+    `<meta name="twitter:description" content="${escapeHtml(page.description)}" />`
   );
 
   // 6. Robots indexing directives
@@ -429,32 +409,15 @@ function generatePageHtml(template: string, page: PagePrerenderMeta): string {
     );
   }
 
-  // 7. Inject Breadcrumbs JSON-LD if subpage
-  if (page.id !== 'home' && page.id !== 'notFound') {
-    const pageConfig = SITE_CONFIG.pages[page.id as PublicPageId];
-    if (pageConfig) {
-      const breadcrumbJson = JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Home',
-            item: `${SITE_CONFIG.domain}/`,
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: pageConfig.navLabel,
-            item: fullCanonicalUrl,
-          },
-        ],
-      });
-      const breadcrumbScript = `<script type="application/ld+json" id="schema-breadcrumbs">${breadcrumbJson}</script>`;
-      html = html.replace('</head>', `  ${breadcrumbScript}\n  </head>`);
-    }
-  }
+  // 7. Replace #schema-page with route-specific Schema.org JSON-LD (or strip cleanly on 404)
+  const routeSchema = getRouteStructuredData(page.id, !page.isIndexable);
+  const schemaScriptBlock = routeSchema
+    ? `<script type="application/ld+json" id="schema-page">${JSON.stringify(routeSchema)}</script>`
+    : '';
+  html = html.replace(
+    /<script\s+type="application\/ld\+json"\s+id="schema-page">[\s\S]*?<\/script>/i,
+    schemaScriptBlock
+  );
 
   // 8. Inject Semantic Content inside <div id="root">
   const pageNavActive = (id: string) =>
@@ -499,7 +462,7 @@ function generatePageHtml(template: string, page: PagePrerenderMeta): string {
       <footer class="border-t border-white/[0.08] bg-stone-950/95 py-10 px-4 sm:px-6 lg:px-8 text-xs text-stone-400 mt-16">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
-            © 2026 Speak in Progress · Founded by <strong>Md. Selim</strong> · <a href="https://www.youtube.com/@SpeakInProgress" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300">YouTube @SpeakInProgress</a>
+            © 2026 Speak in Progress · Founded by <strong>Md. Selim</strong> · <a href="${SITE_CONFIG.youtubeUrl}" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300">YouTube @SpeakInProgress</a>
           </div>
           <div class="flex flex-wrap items-center gap-3">
             <a href="/" class="hover:text-emerald-400">Home</a>
@@ -534,7 +497,7 @@ export function prerenderAll() {
 
   const masterTemplate = fs.readFileSync(masterTemplatePath, 'utf8');
 
-  console.log('⚡ Starting Static Prerendering for SEO and Cloudflare Pages...');
+  console.log('⚡ Starting Static Prerendering for SEO, AEO & GEO...');
 
   for (const page of PUBLIC_PAGES) {
     const renderedHtml = generatePageHtml(masterTemplate, page);
@@ -547,23 +510,19 @@ export function prerenderAll() {
       fs.writeFileSync(outPath, renderedHtml, 'utf8');
       console.log('  ✓ Prerendered: 404 (dist/404.html)');
     } else {
-      // Create nested route folder e.g. dist/features/index.html AND dist/features.html
-      const dirPath = path.join(DIST_DIR, page.id === 'howItWorks' ? 'how-it-works' : page.id);
+      const slug = page.id === 'howItWorks' ? 'how-it-works' : page.id;
+      const dirPath = path.join(DIST_DIR, slug);
       fs.mkdirSync(dirPath, { recursive: true });
       fs.writeFileSync(path.join(dirPath, 'index.html'), renderedHtml, 'utf8');
 
-      // Also create direct .html file for hosts supporting direct clean files
-      const cleanHtmlPath = path.join(
-        DIST_DIR,
-        `${page.id === 'howItWorks' ? 'how-it-works' : page.id}.html`
-      );
+      const cleanHtmlPath = path.join(DIST_DIR, `${slug}.html`);
       fs.writeFileSync(cleanHtmlPath, renderedHtml, 'utf8');
 
       console.log(`  ✓ Prerendered: ${page.path} (${dirPath}/index.html & ${cleanHtmlPath})`);
     }
   }
 
-  console.log('✨ All public pages successfully prerendered with full semantic HTML & metadata!');
+  console.log('✨ All public pages successfully prerendered with route-specific JSON-LD & AEO content!');
 }
 
 if (process.argv[1]?.endsWith('prerender.ts')) {

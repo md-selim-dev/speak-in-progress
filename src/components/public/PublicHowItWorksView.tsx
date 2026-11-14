@@ -99,20 +99,26 @@ export const PublicHowItWorksView: React.FC<PublicHowItWorksViewProps> = ({
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-brand tracking-tight">
           How Speak in Progress Works
         </h1>
-        <p className="text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
+        <p className="speakable-summary text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
           A disciplined, 5-phase daily spoken workout that pairs teleprompter-guided reading with active recall and high-impact YouTube video packaging.
         </p>
       </section>
 
       {/* Steps List */}
-      <section className="space-y-6 sm:space-y-8">
+      <section itemScope itemType="https://schema.org/HowTo" className="space-y-6 sm:space-y-8">
+        <meta itemProp="name" content="How to Practice Spoken English with the 5-Step Screen Recording Workflow" />
         {steps.map((step, idx) => {
           const Icon = step.icon;
           return (
             <article
               key={step.num}
+              id={`step-${idx + 1}`}
+              itemProp="step"
+              itemScope
+              itemType="https://schema.org/HowToStep"
               className="p-6 sm:p-8 rounded-3xl bg-stone-900/60 border border-white/[0.08] hover:border-emerald-500/30 transition-all flex flex-col md:flex-row gap-6 sm:gap-8 items-start"
             >
+              <meta itemProp="position" content={String(idx + 1)} />
               {/* Step indicator */}
               <div className="flex flex-row md:flex-col items-center justify-between w-full md:w-auto md:min-w-[120px] gap-3 shrink-0">
                 <span className="text-3xl sm:text-4xl font-extrabold font-mono text-emerald-400/90">
@@ -129,11 +135,11 @@ export const PublicHowItWorksView: React.FC<PublicHowItWorksViewProps> = ({
                   <span className="text-xs font-mono font-bold text-emerald-400/80 uppercase tracking-wider">
                     {step.subtitle}
                   </span>
-                  <h2 className="text-xl sm:text-2xl font-extrabold text-white font-brand mt-1">
+                  <h2 itemProp="name" className="text-xl sm:text-2xl font-extrabold text-white font-brand mt-1">
                     {step.title}
                   </h2>
                 </div>
-                <p className="text-sm sm:text-base text-stone-300 leading-relaxed">
+                <p itemProp="text" className="speakable-step text-sm sm:text-base text-stone-300 leading-relaxed">
                   {step.description}
                 </p>
                 <ul className="grid sm:grid-cols-3 gap-2.5 pt-2">
@@ -168,13 +174,19 @@ export const PublicHowItWorksView: React.FC<PublicHowItWorksViewProps> = ({
         </div>
 
         <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs sm:text-sm text-stone-300 border-collapse">
+          <table
+            aria-label="Teleprompter Scroll Speed and Spoken Cadence Calibration by CEFR Level"
+            className="w-full text-left text-xs sm:text-sm text-stone-300 border-collapse"
+          >
+            <caption className="sr-only">
+              Calibration reference comparing CEFR spoken fluency levels, teleprompter scroll speed in pixels per second, and target words per minute.
+            </caption>
             <thead>
               <tr className="border-b border-white/10 font-mono text-stone-400 text-[11px] uppercase tracking-wider">
-                <th className="py-3 px-4">Level</th>
-                <th className="py-3 px-4">Prompter Scroll Speed</th>
-                <th className="py-3 px-4">Target WPM</th>
-                <th className="py-3 px-4">Recommended Tone & Focus</th>
+                <th scope="col" className="py-3 px-4">Level</th>
+                <th scope="col" className="py-3 px-4">Prompter Scroll Speed</th>
+                <th scope="col" className="py-3 px-4">Target WPM</th>
+                <th scope="col" className="py-3 px-4">Recommended Tone & Focus</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">

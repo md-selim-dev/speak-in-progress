@@ -1,6 +1,6 @@
 # ==============================================================================
 # Cloudflare Pages Headers Configuration
-# Security Hardening, Search Engine Optimization & High-Performance Caching
+# Security Hardening, Public SEO/AEO Indexing & Private Studio Protection
 # ==============================================================================
 
 # Global Security Headers across all routes
@@ -12,6 +12,111 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-XSS-Protection: 1; mode=block
   Cross-Origin-Opener-Policy: same-origin-allow-popups
+  X-Permitted-Cross-Domain-Policies: none
+
+# Explicit Indexable Directives for the 5 Public Pages Only
+/
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+  Cache-Control: public, max-age=300, stale-while-revalidate=600
+
+/features
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+  Cache-Control: public, max-age=300, stale-while-revalidate=600
+
+/features/*
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+
+/how-it-works
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+  Cache-Control: public, max-age=300, stale-while-revalidate=600
+
+/how-it-works/*
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+
+/about
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+  Cache-Control: public, max-age=300, stale-while-revalidate=600
+
+/about/*
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+
+/faq
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+  Cache-Control: public, max-age=300, stale-while-revalidate=600
+
+/faq/*
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+
+# Strict Non-Indexing Enforcement for Private Studio, Dashboard, User & Error Routes
+/studio
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/studio/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/dashboard
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/dashboard/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/workspace
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/workspace/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/teleprompter
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/teleprompter/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/login
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/account
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/account/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/scripts
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/scripts/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/recordings
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/recordings/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
+
+/404
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
+/404.html
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+
+/api/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Cache-Control: private, no-store, max-age=0
 
 # Long-term immutable caching for hashed production JavaScript & CSS bundles
 /assets/*
@@ -68,10 +173,12 @@
 # LLM Specification & Context Endpoints
 /llms.txt
   Access-Control-Allow-Origin: *
+  X-Robots-Tag: index, follow
   Cache-Control: public, max-age=86400
   Content-Type: text/markdown; charset=utf-8
 
 /llms-full.txt
   Access-Control-Allow-Origin: *
+  X-Robots-Tag: index, follow
   Cache-Control: public, max-age=86400
   Content-Type: text/markdown; charset=utf-8

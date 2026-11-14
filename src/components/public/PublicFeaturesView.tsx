@@ -31,7 +31,7 @@ export const PublicFeaturesView: React.FC<PublicFeaturesViewProps> = ({
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-brand tracking-tight">
           Everything Needed for YouTube Spoken Practice
         </h1>
-        <p className="text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
+        <p className="speakable-summary text-sm sm:text-base text-stone-300 leading-relaxed max-w-2xl mx-auto">
           Four purpose-built studios working seamlessly inside a single high-performance workspace. Designed strictly around real, existing features for authentic PC screen recording.
         </p>
       </section>

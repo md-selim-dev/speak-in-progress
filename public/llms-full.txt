@@ -1,55 +1,51 @@
-# Speak in Progress — Complete System & Methodology Specification
+# Speak in Progress — Complete System, Methodology & GEO Specification
 
-> Official LLM & AI agent documentation for the Speak in Progress spoken fluency production suite.
+> Official AI & Search Engine ground-truth documentation for Speak in Progress (https://speak-in-progress.pages.dev/), founded by Md. Selim.
 
-## 1. Overview
-Speak in Progress is a dedicated desktop YouTube recording studio and deliberate practice framework engineered specifically for English learners documenting their communicative fluency journey.
+## 1. Executive Summary
 
-Rather than relying on passive listening, traditional vocabulary apps, or grammar drills, Speak in Progress couples continuous teleprompter reading with instant 90-second unscripted memory retellings, tracking daily stumble rates and script independence over time.
+Speak in Progress is a specialized YouTube production studio and deliberate spoken English practice framework engineered for creators documenting their spoken fluency journey through faceless PC screen recording.
 
-## 2. The 5-Step Screen-Recording Workflow
-Each daily practice session follows a standardized sequence structured for OBS Studio and Loom screen-recording:
+Its core methodology—the **Cognitive Cadence Method**—couples calibrated teleprompter reading (130–160 words per minute) with an immediate 90-second unscripted memory retelling challenge and structured self-reflection logs.
 
-### Step 1: Voiceover Intro (15 seconds)
-A high-energy opening hook introducing the topic, day number, and personal progress goal. Designed to establish vocal projection and engage viewers within the first 10 seconds of a YouTube video.
+## 2. Canonical Public Routes
 
-### Step 2: Story Reading (2–3 minutes)
-A continuous 5-paragraph leveled narrative read aloud from the teleprompter:
-- Conversational Cadence: 130 WPM (28 px/s drift rate)
-- Presentation Cadence: 145 WPM (34 px/s drift rate)
-- Executive Cadence: 160 WPM (42 px/s drift rate)
-Features an eye-line focus beam, paragraph focus mode, and fullscreen recording view (`F`).
+| Page | Canonical URL | Primary Purpose |
+| :--- | :--- | :--- |
+| Home | https://speak-in-progress.pages.dev/ | Overview, Cognitive Cadence research, interactive WPM calculator |
+| Features | https://speak-in-progress.pages.dev/features | Technical specifications for the 4 integrated studio modules |
+| How It Works | https://speak-in-progress.pages.dev/how-it-works | 5-step daily production blueprint and CEFR calibration table |
+| About | https://speak-in-progress.pages.dev/about | Founder attribution (Md. Selim), philosophy, and methodology pillars |
+| FAQ | https://speak-in-progress.pages.dev/faq | 10 direct answers covering pacing, OBS workflow, assets, and security |
 
-### Step 3: Key Expressions (1–2 minutes)
-Deep dive into 3 high-impact idioms or collocations contextualized within the daily story:
-- Expression 1: Core conceptual collocation
-- Expression 2: Action or momentum phrase
-- Expression 3: Reflective or strategic verbal idiom
-Includes contextual definitions, usage examples, and vocal intonation guidance.
+## 3. The 5-Step Daily Screen-Recording Workflow
 
-### Step 4: Unscripted Retelling (90 seconds)
-The script scrolls out of view. The speaker must verbalize the story from memory within a 90-second countdown using 4 structured cognitive anchor triggers. This forces the brain to construct grammar dynamically under gentle time pressure, bridging the gap between passive comprehension and spontaneous speech.
+Each daily practice session follows a standardized 15-minute sequence structured for OBS Studio, Windows Game Bar (Win+G), or macOS QuickTime:
 
-### Step 5: Private Log (1 minute)
-Personal neuro-linguistic self-assessment:
-- Script Independence Score (1 to 5 stars)
-- Stumble & Friction Notes (phonemes, hesitation points)
-- Win of the Day (pronunciation breakthrough, phrasing milestone)
-Stored in private Cloud Firestore.
+1. **Select Daily Script or Curriculum Topic**: Choose from the 120-Day CEFR syllabus (A1 through C2) or paste a custom script with target vocabulary and estimated spoken duration.
+2. **Calibrate Prompter Speed & Visual Layout**: Set auto-scroll velocity between 15 and 75 px/s, adjust font size (24px–64px), enable eye-line reading guides, and test audio levels with the in-app microphone rehearsal player.
+3. **Record Seamlessly with PC Screen Capture**: Press `F` for clean full-screen teleprompter recording while capturing voiceover narration without on-camera lighting anxiety.
+4. **Run the 90-Second Impromptu Recall Challenge**: Immediately hide the script text and speak spontaneously for 90 seconds using cognitive anchor cues.
+5. **Package Assets & Log Progress**: Generate 2K (2560×1440) or FHD (1920×1080) YouTube thumbnails, animated video intro stings, and daily YouTube upload titles/descriptions while saving stumble logs in private Cloud Firestore.
 
-## 3. Tool Suite
-- **Interactive Teleprompter Studio**: Real-time adjustable speed, audio practice recorder, fullscreen screen-recording canvas.
-- **16:9 Thumbnail Studio**: 2K (2560×1440) and FHD (1920×1080) YouTube thumbnail builder with bold editorial typography, customizable highlight words, and instant PNG download.
-- **Video Intro & Channel Banner Suite**: 3–4 second animated video stings with real audio chords, 2560×1440 channel banners with desktop/mobile TV safe zones, and SVG branding logos.
-- **Voice & Tone Guidelines**: Creator vocal pacing, articulation guidelines, and production standards.
+## 4. Teleprompter Speed vs. Spoken Cadence Calibration Table
 
-## 4. Privacy & Authorization Model
-- Public Landing Page: Fully indexed by search engines (`index, follow`).
-- Internal Studio: Strictly restricted to authorized creator credentials.
-- Once authenticated into the studio, the runtime automatically toggles search robots to `noindex, nofollow, noarchive, nosnippet`, ensuring personal recordings and draft logs are never indexed.
-- Other accounts attempting to log in receive a polite notice directing to the official YouTube channel @SpeakInProgress.
+| CEFR Level | Prompter Scroll Speed | Target Spoken Rate | Recommended Focus |
+| :--- | :--- | :--- | :--- |
+| A1–A2 (Foundational) | 18–25 px/sec | 110–125 WPM | Vowel elongation, syllable precision, breathing control |
+| B1–B2 (Conversational) | 30–42 px/sec | 130–145 WPM | Natural pauses, connected speech, professional inflection |
+| C1–C2 (Advanced Mastery) | 45–60 px/sec | 150–165 WPM | Rapid thought delivery, authoritative storytelling, debate cadence |
 
-## 5. Official Channel & Community
-- Founder & Creator: Md. Selim
-- Official YouTube Channel: https://www.youtube.com/@SpeakInProgress
-- Primary Domain: https://speak-in-progress.pages.dev/
+## 5. Frequently Asked Questions (Verified Ground Truth)
+
+- **What is Speak in Progress?** A desktop spoken English fluency framework and YouTube production studio built by Md. Selim combining a calibrated teleprompter, 90-second recall timer, 2K thumbnail generator, video intro suite, and 120-day CEFR syllabus (A1–C2).
+- **Why practice spoken English with a teleprompter?** Continuous auto-scroll at 130–160 WPM conditions neuromuscular speech rhythm and eliminates mental translation pauses.
+- **What is the 90-second impromptu recall challenge?** Hiding the script right after reading and summarizing key points aloud within 90 seconds builds spontaneous conversational synthesis.
+- **How does the faceless YouTube workflow function?** Recording the teleprompter window via OBS Studio, Windows Game Bar, or macOS QuickTime channels 100% of focus into vocal articulation and storytelling without camera anxiety.
+- **Is the private creator studio publicly indexable?** No. Public documentation pages (`/`, `/features`, `/how-it-works`, `/about`, `/faq`) are openly indexable, while the authenticated studio workspace, scripts, and reflection logs are strictly protected by Google Firebase Authentication, Firestore security rules, `noindex, nofollow, noarchive, nosnippet` directives, and `X-Robots-Tag` headers.
+
+## 6. Official Links
+
+- **Founder & Creator**: Md. Selim
+- **YouTube Channel**: https://www.youtube.com/@SpeakInProgress
+- **Canonical Website**: https://speak-in-progress.pages.dev/

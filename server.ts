@@ -20,12 +20,30 @@ app.use((_req, res, next) => {
   res.setHeader('X-Frame-Options', 'SAMEORIGIN');
   res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
   res.setHeader('Permissions-Policy', 'camera=(), microphone=(self), geolocation=(), payment=()');
+  res.setHeader('X-Permitted-Cross-Domain-Policies', 'none');
   next();
 });
 
-// Security & SEO: Guarantee all API routes are never indexed or archived by web crawlers
-app.use('/api', (_req, res, next) => {
-  res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive');
+// Security & SEO: Guarantee private studio/dashboard routes & APIs are never indexed or cached
+const PRIVATE_NOINDEX_PREFIXES = [
+  '/api',
+  '/studio',
+  '/dashboard',
+  '/workspace',
+  '/teleprompter',
+  '/login',
+  '/account',
+  '/scripts',
+  '/recordings',
+  '/404',
+];
+
+app.use((req, res, next) => {
+  const cleanPath = req.path.toLowerCase();
+  if (PRIVATE_NOINDEX_PREFIXES.some((prefix) => cleanPath === prefix || cleanPath.startsWith(`${prefix}/`))) {
+    res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive, nosnippet');
+    res.setHeader('Cache-Control', 'private, no-store, max-age=0');
+  }
   next();
 });
 
@@ -160,8 +178,16 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     app.use(express.static(path.resolve('dist')));
-    app.get('*', (_req, res) => {
-      res.sendFile(path.resolve('dist', 'index.html'));
+    app.get('*', (req, res) => {
+      const clean = req.path.toLowerCase().replace(/\/+$/, '') || '/';
+      const publicPaths = ['/', '/features', '/how-it-works', '/about', '/faq'];
+      if (publicPaths.includes(clean)) {
+        const htmlFile = clean === '/' ? 'index.html' : `${clean.slice(1)}/index.html`;
+        res.sendFile(path.resolve('dist', htmlFile));
+      } else {
+        res.setHeader('X-Robots-Tag', 'noindex, nofollow, noarchive, nosnippet');
+        res.status(404).sendFile(path.resolve('dist', '404.html'));
+      }
     });
   }
 

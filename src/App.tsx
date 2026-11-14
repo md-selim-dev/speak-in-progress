@@ -3,21 +3,35 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { BrandIdentity } from './types';
 import { BRAND_PRESETS } from './data/brandPresets';
-import { Header } from './components/Header';
-import { BrandIdentityView } from './components/BrandIdentityView';
-import { ToneGuidelinesView } from './components/ToneGuidelinesView';
-import { ChannelMockupView } from './components/ChannelMockupView';
-import { TeleprompterStudioView } from './components/TeleprompterStudioView';
-import { ExportKitView } from './components/ExportKitModal';
 import { LandingPage } from './components/LandingPage';
 import { User } from 'firebase/auth';
 import { onAuthUserChanged, signInWithGoogle, signOutUser } from './lib/firebase';
-import { isAuthorizedOwner, OWNER_EMAIL } from './lib/authConfig';
+import { isAuthorizedOwner } from './lib/authConfig';
 import { LogoMark } from './components/LogoMark';
 import { updatePageSEO } from './lib/seoHelper';
+
+// Lazy-load private studio modules so public SEO pages never bundle or expose workspace code
+const Header = lazy(() =>
+  import('./components/Header').then((m) => ({ default: m.Header }))
+);
+const BrandIdentityView = lazy(() =>
+  import('./components/BrandIdentityView').then((m) => ({ default: m.BrandIdentityView }))
+);
+const ToneGuidelinesView = lazy(() =>
+  import('./components/ToneGuidelinesView').then((m) => ({ default: m.ToneGuidelinesView }))
+);
+const ChannelMockupView = lazy(() =>
+  import('./components/ChannelMockupView').then((m) => ({ default: m.ChannelMockupView }))
+);
+const TeleprompterStudioView = lazy(() =>
+  import('./components/TeleprompterStudioView').then((m) => ({ default: m.TeleprompterStudioView }))
+);
+const ExportKitView = lazy(() =>
+  import('./components/ExportKitModal').then((m) => ({ default: m.ExportKitView }))
+);
 
 export default function App() {
   const [activeBrand, setActiveBrand] = useState<BrandIdentity>(() => {
@@ -215,52 +229,63 @@ export default function App() {
         style={{ backgroundColor: activeBrand.colors.accent.hex }}
       />
 
-      {/* Top Bar Navigation (Strict 3-zone contract with Owner Sign Out) */}
-      <Header
-        activeBrand={activeBrand}
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        onQuickRecord={handleQuickRecord}
-        currentUser={currentUser}
-        onSignOut={handleSignOut}
-      />
-
-      {/* Main Content View with transition */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        {activeTab === 'teleprompter' && (
-          <div className="animate-fade-in">
-            <TeleprompterStudioView activeBrand={activeBrand} />
+      <Suspense
+        fallback={
+          <div className="min-h-screen bg-[#030705] flex flex-col items-center justify-center space-y-4">
+            <LogoMark brand={activeBrand} size="sm" layout="icon-only" isAnimated={true} />
+            <span className="text-xs font-mono text-stone-400 animate-pulse tracking-widest uppercase">
+              Loading Studio Workspace...
+            </span>
           </div>
-        )}
+        }
+      >
+        {/* Top Bar Navigation (Strict 3-zone contract with Owner Sign Out) */}
+        <Header
+          activeBrand={activeBrand}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          onQuickRecord={handleQuickRecord}
+          currentUser={currentUser}
+          onSignOut={handleSignOut}
+        />
 
-        {activeTab === 'identity' && (
-          <div className="animate-fade-in">
-            <BrandIdentityView
-              activeBrand={activeBrand}
-              setActiveBrand={handleBrandChange}
-              onNavigateToTeleprompter={handleQuickRecord}
-            />
-          </div>
-        )}
+        {/* Main Content View with transition */}
+        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+          {activeTab === 'teleprompter' && (
+            <div className="animate-fade-in">
+              <TeleprompterStudioView activeBrand={activeBrand} />
+            </div>
+          )}
 
-        {activeTab === 'tone' && (
-          <div className="animate-fade-in">
-            <ToneGuidelinesView activeBrand={activeBrand} />
-          </div>
-        )}
+          {activeTab === 'identity' && (
+            <div className="animate-fade-in">
+              <BrandIdentityView
+                activeBrand={activeBrand}
+                setActiveBrand={handleBrandChange}
+                onNavigateToTeleprompter={handleQuickRecord}
+              />
+            </div>
+          )}
 
-        {activeTab === 'channel' && (
-          <div className="animate-fade-in">
-            <ChannelMockupView activeBrand={activeBrand} />
-          </div>
-        )}
+          {activeTab === 'tone' && (
+            <div className="animate-fade-in">
+              <ToneGuidelinesView activeBrand={activeBrand} />
+            </div>
+          )}
 
-        {activeTab === 'export' && (
-          <div className="animate-fade-in">
-            <ExportKitView activeBrand={activeBrand} />
-          </div>
-        )}
-      </main>
+          {activeTab === 'channel' && (
+            <div className="animate-fade-in">
+              <ChannelMockupView activeBrand={activeBrand} />
+            </div>
+          )}
+
+          {activeTab === 'export' && (
+            <div className="animate-fade-in">
+              <ExportKitView activeBrand={activeBrand} />
+            </div>
+          )}
+        </main>
+      </Suspense>
 
       {/* Quiet, Human Editorial Footer */}
       <footer className="border-t border-white/[0.08] bg-stone-950/90 py-8 px-6 text-xs text-stone-400">

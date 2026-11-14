@@ -20,12 +20,18 @@ service cloud.firestore {
       return request.auth != null;
     }
 
+    function isVerifiedOwnerEmail() {
+      return isSignedIn()
+        && request.auth.token.email == "smselimreja77@gmail.com"
+        && request.auth.token.email_verified == true;
+    }
+
     function isOwner(userId) {
-      return isSignedIn() && request.auth.uid == userId && request.auth.token.email == "smselimreja77@gmail.com";
+      return isVerifiedOwnerEmail() && request.auth.uid == userId;
     }
 
     function isAdmin() {
-      return isSignedIn() && request.auth.token.email == "smselimreja77@gmail.com";
+      return isVerifiedOwnerEmail();
     }
 
     function isValidScript(data) {
@@ -35,7 +41,7 @@ service cloud.firestore {
         && data.userId == request.auth.uid;
     }
 
-    // User Profile - strictly restricted to authorized owner
+    // User Profile - strictly restricted to verified authorized owner
     match /users/{userId} {
       allow get, update: if isOwner(userId) && isValidId(userId);
       allow create: if isOwner(userId) && isValidId(userId) && request.resource.data.email == "smselimreja77@gmail.com";
@@ -43,21 +49,23 @@ service cloud.firestore {
 
       // Personal Teleprompter Scripts
       match /scripts/{scriptId} {
-        allow get, list, delete: if isOwner(userId);
+        allow get, delete: if isOwner(userId) && isValidId(scriptId);
+        allow list: if isOwner(userId);
         allow create: if isOwner(userId) && isValidId(scriptId) && isValidScript(request.resource.data);
         allow update: if isOwner(userId) && isValidId(scriptId) && isValidScript(request.resource.data) && request.resource.data.userId == resource.data.userId;
       }
 
       // Personal Practice Reflections & Win Logs
       match /reflections/{reflectionId} {
-        allow get, list, delete: if isOwner(userId);
+        allow get, delete: if isOwner(userId) && isValidId(reflectionId);
+        allow list: if isOwner(userId);
         allow create, update: if isOwner(userId) && isValidId(reflectionId);
       }
     }
 
-    // Master Curriculum Library (A1 to C2)
+    // Master Curriculum Library - restricted to authorized studio admin (never publicly exposed)
     match /curriculum/{dayId} {
-      allow get, list: if true;
+      allow get, list: if isAdmin();
       allow write: if isAdmin();
     }
   }

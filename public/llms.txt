@@ -1,42 +1,39 @@
 # Speak in Progress
 
-> A specialized YouTube production suite and deliberate spoken practice framework. Built for PC screen recording, calibrated teleprompter pacing, unscripted memory retellings, and consistent fluency gains.
+> A specialized YouTube production suite and deliberate spoken English practice framework built by Md. Selim for PC screen recording, calibrated teleprompter pacing, unscripted 90-second memory retellings, and daily fluency documentation.
 
-Speak in Progress is designed for creators documenting their English fluency journey through faceless PC screen recording (OBS / Loom), deliberate teleprompter practice, and immediate unscripted recall.
+Speak in Progress helps English speakers move past reading comprehension into spontaneous, confident speech using faceless PC screen recording (OBS Studio, Windows Game Bar, macOS QuickTime) and structured active retrieval.
 
-## Core Capabilities
+## Public Pages (Indexable Canonical URLs)
 
-- **Interactive Teleprompter Studio**: Calibrated speaking rate (130–160 WPM), continuous vertical auto-scroll (15–75 px/s), paragraph focus mode, eye-line focus beam, and clean screen-recording mode (`F` shortcut).
-- **5-Step Practice Workflow**:
-  1. *Voiceover Intro*: 15-second opening hook tailored for session greeting.
-  2. *Story Reading*: Calibrated 5-paragraph teleprompter reading at broadcast cadence.
-  3. *Key Expressions*: 3 curated collocations and idioms with contextual meaning, example, and vocal tip.
-  4. *Unscripted Retelling*: 90-second spontaneous memory recall using structured anchor cues without reading.
-  5. *Private Log*: Script independence rating (1–5), stumble friction notes, and win-of-the-day log.
-- **16:9 Thumbnail Studio**: Instant 2K (2560×1440) and 1080p high-CTR YouTube thumbnail generator with contrast typography, word highlighting, and PNG export.
-- **Video Intro & Channel Banner Suite**: 3–4 second animated video stings with real audio chords, 2560×1440 channel banners with mobile/TV safe zones, and SVG branding logos.
-- **Private Cloud Vault**: Single-user Cloud Firestore persistence secured with attribute-based security rules.
+- [Home](https://speak-in-progress.pages.dev/): Overview of the studio, Cognitive Cadence Method, and interactive WPM calculator.
+- [Features](https://speak-in-progress.pages.dev/features): Breakdown of the 4 integrated studio modules.
+- [How It Works](https://speak-in-progress.pages.dev/how-it-works): 5-step daily speaking blueprint and CEFR WPM pacing calibration table.
+- [About](https://speak-in-progress.pages.dev/about): Origin, founder bio (Md. Selim), and the Cognitive Cadence philosophy.
+- [FAQ](https://speak-in-progress.pages.dev/faq): Direct answers on teleprompter pacing, 90-second recall, OBS workflow, and data privacy.
+
+## Core Studio Modules
+
+- **Interactive Teleprompter Studio**: Calibrated speaking rate (130–160 WPM), continuous auto-scroll (15–75 px/s), Paragraph Focus mode, eye-line focus beam, clean screen-recording mode (`F` shortcut), and in-app microphone rehearsal playback.
+- **Cognitive Cadence & 120-Day CEFR Syllabus**: Progressive A1–C2 daily scripts pairing guided reading with an immediate 90-second unscripted memory retelling challenge and stumble-rate reflection logs.
+- **16:9 High-CTR Thumbnail Studio**: Native HTML5 Canvas exporter producing 2K (2560×1440) and FHD (1920×1080) PNG thumbnails with bold typography and episode badges.
+- **Video Intro, Banner & Daily YouTube Upload Kit**: Browser-rendered animated intro stingers with acoustic audio chords, 2560×1440 channel banners with desktop/mobile/TV safe zones, SVG logos, and daily YouTube title and description metadata generators.
 
 ## The Cognitive Cadence Method
 
-Traditional language learning over-indexes on passive comprehension. Fluency requires rapid memory retrieval under communicative time pressure:
-- **Calibrated Pacing (130–150 WPM)**: Stabilizes respiratory cadence and eliminates anxiety-driven rushing or hesitation.
-- **Immediate Active Retrieval (90s Window)**: Forcing spontaneous verbalization immediately following reading builds myelinated synaptic pathways.
-- **Normalizing Stumble Rates**: Treats vocal pauses and pronunciation friction as objective proof of neuro-linguistic progress rather than failure.
-- **Faceless Screen-Recording Freedom**: Channels 100% of cognitive energy into vocal projection, idiom usage, and articulation without camera appearance anxiety.
+Traditional language study relies heavily on passive listening and translation. Fluent speech requires motor-articulatory rhythm and rapid cognitive retrieval under gentle time pressure:
+- **Subvocal Alignment (130–160 WPM)**: Continuous prompter movement eliminates mid-sentence pauses and mental translation.
+- **Active Retrieval (90s Window)**: Hiding text immediately after reading forces spontaneous grammatical synthesis from memory anchors.
+- **Normalizing the Stumble Rate**: Treats hesitations as objective neuro-linguistic calibration signals rather than failure.
+- **Faceless PC Screen Recording**: Removes camera and lighting friction so 100% of focus stays on vocal delivery.
 
-## Technical Architecture & Integrations
+## Privacy & Non-Indexable Studio Boundary
 
-- **Framework**: React 19, TypeScript, Vite 8
-- **Styling**: Tailwind CSS v4, Lucide React, Framer Motion
-- **Authentication**: Firebase Authentication (Google OAuth 2.0) with strict owner verification
-- **Database**: Cloud Firestore with zero-trust ABAC rules
-- **Media**: Web Audio API (microphone rehearsal recorder), HTML5 Canvas API (thumbnail generator)
-- **Deployment**: Static SPA hosted on Cloudflare Pages (https://speak-in-progress.pages.dev/)
+Only the 5 public documentation pages listed above are indexable. The authenticated creator studio workspace, personal teleprompter drafts, rehearsal recordings, and private reflection vaults are strictly protected behind Firebase Authentication (`noindex, nofollow, noarchive, nosnippet`, `X-Robots-Tag` headers, and Cloud Firestore security rules).
 
-## Official Channel & Community
+## Official Attribution
 
-- Founder & Creator: Md. Selim
-- Official YouTube Channel: https://www.youtube.com/@SpeakInProgress
-- Official Domain: https://speak-in-progress.pages.dev/
-- Public Documentation: https://speak-in-progress.pages.dev/llms-full.txt
+- **Founder & Creator**: Md. Selim
+- **Official YouTube Channel**: https://www.youtube.com/@SpeakInProgress
+- **Canonical Website**: https://speak-in-progress.pages.dev/
+- **Extended Specification**: https://speak-in-progress.pages.dev/llms-full.txt

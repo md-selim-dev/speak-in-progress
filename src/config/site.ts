@@ -42,7 +42,7 @@ export const SITE_CONFIG = {
       id: 'home',
       path: '/',
       navLabel: 'Home',
-      title: 'Speak in Progress — Spoken English Fluency & Recording Studio',
+      title: 'Speak in Progress — English Fluency & Recording Studio',
       description:
         'Master real-world English fluency through deliberate practice, calibrated teleprompter pacing, unscripted memory retelling, and PC screen-recording.',
     },
